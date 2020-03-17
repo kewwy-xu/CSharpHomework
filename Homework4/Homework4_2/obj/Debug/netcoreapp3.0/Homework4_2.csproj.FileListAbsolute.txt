@@ -1,0 +1,11 @@
+D:\VS projects\c# repos\Homework4_2\bin\Debug\netcoreapp3.0\Homework4_2.exe
+D:\VS projects\c# repos\Homework4_2\bin\Debug\netcoreapp3.0\Homework4_2.deps.json
+D:\VS projects\c# repos\Homework4_2\bin\Debug\netcoreapp3.0\Homework4_2.runtimeconfig.json
+D:\VS projects\c# repos\Homework4_2\bin\Debug\netcoreapp3.0\Homework4_2.runtimeconfig.dev.json
+D:\VS projects\c# repos\Homework4_2\bin\Debug\netcoreapp3.0\Homework4_2.dll
+D:\VS projects\c# repos\Homework4_2\bin\Debug\netcoreapp3.0\Homework4_2.pdb
+D:\VS projects\c# repos\Homework4_2\obj\Debug\netcoreapp3.0\Homework4_2.csprojAssemblyReference.cache
+D:\VS projects\c# repos\Homework4_2\obj\Debug\netcoreapp3.0\Homework4_2.AssemblyInfoInputs.cache
+D:\VS projects\c# repos\Homework4_2\obj\Debug\netcoreapp3.0\Homework4_2.AssemblyInfo.cs
+D:\VS projects\c# repos\Homework4_2\obj\Debug\netcoreapp3.0\Homework4_2.dll
+D:\VS projects\c# repos\Homework4_2\obj\Debug\netcoreapp3.0\Homework4_2.pdb
