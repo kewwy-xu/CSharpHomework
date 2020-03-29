@@ -1,0 +1,11 @@
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework_5\bin\Debug\netcoreapp3.0\Homework_5.exe
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework_5\bin\Debug\netcoreapp3.0\Homework_5.deps.json
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework_5\bin\Debug\netcoreapp3.0\Homework_5.runtimeconfig.json
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework_5\bin\Debug\netcoreapp3.0\Homework_5.runtimeconfig.dev.json
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework_5\bin\Debug\netcoreapp3.0\Homework_5.dll
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework_5\bin\Debug\netcoreapp3.0\Homework_5.pdb
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework_5\obj\Debug\netcoreapp3.0\Homework_5.csprojAssemblyReference.cache
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework_5\obj\Debug\netcoreapp3.0\Homework_5.AssemblyInfoInputs.cache
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework_5\obj\Debug\netcoreapp3.0\Homework_5.AssemblyInfo.cs
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework_5\obj\Debug\netcoreapp3.0\Homework_5.dll
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework_5\obj\Debug\netcoreapp3.0\Homework_5.pdb
