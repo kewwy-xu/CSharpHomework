@@ -1,0 +1,9 @@
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework7\obj\Debug\Homework7.csprojAssemblyReference.cache
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework7\obj\Debug\Homework7.Form1.resources
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework7\obj\Debug\Homework7.Properties.Resources.resources
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework7\obj\Debug\Homework7.csproj.GenerateResource.cache
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework7\bin\Debug\Homework7.exe.config
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework7\bin\Debug\Homework7.exe
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework7\bin\Debug\Homework7.pdb
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework7\obj\Debug\Homework7.exe
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework7\obj\Debug\Homework7.pdb
