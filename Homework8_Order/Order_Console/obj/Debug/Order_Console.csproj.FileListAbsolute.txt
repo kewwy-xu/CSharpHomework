@@ -1,0 +1,6 @@
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework8_Order\Order_Console\bin\Debug\Order_Console.exe.config
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework8_Order\Order_Console\bin\Debug\Order_Console.exe
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework8_Order\Order_Console\bin\Debug\Order_Console.pdb
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework8_Order\Order_Console\obj\Debug\Order_Console.csprojAssemblyReference.cache
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework8_Order\Order_Console\obj\Debug\Order_Console.exe
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework8_Order\Order_Console\obj\Debug\Order_Console.pdb

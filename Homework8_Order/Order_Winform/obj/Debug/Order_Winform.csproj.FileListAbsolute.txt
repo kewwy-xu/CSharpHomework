@@ -1,0 +1,14 @@
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Order_Winform\bin\Debug\Order_Winform.exe.config
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Order_Winform\bin\Debug\Order_Winform.exe
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Order_Winform\bin\Debug\Order_Winform.pdb
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Order_Winform\obj\Debug\Order_Winform.csprojAssemblyReference.cache
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Order_Winform\obj\Debug\Order_Winform.Properties.Resources.resources
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Order_Winform\obj\Debug\Order_Winform.csproj.GenerateResource.cache
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Order_Winform\obj\Debug\Order_Winform.exe
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Order_Winform\obj\Debug\Order_Winform.pdb
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Order_Winform\bin\Debug\Order_Console.exe
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Order_Winform\bin\Debug\Order_Console.pdb
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Order_Winform\bin\Debug\Order_Console.exe.config
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Order_Winform\obj\Debug\Order_Winform.csproj.CopyComplete
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Order_Winform\obj\Debug\Order_Winform.MainForm.resources
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Order_Winform\obj\Debug\Order_Winform.AddOrderForm.resources
