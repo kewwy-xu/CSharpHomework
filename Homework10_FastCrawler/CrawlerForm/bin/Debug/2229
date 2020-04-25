@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">博客园_你的龙儿</title>
+  <subtitle type="text"></subtitle>
+  <id>uuid:0d9a7eed-4c6e-4c6a-b966-a76fff4e7415;id=457</id>
+  <updated>2020-04-24T13:44:20Z</updated>
+  <author>
+    <name>你的龙儿</name>
+    <uri>http://www.cnblogs.com/liangbaolong/</uri>
+  </author>
+  <generator>feed.cnblogs.com</generator>
+  <entry>
+    <id>http://www.cnblogs.com/liangbaolong/p/12758023.html</id>
+    <title type="text">构造方法及方法(重载)与this关键字的使用 - 你的龙儿</title>
+    <summary type="text">一：构造方法的概念： 构造方法是一种特殊的方法，它是一个与类同名的方法。对象的创建就是通过构造方法来完成，其功能主要是完成对象的初始化。当类实例化一个对象时会自动调用构造方法。构造方法和其他方法一样也可以重载。 二：构造方法的特殊性（反映在以下几个方面）： 1.构造方法作用： （1）构造出来一个类的</summary>
+    <published>2020-04-24T13:44:00Z</published>
+    <updated>2020-04-24T13:44:00Z</updated>
+    <author>
+      <name>你的龙儿</name>
+      <uri>http://www.cnblogs.com/liangbaolong/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/liangbaolong/p/12758023.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/liangbaolong/p/12758023.html" />
+    <content type="html">【摘要】一：构造方法的概念： 构造方法是一种特殊的方法，它是一个与类同名的方法。对象的创建就是通过构造方法来完成，其功能主要是完成对象的初始化。当类实例化一个对象时会自动调用构造方法。构造方法和其他方法一样也可以重载。 二：构造方法的特殊性（反映在以下几个方面）： 1.构造方法作用： （1）构造出来一个类的 &lt;a href="http://www.cnblogs.com/liangbaolong/p/12758023.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+</feed>

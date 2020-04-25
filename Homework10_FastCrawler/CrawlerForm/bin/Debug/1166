@@ -1,0 +1,317 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    <meta property="og:description" content="47小时&#x27;巨作&#x27;(头发要掉光了，还不知道写得对不对，毕竟这只是我的一家之言。希望是对的叭)" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>第2章_004_关系数据库_关系演算_001_元组关系演算（从集合的角度深入浅出） - SimbaWang - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    <link id="MainCss" rel="stylesheet" href="/skins/dark/bundle-dark.min.css?v=j0xwuLPsI18WSVxV2q2NcI-Zj1ljH0hxwq6KgeUX0QQ" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/dark/bundle-dark-mobile.min.css?v=ADiCwO2hOTdd5yYidcx7eob7ix2VJI4o_TXjEycTHjs" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/SimbaWang/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/SimbaWang/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/SimbaWang/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 575348;
+        var currentBlogApp = 'SimbaWang';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'Dark';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    <table width="100%" cellspacing="0" cellpadding="5" border="0">
+<tr>
+<td class="banner" height="100">
+
+<div id="header">
+	<span>
+		<a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/SimbaWang/">SimbaWang</a>
+<br/>
+		<div class="sub">
+
+</div>
+	</span>
+</div>
+
+
+</td>
+</tr>
+<tr>
+<td style="padding-left: 5px" height="35">
+<div style="border: solid 4px #333333; padding: 0px">
+<div style="border: solid 1px #666666; padding: 5px">
+
+<a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+ | 
+
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/SimbaWang/">
+首页</a>
+ | 
+
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+ | 
+
+
+<a id="MyLinks1_NewArticleLink" class="menu" href="https://i.cnblogs.com/EditArticles.aspx?opt=1">新文章</a>
+ | 
+
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/SimbaWang">
+联系</a> | 
+
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/SimbaWang/rss/">
+订阅</a> 
+<a id="blog_nav_rss_image" href="https://www.cnblogs.com/SimbaWang/rss/">
+    <img src="/skins/dark/images/xml.gif" alt="订阅" />
+</a> | 
+
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+
+
+
+<div id="blog_stats">随笔：
+4
+文章：
+82
+评论：
+2
+引用：
+0
+
+</div>
+</div>
+</div>
+</td>
+</tr>
+</table>
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td valign="top" style="padding: 0">
+<table align="center" width="100%" height="1400" cellspacing="0" cellpadding="5" border="0" class="index">
+<tr>
+<td class="banner" valign="top">
+<div id="post_detail">
+<div class="block">
+	<h1 class="block_title">
+<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/SimbaWang/p/12502855.html">第2章_004_关系数据库_关系演算_001_元组关系演算（从集合的角度深入浅出）</a>
+</h1>
+	<div class="post">
+		<div class="postcontent">
+			
+    <div id="cnblogs_post_description" style="display: none">
+        47小时"巨作"(头发要掉光了，还不知道写得对不对，毕竟这只是我的一家之言。希望是对的叭)
+    </div>
+<div id="cnblogs_post_body" class="blogpost-body ">
+    <p><span style="font-family: 仿宋; font-size: 18pt; color: #008000;">一. 定义 ===》</span><br /><span style="font-family: 仿宋; font-size: 18px;">元组关系演算中，以元组为单位，通过公式约束所要查找元组的条件，可以表示为: {t | &phi;(t)} <span style="color: #ff6600;">===&gt;</span> 使&phi;(t)为真的元组t的集合。其中: t为元组变量，即查询目的，&phi;为元组演算的谓词公式，即查询的条件。</span><br /><span style="font-family: 仿宋; font-size: 18px;">按照集合的思想来理解即为：个体词t具有谓词&phi;(t)的性质。</span><br /> <br /> <br /> <br /><span style="font-family: 仿宋; font-size: 18pt; color: #008000;">二. 元组关系演算的谓词公式 ===》</span><br /><span style="font-family: 仿宋; font-size: 18px;">&phi;(t)可以通过原子公式、约束公式、自由变量、运算符构成。</span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #00ccff;">1. </span>原子公式分为3类 ===》</span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ffff00;">--(1).</span> R(t): R为关系名，表示t是R中的元组;</span></p>
+<p><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ffff00;">--(2).</span> t[i] &theta; u[j]: 表示"元组t的第i个分量与元组u的第j个分量进行比较运算: &theta;"，如t[2] &lt; u[3]。</span></p>
+<p><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ffff00;">--(3).</span> t[i] &theta; C: 表示"元组的第i个分量与常量C进行比较运算: &theta;"，如t[3] &gt; 5。</span><br /> </p>
+<p>&nbsp;</p>
+<p><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #00ccff;">2.</span> 约束元组变量 <span style="color: #99cc00;">&amp;&amp;</span> 自由元组变量 ===》</span><br /><span style="font-family: 仿宋; font-size: 18px;">若元组演算公式中的一个元组变量前有"全称量词"和"存在量词"，则称该变量为约束元组变量; 否则称为自由元组变量。</span><br /><span style="font-family: 仿宋; font-size: 18px;">即: 在公式(&exist;t)&phi;(t)和(&forall;t)&phi;(t)中，&phi;称为量词的辖域。t出现在(&exist;t)或(&forall;t)的辖域内，t为约束元组变量，被量词所绑定。任何没有以这种方法显示绑定的变量都称为自由变量。</span><br /> </p>
+<p>&nbsp;</p>
+<p><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #00ccff;">3.</span> 为此公式&phi;(t)的递归定义 ===》</span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ffff00;">--(1).</span> 原子公式是公式;</span></p>
+<p><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ffff00;">--(2).</span> 通过吸取连接词、合取连接词所构成的复合公式也是公式 ===&gt; 设&phi;<sub>1</sub>(t<sub>1</sub>)和&phi;<sub>2</sub>(t<sub>2</sub>)是公式，则<sup>&not;</sup>&phi;<sub>1</sub>(t<sub>1</sub>)，&phi;<sub>1</sub>(t<sub>1</sub>) &Lambda; &phi;<sub>2</sub>(t<sub>2</sub>)和&phi;<sub>1</sub>(t<sub>1</sub>) &or; &phi;<sub>2</sub>(t<sub>2</sub>)也是公式;</span></p>
+<p><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ffff00;">--(3).</span> 利用全称量词和存在量词构成的公式也是&phi;(t)的一种表现形式 ===&gt; (&exist;t)&phi;(t)和(&forall;t)&phi;(t)也是公式;</span></p>
+<p><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ffff00;">--(4).</span> 有限次利用上述规则得到的式子都是公式;</span><br /> </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p> <br /><span style="font-family: 仿宋; font-size: 18pt; color: #008000;">三. 公式运算符及其优先级 ===》</span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #00ccff;">1.</span> 算术比较符: &lt;, &gt;, &ge;, &le;, &ne;, =;</span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #00ccff;">2.</span> 全称量词&forall;和存在量词&exist;;</span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #00ccff;">3.</span> 逻辑运算符: &Lambda;, &or;, &not;, &rarr;;</span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #00ccff;">4.</span> 优先级: 算术比较符 &gt; 全称量词&forall;和存在量词&exist; &gt; 逻辑运算符;</span><br /> </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><br /><span style="font-family: 仿宋; font-size: 18pt; color: #008000;">四. 元组关系演算与关系代数 ===》</span><br /><span style="font-family: 仿宋; font-size: 18px;">在元组关系演算中，可以不用考虑为解决表的自然连接中产生数据冗余而进行投影属性列<span style="color: #008000;">(最好还是考虑，但是为了简化步骤就没有考虑)</span>。</span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #00ccff;">1.</span> 传统关系代数 ---&gt; 元组关系演算 ===》</span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ffff00;">--(1).</span> 交操作: {t | R(t) &Lambda; S(t)};</span></p>
+<p><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ffff00;">--(2).</span> 并操作: {t | R(t) &or; S(t)};</span></p>
+<p><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ffff00;">--(3).</span> 差操作: {t | R(t) &Lambda;&nbsp;<sup>&not;</sup>S(t)};</span></p>
+<p><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ffff00;">--(4).</span> 广义笛卡尔积操作: {t<sup>(m+n)</sup> | (&exist;u)(&exist;v) (R(u) &Lambda; S(v)) <span style="color: #008000;">&Lambda;</span> (t[i]=u[j] </span><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #008000;">(i=1, 2, ..., m)</span> <span style="color: #008000;">&Lambda;</span> t[i]=v[k]) <span style="color: #008000;">(i=m+1, m+2, ..., m+n) (j=1, 2, ...,m) (k=1, 2, ..., n)</span>};</span><br /> </p>
+<p>&nbsp;</p>
+<p><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #00ccff;">2.</span> 专门关系代数 ---&gt; 元组关系演算 ===》</span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ffff00;">--(1).</span> 选择操作: {t | R(t) &Lambda; F}，其中F ☞ 查询的条件。选取操作只是在原有的表上，将满足特定性质的元组提取出来，并没有形成新的表。</span></p>
+<p><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ffff00;">--(2).</span> 投影操作: {t<sup>(n)</sup> | (&exist;u) (R(u) <span style="color: #008000;">&Lambda;</span> t[i]=u[j]) <span style="color: #008000;">(i=1, 2, ..., n, j&isin;[1, count_A(R)])</span>}。===&gt; &exist;u &isin; R，满足t[1] = u[1]。投影是建立了一个新的表，这个表中的列来自于原表中的属性列(感兴趣的、被选取出来的列)。</span></p>
+<div class="cnblogs_code" onclick="cnblogs_code_show('c9ea0e44-aadf-47c0-90d7-9d8ff78f47a8')"><span style="font-family: 仿宋;"><img id="code_img_closed_c9ea0e44-aadf-47c0-90d7-9d8ff78f47a8" class="code_img_closed" src="https://images.cnblogs.com/OutliningIndicators/ContractedBlock.gif" alt=""><img id="code_img_opened_c9ea0e44-aadf-47c0-90d7-9d8ff78f47a8" class="code_img_opened" style="display: none" src="https://images.cnblogs.com/OutliningIndicators/ExpandedBlockStart.gif" alt=""></span>
+<div id="cnblogs_code_open_c9ea0e44-aadf-47c0-90d7-9d8ff78f47a8" class="cnblogs_code_hide">
+<pre><span style="color: #000000; font-family: 仿宋; font-size: 18px;">补充：为什么投影是要对所有的关系中元组进行操作(将所有的元组投影到属性列上)，但却用"存在量词&exist;"而不是"全称量词&forall;"？===》
+因为如果用了"全称量词&forall;"，那么这句话将会被解释为："对于任意的u&isin;R，都满足t[i] = u[j]" ===&gt; "新关系中某一个元组上的第i个分量t[i]等于原关系的第j列上所有的分量"，这显然是不正确的，这是因为一个t[i]有且仅有一个u[j]与之对应相等。所以说，我们只能表述为："在关系R中，总是存在某一个u元组，满足t[i] = u[j]"。
+还有一种解释(更确切地说是理解)将会在下面提到。</span></pre>
+</div>
+<span class="cnblogs_code_collapse" style="font-family: 仿宋; font-size: 18px;">补充：投影用存在量词&exist;的原因</span></div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p> <br /><span style="font-family: 仿宋; font-size: 18pt; color: #008000;">五. 什么时候用"全称量词&forall;和存在量词&exist;"<span style="color: #ff0000;">("浅"理解)</span> ===》</span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #00ccff;">1.</span> "存在量词&exist;": 当需求中含有"存在一个"、"至少一个"、"有一个"等词的时候。就像上述的投影操作一样：有且仅有一个R中的u元组，满足t[i] = u[j]。</span><br /> </p>
+<p>&nbsp;</p>
+<p><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #00ccff;">2.</span> "全称量词&forall;": 当需求中含有"全部"、"所有"等词，并且将<span style="color: #99cc00;">"全部"一词去掉</span>有后<span style="color: #ffff00;">改变原句句意</span>的时候。eg：</span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ffff00;">--(1).</span>&nbsp;<span style="color: #ff99cc;">在进行操作的过程中选择某一集合中全部元素</span>的元素集合时，即此时的"全部"并不是默认值，<span style="color: #00ff00;">默认值为"至少一个 / 存在"</span>: "查询选修了全部课程的学生"，将"全部"一词去掉后变为"查询选修了课程的学生"，前一个是"选修了全部课程"，后一个是"只要是选修了课程，即至少选修了一门课程"，将两者比较我们发现，两句话的句意完全不同。</span></p>
+<p><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ffff00;">--(2).</span>&nbsp;<span style="color: #ff99cc;">在经过一系列操作后所得到的集合中选择全部元组</span>时，即此时的<span style="color: #00ff00;">"全部"为默认值</span>: 对于"查询选修了'刘伟'老师的课程的全部学生"，将"全部"一词去掉后变为"查询选修了'刘伟'老师的课程的学生"，这并没有len何差别，所以自然就"不配"使用"全称量词&forall;"了。</span></p>
+<p><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ffff00;">--(3).</span> 关于"投影中使用'存在量词&exist;'的另一角度的理解": "将所有的元组投影到属性列上"，把"所有的"一词去掉变为"将元组投影到属性列上"，显然这两句话其实是一样的意思。</span><br /> </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-family: 仿宋; font-size: 18pt; color: #008000;">六. 命题的否定 VS 否命题 ===》</span><br /><span style="font-family: 仿宋; font-size: 18px;">存在一个命题为：若p，则q。</span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #00ccff;">1.</span> 命题的否定: 若p，则<sup>&not;</sup>q。也就是说，命题的否定只会否定命题的结论，并不会否定命题的条件。简单来说就是与原命题唱反调，所以他与原命题是完全对立的。所以我们研究问题的时候用的"正难则反"就是研究问题的否定形式<sup>&not;</sup>q。</span><br /> </p>
+<p>&nbsp;</p>
+<p><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #00ccff;">2.</span> 否命题: 若<sup>&not;</sup>p，则<sup>&not;</sup>q。也就是说，否命题会把命题的条件和结论一起否定掉。他与原命题的真假无关，与逆命题同真同假。</span><span style="font-family: 仿宋; font-size: 18px;"><br /></span><img style="display: block; margin-left: auto; margin-right: auto" src="https://img2020.cnblogs.com/i-beta/1930229/202003/1930229-20200316114808482-173253982.png" alt="" width="834" height="398"></p>
+<p>&nbsp;</p>
+<p><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #00ccff;">3.</span> 全称量词&forall;和存在量词&exist;的否定形式 ===》</span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ffff00;">--(1).</span> 全称量词&forall;的否定形式 ===》</span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ff99cc;">	　　1st.</span> 更换量词: 将全称量词&forall;换成存在量词&exist;;</span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ff99cc;">	　　2nd.</span> 将结论否定;</span><br /><span style="font-family: 仿宋; font-size: 18px;">也就是说: 全称量词&forall;的否定是一个存在命题;</span></p>
+<p><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ffff00;">--(2).</span> 存在量词&exist;的否定形式 ===》</span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ff99cc;">	　　1st.</span> 更换量词: 将存在量词&exist;换成全称量词&forall;;</span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ff99cc;">	　　2nd.</span> 将结论否定;</span><br /><span style="font-family: 仿宋; font-size: 18px;">也就是说: 存在量词&exist;的否定是一个全称命题;</span><br /> </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-family: 仿宋; font-size: 18pt; color: #008000;">七. 例题（不严谨，更严谨的看这里：<span style="color: #ff99cc;"><a href="https://www.cnblogs.com/SimbaWang/p/12640038.html" target="_blank"><span style="color: #ff99cc;">蕴含式</span></a></span>） ===》</span></p>
+<p><span style="font-family: 仿宋; font-size: 18px;"><strong><span style="color: #339966;">注：这里有如下说明 ＞</span></strong> 关于全称量词需要用到&ldquo;蕴含式&rdquo;，所以就<span style="color: #ff0000;">不严谨</span>(<strong><span style="color: #339966;">但并不是说有错误</span></strong>)。我们知道我们提出这样一个理论的目的是为了更好的运用于实际，在实际中我们是用的SQL语句来实现的，这样写是很难转换为SQL语句的，所以就<span style="color: #ff0000;">不提倡</span>大家用这样的方法写，上面就贴出来一个全新的、能够很容易就转换为SQL语句的元组关系演算(顺便介绍了&ldquo;<span style="color: #00ccff;"><a href="https://baike.baidu.com/item/%E8%95%B4%E5%90%AB%E5%BC%8F/4108247?fr=aladdin" target="_blank"><span style="color: #00ccff;">蕴含式</span></a></span>&rdquo;&mdash;&mdash;百度百科)。</span></p>
+<p><span style="font-family: 仿宋; font-size: 18px;">用户提供的5张表 ===》</span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ff99cc;">　　1st.</span> <span style="color: #00ccff;">Teacher</span>　　　&nbsp;　　<span style="color: #ff6600;">(教师关系表)</span>　　　　<span style="color: #99cc00;"> as</span>　　　　<span style="color: #ff6600;">T</span>&nbsp;&nbsp;<span style="color: #00ccff;">(TNo, TN, Dept)</span></span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ff99cc;">　　2nd.</span> <span style="color: #00ccff;">Student</span>　　　 　　<span style="color: #ff6600;">(学生关系表)</span>　　　　<span style="color: #99cc00;"> as</span>　　　<span style="color: #ff6600;">　S</span>&nbsp;&nbsp;<span style="color: #00ccff;">(SNo, SN, Dept)</span></span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ff99cc;">　　3rd.</span> <span style="color: #00ccff;">Class</span>　　　　 　　<span style="color: #ff6600;">(课程关系表)</span>　　　　 <span style="color: #99cc00;">as　</span>　　　<span style="color: #ff6600;">C</span>&nbsp;&nbsp;<span style="color: #00ccff;">(CNo, CN, CT)</span></span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ff99cc;">　　4th.</span> <span style="color: #00ccff;">Student-Class</span> 　　<span style="color: #ff6600;">(学生-选课关系表)</span>　　<span style="color: #99cc00;">as</span>　　　　<span style="color: #ff6600;">SC</span> <span style="color: #00ccff;">(SNo, CNo, Score)</span></span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ff99cc;">　　5th.</span> <span style="color: #00ccff;">Teacher-Class</span> 　　<span style="color: #ff6600;">(教师-授课关系表)</span>　<span style="color: #99cc00;">　as</span>　　　　<span style="color: #ff6600;">TC</span> <span style="color: #00ccff;">(TNo, CNo)</span></span></p>
+<p><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #00ccff;">1.</span> "全部都有" VS "至少没一"<span style="color: #00ccff;">(即：A &cup; B =?= A，或者表述为A ?&supe; B)</span></span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ffff00;">--(1).</span> 查询选修了'李力'老师所教授的全部课程的学生的学号、姓名 ===》</span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ff99cc;">答：</span><span style="color: #00ff00;">粗略关系代数表达式为:</span> ===》<br /><span style="color: #ff99cc;">&Pi;<sub>(SNo, SN)</sub>(S)&nbsp;⋈&nbsp;&Pi;<sub>(SNo, CNo)</sub>(SC) &divide;&nbsp;&Pi;<sub>CNo</sub>{&Pi;<sub>TNo</sub>[&sigma;<sub>TN='李力'</sub>(T)]&nbsp;⋈ TC}<span style="color: #ffffff;">;</span></span></span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ff9900;">元组演算表达式为: </span>{</span><br /><span style="font-family: 仿宋; font-size: 18px;">new_s<sup>(2)</sup> | 【(&exist;t)(&exist;sc)(&exist;s)】 </span><br /><span style="font-family: 仿宋; font-size: 18px;">	　　【T(t) &Lambda; TC(tc) &Lambda; SC(sc) &Lambda; S(s)】	&Lambda;</span><br /><span style="font-family: 仿宋; font-size: 18px;">	　　【</span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　t[2] = '李力'　　　　&Lambda;	<span style="color: #008000;"># 在T表中选取TN字段为'李力'的元组;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　t[1] = tc[1]	　　　　&Lambda;	<span style="color: #008000;"># 通过TNo字段将T表与TC表进行自然连接，这时得到了李力老师教授的所有课程的课程号的集合：Lili_C;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　s[1] = sc[1]　　　　&nbsp;&Lambda;	<span style="color: #008000;"># 通过SNo字段将SC表与S表进行自然连接;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　(&forall;tc) tc[2] = sc[2]　　　　&Lambda;	<span style="color: #008000;"># 对于任意的(&forall;)tc &isin; TC，总是存在(&exist;)sc &isin; SC，满足tc[2] = sc[2]，即Lili_C &sube; SNo<sub>cno</sub>(所在关系为&Pi;<sub>(SNo, CNo)</sub>(SC));</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　new_s[1] = s[1]　　　&Lambda;<span style="color: #008000;">	# 将S表投影到SNo字段，新表的第一个属性为SNo;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　new_s[2] = s[2]　　　&Lambda;	<span style="color: #008000;"># 将S表投影到SN字段，新表的第二个属性为SN;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">	　　】</span><br /><span style="font-family: 仿宋; font-size: 18px;">}</span><br /> <br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ffff00;">--(2).</span> 查询至少有一门'李力'老师所教授的课程没有选过的学生的学号、姓名<span style="color: #008000;">(这名学生没有选择李力老师教授的一门或以上的课程)</span> ===》</span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ff99cc;">答：</span><span style="color: #00ff00;">粗略关系代数表达式为:</span>&nbsp;===》<br /><span style="color: #ff99cc;">&Pi;<sub>(SNo, SN)</sub>(S) - &Pi;<sub>(SNo, SN)</sub>(S)&nbsp;⋈&nbsp;&Pi;<sub>(SNo, CNo)</sub>(SC) &divide;&nbsp;&Pi;<sub>CNo</sub>{&Pi;<sub>TNo</sub>[&sigma;<sub>TN='李力'</sub>(T)]&nbsp;⋈&nbsp;TC<span style="color: #000000;"><span style="color: #ff99cc;">}</span>;</span></span></span><br /><span style="font-family: 仿宋; font-size: 18px;">在上一个题目中，我们求的是"选修了'李力'老师所教授的全部课程的学生"，所以选择"全称量词&forall;"来表述命题p：&forall;tc&isin;TC，&exist;sc&isin;SC使得tc[2] = sc[2]成立。而现在我们是"没有选择李力老师教授的一门或以上的课程的学生"，即求&not;p：&exist;tc&isin;TC，&forall;sc&isin;SC使得tc[2] &ne; sc[2]成立。</span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ff9900;">元组演算表达式为:</span> {</span><br /><span style="font-family: 仿宋; font-size: 18px;">new_s<sup>(2)</sup> | 【(&exist;t)(&exist;tc)(&forall;sc)(&exist;s)】 </span><br /><span style="font-family: 仿宋; font-size: 18px;">	　　【T(t) &Lambda; TC(tc) &Lambda; SC(sc) &Lambda; S(s)】	&Lambda;</span><br /><span style="font-family: 仿宋; font-size: 18px;">	　　【</span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　t[2] = '李力'　　　　&Lambda;	<span style="color: #008000;"># 在T表中选取TN字段为'李力'的元组;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　t[1] = tc[1]　　　　&nbsp;&Lambda;	<span style="color: #008000;"># 通过TNo字段将T表与TC表进行自然连接，这时得到了李力老师教授的所有课程的课程号的集合：Lili_C;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　s[1] = sc[1]　　　　&nbsp;&Lambda;	<span style="color: #008000;"># 通过SNo字段将SC表与S表进行自然连接;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　tc[2] &ne; sc[2]　　　 &Lambda;<span style="color: #008000;">	# 存在tc &isin; TC，对于任意的sc &isin; SC，都满足tc[2] &ne; sc[2]，即TC &cap; SC &ne; TC;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　new_s[1] = s[1]　　　&Lambda;	<span style="color: #008000;"># 将S表投影到SNo字段，新表的第一个属性为SNo;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　new_s[2] = s[2]　　　&Lambda;<span style="color: #008000;">	# 将S表投影到SN字段，新表的第二个属性为SN;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">	　　】</span><br /><span style="font-family: 仿宋; font-size: 18px;">}</span><br /> <br /><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ffff00;">--(3).</span> 查询<span style="color: #008000;">(至少)</span>教授'数据库'和'计算机基础'这两门课程的老师的姓名<span style="color: #008000;">(在老师教授的课程的课程编号集合中包含{'数据库'的编号, '计算机基础'的编号})</span> ===》</span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ff99cc;">答：</span><span style="color: #00ff00;">粗略关系代数表达式为:</span> ===》<br /><span style="color: #ff99cc;">&Pi;<sub>(TNo, CNo)</sub>[&Pi;<sub>(TNo, TN)</sub>(T) ⋈ &Pi;<sub>(TNo, CNo)</sub>(TC)] &divide;&nbsp;&Pi;<sub>CNo</sub>[&sigma;<sub>cn='数据库'&nbsp;&or; cn='计算机基础'</sub>(C)]</span>;</span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ff9900;">元组演算表达式为:</span> {</span><br /><span style="font-family: 仿宋; font-size: 18px;">new_t<sup>(1)</sup> | (&exist;t)(&exist;tc)</span><br /><span style="font-family: 仿宋; font-size: 18px;">	　　【T(t) &Lambda; TC(tc) &Lambda; C(c)】		&Lambda;</span><br /><span style="font-family: 仿宋; font-size: 18px;">	　　【</span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　(&exist;c) (c[2] = '数据库' &or; c[2] = '计算机基础')　　　　&Lambda; <span style="color: #008000;"># 在C表中选取CN字段为'数据库'的元组，其实是得到了'数据库'课程的编号sjk_C;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　(&forall;c) (tc[2] = c[1])　　　　&Lambda; <span style="color: #008000;"># &forall;c&isin;C，&exist;tc&isin;TC，满足tc[2] = c[1]，即TC &supe; C;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　t[1] = tc[1]　　　　　　　 &Lambda; <span style="color: #008000;"># 通过TNo字段将T表与TC表进行连接;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　new_t[1] = t[2]　　　　　　&Lambda; <span style="color: #008000;"># 将T表投影到TN字段，新表的第一个属性为TN;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">	　　】</span><br /><span style="font-family: 仿宋; font-size: 18px;">}</span><br /> <br /><span style="font-family: 仿宋; font-size: 18px;"> --(4).&nbsp;查找至少没有教授"数据库"和"计算机基础"这俩门课程中的一门的老师的姓名 ===》</span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ff99cc;">答：</span><span style="color: #00ff00;">关系代数:&nbsp;<span style="color: #000000;">===》<br /></span></span><span style="color: #ff99cc;">&Pi;<sub>TN</sub>(T) - &Pi;<sub>(TNo, CNo)</sub>[&Pi;<sub>(TNo, TN)</sub>(T)&nbsp;⋈&nbsp;&Pi;<sub>(TNo, CNo)</sub>(TC)] &divide;&nbsp;&Pi;<sub>CNo</sub>[&sigma;<sub>cn='数据库'&nbsp;&or; cn='计算机基础'</sub>(C)]</span>;</span><br /><span style="font-family: 仿宋; font-size: 18px;">这个问题乍一看"WTF"，那我们"正难则反"，考虑其反面："全部都选"。所以&not;p： &forall;tc&isin;TC和sc&isin;SC，都满足tc[2] &ne; sc[2] <span style="color: #ff6600;">===&gt;</span> p：&exist;tc&isin;TC和sc&isin;SC，满足tc[2] = sc[2]，即A &cap; B &ne; &empty;。</span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ff9900;">元组演算表达式为:</span> {</span><br /><span style="font-family: 仿宋; font-size: 18px;">new_t<sup>(1)</sup>&nbsp;| (&exist;t)(&exist;c)(&forall;tc)</span><br /><span style="font-family: 仿宋; font-size: 18px;">　　【T(t) &Lambda; TC(tc) &Lambda; C(c)】	&Lambda;</span><br /><span style="font-family: 仿宋; font-size: 18px;">　　【</span><br /><span style="font-family: 仿宋; font-size: 18px;">　　　　c[2] = '数据库' &or; c[2] = '计算机基础'　　&Lambda;&nbsp;<span style="color: #008000;"># 在C表中选取CN字段为'数据库'的元组，其实是得到了'数据库'课程的编号sjk_C;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">　　　　tc[2] &ne; c[1]　　　　&Lambda;&nbsp;<span style="color: #008000;"># &exist;c&isin;C，&forall;tc&isin;TC都满足tc[2] &ne; c[1]，即A &cup; B &ne; A;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">　　　　t[1] = tc[1]　　　　&nbsp;&Lambda;<span style="color: #008000;">&nbsp;# 通过TNo字段将T表与TC表进行连接;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">　　　　new_t[1] = t[2]　　　&Lambda;&nbsp;<span style="color: #008000;"># 将T表投影到TN字段，新表的第一个属性为TN;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">　　】</span><br /><span style="font-family: 仿宋; font-size: 18px;">}</span><br /><br /><br /><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #00ccff;">2.</span> "全部都没" VS "至少有一"<span style="color: #00ccff;">(即：A &cap; B =?= &empty;)</span></span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ffff00;">--(1).</span> 查询没有选修'李力'老师的课程的<span style="color: #008000;">(全部)</span>学生的学号、姓名<span style="color: #008000;">(一门李力老师教授的课程都没有选的学生)</span> ===》<br /><span style="color: #ff99cc;">答：</span>粗略关系代数表达式为(这个用关系代数比较难表达，所以我们可以看反面："至少选了一门"。然后再用总的减去它):&nbsp;<br /></span><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ff99cc;">&Pi;<sub>(SNo, SN)</sub>(S)&nbsp;- &Pi;<sub>(SNo, SN)</sub>(&Pi;<sub>CNo</sub>{&Pi;<sub>TNo</sub>[&sigma;<sub>cn='李力'</sub>(T)]&nbsp;⋈ TC}&nbsp;⋈ [&Pi;<sub>(CNo, SNo)</sub>(SC)&nbsp;⋈&nbsp;&Pi;<sub>(SNo, SN)</sub>(S)])</span>;</span><br /><span style="font-family: 仿宋; font-size: 18px;">这个问题可以表述为A &cap; B = &empty;(对于A、B中的所有元素，都满足a &ne; b)，这里的A即为<span style="color: #99cc00;">{某个学生选课的编号集合}</span>，B即为<span style="color: #99cc00;">{李力老师教授课程的课程编号集合}</span></span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ff9900;">元组演算表达式为:</span> {</span><br /><span style="font-family: 仿宋; font-size: 18px;">new_s<sup>(2)</sup> | 【(&exist;t)(&forall;tc)(&forall;sc)(&exist;s)】 </span><br /><span style="font-family: 仿宋; font-size: 18px;">	　　【T(t) &Lambda; TC(tc) &Lambda; SC(sc) &Lambda; S(s)】	&Lambda;</span><br /><span style="font-family: 仿宋; font-size: 18px;">	　　【</span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　t[2] = '李力'　　　　&Lambda;<span style="color: #008000;">	# 在T表中选取TN字段为'李力'的元组;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　t[1] = tc[1]　　　　&nbsp;&Lambda;<span style="color: #008000;">	# 通过TNo字段将T表与TC表进行连接，得到李力老师教授的全部课程的课程编号集合;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　tc[2] &ne; sc[2]　　　 &Lambda;	<span style="color: #008000;"># &forall;tc&isin;TC和sc&isin;SC，都满足tc[2] &ne; sc[2];</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　s[1] = sc[1]　　　　&nbsp;&Lambda;	<span style="color: #008000;"># 通过SNo字段将SC表与S表进行自然连接;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　new_s[1] = s[1]　　　&Lambda;	<span style="color: #008000;"># 将S表投影到SNo字段，新表的第一个属性为SNo;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　new_s[2] = s[2]　　　&Lambda;	<span style="color: #008000;"># 将S表投影到SN字段，新表的第二个属性为SN;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">	　　】</span><br /><span style="font-family: 仿宋; font-size: 18px;">}</span><br /> <br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ffff00;">--(2).</span> 查询选修了'李力'老师的课程的<span style="color: #008000;">(全部)</span>学生的学号、姓名<span style="color: #008000;">(至少选修了一门李力老师教授的课程的学生)</span> ===》</span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ff99cc;">答：</span><span style="color: #00ff00;">粗略关系代数表达式为:&nbsp;<span style="color: #000000;">===》</span><br /></span><span style="color: #ff99cc;">&Pi;<sub>(SNo, SN)</sub>(&Pi;<sub>CNo</sub>{&Pi;<sub>TNo</sub>[&sigma;<sub>cn='李力'</sub>(T)]&nbsp;⋈ TC}&nbsp;⋈ [&Pi;<sub>(CNo, SNo)</sub>(SC)&nbsp;⋈&nbsp;&Pi;<sub>(SNo, SN)</sub>(S)])<span style="color: #000000;">;</span></span></span><br /><span style="font-family: 仿宋; font-size: 18px;">很懵逼，那老规矩"正难则反"，考虑其反面："全部都没选"，发现正好是(1)中解决的(真巧吭，难道是故意安排的，谁知道呢？)，所以&not;p： &forall;tc&isin;TC和sc&isin;SC，都满足tc[2] &ne; sc[2] <span style="color: #ff6600;">===&gt;</span> p：&exist;tc&isin;TC和sc&isin;SC，满足tc[2] = sc[2]，即A &cap; B &ne; &empty;。</span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ff9900;">元组演算表达式为:</span> {</span><br /><span style="font-family: 仿宋; font-size: 18px;">new_s<sup>(2)</sup> | 【(&exist;t)(&exist;tc)(&exist;sc)(&exist;s)】 </span><br /><span style="font-family: 仿宋; font-size: 18px;">	　　【T(t) &Lambda; TC(tc) &Lambda; SC(sc) &Lambda; S(s)】	&Lambda;</span><br /><span style="font-family: 仿宋; font-size: 18px;">	　　【</span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　t[2] = '李力'　　　　&Lambda;	<span style="color: #008000;"># 在T表中选取TN字段为'李力'的元组;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　t[1] = tc[1]　　　 　&Lambda;	<span style="color: #008000;"># 通过TNo字段将T表与TC表进行连接，得到李力老师教授的全部课程的课程编号集合;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　tc[2] = sc[2]　　　　&Lambda;	<span style="color: #008000;"># &exist;tc&isin;TC和sc&isin;SC，满足tc[2] = sc[2]，即在TC表中存在某个元组tc，总能在SC表中找到某个元组sc，满足tc[2] = sc[2];</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　s[1] = sc[1]　　　　&nbsp;&Lambda;	<span style="color: #008000;"># 通过SNo字段将SC表与S表进行自然连接;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　new_s[1] = s[1]　　　&Lambda;	<span style="color: #008000;"># 将S表投影到SNo字段，新表的第一个属性为SNo;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　new_s[2] = s[2]　　　&Lambda;	<span style="color: #008000;"># 将S表投影到SN字段，新表的第二个属性为SN;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">	　　】</span><br /><span style="font-family: 仿宋; font-size: 18px;">}</span><br /><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ffff00;">--(3).</span> 查询教授'数据库'这门课程的<span style="color: #008000;">(全部)</span>老师的编号、姓名<span style="color: #008000;">(在老师教授的课程的课程编号集合中至少存在数据库这门课程的编号)</span> ===》</span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ff99cc;">答：</span><span style="color: #00ff00;">粗略关系代数表达式为:</span> ===》<br /><span style="color: #ff99cc;">&Pi;<sub>(TNo, TN)</sub>{&Pi;<sub>CNo</sub>[&sigma;<sub>cn='数据库'</sub>(C)]&nbsp;⋈ TC&nbsp;⋈&nbsp;&Pi;<sub>(TNo, TN)</sub>(T)}</span>;</span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ff9900;">元组演算表达式为:</span> {</span><br /><span style="font-family: 仿宋; font-size: 18px;">new_t<sup>(2)</sup> | 【(&exist;c)(&exist;t)(&exist;tc)】 </span><br /><span style="font-family: 仿宋; font-size: 18px;">	　　【T(t) &Lambda; C(c) &Lambda; TC(tc)】	&Lambda;</span><br /><span style="font-family: 仿宋; font-size: 18px;">	　　【</span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　c[2] = '数据库'　　　　&Lambda;	<span style="color: #008000;"># 在C表中选取CN字段为'数据库'的元组;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　tc[2] = c[1]　　　　　 &Lambda;	<span style="color: #008000;"># &exist;tc&isin;TC和c&isin;C，满足tc[2] = c[1]，即'数据库'课程的编号sjk_C存在于这位老师教授课程的课程编号集合中;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　tc[1] = t[1]　　　　　 &Lambda;	<span style="color: #008000;"># 通过TNo字段将T表与TC表进行连接;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　new_t[1] = t[1]　　　　&Lambda;<span style="color: #008000;">	# 将T表投影到TNo字段，新表的第一个属性为TNo;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　new_t[2] = t[2]　　　　&Lambda;	<span style="color: #008000;"># 将T表投影到TN字段，新表的第二个属性为TN;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">	　　】</span><br /><span style="font-family: 仿宋; font-size: 18px;">}</span><br /> <br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ffff00;">--(4).</span> 查找没有教授"数据库"这门课程的老师的姓名('数据库'这门课程全都不存在于老师的教授课程编号集合中) ===》</span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ff99cc;">答：</span><span style="color: #00ff00;">粗略关系代数表达式为</span><span style="color: #008000;">(考虑反面："至少有一个'数据库'的课程存在于老师的教授课程编号集合中")</span>:&nbsp;<br /><span style="color: #ff99cc;">&Pi;<sub>TN</sub>(T)&nbsp;- &Pi;<sub>TN</sub>{&Pi;<sub>CNo</sub>[&sigma;<sub>cn='数据库'</sub>(C)]&nbsp;⋈ TC&nbsp;⋈&nbsp;&Pi;<sub>(TNo, TN)</sub>(T)}</span>;</span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ff9900;">元组演算表达式为:</span> {</span><br /><span style="font-family: 仿宋; font-size: 18px;">new_t<sup>(1)</sup> | (&exist;t)(&forall;tc)(&forall;c)</span><br /><span style="font-family: 仿宋; font-size: 18px;">	　　【T(t) &Lambda; TC(tc) &Lambda; C(c)】	&Lambda;</span><br /><span style="font-family: 仿宋; font-size: 18px;">	　　【</span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　c[2] = '数据库'　　　　&Lambda; <span style="color: #008000;"># 在C表中选取CN字段为'数据库'的元组，其实是得到了'数据库'课程的编号sjk_C;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　tc[2] &ne; c[1]　　　　　&Lambda; <span style="color: #008000;"># &forall;tc&isin;TC和c&isin;sjk_C，都满足tc[2] &ne; c[1];</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　t[1] = tc[1]　　　　　 &Lambda;<span style="color: #008000;"> # 通过TNo字段将T表与TC表进行连接;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　new_t[1] = t[2]　　　　&Lambda; <span style="color: #008000;"># 将T表投影到TN字段，新表的第一个属性为TN;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">	　　】</span><br /><span style="font-family: 仿宋; font-size: 18px;">}</span><br /> <br /> <br /> <br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #00ccff;">3.</span> "全部都有" VS "全部都没"&nbsp;<strong><span style="color: #ff0000;">(注意：这俩并不是对立事件！！！)</span></strong></span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ffff00;">--(1).</span> 查询选修了所有课程的学生的学号、姓名<span style="color: #008000;">(在C表中任取一个课程都能在这个学生的SC表中找到对应的CNo ===&gt; &forall;c&isin;C，c&isin;在集合&pi;(SNo, CNo)(SC)中SNo的像集CNosno)</span> ===》</span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ff99cc;">答：<span style="color: #00ff00;">粗略关系代数表达式为:</span></span> ===》<br /><span style="color: #ff99cc;">&Pi;<sub>(SNo, SN)</sub>(S)&nbsp;⋈&nbsp;&Pi;<sub>(SNo, CNo)</sub>(SC) &divide;&nbsp;&Pi;<sub>CNo</sub>(C)</span></span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ff9900;">元组演算表达式为:</span> {</span><br /><span style="font-family: 仿宋; font-size: 18px;">new_s<sup>(2)</sup> | 【(&forall;c)(&exist;sc)(&exist;s)】 </span><br /><span style="font-family: 仿宋; font-size: 18px;">	　　【C(c) &Lambda; S(s) &Lambda; SC(sc)】	&Lambda;</span><br /><span style="font-family: 仿宋; font-size: 18px;">	　　【</span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　s[1] = sc[1]　　　　&Lambda;	<span style="color: #008000;"># 通过SNo字段将SC表与S表进行连接，这时其实可以得到所有选课学生的课程编号;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　sc[2] = c[1]　　　　&Lambda;<span style="color: #008000;">	# 对于任意的c &isin; C，总是存在(&exist;)sc &isin; SC，满足sc[2] = c[1]，即&pi;CNo(C) &sube; SNocno(所在关系为&pi;(SNo, CNo)(SC));</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　new_s[1] = s[1]　　 &Lambda;	<span style="color: #008000;"># 将S表投影到SNo字段，新表的第一个属性为SNo;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　new_s[2] = s[2]　　&nbsp;&Lambda;	<span style="color: #008000;"># 将S表投影到SN字段，新表的第二个属性为SN;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">	】</span><br /><span style="font-family: 仿宋; font-size: 18px;">}</span><br /> <br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ffff00;">--(2).</span> 查询没有选修一门课程的学生的学号、姓名<span style="color: #008000;">(比如：1805xxxxx04, SimbaWang)</span> ===》</span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ff99cc;">答：</span><span style="color: #00ff00;">粗略关系代数表达式为</span><span style="color: #008000;">(老规矩"正难则反"："选修了课程的学生"):</span>&nbsp;===》<br /><span style="color: #ff99cc;">&Pi;<sub>SN</sub>(S) - &Pi;<sub>SN</sub>[&Pi;<sub>(SNo)</sub>(SC)&nbsp;⋈&nbsp;&Pi;<sub>(SNo, SN)</sub>(S)]</span></span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ff9900;">元组演算表达式为:</span> {</span><br /><span style="font-family: 仿宋; font-size: 18px;">new_s<sup>(2)</sup> | 【(&forall;c)(&forall;sc)(&exist;s)】 </span><br /><span style="font-family: 仿宋; font-size: 18px;">	　　【C(c) &Lambda; S(s) &Lambda; SC(sc)】	&Lambda;</span><br /><span style="font-family: 仿宋; font-size: 18px;">	　　【</span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　s[1] = sc[1]　　　　&Lambda;	<span style="color: #008000;"># 通过SNo字段将SC表与S表进行连接，这时其实可以得到所有选课学生的课程编号;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　sc[2] &ne; c[1]　　　 &Lambda;<span style="color: #008000;">	# 对于任意的c &isin; C和sc &isin; SC，都满足sc[2] &ne; c[1]，即这两者的交集为&empty;;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　new_s[1] = s[1]　　 &Lambda;	<span style="color: #008000;"># 将S表投影到SNo字段，新表的第一个属性为SNo;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">		　　　　new_s[2] = s[2]　　 &Lambda;<span style="color: #008000;">	# 将S表投影到SN字段，新表的第二个属性为SN;</span></span><br /><span style="font-family: 仿宋; font-size: 18px;">	　　】</span><br /><span style="font-family: 仿宋; font-size: 18px;">}</span><br /> <br /> <br /> <br /><span style="font-family: 仿宋; font-size: 18pt;"><span style="color: #008000;">八. 总结&nbsp;</span><span style="color: #008000;">(什么时候用"全称量词&forall;和存在量词&exist;"<strong><span style="color: #ff0000;">("深"理解)</span></strong>)</span> ===》</span><br /><span style="font-family: 仿宋; font-size: 18px;">研究"全称量词&forall;和存在量词&exist;"本质上就是研究<span style="color: #ff0000;">"集合"</span>的有关问题，所以要先把握住集合与集合之间的关系。任何两个集合的关系有且仅可能有3种：相交、包含、相离，并且这三种关系又有如下的关系 ===》</span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #00ccff;">　　1.</span> "相离" 与 "相交"&cup;"包含": 互为对立事件，即"全部都没" <span style="color: #00ccff;">VS</span> "至少有一";</span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #00ccff;">　　2.</span> "包含" 与 "相交"&cup;"相离": 互为对立事件，即"全部都有" <span style="color: #00ccff;">VS</span> "至少没一";</span></p>
+<p>&nbsp;</p>
+<p><span style="font-family: 仿宋; font-size: 18px;">了解了这个后，我们就可进一步的归纳出使用"全称量词&forall;和存在量词&exist;"的情景 ===》</span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #00ccff;">　　1.</span> 当某个事件被表述为两个集合<span style="color: #ff99cc;">"相离"</span>或者<span style="color: #ff99cc;">"包含"</span>的时候 ===&gt; 使用<span style="color: #ff9900;">"全称量词&forall;"</span>来表示<span style="color: #339966;">"全部都没"</span>或者<span style="color: #339966;">"全部都有"</span>;</span><br /><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #00ccff;">　　2.</span> 当某个事件被表述为两个集合<span style="color: #ff99cc;">"相交"</span>的时候 ===&gt; 使用<span style="color: #ff9900;">"存在量词&exist;"</span>来表达<span style="color: #339966;">"至少有一"</span>或者<span style="color: #339966;">"至少没一"</span>;&nbsp;</span></p>
+<p><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #ffff00; font-size: 18pt;">举个栗子 ===》</span><br /><span style="color: #00ccff;">　　1.</span> <span style="color: #ff6600;">"相离":</span> <span style="color: #ff99cc;">"没有选修过'李力'老师教授的课程的同学"</span>这个问题就可以被表述为：<span style="color: #00ff00;">"A<sub>i</sub> &cap; B = &empty;"</span>，其中A<sub>i</sub> = {第i个学生的"学生-选课信息"的课程编号集合}，B = {'李力'老师教授的课程的课程编号集合};<br /><span style="color: #00ccff;">　　2.</span><span style="color: #ff6600;"> "相交":</span> <span style="color: #ff99cc;">"选修过'李力'老师教授的课程的同学"</span>这个问题就可以被表述为：<span style="color: #00ff00;">"A<sub>i</sub> &cap; B &ne; &empty;"</span>，其中A<sub>i</sub> = {第i个学生的"学生-选课信息"的课程编号集合}，B = {'李力'老师教授的课程的课程编号集合};<br /><span style="color: #00ccff;">　　3.</span> <span style="color: #ff6600;">"包含":<span style="color: #ff99cc;">&nbsp;</span></span><span style="color: #ff99cc;">"选修了'李力'老师教授的全部课程的同学"</span>这个问题就可以被表述为：<span style="color: #00ff00;">"A<sub>i</sub> &supe; B"</span>，其中A<sub>i</sub> = {第i个学生的"学生-选课信息"的课程编号集合}，B = {'李力'老师教授的课程的课程编号集合};</span></p>
+<p><span style="font-family: 仿宋; font-size: 18px;">&nbsp;</span></p>
+<p><span style="font-family: 仿宋; font-size: 18px;">从"正"、"反"两个方面考虑问题的角度来说 ===》</span></p>
+<p><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #00ccff;">1.</span> 当考虑的问题是<span style="color: #00ff00;">"全部都有"</span>时则可以从<span style="color: #ff99cc;">正</span>面入手，在关系代数中利用<span style="color: #ff6600;">除法</span>，在元组演算中利用<span style="color: #ff99cc;">"全称量词&forall;"</span>;</span></p>
+<p><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #00ccff;">2.</span> 当考虑的问题是<span style="color: #00ff00;">"至少没有一个"</span>时则可以从<span style="color: #ff99cc;">反</span>面入手，在关系代数中利用<span style="color: #ff6600;">除法</span> + <span style="color: #ff6600;">减法</span>，在元组演算中利用<span style="color: #ff99cc;">"存在量词&exist;"</span>;</span></p>
+<p><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #00ccff;">3.</span> 当考虑的问题是<span style="color: #00ff00;">"至少存在一个"</span>时则可以从<span style="color: #ff99cc;">正</span>面入手，在关系代数中利用<span style="color: #ff6600;">自然连接</span>，在元组演算中利用<span style="color: #ff99cc;">"存在量词&exist;"</span>;</span></p>
+<p><span style="font-family: 仿宋; font-size: 18px;"><span style="color: #00ccff;">4.</span> 当考虑的问题是<span style="color: #00ff00;">"全部都无"</span>时则可以从<span style="color: #ff99cc;">反</span>面入手，在关系代数中利用<span style="color: #ff6600;">自然连接</span> + <span style="color: #ff6600;">减法</span>，在元组演算中利用<span style="color: #ff99cc;">"全称量词&forall;"</span>;</span></p>
+<p style="text-align: center;"><span style="font-family: 仿宋; font-size: 18px;">(头发嗐挺多)</span></p>
+</div>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+    <div id="blog_post_info"></div>
+    <div class="clear"></div>
+    <div id="post_next_prev"></div>
+</div>
+		</div>
+		<div class="itemdesc">
+			发表于 
+<span id="post-date">2020-04-24 19:07</span>&nbsp;
+<a href="https://www.cnblogs.com/SimbaWang/">SimbaWang</a>&nbsp;
+阅读(<span id="post_view_count">...</span>)&nbsp;
+评论(<span id="post_comment_count">...</span>)&nbsp;
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12502855" rel="nofollow">编辑</a>&nbsp;
+<a href="javascript:void(0)" onclick="AddToWz(12502855);return false;">收藏</a>
+		</div>
+	</div>
+	<div class="seperator">&nbsp;</div>
+	
+	
+<script src="https://common.cnblogs.com/highlight/9.12.0/highlight.min.js"></script>
+<script>markdown_highlight();</script>
+<script>
+    var allowComments = true, cb_blogId = 575348, cb_blogApp = 'SimbaWang', cb_blogUserGuid = 'a1474262-de82-4ff1-f445-08d7a00dc721';
+    var cb_entryId = 12502855, cb_entryCreatedDate = '2020-04-24 19:07', cb_postType = 1; 
+    loadViewCount(cb_entryId);
+</script><a name="!comments"></a>
+<div id="blog-comments-placeholder"></div>
+<script>
+    var commentManager = new blogCommentManager();
+    commentManager.renderComments(0);
+</script>
+
+<div id="comment_form" class="commentform">
+    <a name="commentform"></a>
+    <div id="divCommentShow"></div>
+    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+    <div id="comment_form_container"></div>
+    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+    <div id="ad_t2"></div>
+    <div id="opt_under_post"></div>
+    <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            googletag.defineSlot("/1090369/C1", [300, 250], "div-gpt-ad-1546353474406-0").addService(googletag.pubads());
+            googletag.defineSlot("/1090369/C2", [468, 60], "div-gpt-ad-1539008685004-0").addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    </script>
+    <div id="cnblogs_c1" class="c_ad_block">
+        <div id="div-gpt-ad-1546353474406-0" style="height:250px; width:300px;"></div>
+    </div>
+    <div id="under_post_news"></div>
+    <div id="cnblogs_c2" class="c_ad_block">
+        <div id="div-gpt-ad-1539008685004-0" style="height:60px; width:468px;">
+            <script>
+                if (new Date() >= new Date(2018, 9, 13)) {
+                    googletag.cmd.push(function () { googletag.display("div-gpt-ad-1539008685004-0"); });
+                }
+            </script>
+        </div>
+    </div>
+    <div id="under_post_kb"></div>
+    <div id="HistoryToday" class="c_ad_block"></div>
+    <script type="text/javascript">
+        fixPostBody();
+        deliverBigBanner();
+setTimeout(function() { incrementViewCount(cb_entryId); }, 50);        deliverAdT2();
+        deliverAdC1();
+        deliverAdC2();
+        loadNewsAndKb();
+        loadBlogSignature();
+LoadPostCategoriesTags(cb_blogId, cb_entryId);        LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+        GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+        loadOptUnderPost();
+        GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    </script>
+</div></div>
+</div>
+
+</td>
+</tr>
+</table>
+</td>
+<td width="200" valign="top" style="border-left: dashed 1px #CCCCCC">
+<table align="center" width="100%" height="1400" cellspacing="0" cellpadding="5" border="0">
+<tr>
+<td class="banner" valign="top" style="padding-top: 0px">
+
+<table width="100%" height="200">
+<tr>
+<td>
+<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+</td>
+</tr>
+</table>
+<div id="side_right">
+
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+</div>
+
+<br/>
+<div class="footer">
+	Powered by: <a href="http://www.cnblogs.com">博客园</a><br>
+	Copyright &copy; 2020 SimbaWang
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+</div>
+
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+
+    
+</body>
+</html>

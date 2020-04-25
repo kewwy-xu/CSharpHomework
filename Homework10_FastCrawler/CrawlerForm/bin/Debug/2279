@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>2020 年 4月 24 日 随笔档案 - 李志涛 - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    <link id="MainCss" rel="stylesheet" href="/skins/hover/bundle-hover.min.css?v=4g9VRwEunu0VTeVQV676B9zlptl8ucyilUBAFWqEsMA" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/hover/bundle-hover-mobile.min.css?v=ADiCwO2hOTdd5yYidcx7eob7ix2VJI4o_TXjEycTHjs" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/lizherui/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/lizherui/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/lizherui/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 354992;
+        var currentBlogApp = 'lizherui';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'Hover';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    
+<div id="top">
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/lizherui/">李志涛</a>
+</h1>
+</div>
+<p id="tagline">
+
+</p>
+
+
+<div id="leftmenu">
+	
+		
+<h3>导航</h3>
+<ul>
+			<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+			<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/lizherui/">
+首页</a>
+</li>
+			<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+			<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E6%9D%8E%E5%BF%97%E6%B6%9B">
+联系</a></li>
+			<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/lizherui/rss/">
+订阅</a>
+<a id="blog_nav_rss_image" href="https://www.cnblogs.com/lizherui/rss/">
+    <img src="/skins/hover/images/xml.gif" alt="订阅" />
+</a></li>
+			<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div id="calendar"><div id="blog-calendar" style="display:none"></div></div>                
+                    <script>loadBlogDefaultCalendar();</script>
+		<h3>统计</h3>
+	<ul>
+		<li>随笔 - 
+23</li>
+		<li>文章 - 
+0</li>
+		<li>评论 - 
+5</li>
+		<li>引用 - 
+0</li>
+	</ul>
+
+
+		
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+		<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+	
+</div>
+<div id="main">
+	
+        
+<p class="date">
+	<span>2020年4月24日		  
+	<a style="height: 15px; width: 12px; border-width: 0">#</a>
+	</span>
+</p>
+
+
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/lizherui/p/12769889.html">
+    TDDL当前进展及技术规划
+</a>
+</h2>
+			
+			
+
+    <div class="c_b_p_desc">
+摘要：一、选型背景 公司营收业绩高速增长，业务快速向前奔跑，对基础技术上线既要超、快、猛，又要保证服务质量，所以前期选型稳妥方案为MySQL router，但他的核心功能上仅支持读写分离、读写库高可用、动态增删DB节点，而读写性能却无法应对每月大幅增长的数据。对业务拆分同时进行分库分表势在必行。基于以上场            <a href="https://www.cnblogs.com/lizherui/p/12769889.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			
+			<p class="postfoot">		
+				
+
+posted @ 2020-04-24 20:30 李志涛 阅读 (4) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12769889" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/lizherui/p/12769878.html">
+    es技术规划
+</a>
+</h2>
+			
+			
+
+    <div class="c_b_p_desc">
+摘要：一、业务背景 es服务当前没有专门的部门负责维护和开发，交由各端自行负责维护，随着公司业务查询和统计需求非常多，会面临居多方面问题和挑战： 无人(专业RD或部门)负责 无专业的人进行维护，遇到问题几乎无人处理 缺乏性能评估 查询和统计相关语句执行无指标评价体系 运维效率较低 无操作友好且高效的web            <a href="https://www.cnblogs.com/lizherui/p/12769878.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			
+			<p class="postfoot">		
+				
+
+posted @ 2020-04-24 20:27 李志涛 阅读 (39) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12769878" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+
+
+
+
+
+
+
+</div>
+<p id="footer">
+	Powered by: 
+	<br />
+	
+	
+<a href="https://www.cnblogs.com/" id="Footer1_Hyperlink3" style="font-size: 12px; font-family: Verdana">博客园</a>
+	<br />
+	Copyright &copy; 2020 李志涛
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+</p>
+
+
+
+
+    
+</body>
+</html>

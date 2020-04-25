@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">博客园_求知</title>
+  <subtitle type="text"></subtitle>
+  <id>uuid:0d9a7eed-4c6e-4c6a-b966-a76fff4e7415;id=465</id>
+  <updated>2020-04-24T13:46:05Z</updated>
+  <author>
+    <name>JohnnyBai</name>
+    <uri>http://www.cnblogs.com/johnny666888/</uri>
+  </author>
+  <generator>feed.cnblogs.com</generator>
+  <entry>
+    <id>http://www.cnblogs.com/johnny666888/p/12770325.html</id>
+    <title type="text">spark 集群优化 - JohnnyBai</title>
+    <summary type="text">只有满怀自信的人，能在任何地方都怀有自信，沉浸在生活中，并认识自己的意志。 前言 最近公司有一个生产的小集群，专门用于运行spark作业。但是偶尔会因为nn或dn压力过大而导致作业checkpoint操作失败进而导致spark 流任务失败。本篇记录从应用层面对spark作业进行优化，进而达到优化集群</summary>
+    <published>2020-04-24T13:46:00Z</published>
+    <updated>2020-04-24T13:46:00Z</updated>
+    <author>
+      <name>JohnnyBai</name>
+      <uri>http://www.cnblogs.com/johnny666888/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/johnny666888/p/12770325.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/johnny666888/p/12770325.html" />
+    <content type="html">【摘要】只有满怀自信的人，能在任何地方都怀有自信，沉浸在生活中，并认识自己的意志。 前言 最近公司有一个生产的小集群，专门用于运行spark作业。但是偶尔会因为nn或dn压力过大而导致作业checkpoint操作失败进而导致spark 流任务失败。本篇记录从应用层面对spark作业进行优化，进而达到优化集群 &lt;a href="http://www.cnblogs.com/johnny666888/p/12770325.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/johnny666888/p/12629216.html</id>
+    <title type="text">linux神器 strace解析 - JohnnyBai</title>
+    <summary type="text">除了人格以外，人最大的损失，莫过于失掉自信心了。 前言 strace可以说是神器一般的存在了，对于研究代码调用，内核级调用、系统级调用有非常重要的作用。打算了一周了，只有原文，一直没有梳理，拖延症犯了，今天加班把这个神器的官方翻译梳理一下。 linux 7 的 man的官方文档链接如下：http:/</summary>
+    <published>2020-04-09T17:08:00Z</published>
+    <updated>2020-04-09T17:08:00Z</updated>
+    <author>
+      <name>JohnnyBai</name>
+      <uri>http://www.cnblogs.com/johnny666888/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/johnny666888/p/12629216.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/johnny666888/p/12629216.html" />
+    <content type="html">【摘要】除了人格以外，人最大的损失，莫过于失掉自信心了。 前言 strace可以说是神器一般的存在了，对于研究代码调用，内核级调用、系统级调用有非常重要的作用。打算了一周了，只有原文，一直没有梳理，拖延症犯了，今天加班把这个神器的官方翻译梳理一下。 linux 7 的 man的官方文档链接如下：http:/ &lt;a href="http://www.cnblogs.com/johnny666888/p/12629216.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/johnny666888/p/12613226.html</id>
+    <title type="text">打个 hadoop RPC的栗子 - JohnnyBai</title>
+    <summary type="text">以豁达和宽容的心态对待学习和生活中遇到的不如意的事。 需求 通过RPC远程调用服务端函数来实现加法操作 maven 依赖 依赖如下： &lt;dependency&gt; &lt;groupId&gt;org.apache.hadoop&lt;/groupId&gt; &lt;artifactId&gt;hadoop-common&lt;/artifa</summary>
+    <published>2020-04-01T13:08:00Z</published>
+    <updated>2020-04-01T13:08:00Z</updated>
+    <author>
+      <name>JohnnyBai</name>
+      <uri>http://www.cnblogs.com/johnny666888/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/johnny666888/p/12613226.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/johnny666888/p/12613226.html" />
+    <content type="html">【摘要】以豁达和宽容的心态对待学习和生活中遇到的不如意的事。 需求 通过RPC远程调用服务端函数来实现加法操作 maven 依赖 依赖如下： &lt;dependency&gt; &lt;groupId&gt;org.apache.hadoop&lt;/groupId&gt; &lt;artifactId&gt;hadoop-common&lt;/artifa &lt;a href="http://www.cnblogs.com/johnny666888/p/12613226.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/johnny666888/p/12571916.html</id>
+    <title type="text">修改Apache Livy 源码使其支持动态资源分配和堆外内存分配 - JohnnyBai</title>
+    <summary type="text">该文被密码保护。</summary>
+    <published>2020-03-25T17:49:00Z</published>
+    <updated>2020-03-25T17:49:00Z</updated>
+    <author>
+      <name>JohnnyBai</name>
+      <uri>http://www.cnblogs.com/johnny666888/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/johnny666888/p/12571916.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/johnny666888/p/12571916.html" />
+    <content type="html">该文被密码保护。</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/johnny666888/p/12382919.html</id>
+    <title type="text">spark sql 之drop partition定制 - JohnnyBai</title>
+    <summary type="text">该文被密码保护。</summary>
+    <published>2020-02-29T06:54:00Z</published>
+    <updated>2020-02-29T06:54:00Z</updated>
+    <author>
+      <name>JohnnyBai</name>
+      <uri>http://www.cnblogs.com/johnny666888/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/johnny666888/p/12382919.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/johnny666888/p/12382919.html" />
+    <content type="html">该文被密码保护。</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/johnny666888/p/12374895.html</id>
+    <title type="text">spark sql 自定义之 thriftserver 高可用 - JohnnyBai</title>
+    <summary type="text">该文被密码保护。</summary>
+    <published>2020-02-28T08:37:00Z</published>
+    <updated>2020-02-28T08:37:00Z</updated>
+    <author>
+      <name>JohnnyBai</name>
+      <uri>http://www.cnblogs.com/johnny666888/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/johnny666888/p/12374895.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/johnny666888/p/12374895.html" />
+    <content type="html">该文被密码保护。</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/johnny666888/p/12349301.html</id>
+    <title type="text">kafka 0.10.0.1 编译并导入idea调试 - JohnnyBai</title>
+    <summary type="text">kafka 老版本的编译有很多的不兼容的问题，故记录之。 1. 准备 jdk1.8 gradle3.1 scala2.11.8 idea zookeeper（单机集群都可以） 2. 下载源码 从 http://archive.apache.org/dist/kafka/ 下载 0.10.0.1 版本</summary>
+    <published>2020-02-24T02:53:00Z</published>
+    <updated>2020-02-24T02:53:00Z</updated>
+    <author>
+      <name>JohnnyBai</name>
+      <uri>http://www.cnblogs.com/johnny666888/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/johnny666888/p/12349301.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/johnny666888/p/12349301.html" />
+    <content type="html">【摘要】kafka 老版本的编译有很多的不兼容的问题，故记录之。 1. 准备 jdk1.8 gradle3.1 scala2.11.8 idea zookeeper（单机集群都可以） 2. 下载源码 从 http://archive.apache.org/dist/kafka/ 下载 0.10.0.1 版本 &lt;a href="http://www.cnblogs.com/johnny666888/p/12349301.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/johnny666888/p/12345142.html</id>
+    <title type="text">如何查看SparkSQL 生成的抽象语法树？ - JohnnyBai</title>
+    <summary type="text">前言 在《Spark SQL内核剖析》书中4.3章节，谈到Catalyst体系中生成的抽象语法树的节点都是以Context来结尾，在ANLTR4以及生成的SqlBaseParser解析SQL生成，其源码部分就是语法解析，其生成的抽象语法树的节点都是ParserRuleContext的子类。 提出问题</summary>
+    <published>2020-02-22T05:49:00Z</published>
+    <updated>2020-02-22T05:49:00Z</updated>
+    <author>
+      <name>JohnnyBai</name>
+      <uri>http://www.cnblogs.com/johnny666888/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/johnny666888/p/12345142.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/johnny666888/p/12345142.html" />
+    <content type="html">【摘要】前言 在《Spark SQL内核剖析》书中4.3章节，谈到Catalyst体系中生成的抽象语法树的节点都是以Context来结尾，在ANLTR4以及生成的SqlBaseParser解析SQL生成，其源码部分就是语法解析，其生成的抽象语法树的节点都是ParserRuleContext的子类。 提出问题 &lt;a href="http://www.cnblogs.com/johnny666888/p/12345142.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/johnny666888/p/12343338.html</id>
+    <title type="text">spark sql 执行计划生成案例 - JohnnyBai</title>
+    <summary type="text">前言 一个SQL从词法解析、语法解析、逻辑执行计划、物理执行计划最终转换为可以执行的RDD，中间经历了很多的步骤和流程。其中词法分析和语法分析均有ANTLR4完成，可以进一步学习ANTLR4的相关知识做进一步了解。 本篇文章主要对一个简单的SQL生成的逻辑执行计划物理执行计划的做一个简单地说明。 示</summary>
+    <published>2020-02-21T14:07:00Z</published>
+    <updated>2020-02-21T14:07:00Z</updated>
+    <author>
+      <name>JohnnyBai</name>
+      <uri>http://www.cnblogs.com/johnny666888/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/johnny666888/p/12343338.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/johnny666888/p/12343338.html" />
+    <content type="html">【摘要】前言 一个SQL从词法解析、语法解析、逻辑执行计划、物理执行计划最终转换为可以执行的RDD，中间经历了很多的步骤和流程。其中词法分析和语法分析均有ANTLR4完成，可以进一步学习ANTLR4的相关知识做进一步了解。 本篇文章主要对一个简单的SQL生成的逻辑执行计划物理执行计划的做一个简单地说明。 示 &lt;a href="http://www.cnblogs.com/johnny666888/p/12343338.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/johnny666888/p/11313477.html</id>
+    <title type="text">spark shuffle读操作 - JohnnyBai</title>
+    <summary type="text">提出问题 1. shuffle过程的数据是如何传输过来的，是按文件来传输，还是只传输该reduce对应在文件中的那部分数据？ 2. shuffle读过程是否有溢出操作？是如何处理的？ 3. shuffle读过程是否可以排序、聚合？是如何做的？ 。。。。。。 概述 在 spark shuffle的写操</summary>
+    <published>2019-08-09T12:25:00Z</published>
+    <updated>2019-08-09T12:25:00Z</updated>
+    <author>
+      <name>JohnnyBai</name>
+      <uri>http://www.cnblogs.com/johnny666888/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/johnny666888/p/11313477.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/johnny666888/p/11313477.html" />
+    <content type="html">【摘要】提出问题 1. shuffle过程的数据是如何传输过来的，是按文件来传输，还是只传输该reduce对应在文件中的那部分数据？ 2. shuffle读过程是否有溢出操作？是如何处理的？ 3. shuffle读过程是否可以排序、聚合？是如何做的？ 。。。。。。 概述 在 spark shuffle的写操 &lt;a href="http://www.cnblogs.com/johnny666888/p/11313477.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+</feed>

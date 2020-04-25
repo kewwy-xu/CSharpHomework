@@ -1,0 +1,382 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    <meta property="og:description" content="引用博客来自李志涛：https://www.cnblogs.com/lizherui/p/12275193.html 前言介绍 网络上针对脚本kafka-configs.sh用法，也有一些各种文章，但" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>脚本kafka-configs.sh用法解析 - 李志涛 - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    <link id="MainCss" rel="stylesheet" href="/skins/hover/bundle-hover.min.css?v=4g9VRwEunu0VTeVQV676B9zlptl8ucyilUBAFWqEsMA" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/hover/bundle-hover-mobile.min.css?v=ADiCwO2hOTdd5yYidcx7eob7ix2VJI4o_TXjEycTHjs" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/lizherui/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/lizherui/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/lizherui/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 354992;
+        var currentBlogApp = 'lizherui';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'Hover';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    
+<div id="top">
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/lizherui/">李志涛</a>
+</h1>
+</div>
+<p id="tagline">
+
+</p>
+
+
+<div id="leftmenu">
+	
+		
+<h3>导航</h3>
+<ul>
+			<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+			<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/lizherui/">
+首页</a>
+</li>
+			<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+			<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E6%9D%8E%E5%BF%97%E6%B6%9B">
+联系</a></li>
+			<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/lizherui/rss/">
+订阅</a>
+<a id="blog_nav_rss_image" href="https://www.cnblogs.com/lizherui/rss/">
+    <img src="/skins/hover/images/xml.gif" alt="订阅" />
+</a></li>
+			<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div id="calendar"><div id="blog-calendar" style="display:none"></div></div>                
+                    <script>loadBlogDefaultCalendar();</script>
+		<h3>统计</h3>
+	<ul>
+		<li>随笔 - 
+23</li>
+		<li>文章 - 
+0</li>
+		<li>评论 - 
+5</li>
+		<li>引用 - 
+0</li>
+	</ul>
+
+
+		
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+		<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+	
+</div>
+<div id="main">
+	<div id="post_detail">
+	<div class="post">
+		<h2>
+			
+<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/lizherui/p/12275193.html">脚本kafka-configs.sh用法解析</a>
+
+		</h2>
+		
+<div id="cnblogs_post_body" class="blogpost-body ">
+    <p>引用博客来自李志涛：<a href="https://www.cnblogs.com/lizherui/p/12275193.html">https://www.cnblogs.com/lizherui/p/12275193.html</a></p>
+<h2 id="id-脚本kafka-configs.sh用法解析-前言介绍">前言介绍</h2>
+<p>网络上针对脚本kafka-configs.sh用法，也有一些各种文章，但都不系统不全面，介绍的内容是有缺失的，总让人看起来很懂，用起来难，例如：动态配置内部关系不清晰、有些重点配置参数主从同步配额限流也没有解释清楚，除非去看代码。所以我希望读者通过深入阅读此文，更便捷利用此脚本解决实际运维和开发中遇到的问题，同时也为大家节省学习时间。</p>
+<h2 id="id-脚本kafka-configs.sh用法解析-脚本语法解析">脚本语法解析</h2>
+<h3 id="id-脚本kafka-configs.sh用法解析-kafka-configs.sh参数解析"><span style="color: #339966;">kafka-configs.sh参数解析</span></h3>
+<p><span style="color: #339966;"><img src="https://img2018.cnblogs.com/i-beta/273782/202002/273782-20200207233722724-2083026365.png" alt="" width="682" height="334"></span></p>
+<h3 id="id-脚本kafka-configs.sh用法解析-语法格式"><span style="color: #339966;">语法格式</span></h3>
+<p><strong>增加配置项</strong></p>
+<p>某个topic配置对象</p>
+<p>bin/kafka-configs.sh --zookeeper localhost:2181/kafkacluster&nbsp;--alter&nbsp;--entity-type topics --entity-name topicName&nbsp; --add-config 'k1=v1, k2=v2, k3=v3'&nbsp;</p>
+<p>所有clientId的配置对象</p>
+<p>bin/kafka-configs.sh --zookeeper&nbsp;localhost:2181/kafkacluster&nbsp;--alter&nbsp;--entity-type clients --entity-default --add-config 'k1=v1, k2=v2, k3=v3'&nbsp;<strong><br /></strong></p>
+<p><strong>例子</strong></p>
+<p>bin/kafka-configs.sh --zookeeper&nbsp;localhost:2181/kafkacluster&nbsp;--alter&nbsp;--entity-type topics --entity-name topicName&nbsp; --add-config 'max.message.bytes=50000000, flush.messages=50000,&nbsp;<a class="external-link" href="http://flush.ms/" rel="nofollow">flush.ms</a>=5000'</p>
+<p>bin/kafka-configs.sh --zookeeper&nbsp;localhost:2181/kafkacluster&nbsp;--alter&nbsp;--entity-type topics --entity-name topicName&nbsp; --add-config 'max.message.bytes=50000000' --add-config 'flush.messages=50000'</p>
+<p><strong>删除配置项</strong></p>
+<p>bin/kafka-configs.sh&nbsp;--zookeeper&nbsp;localhost:2181/kafkacluster&nbsp;--alter&nbsp;--entity-type topics&nbsp;--entity-name topicName&nbsp;--delete-config &lsquo;k1,k2,k3&rsquo;</p>
+<p>bin/kafka-configs.sh&nbsp;--zookeeper&nbsp;localhost:2181/kafkacluster&nbsp;--alter&nbsp;--entity-type clients&nbsp;--entity-name clientId&nbsp;--delete-config &lsquo;k1,k2,k3&rsquo;</p>
+<p>bin/kafka-configs.sh&nbsp;--bootstrap-server localhost:9092&nbsp;--alter&nbsp;--entity-type brokers&nbsp;--entity-name $brokerId&nbsp;--delete-config &lsquo;k1,k2,k3&rsquo;</p>
+<p>bin/kafka-configs.sh&nbsp;--bootstrap-server localhost:9092&nbsp;--alter&nbsp;--entity-type brokers&nbsp;--entity-default&nbsp;--delete-config &lsquo;k1,k2,k3&rsquo;</p>
+<p><strong>例子</strong></p>
+<p>bin/kafka-configs.sh --zookeeper&nbsp;localhost:2181/kafkacluster&nbsp;--alter&nbsp;--entity-type topics --entity-name test-cqy --delete-config 'segment.bytes'</p>
+<p><strong>修改配置项</strong></p>
+<p>修改配置项与增加语法格式相同，相同参数后端直接覆盖</p>
+<p><strong>列出entity配置描述</strong></p>
+<p>bin/kafka-configs.sh --zookeeper&nbsp;localhost:2181/kafkacluster&nbsp;--entity-type topics --entity-name&nbsp;topicName&nbsp;--describe</p>
+<p>bin/kafka-configs.sh--bootstrap-server localhost:9092&nbsp;--entity-type brokers --entity-name $brokerId&nbsp;--describe</p>
+<p>bin/kafka-configs.sh&nbsp;--bootstrap-server localhost:9092&nbsp;--entity-type brokers --entity-default&nbsp;--describe</p>
+<p>bin/kafka-configs.sh&nbsp; --zookeeper&nbsp;localhost:2181/kafkacluster&nbsp;--entity-type users --entity-name user1 --entity-type clients --entity-name clientA&nbsp;--describe</p>
+<p>其他依次类推，不一一列举</p>
+<h2 id="id-脚本kafka-configs.sh用法解析-配置管理用法">配置管理用法</h2>
+<h3 id="id-脚本kafka-configs.sh用法解析-客户端配额限流"><span style="color: #339966;">客户端配额限流</span></h3>
+<p>kafka支持配额管理，从而可以对Producer和Consumer的produce&amp;fetch操作进行流量限制，防止个别业务压爆服务器。本文主要介绍如何使用kafka的配额管理功能</p>
+<p><strong>配额限流简介</strong></p>
+<p>Kafka配额限流由3种粒度配置：</p>
+<ul>
+<li>users + clients</li>
+<li>users</li>
+<li>clients</li>
+
+
+
+
+
+
+</ul>
+<p>以上3种都是对接入的client的身份进行的认定方式。其中clientid是每个接入kafka集群的client的一个身份标志，在ProduceRequest和FetchRequest中都需要带上；users只有在开启了身份认证的kafka集群才有。producer和consumer的clientid默认值分别为producer-自增序号、groupid</p>
+<p>配置优先级</p>
+<p>以上三种粒度配置会组合成8个配置对象，相同配置项作用域范围不同，高优先级覆盖低优先级，下面为配置优先级</p>
+<p><img src="https://img2018.cnblogs.com/i-beta/273782/202002/273782-20200207234002308-1633524389.png" alt="" width="523" height="280"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>配置项列表</p>
+<p><img src="https://img2018.cnblogs.com/i-beta/273782/202002/273782-20200207234037675-1503433674.png" alt="" width="827" height="118"></p>
+<p><strong>配置用例</strong></p>
+<p>1.配置users + clients</p>
+<p>bin/kafka-configs.sh&nbsp; --zookeeper&nbsp;localhost:2181/kafkacluster&nbsp;--alter&nbsp; --entity-type users --entity-name user1 --entity-type clients --entity-name clientA&nbsp;--add-config 'producer_byte_rate=20971520,consumer_byte_rate=20971520'&nbsp;</p>
+<p>bin/kafka-configs.sh&nbsp; --zookeeper&nbsp;localhost:2181/kafkacluster&nbsp;--alter&nbsp; --entity-type users --entity-name user1 --entity-type clients&nbsp;--entity-default&nbsp;--add-config 'producer_byte_rate=20971520,consumer_byte_rate=20971520'&nbsp;</p>
+<p>bin/kafka-configs.sh&nbsp; --zookeeper&nbsp;localhost:2181/kafkacluster&nbsp;--alter&nbsp; --entity-type users --entity-default&nbsp;--entity-type clients&nbsp;--entity-default&nbsp;--add-config 'producer_byte_rate=20971520,consumer_byte_rate=20971520'&nbsp;</p>
+<p>2.配置users</p>
+<p>broker内所有的users累加总和最大producer生产&amp;消费速率为20MB/sec</p>
+<p>bin/kafka-configs.sh&nbsp; --zookeeper&nbsp;localhost:2181/kafkacluster&nbsp;--entity-type users&nbsp;--entity-default&nbsp;--alter --add-config 'producer_byte_rate=20971520,consumer_byte_rate=20971520'</p>
+<p>broker内userA的最大producer生产&amp;消费速率为20MB/sec</p>
+<p>bin/kafka-configs.sh&nbsp; --zookeeper&nbsp;localhost:2181/kafkacluster&nbsp;--entity-type users --entity-name userA --alter --add-config 'producer_byte_rate=20971520,consumer_byte_rate=20971520'</p>
+<p>3.配置clients</p>
+<p>broker内所有clientId累加总和最大producer生产速率为20MB/sec</p>
+<p>bin/kafka-configs.sh --zookeeper&nbsp;localhost:2181/kafkacluster&nbsp;--alter&nbsp;--entity-type clients --entity-default&nbsp; --add-config 'producer_byte_rate=20971520'</p>
+<p>broker内clientA的最大producer生产速率为20MB/sec</p>
+<p>bin/kafka-configs.sh --zookeeper&nbsp;localhost:2181/kafkacluster&nbsp;--alter&nbsp;--entity-type clients&nbsp;&nbsp;--entity-name clientA&nbsp; --add-config 'producer_byte_rate=20971520'</p>
+<p><strong>超出限流存在的问题</strong></p>
+<p>如果producer和consumer超出了流量限制，kafka会怎么处理呢？</p>
+<ul>
+<li>对于Producer。如果Producer超出限流，先把数据append到log文件，再计算延时时间，并在等待ThrottleTime时间后响应给Producer。kafka没有客户端反馈机制，所以producer写入超时会重发，写入消息会重复。</li>
+<li>对于Consumer。如果Consumer超出限流，先计算延时时间，并在等待ThrottleTime时间后，Kafka从log读取数据并响应Consumer。如果consumer的QequestTimeout &lt;&nbsp;ThrottleTime，则consumer在ThrottleTime时间内会不断重发fetch请求，kafka会堆积大量无效请求，占用资源。</li>
+
+
+
+
+
+
+</ul>
+<h3 id="id-脚本kafka-configs.sh用法解析-Brokers类型配置">Brokers类型配置</h3>
+<p><img src="https://img2018.cnblogs.com/i-beta/273782/202002/273782-20200207234151123-384533055.png" alt="" width="476" height="310"></p>
+<p>&nbsp;<a href="https://www.cnblogs.com/lizherui/p/12056760.html" target="_blank">brokers配置</a>比较复杂，配置项众多，Kafka内部把brokers配置分为7个模块，具体如下表格所示：</p>
+<p><img src="https://img2018.cnblogs.com/i-beta/273782/202002/273782-20200207234609105-2060391866.png" alt="" width="1010" height="192">&nbsp;<img src="https://img2018.cnblogs.com/i-beta/273782/202002/273782-20200207234711819-1947206291.png" alt="" width="1007" height="524">&nbsp;</p>
+<p><img src="https://img2018.cnblogs.com/i-beta/273782/202002/273782-20200207234916461-783949500.png" alt="" width="1006" height="403">&nbsp;</p>
+<p><img src="https://img2018.cnblogs.com/i-beta/273782/202002/273782-20200207235048833-1202754856.png" alt="" width="1007" height="391"></p>
+<p>brokers类型配置并不支持所有的配置项，例如：Broker升级相关协议和group、zookeeper、内置Transaction、Controlled、内置offset相关就不能动态更改。配置brokers只能指定--bootstrap-server，zk不支持</p>
+<p><strong>增加配置项</strong></p>
+<p>bin/kafka-configs.sh&nbsp;--bootstrap-server localhost:9092&nbsp;--alter&nbsp;--entity-type brokers --entity-default&nbsp; --add-config 'max.connections.per.ip=200,max.connections.per.ip.overrides=[ip1:100,ip2:120]'<strong>&nbsp;</strong></p>
+<p>bin/kafka-configs.sh&nbsp;--bootstrap-server localhost:9092--alter&nbsp;--entity-type brokers&nbsp;--entity-name&nbsp;&nbsp;$brokerId --add-config 'max.connections.per.ip=200,max.connections.per.ip.overrides=[ip1:100]'&nbsp;</p>
+<p><strong>删除配置项</strong></p>
+<p>bin/kafka-configs.sh&nbsp;--bootstrap-server localhost:9092&nbsp;--alter&nbsp;--entity-type brokers --entity-default&nbsp;&nbsp;--delete-config&nbsp;&nbsp;'max.connections.per.ip,max.connections.per.ip.overrides'&nbsp;</p>
+<p>bin/kafka-configs.sh&nbsp;--bootstrap-server localhost:9092&nbsp;--alter&nbsp;--entity-type brokers&nbsp;--entity-name&nbsp;&nbsp;$brokerId&nbsp;--delete-config&nbsp;&nbsp;'max.connections.per.ip,max.connections.per.ip.overrides'&nbsp;</p>
+<p><strong>列出配置描述</strong></p>
+<p>bin/kafka-configs.sh&nbsp;--bootstrap-server localhost:9092&nbsp;--entity-type&nbsp;brokers&nbsp;--entity-default&nbsp;--describe</p>
+<p>bin/kafka-configs.sh&nbsp;--bootstrap-server localhost:9092&nbsp;--entity-type&nbsp;brokers&nbsp;--entity-name&nbsp;$brokerId&nbsp;--describe</p>
+<h3 id="id-脚本kafka-configs.sh用法解析-Topics类型配置"><strong>Topics类型配置</strong></h3>
+<p><a href="https://www.cnblogs.com/lizherui/p/12056792.html" target="_blank">Topics类型配置</a>是Brokers类型配置的子集，Brokers类型包含Topics类型所有配置，brokers只是在topics配置项前加了前缀。还有一个特例区别是参数message.format.version在brokers动态配置暂时是不支持的</p>
+<p><img src="https://img2018.cnblogs.com/i-beta/273782/202002/273782-20200207235213669-52828654.png" alt="" width="969" height="389"><img src="https://img2018.cnblogs.com/i-beta/273782/202002/273782-20200207235319520-108915127.png" alt="" width="969" height="406">&nbsp;</p>
+<p><strong>增加配置项</strong></p>
+<p>bin/kafka-configs.sh --zookeeper localhost:2181/kafkacluster&nbsp;--alter --entity-type topics --entity-name test-cqy --add-config 'max.message.bytes=50000000,flush.messages=50000,<a class="external-link" href="http://flush.ms/" rel="nofollow">flush.ms</a>=5000'<strong><br /></strong></p>
+<p><strong>删除配置项</strong></p>
+<p>bin/kafka-configs.sh --zookeeper&nbsp;localhost:2181/kafkacluster&nbsp;--alter --entity-type topics --entity-name test-cqy --delete-config 'max.message.bytes,flush.messages,<a class="external-link" href="http://flush.ms/" rel="nofollow">flush.ms</a>'<strong><br /></strong></p>
+<p><strong>列出配置描述</strong></p>
+<p>bin/kafka-configs.sh --zookeeper&nbsp;localhost:2181/kafkacluster&nbsp;--entity-type topics --entity-name&nbsp;test-cqy&nbsp;--describe</p>
+<h3 id="id-脚本kafka-configs.sh用法解析-Brokers配额限流">Brokers配额限流</h3>
+<p><strong>broker之间复制数据配额限流</strong></p>
+<p><strong><img src="https://img2018.cnblogs.com/i-beta/273782/202002/273782-20200207235438292-1166930602.png" alt="" width="493" height="186"></strong></p>
+<p>&nbsp;</p>
+<p>Kafka提供一个broker之间复制传输的流量限制功能，限制了partitions数据复制从一个broker节点到另一个broker节点的带宽上限。当重新平衡集群，引导新broker添加或移除老的broker方便很有用。配置注意事项如下：</p>
+<ul>
+<li>topic是DynamicReplicationQuota限流的载体，只有作用于具体topic，配额限流才有效</li>
+<li>leader|follower.xxx.throttled.replicas与leader|follower.xxx.throttled.rate同时都配置才有效</li>
+<li>配置只对xxx.throttled.replicas范围限流，其他topics不做限流处理</li>
+
+
+
+
+
+</ul>
+<p>Kafka复制配额限流还是挺灵活的，用两个参数作rate和replicas前置限制，保证只对配置topics才有效。例如某个场景一个集群扩容增加broker，需要对制定topics进行迁移分摊IO压力，如果所有topics都限流了，就会对正常运行业务造成影响。</p>
+<p>设置xxx.throttled.rate的语法(只能设置brokerId，设置--entity-default无效)</p>
+<p>bin/kafka-configs.sh --zookeeper localhost:2181/kafkacluster&nbsp;--alter&nbsp;--entity-type brokers&nbsp;--entity-name $brokerId&nbsp;&nbsp;--add-config&nbsp;&nbsp;'leader.replication.throttled.rate=10485760'&nbsp;</p>
+<p><strong>配额流量2两种方式</strong></p>
+<p><strong>方式1</strong></p>
+<p>bin/kafka-configs.sh&nbsp;--bootstrap-server localhost:9092&nbsp;--entity-type brokers --entity-name 105 --alter --add-config 'leader.replication.throttled.rate=10485760,follower.replication.throttled.rate=10485760'</p>
+<p>bin/kafka-configs.sh --zookeeper&nbsp;localhost:2181/kafkacluster&nbsp;&nbsp;--entity-type topics --entity-name topicA --alter --add-config 'leader.replication.throttled.replicas=*,follower.replication.throttled.replicas=*'</p>
+<p><strong>方式2</strong></p>
+<p>用reassign脚本设置leader&amp;follower.xxx.throttled.rate限流，在操作partitions迁移时同时设置限流，避免IO过大网卡打爆，下面throttle实际最终生成leader&amp;follower.xxx.throttled.rate=31457280。reassign在底层还是调用kafka-configs.sh的API实现，逐个设置move.json覆盖到的brokers进行配置</p>
+<p>bin/kafka-reassign-partitions.sh --zookeeper&nbsp;localhost:2181/kafkacluster&nbsp;--reassignment-json-file move.json --throttle 31457280 --execute</p>
+<p>当上面partitions数据迁移完成时，执行以下脚本，删除--throttle参数配置</p>
+<p>bin/kafka-reassign-partitions.sh --zookeeper&nbsp;localhost:2181/kafkacluster&nbsp; --reassignment-json-file reassign.json --verify</p>
+<p>fetchRequest和fetchResponse二者作用：</p>
+<ul>
+<li>fetchRequest向leader发起复制请求，用于follower.replication.throttled.rate限流，当follower请求流量大于阀值时，不允许限制topics发送本次fetchRequest请求，下次请求未达到阀值可以成功发送</li>
+<li>leader向follower响应内容fetchResponse，用于leader.replication.throttled.rate限流，当leader响应流量大于阀值时，不允许限制topics应答fetchResponse响应，下次应答未达到阀值可以成功响应</li>
+
+
+
+
+
+</ul>
+<p><strong>broker内partitions目录数据迁移配额限流</strong></p>
+<p>为什么有目录迁移呢？主要原因是随着硬件高速发展，CPU性能大幅提升，一台物理机会挂载多块磁盘，而且集群扩容可能也会加入不同型号机型，挂载数量和性能也有差异，所以kafka提供了broker内部目录之间迁移数据流量限制功能，限制数据拷贝从一个目录到另外一个目录带宽上限。常用于broker内挂载点间partitions数量数据均衡和降低IO压力</p>
+<p><img src="https://img2018.cnblogs.com/i-beta/273782/202002/273782-20200207235540833-412565609.png" alt="" width="350" height="202"></p>
+<p>&nbsp;</p>
+<p>当在目前间迁移数据时，会设置具体的partitions，这些partitions就是限流的载体。具体操作如下：</p>
+<p>具体broker内partitions迁移脚本用法，请查看<a class="external-link" href="https://www.cnblogs.com/huxi2b/p/9214592.html" rel="nofollow" target="_blank">partitions目录数据迁移</a></p>
+<p>bin/kafka-configs.sh&nbsp;--bootstrap-server localhost:9092&nbsp;--entity-type brokers --entity-name 105 --alter --add-config 'replica.alter.log.dirs.io.max.bytes.per.second=104857600'</p>
+<p>目录数据迁移被设置为独立的FutureLocalReplica角色，不受broker间复制配额限流功能影响</p>
+<h2 id="id-脚本kafka-configs.sh用法解析-总结">总结</h2>
+<ul>
+<li>文章开头列出了kafka-configs.sh详尽的语法格式，便于读者阅读使用</li>
+<li>客户端配额限流3种粒度配置生成8种优先级组合</li>
+<li>Brokers类型7个配置模块有2种优先级，除了DynamicReplicationQuota仅只是brokerId局部作用域，其他模块都可以用于全局作用域</li>
+<li>broker之间复制限流需要2种类型组合配置实现，分别为brokers和topics</li>
+<li>broker内partitions目录迁移限流，需要kafka-reassign-partitions.sh脚本结合，配置具体partitions的replicas及迁移目录</li>
+
+
+
+
+
+</ul>
+<p>&nbsp;引用博客来自李志涛：<a href="https://www.cnblogs.com/lizherui/p/12275193.html">https://www.cnblogs.com/lizherui/p/12275193.html</a></p>
+</div>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+    <div id="blog_post_info"></div>
+    <div class="clear"></div>
+    <div id="post_next_prev"></div>
+</div>
+		<p class="postfoot">
+			posted on 
+<span id="post-date">2020-02-07 23:57</span>&nbsp;
+<a href="https://www.cnblogs.com/lizherui/">李志涛</a>&nbsp;
+阅读(<span id="post_view_count">...</span>)&nbsp;
+评论(<span id="post_comment_count">...</span>)&nbsp;
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12275193" rel="nofollow">编辑</a>&nbsp;
+<a href="javascript:void(0)" onclick="AddToWz(12275193);return false;">收藏</a>
+		</p>
+	</div>
+
+
+<script src="https://common.cnblogs.com/highlight/9.12.0/highlight.min.js"></script>
+<script>markdown_highlight();</script>
+<script>
+    var allowComments = true, cb_blogId = 354992, cb_blogApp = 'lizherui', cb_blogUserGuid = '03cd9f93-ca38-e011-ac81-842b2b196315';
+    var cb_entryId = 12275193, cb_entryCreatedDate = '2020-02-07 23:57', cb_postType = 1; 
+    loadViewCount(cb_entryId);
+</script><a name="!comments"></a>
+<div id="blog-comments-placeholder"></div>
+<script>
+    var commentManager = new blogCommentManager();
+    commentManager.renderComments(0);
+</script>
+
+<div id="comment_form" class="commentform">
+    <a name="commentform"></a>
+    <div id="divCommentShow"></div>
+    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+    <div id="comment_form_container"></div>
+    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+    <div id="ad_t2"></div>
+    <div id="opt_under_post"></div>
+    <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            googletag.defineSlot("/1090369/C1", [300, 250], "div-gpt-ad-1546353474406-0").addService(googletag.pubads());
+            googletag.defineSlot("/1090369/C2", [468, 60], "div-gpt-ad-1539008685004-0").addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    </script>
+    <div id="cnblogs_c1" class="c_ad_block">
+        <div id="div-gpt-ad-1546353474406-0" style="height:250px; width:300px;"></div>
+    </div>
+    <div id="under_post_news"></div>
+    <div id="cnblogs_c2" class="c_ad_block">
+        <div id="div-gpt-ad-1539008685004-0" style="height:60px; width:468px;">
+            <script>
+                if (new Date() >= new Date(2018, 9, 13)) {
+                    googletag.cmd.push(function () { googletag.display("div-gpt-ad-1539008685004-0"); });
+                }
+            </script>
+        </div>
+    </div>
+    <div id="under_post_kb"></div>
+    <div id="HistoryToday" class="c_ad_block"></div>
+    <script type="text/javascript">
+        fixPostBody();
+        deliverBigBanner();
+setTimeout(function() { incrementViewCount(cb_entryId); }, 50);        deliverAdT2();
+        deliverAdC1();
+        deliverAdC2();
+        loadNewsAndKb();
+        loadBlogSignature();
+LoadPostCategoriesTags(cb_blogId, cb_entryId);        LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+        GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+        loadOptUnderPost();
+        GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    </script>
+</div></div>
+
+
+</div>
+<p id="footer">
+	Powered by: 
+	<br />
+	
+	
+<a href="https://www.cnblogs.com/" id="Footer1_Hyperlink3" style="font-size: 12px; font-family: Verdana">博客园</a>
+	<br />
+	Copyright &copy; 2020 李志涛
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+</p>
+
+
+
+
+    
+</body>
+</html>

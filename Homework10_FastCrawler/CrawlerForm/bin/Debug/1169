@@ -1,0 +1,441 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>BD同步 - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    <link id="MainCss" rel="stylesheet" href="/skins/codinglife/bundle-codinglife.min.css?v=hlpQ1CJDwwJXDxv2HNauUmW3NjyWzoMaw1uER19SLT0" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/codinglife/bundle-codinglife-mobile.min.css?v=XjHfryC9ctsatIZz1dHn7TsRIqmwz9c3aj_6SCfHSDM" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/shizhongtongbu/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/shizhongtongbu/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/shizhongtongbu/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 573893;
+        var currentBlogApp = 'shizhongtongbu';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'CodingLife';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/shizhongtongbu/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/shizhongtongbu/">BD同步</a>
+</h1>
+<h2>
+
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/shizhongtongbu/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/BD%E5%90%8C%E6%AD%A5">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/shizhongtongbu/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<span id="stats_post_count">随笔 - 
+66&nbsp; </span>
+<span id="stats_article_count">文章 - 
+16&nbsp; </span>
+<span id="stats-comment_count">评论 - 
+0</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<!--done-->
+
+
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/shizhongtongbu/archive/2020/04/24.html">2020年4月24日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/shizhongtongbu/p/12769632.html">
+    子母钟系统介绍
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：子母钟系统介绍 标准时钟系统又称为母钟为需要授时设备提供标准时间信号。子钟又称时钟，接收母钟的标准时间信号。母钟可以接收GPS、北斗、GLONASS、等卫星信号，作为标准时间信号，为计算机系统、子钟、监控设备、弱电子系统、及其他需要授时的设备提供标准时间信号。 随着科技的发展，机械式母钟慢慢被石英母            <a href="https://www.cnblogs.com/shizhongtongbu/p/12769632.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-24 19:25 BD同步 阅读 (5) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12769632" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/shizhongtongbu/p/12769483.html">
+    综合时间码分配器介绍
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：综合时间码分配器介绍 时间是人们生活中必不可少的，时间的应用与工业生产，国防安全，公共设施、交通运输、航空航天等紧密联系。随着科技进步发展，时间授时设备也在多样化的发展，从普通时钟发展成能接收卫星信号的NTP网络时钟、串口时钟等，接收卫星信号使时间更加准确和时间信号的统一，接收卫星信号的同时需要对信            <a href="https://www.cnblogs.com/shizhongtongbu/p/12769483.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-24 19:06 BD同步 阅读 (4) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12769483" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/shizhongtongbu/p/12769470.html">
+    NTP网络时钟服务器品牌
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：NTP网络时钟服务器品牌 在科技的不断进步和发展下，时钟的种类和功能也在发生着变化，以满足人们的各种需求，时钟从原始的机械时钟发展成具有多钟功能的时钟。而时钟服务器主要是给时钟提供时间信息的，时钟服务器按功能可分为，NTP网络时间服务器、CDMA时间服务器、串口时间服务、GPS北斗时间服务器等等。             <a href="https://www.cnblogs.com/shizhongtongbu/p/12769470.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-24 19:04 BD同步 阅读 (4) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12769470" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/shizhongtongbu/archive/2020/03/30.html">2020年3月30日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/shizhongtongbu/p/12600373.html">
+    体育馆时钟系统的功能特点
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：体育馆时钟系统的功能特点 体育馆配置一套可靠、精准、稳定，统一的GPS子母钟系统，对提升体育馆的数字化、智能化管理有着重要的意义。 时钟同步系统主要是为体育场馆提供统一标准的时间信息，由高精度母钟及由它控制并与其时间相一致的若干子钟所组成的一套时钟系统。 体育馆时钟系统主母钟通过连线向各子钟提供统一            <a href="https://www.cnblogs.com/shizhongtongbu/p/12600373.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-03-30 18:40 BD同步 阅读 (10) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12600373" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/shizhongtongbu/p/12600296.html">
+    gps信号转发器的功能特点和使用方法
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：gps信号转发器的功能特点和使用方法 在使用卫星导航系统相关产品的时候，有时因各种因素的限制，gps卫星信号过弱，质量过差无法正常工作。因此配置一台GPS卫星信号转发器非常必要，可帮助现场有力解决无法收到卫星信号，或信号衰弱的问题。本文简单的了解一下gps信号转发器的功能特点和使用。 GPS信号转发            <a href="https://www.cnblogs.com/shizhongtongbu/p/12600296.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-03-30 18:27 BD同步 阅读 (18) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12600296" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/shizhongtongbu/p/12600289.html">
+    ntp时间服务器价格解析
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：ntp时间服务器价格解析 关键词：ntp时间服务器价格,时间服务器 ntp时间服务器的价格也关乎着用户的选择，那么怎样能够选择一款价格适中并且功能居多的ntp时间服务器呢。首选我们要了解ntp时间服务器的定义、功能、原理。这样才能选择合适的ntp时间服务器。 那么ntp时间服务器是什么呢，ntp时间            <a href="https://www.cnblogs.com/shizhongtongbu/p/12600289.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-03-30 18:26 BD同步 阅读 (27) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12600289" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/shizhongtongbu/archive/2020/03/27.html">2020年3月27日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/shizhongtongbu/p/12583756.html">
+    低频数字式相位测量仪介绍
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：低频数字式相位测量仪介绍 关键词：低频数字式相位测量仪,数字式相位测量仪,相位测量仪 低频数字式相位测量仪是用数字形式显示两个同频信号之间的相位差,它是一种具有读数方方便、精度高、测量速度快的电子仪器。低频数字式相位测量仪采用电流耦合、高阻输入方式对轨道电路相位差、相邻区段极性交叉进行检查，解决了相            <a href="https://www.cnblogs.com/shizhongtongbu/p/12583756.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-03-27 18:56 BD同步 阅读 (16) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12583756" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/shizhongtongbu/p/12583748.html">
+    bits时钟是什么
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：bits时钟是什么 关键词：bits时钟,时钟 Bits是大楼综合定时供给设备的简称，为通信设备提供外接时钟。本文简单的介绍了什么是bits时钟及其功能特点。 Bits时钟设备需要提供同步状态信息，国内各类传输设备所需频率同步信号主要有：E1信号（2048kbits/s）及2048kHz频率信号，当            <a href="https://www.cnblogs.com/shizhongtongbu/p/12583748.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-03-27 18:55 BD同步 阅读 (35) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12583748" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/shizhongtongbu/p/12583743.html">
+    gps授时仪常用的几种对时方式
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：gps授时仪常用的几种对时方式 关键词：gps授时仪,gps授时 gps授时仪广泛应用于靶场、武器系统、医院、电力、金融等行业。本文我们将讨论gps授时仪常用的几种对时方式。 gps授时仪由卫星接收天线和主机两部分组成，其中授时仪主机又可分为标准时间信号接收单元、时间保持单元和时间频率信号产生单元，            <a href="https://www.cnblogs.com/shizhongtongbu/p/12583743.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-03-27 18:54 BD同步 阅读 (24) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12583743" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/shizhongtongbu/archive/2020/03/20.html">2020年3月20日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/shizhongtongbu/p/12532951.html">
+    ntp同步时钟的使用方法
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：ntp同步时钟的使用方法 北斗时间服务器是对现代高科技自动化系统中的计算机及控制装置等进行校时的高科技产品。NTP协议用于把计算机或者其他的网络设备的时间同步到标准的UTC时间。网络时钟服务器从GPS卫星上获取到UTC时间信号，并将这些标准的时间信息经过内部高科技处理后通过网口传输给网络系统中需要标            <a href="https://www.cnblogs.com/shizhongtongbu/p/12532951.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-03-20 17:12 BD同步 阅读 (18) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12532951" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+
+<div class="topicListFooter">
+    <div id="nav_next_page">
+        
+    <a href="https://www.cnblogs.com/shizhongtongbu/default.html?page=2">
+        下一页
+    </a>
+
+    </div>    
+</div>
+
+
+
+
+
+
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 BD同步
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    
+</body>
+</html>

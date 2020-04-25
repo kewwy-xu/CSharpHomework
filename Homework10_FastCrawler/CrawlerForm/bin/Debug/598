@@ -1,0 +1,535 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>CoderLcp - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    <link id="MainCss" rel="stylesheet" href="/skins/codinglife/bundle-codinglife.min.css?v=hlpQ1CJDwwJXDxv2HNauUmW3NjyWzoMaw1uER19SLT0" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/codinglife/bundle-codinglife-mobile.min.css?v=XjHfryC9ctsatIZz1dHn7TsRIqmwz9c3aj_6SCfHSDM" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/lcplcpjava/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/lcplcpjava/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/lcplcpjava/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 294586;
+        var currentBlogApp = 'lcplcpjava';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'CodingLife';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/lcplcpjava/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/lcplcpjava/">coder-lcp</a>
+</h1>
+<h2>
+
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/lcplcpjava/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/CoderLcp">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/lcplcpjava/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<span id="stats_post_count">随笔 - 
+52&nbsp; </span>
+<span id="stats_article_count">文章 - 
+0&nbsp; </span>
+<span id="stats-comment_count">评论 - 
+47</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<!--done-->
+
+
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/lcplcpjava/archive/2017/05/21.html">2017年5月21日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/lcplcpjava/p/6884420.html">
+[置顶]    多线程实现简单的事件异步处理框架
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：老实说，多线程在web开发里面非常常见，很多web容器本身就支持多线程，所以很多时候我们在进行web开发的时候并不需要考虑多线程相关的负责问题，而只需要实现相关的业务功能即可。所以，可以概括地讲，很多时候的web开发，并没有多线程方面的考虑，因为web应用本身就是在多线程基础上的了。 但是，有些时候            <a href="https://www.cnblogs.com/lcplcpjava/p/6884420.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2017-05-21 12:04 CoderLcp 阅读 (13028) 评论 (14)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=6884420" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/lcplcpjava/archive/2020/04/24.html">2020年4月24日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/lcplcpjava/p/12767571.html">
+    纯函数与函数式编程初探
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：纯函数概念 满足一个条件：输入值确定，输出值就确定的函数 为什么需要存函数 非混乱的结果 例子1 一个计算扣除所得税后工资功能函数，假设直接扣除20%的比例： 上面是普通的函数，下面，我们考虑个人所得税计算税率随着时间变化的问题，如果2020.4.24前是扣除0.2，之后调整为扣除0.15，我们可以            <a href="https://www.cnblogs.com/lcplcpjava/p/12767571.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-24 15:11 CoderLcp 阅读 (5) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12767571" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/lcplcpjava/archive/2017/09/15.html">2017年9月15日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/lcplcpjava/p/7527212.html">
+    jdk源码研究1-HashMap
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：今天开始，研读下jdk的常用类的一些源码，下面是jdk中HashMap的研究。诚然，网上已经很多这方面的总结了，但是，个人只是想单纯地把自己的理解过程进行记录，大牛们就绕路吧，当然，欢迎扔砖头。下面是大体的内容如下： 一、哈希的概述 1、哈希的概念 2、哈希要解决的问题 二、java中哈希的实现过程            <a href="https://www.cnblogs.com/lcplcpjava/p/7527212.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2017-09-15 16:46 CoderLcp 阅读 (435) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=7527212" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/lcplcpjava/archive/2017/08/24.html">2017年8月24日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/lcplcpjava/p/7422296.html">
+    tomcat 组件研究二--请求过程
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：上一篇博客大概总结了tomcat 的组件以及其组织方式，对于tomcat 的启动过程也进行进行了简单的总结，下面这篇博客，继续研究tomcat 处理请求的相关组件，其实就是主要研究Connectors 以及Container 的工作过程，以此加深对tomcat 工作过程的理解，不足之处，请各路大神指            <a href="https://www.cnblogs.com/lcplcpjava/p/7422296.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2017-08-24 22:19 CoderLcp 阅读 (546) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=7422296" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/lcplcpjava/archive/2017/08/23.html">2017年8月23日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/lcplcpjava/p/7411318.html">
+    tomcat 组件研究一--启动过程总结
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：作为java 开发者，从开始学习java 便知道tomcat 这个容器了，但是一直却没有怎么研究过它的内部结构，以前对tomcat的认识也仅仅局限在那几个常用的目录放什么东西，那几个常用的配置文件应该写说明内容，却很少研究其内部的组件以及启动过程，另外，去网上找相关的资料博客，也发现不是很多很全面，            <a href="https://www.cnblogs.com/lcplcpjava/p/7411318.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2017-08-23 11:06 CoderLcp 阅读 (1292) 评论 (6)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=7411318" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/lcplcpjava/archive/2017/08/21.html">2017年8月21日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/lcplcpjava/p/7406253.html">
+    Spring-Boot快速搭建web项目详细总结
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：最近在学习Spring Boot 相关的技术，刚接触就有种相见恨晚的感觉，因为用spring boot进行项目的搭建是在太方便了，我们往往只需要很简单的几步，便可完成一个spring MVC项目的搭建，感觉就是下图： 好，下面就本人搭建项目的过程简单说说如何快速搭建一个spring MVC项目，相信            <a href="https://www.cnblogs.com/lcplcpjava/p/7406253.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2017-08-21 19:35 CoderLcp 阅读 (78741) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=7406253" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/lcplcpjava/archive/2017/08/13.html">2017年8月13日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/lcplcpjava/p/7354513.html">
+    java 内存模型的理解
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：之前一直在实习，博客停写了一段时间，现在秋招开始了，所以辞职回来专心看书，同时将每天的收获以博客的形式记录下来。最近在看jvm相关的书籍，下面对面试中问得最多的部分--java 内存模型进行简单总结。 本篇博客大概由一下几个部分组成： 1、程序在真实物理世界的内存模型 2、java的内存模型 3、j            <a href="https://www.cnblogs.com/lcplcpjava/p/7354513.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2017-08-13 19:47 CoderLcp 阅读 (1425) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=7354513" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/lcplcpjava/archive/2017/05/24.html">2017年5月24日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/lcplcpjava/p/6896904.html">
+    java 线程方法join的简单总结
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：虽然关于讨论线程join方法的博客已经很多了，不过个人感觉挺多都讨论得不够全面，所以我觉得有必要对其进行一个全面的总结。 一、作用 Thread类中的join方法的主要作用就是同步，它可以使得线程之间的并行执行变为串行执行。具体看代码： 上面程序结果是先打印完小明线程，在打印小东线程； 上面注释也大            <a href="https://www.cnblogs.com/lcplcpjava/p/6896904.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2017-05-24 15:03 CoderLcp 阅读 (77855) 评论 (13)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=6896904" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/lcplcpjava/archive/2017/05/21.html">2017年5月21日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/lcplcpjava/p/6884420.html">
+    多线程实现简单的事件异步处理框架
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：老实说，多线程在web开发里面非常常见，很多web容器本身就支持多线程，所以很多时候我们在进行web开发的时候并不需要考虑多线程相关的负责问题，而只需要实现相关的业务功能即可。所以，可以概括地讲，很多时候的web开发，并没有多线程方面的考虑，因为web应用本身就是在多线程基础上的了。 但是，有些时候            <a href="https://www.cnblogs.com/lcplcpjava/p/6884420.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2017-05-21 12:04 CoderLcp 阅读 (13028) 评论 (14)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=6884420" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/lcplcpjava/archive/2017/05/15.html">2017年5月15日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/lcplcpjava/p/6858135.html">
+    java线程总结3--synchronized关键字，原理以及相关的锁
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：在多线程编程中，synchronized关键字非常常见，当我们需要进行“同步”操作时，我们很多时候需要该该关键字对代码块或者方法进行锁定。被synchronized锁定的代码块，只能同时有一条线程访问该代码块。 上面是很多人的认识，当然也是我之前对synchronized关键字的浅显认识，其实上面的            <a href="https://www.cnblogs.com/lcplcpjava/p/6858135.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2017-05-15 20:01 CoderLcp 阅读 (3467) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=6858135" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/lcplcpjava/archive/2017/04/24.html">2017年4月24日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/lcplcpjava/p/6759859.html">
+    Hibernate学习--hibernate延迟加载原理（动态代理）
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：在正式说hibernate延迟加载时，先说说一个比较奇怪的现象吧：hibernate中，在many-to-one时，如果我们设置了延迟加载，会发现我们在eclipse的调试框中查看one对应对象时，它的内部成员变量全是null的（因为这个原因我还调了好久的代码！），贴张图给你们感受下： 左边是设置延            <a href="https://www.cnblogs.com/lcplcpjava/p/6759859.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2017-04-24 23:57 CoderLcp 阅读 (10266) 评论 (3)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=6759859" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+
+<div class="topicListFooter">
+    <div id="nav_next_page">
+        
+    <a href="https://www.cnblogs.com/lcplcpjava/default.html?page=2">
+        下一页
+    </a>
+
+    </div>    
+</div>
+
+
+
+
+
+
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 CoderLcp
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    
+</body>
+</html>

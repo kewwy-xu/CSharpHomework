@@ -1,0 +1,266 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>随笔列表第2页 - 李志涛 - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    <link id="MainCss" rel="stylesheet" href="/skins/hover/bundle-hover.min.css?v=4g9VRwEunu0VTeVQV676B9zlptl8ucyilUBAFWqEsMA" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/hover/bundle-hover-mobile.min.css?v=ADiCwO2hOTdd5yYidcx7eob7ix2VJI4o_TXjEycTHjs" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/lizherui/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/lizherui/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/lizherui/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 354992;
+        var currentBlogApp = 'lizherui';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'Hover';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    
+<div id="top">
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/lizherui/">李志涛</a>
+</h1>
+</div>
+<p id="tagline">
+
+</p>
+
+
+<div id="leftmenu">
+	
+		
+<h3>导航</h3>
+<ul>
+			<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+			<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/lizherui/">
+首页</a>
+</li>
+			<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+			<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E6%9D%8E%E5%BF%97%E6%B6%9B">
+联系</a></li>
+			<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/lizherui/rss/">
+订阅</a>
+<a id="blog_nav_rss_image" href="https://www.cnblogs.com/lizherui/rss/">
+    <img src="/skins/hover/images/xml.gif" alt="订阅" />
+</a></li>
+			<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div id="calendar"><div id="blog-calendar" style="display:none"></div></div>                
+                    <script>loadBlogDefaultCalendar();</script>
+		<h3>统计</h3>
+	<ul>
+		<li>随笔 - 
+23</li>
+		<li>文章 - 
+0</li>
+		<li>评论 - 
+5</li>
+		<li>引用 - 
+0</li>
+	</ul>
+
+
+		
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+		<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+	
+</div>
+<div id="main">
+	
+
+
+<div id="homepage_top_pager" class="topicListFooter">
+    
+
+<div class="pager">
+    <a href="https://www.cnblogs.com/lizherui/default.html?page=1">上一页</a>
+    
+    
+        <a href="https://www.cnblogs.com/lizherui/default.html?page=1">1</a>
+    2
+    
+    
+    
+</div>
+</div>
+
+		
+<p class="date">
+	<span>2019年10月19日		  
+	<a href="https://www.cnblogs.com/lizherui/archive/2019/10/19.html" style="height: 15px; width: 12px; border-width: 0">#</a>
+	</span>
+</p>
+
+
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/lizherui/p/11704523.html">
+    故障处理流程和规范
+</a>
+</h2>
+			
+			
+
+    <div class="c_b_p_desc">
+摘要：背景 大数据团队负责很多公司核心服务，包括olap查询、队列、日志搜索、数据传输、存储、计算等等服务，作为公司数据传输和存储及计算的中枢，服务的稳定性直接影响用户口碑和体验，间接影响着公司的营收，线上服务的稳定性是每位同学需要重点关注的事情。当然线上服务发生故障，做技术每位同学几乎都会遇到，也是作为            <a href="https://www.cnblogs.com/lizherui/p/11704523.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			
+			<p class="postfoot">		
+				
+
+posted @ 2019-10-19 17:21 李志涛 阅读 (831) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11704523" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+
+
+
+		
+<p class="date">
+	<span>2018年4月30日		  
+	<a href="https://www.cnblogs.com/lizherui/archive/2018/04/30.html" style="height: 15px; width: 12px; border-width: 0">#</a>
+	</span>
+</p>
+
+
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/lizherui/p/8973618.html">
+    Kafka源码工程examples项目配置log4j
+</a>
+</h2>
+			
+			
+
+    <div class="c_b_p_desc">
+摘要：examples项目启动想知道有哪些错误，通过日志了解代码执行逻辑，但是启动SimpleConsumerDemo了报错如下： log4j.proproties也配置了 log4j.proproties配置如下： No appenders could be found for logger，意思是lo            <a href="https://www.cnblogs.com/lizherui/p/8973618.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			
+			<p class="postfoot">		
+				
+
+posted @ 2018-04-30 14:24 李志涛 阅读 (80) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=8973618" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/lizherui/p/8973227.html">
+    如何快速安装kafka-manager
+</a>
+</h2>
+			
+			
+
+    <div class="c_b_p_desc">
+摘要：1.下载kafka-manager git clone&#160;https://github.com/yahoo/kafka-manager.git 2.配置sbt镜像仓库 因为kafka-manager是雅虎开发的，构建时需要依赖外网，下载scala运行时jar，由于网络环境不好，构建耗时长而且很有可能失            <a href="https://www.cnblogs.com/lizherui/p/8973227.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			
+			<p class="postfoot">		
+				
+
+posted @ 2018-04-30 11:25 李志涛 阅读 (120) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=8973227" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+
+
+
+
+<div class="topicListFooter">
+    <div id="nav_next_page">
+        
+
+    </div>    
+</div>
+
+
+<div id="homepage_bottom_pager" class="topicListFooter">
+    
+
+<div class="pager">
+    <a href="https://www.cnblogs.com/lizherui/default.html?page=1">上一页</a>
+    
+    
+        <a href="https://www.cnblogs.com/lizherui/default.html?page=1">1</a>
+    2
+    
+    
+    
+</div>
+</div>
+
+
+
+
+
+</div>
+<p id="footer">
+	Powered by: 
+	<br />
+	
+	
+<a href="https://www.cnblogs.com/" id="Footer1_Hyperlink3" style="font-size: 12px; font-family: Verdana">博客园</a>
+	<br />
+	Copyright &copy; 2020 李志涛
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+</p>
+
+
+
+
+    
+</body>
+</html>

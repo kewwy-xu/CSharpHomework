@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">博客园_TechFlow2019</title>
+  <subtitle type="text"></subtitle>
+  <id>uuid:0d9a7eed-4c6e-4c6a-b966-a76fff4e7415;id=405</id>
+  <updated>2020-04-24T13:33:34Z</updated>
+  <author>
+    <name>TechFlow2019</name>
+    <uri>http://www.cnblogs.com/techflow/</uri>
+  </author>
+  <generator>feed.cnblogs.com</generator>
+  <entry>
+    <id>http://www.cnblogs.com/techflow/p/12770388.html</id>
+    <title type="text">高等数学——手撕牛顿莱布尼茨公式 - TechFlow2019</title>
+    <summary type="text">本文始发于个人公众号： TechFlow ，原创不易，求个关注 今天是 高等数学专题的第13篇 文章，我们来看看定积分究竟应该怎么计算。 定积分的实际意义 通过之前的文章，我们基本上熟悉了定积分这个概念和它的一些简单性质，今天终于到了正题，我们要试着来算一算这个积分了。 我们先来回忆一下对定积分的直</summary>
+    <published>2020-04-24T13:34:00Z</published>
+    <updated>2020-04-24T13:34:00Z</updated>
+    <author>
+      <name>TechFlow2019</name>
+      <uri>http://www.cnblogs.com/techflow/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/techflow/p/12770388.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/techflow/p/12770388.html" />
+    <content type="html">【摘要】本文始发于个人公众号： TechFlow ，原创不易，求个关注 今天是 高等数学专题的第13篇 文章，我们来看看定积分究竟应该怎么计算。 定积分的实际意义 通过之前的文章，我们基本上熟悉了定积分这个概念和它的一些简单性质，今天终于到了正题，我们要试着来算一算这个积分了。 我们先来回忆一下对定积分的直 &lt;a href="http://www.cnblogs.com/techflow/p/12770388.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/techflow/p/12763551.html</id>
+    <title type="text">用二分法优化动态规划——实现快速决策 - TechFlow2019</title>
+    <summary type="text">本文始发于个人公众号： TechFlow ，原创不易，求个关注 今天是算法与数据结构专题的17篇文章，也是动态规划专题的第6篇。 今天我们一起来看一道非常经典的动态规划的问题，有多经典呢？我想了一下，大概是我这辈子做的最早的一道动态规划问题，以至于我现在都记得它的题面。 题面 这道题就是导弹拦截系统</summary>
+    <published>2020-04-23T13:07:00Z</published>
+    <updated>2020-04-23T13:07:00Z</updated>
+    <author>
+      <name>TechFlow2019</name>
+      <uri>http://www.cnblogs.com/techflow/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/techflow/p/12763551.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/techflow/p/12763551.html" />
+    <content type="html">【摘要】本文始发于个人公众号： TechFlow ，原创不易，求个关注 今天是算法与数据结构专题的17篇文章，也是动态规划专题的第6篇。 今天我们一起来看一道非常经典的动态规划的问题，有多经典呢？我想了一下，大概是我这辈子做的最早的一道动态规划问题，以至于我现在都记得它的题面。 题面 这道题就是导弹拦截系统 &lt;a href="http://www.cnblogs.com/techflow/p/12763551.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/techflow/p/12756050.html</id>
+    <title type="text">召回、精确、准确，这些让人头大的概念一文全讲清楚 - TechFlow2019</title>
+    <summary type="text">本文始发于个人公众号： TechFlow ，原创不易，求个关注 今天是机器学习真题的第17篇文章，我们来讲讲机器学习模型的评估。 在之前的文章当中我们已经介绍了好几个模型了，有朴素贝叶斯、KNN、KMeans、EM还有线性回归和逻辑回归。今天我们来和大家聊聊该怎么评估这些模型。 均方差 这个概念很简</summary>
+    <published>2020-04-22T13:18:00Z</published>
+    <updated>2020-04-22T13:18:00Z</updated>
+    <author>
+      <name>TechFlow2019</name>
+      <uri>http://www.cnblogs.com/techflow/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/techflow/p/12756050.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/techflow/p/12756050.html" />
+    <content type="html">【摘要】本文始发于个人公众号： TechFlow ，原创不易，求个关注 今天是机器学习真题的第17篇文章，我们来讲讲机器学习模型的评估。 在之前的文章当中我们已经介绍了好几个模型了，有朴素贝叶斯、KNN、KMeans、EM还有线性回归和逻辑回归。今天我们来和大家聊聊该怎么评估这些模型。 均方差 这个概念很简 &lt;a href="http://www.cnblogs.com/techflow/p/12756050.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/techflow/p/12747480.html</id>
+    <title type="text">Python——详解__slots__，property和私有方法 - TechFlow2019</title>
+    <summary type="text">本文始发于个人公众号： TechFlow ，原创不易，求个关注 今天是Python专题的第11篇文章，我们来聊聊面向对象的一些进阶使用。 __slots__ 如果你看过github当中一些大牛的代码，你会发现很多大牛经常在类的顶部加上__slots__关键字。如果你足够好奇，你可能会试着把这个关键字</summary>
+    <published>2020-04-21T12:09:00Z</published>
+    <updated>2020-04-21T12:09:00Z</updated>
+    <author>
+      <name>TechFlow2019</name>
+      <uri>http://www.cnblogs.com/techflow/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/techflow/p/12747480.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/techflow/p/12747480.html" />
+    <content type="html">【摘要】本文始发于个人公众号： TechFlow ，原创不易，求个关注 今天是Python专题的第11篇文章，我们来聊聊面向对象的一些进阶使用。 __slots__ 如果你看过github当中一些大牛的代码，你会发现很多大牛经常在类的顶部加上__slots__关键字。如果你足够好奇，你可能会试着把这个关键字 &lt;a href="http://www.cnblogs.com/techflow/p/12747480.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/techflow/p/12740595.html</id>
+    <title type="text">LeetCode50——一题学会快速幂算法 - TechFlow2019</title>
+    <summary type="text">本文始发于个人公众号： TechFlow ，原创不易，求个关注 今天是LeetCode的第31篇文章，我们来看下LeetCode的第50题，求一个数的幂。 题意 这道题的题意只有一句话，就是给定两个数x和n，要求。 从题意来看，这道题平平无奇，基本上没有什么特别的。但是我们继续看它的note就会发现</summary>
+    <published>2020-04-20T13:16:00Z</published>
+    <updated>2020-04-20T13:16:00Z</updated>
+    <author>
+      <name>TechFlow2019</name>
+      <uri>http://www.cnblogs.com/techflow/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/techflow/p/12740595.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/techflow/p/12740595.html" />
+    <content type="html">【摘要】本文始发于个人公众号： TechFlow ，原创不易，求个关注 今天是LeetCode的第31篇文章，我们来看下LeetCode的第50题，求一个数的幂。 题意 这道题的题意只有一句话，就是给定两个数x和n，要求。 从题意来看，这道题平平无奇，基本上没有什么特别的。但是我们继续看它的note就会发现 &lt;a href="http://www.cnblogs.com/techflow/p/12740595.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/techflow/p/12740198.html</id>
+    <title type="text">Golang——详解Go语言代码规范 - TechFlow2019</title>
+    <summary type="text">本文始发于个人公众号： TechFlow ，原创不易，求个关注 今天是Golang专题的第二篇，我们来看看Go的语言规范。 在我们继续今天的内容之前，先来回答一个问题。 有同学在后台问我，为什么说Golang更适合分布式系统的开发？它和Java相比有什么优势吗？ 其实回答这个问题需要涉及很多概念，比</summary>
+    <published>2020-04-20T12:26:00Z</published>
+    <updated>2020-04-20T12:26:00Z</updated>
+    <author>
+      <name>TechFlow2019</name>
+      <uri>http://www.cnblogs.com/techflow/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/techflow/p/12740198.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/techflow/p/12740198.html" />
+    <content type="html">【摘要】本文始发于个人公众号： TechFlow ，原创不易，求个关注 今天是Golang专题的第二篇，我们来看看Go的语言规范。 在我们继续今天的内容之前，先来回答一个问题。 有同学在后台问我，为什么说Golang更适合分布式系统的开发？它和Java相比有什么优势吗？ 其实回答这个问题需要涉及很多概念，比 &lt;a href="http://www.cnblogs.com/techflow/p/12740198.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/techflow/p/12733441.html</id>
+    <title type="text">spark——详解rdd常用的转化和行动操作 - TechFlow2019</title>
+    <summary type="text">本文始发于个人公众号： TechFlow ，原创不易，求个关注 今天是spark第三篇文章，我们继续来看RDD的一些操作。 我们前文说道在spark当中RDD的操作可以分为两种，一种是转化操作(transformation），另一种是行动操作(action)。在转化操作当中，spark不会为我们计算</summary>
+    <published>2020-04-19T12:54:00Z</published>
+    <updated>2020-04-19T12:54:00Z</updated>
+    <author>
+      <name>TechFlow2019</name>
+      <uri>http://www.cnblogs.com/techflow/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/techflow/p/12733441.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/techflow/p/12733441.html" />
+    <content type="html">【摘要】本文始发于个人公众号： TechFlow ，原创不易，求个关注 今天是spark第三篇文章，我们继续来看RDD的一些操作。 我们前文说道在spark当中RDD的操作可以分为两种，一种是转化操作(transformation），另一种是行动操作(action)。在转化操作当中，spark不会为我们计算 &lt;a href="http://www.cnblogs.com/techflow/p/12733441.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/techflow/p/12727713.html</id>
+    <title type="text">从头搭建一个“微博”有多难 - TechFlow2019</title>
+    <summary type="text">本文始发于个人公众号： TechFlow ，原创不易，求个关注 今天是分布式专题的第13篇，今天的文章我们不讲空洞的理论，来聊一个实际点的问题。 众所周知，微博的程序员经常不定期加班。和别的程序员不同，别的岗位的程序员可能加班是可控的，但是微博的程序员不是。为什么呢？因为程序员们无法预知明星们什么时</summary>
+    <published>2020-04-18T11:56:00Z</published>
+    <updated>2020-04-18T11:56:00Z</updated>
+    <author>
+      <name>TechFlow2019</name>
+      <uri>http://www.cnblogs.com/techflow/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/techflow/p/12727713.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/techflow/p/12727713.html" />
+    <content type="html">【摘要】本文始发于个人公众号： TechFlow ，原创不易，求个关注 今天是分布式专题的第13篇，今天的文章我们不讲空洞的理论，来聊一个实际点的问题。 众所周知，微博的程序员经常不定期加班。和别的程序员不同，别的岗位的程序员可能加班是可控的，但是微博的程序员不是。为什么呢？因为程序员们无法预知明星们什么时 &lt;a href="http://www.cnblogs.com/techflow/p/12727713.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/techflow/p/12722306.html</id>
+    <title type="text">高等数学——积分中值定理 - TechFlow2019</title>
+    <summary type="text">本文始发于个人公众号：TechFlow，原创不易，求个关注 今天是高等数学专题的第12篇，我们继续来看定积分。 之前在讲微分求导内容的时候，介绍过一系列微分中值定理的推导。既然有微分中值定理，那么自然也有积分中值定理，我们下面就来看看积分中值定理的定义。 极值定理 极值定理也叫最大最小值定理，它的含</summary>
+    <published>2020-04-17T12:37:00Z</published>
+    <updated>2020-04-17T12:37:00Z</updated>
+    <author>
+      <name>TechFlow2019</name>
+      <uri>http://www.cnblogs.com/techflow/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/techflow/p/12722306.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/techflow/p/12722306.html" />
+    <content type="html">【摘要】本文始发于个人公众号：TechFlow，原创不易，求个关注 今天是高等数学专题的第12篇，我们继续来看定积分。 之前在讲微分求导内容的时候，介绍过一系列微分中值定理的推导。既然有微分中值定理，那么自然也有积分中值定理，我们下面就来看看积分中值定理的定义。 极值定理 极值定理也叫最大最小值定理，它的含 &lt;a href="http://www.cnblogs.com/techflow/p/12722306.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/techflow/p/12715307.html</id>
+    <title type="text">详解状态压缩动态规划算法 - TechFlow2019</title>
+    <summary type="text">本文始发于个人公众号： TechFlow ，原创不易，求个关注 今天是算法与数据结构专题的第16篇，也是动态规划系列的第5篇。 今天文章的内容是动态规划当中非常常见的一个分支——状态压缩动态规划，很多人对于状态压缩畏惧如虎，但其实并没有那么难，希望我今天的文章能带你们学到这个经典的应用。 二进制表示</summary>
+    <published>2020-04-16T12:06:00Z</published>
+    <updated>2020-04-16T12:06:00Z</updated>
+    <author>
+      <name>TechFlow2019</name>
+      <uri>http://www.cnblogs.com/techflow/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/techflow/p/12715307.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/techflow/p/12715307.html" />
+    <content type="html">【摘要】本文始发于个人公众号： TechFlow ，原创不易，求个关注 今天是算法与数据结构专题的第16篇，也是动态规划系列的第5篇。 今天文章的内容是动态规划当中非常常见的一个分支——状态压缩动态规划，很多人对于状态压缩畏惧如虎，但其实并没有那么难，希望我今天的文章能带你们学到这个经典的应用。 二进制表示 &lt;a href="http://www.cnblogs.com/techflow/p/12715307.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+</feed>

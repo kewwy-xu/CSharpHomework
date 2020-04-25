@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">博客园_生命不息，折腾不止</title>
+  <subtitle type="text"></subtitle>
+  <id>uuid:0d9a7eed-4c6e-4c6a-b966-a76fff4e7415;id=356</id>
+  <updated>2020-04-24T12:40:39Z</updated>
+  <author>
+    <name>曾聪聪</name>
+    <uri>http://www.cnblogs.com/zengcongcong/</uri>
+  </author>
+  <generator>feed.cnblogs.com</generator>
+  <entry>
+    <id>http://www.cnblogs.com/zengcongcong/p/12769937.html</id>
+    <title type="text">浅析Java7中的ConcurrentHashMap - 曾聪聪</title>
+    <summary type="text">引入ConcurrentHashMap 模拟使用hashmap在多线程场景下发生线程不安全现象 运行结果如下，由于fail fast机制的存在，出现了并发修改失败的错误 如何解决该问题呢？ 方式一：使用hashtable 方式二：使用Collections.synchronizedMap 方式三：使</summary>
+    <published>2020-04-24T12:39:00Z</published>
+    <updated>2020-04-24T12:39:00Z</updated>
+    <author>
+      <name>曾聪聪</name>
+      <uri>http://www.cnblogs.com/zengcongcong/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/zengcongcong/p/12769937.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/zengcongcong/p/12769937.html" />
+    <content type="html">【摘要】引入ConcurrentHashMap 模拟使用hashmap在多线程场景下发生线程不安全现象 运行结果如下，由于fail fast机制的存在，出现了并发修改失败的错误 如何解决该问题呢？ 方式一：使用hashtable 方式二：使用Collections.synchronizedMap 方式三：使 &lt;a href="http://www.cnblogs.com/zengcongcong/p/12769937.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/zengcongcong/p/12754067.html</id>
+    <title type="text">浅析CopyOnWriteArrayList - 曾聪聪</title>
+    <summary type="text">CopyOnWriteArrayList引入 模拟传统的ArrayList出现线程不安全的现象 运行结果如下：由于fail fast机制的存在，抛出了modcount修改异常的错误(modcount是ArrayList源码中的一个变量，用来表示修改的次数，因为ArrayList不是为并发情况而设计的</summary>
+    <published>2020-04-23T04:45:00Z</published>
+    <updated>2020-04-23T04:45:00Z</updated>
+    <author>
+      <name>曾聪聪</name>
+      <uri>http://www.cnblogs.com/zengcongcong/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/zengcongcong/p/12754067.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/zengcongcong/p/12754067.html" />
+    <content type="html">【摘要】CopyOnWriteArrayList引入 模拟传统的ArrayList出现线程不安全的现象 运行结果如下：由于fail fast机制的存在，抛出了modcount修改异常的错误(modcount是ArrayList源码中的一个变量，用来表示修改的次数，因为ArrayList不是为并发情况而设计的 &lt;a href="http://www.cnblogs.com/zengcongcong/p/12754067.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/zengcongcong/p/12751761.html</id>
+    <title type="text">浅析CAS与AtomicInteger原子类 - 曾聪聪</title>
+    <summary type="text">一：CAS简介 CAS：Compare And Swap(字面意思是比较与交换)，JUC包中大量使用到了CAS，比如我们的atomic包下的原子类就是基于CAS来实现。区别于悲观锁synchronized，CAS是乐观锁的一种实现，在某些场合使用它可以提高我们的并发性能。 在CAS中，主要是涉及到三</summary>
+    <published>2020-04-22T06:14:00Z</published>
+    <updated>2020-04-22T06:14:00Z</updated>
+    <author>
+      <name>曾聪聪</name>
+      <uri>http://www.cnblogs.com/zengcongcong/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/zengcongcong/p/12751761.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/zengcongcong/p/12751761.html" />
+    <content type="html">【摘要】一：CAS简介 CAS：Compare And Swap(字面意思是比较与交换)，JUC包中大量使用到了CAS，比如我们的atomic包下的原子类就是基于CAS来实现。区别于悲观锁synchronized，CAS是乐观锁的一种实现，在某些场合使用它可以提高我们的并发性能。 在CAS中，主要是涉及到三 &lt;a href="http://www.cnblogs.com/zengcongcong/p/12751761.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/zengcongcong/p/12213715.html</id>
+    <title type="text">IDEA左侧不以树形结构展示项目结构 - 曾聪聪</title>
+    <summary type="text">机子重启后发现IDEA变这样了 关闭idea，删除该项目下的.idea目录，在重新打开即可解决</summary>
+    <published>2020-01-19T06:56:00Z</published>
+    <updated>2020-01-19T06:56:00Z</updated>
+    <author>
+      <name>曾聪聪</name>
+      <uri>http://www.cnblogs.com/zengcongcong/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/zengcongcong/p/12213715.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/zengcongcong/p/12213715.html" />
+    <content type="html">【摘要】机子重启后发现IDEA变这样了 关闭idea，删除该项目下的.idea目录，在重新打开即可解决 &lt;a href="http://www.cnblogs.com/zengcongcong/p/12213715.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/zengcongcong/p/12203683.html</id>
+    <title type="text">maven常见问题 - 曾聪聪</title>
+    <summary type="text">使用maven有段时间，期间陆陆续续出过一些问题，记录下。 1.设置本地仓库 maven下载并正确安装后需要配置本地仓库位置,项目优先从本地仓库加载jar包，在maven安装目录的conf\settings.xml中进行设置【默认本地仓库位置在 ${user.dir}/.m2/repository，</summary>
+    <published>2020-01-16T15:00:00Z</published>
+    <updated>2020-01-16T15:00:00Z</updated>
+    <author>
+      <name>曾聪聪</name>
+      <uri>http://www.cnblogs.com/zengcongcong/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/zengcongcong/p/12203683.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/zengcongcong/p/12203683.html" />
+    <content type="html">【摘要】使用maven有段时间，期间陆陆续续出过一些问题，记录下。 1.设置本地仓库 maven下载并正确安装后需要配置本地仓库位置,项目优先从本地仓库加载jar包，在maven安装目录的conf\settings.xml中进行设置【默认本地仓库位置在 ${user.dir}/.m2/repository， &lt;a href="http://www.cnblogs.com/zengcongcong/p/12203683.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/zengcongcong/p/12198329.html</id>
+    <title type="text">Mybatis实现多表联合查询 - 曾聪聪</title>
+    <summary type="text">上篇实现利用mybatis实现单表增删改查，今天利用mybatis实现多表联合查询。 1.创建数据库mybatis2，建立student、class、student_class三张表 DROP TABLE IF EXISTS `class`; CREATE TABLE `class` ( `clas</summary>
+    <published>2020-01-15T11:27:00Z</published>
+    <updated>2020-01-15T11:27:00Z</updated>
+    <author>
+      <name>曾聪聪</name>
+      <uri>http://www.cnblogs.com/zengcongcong/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/zengcongcong/p/12198329.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/zengcongcong/p/12198329.html" />
+    <content type="html">【摘要】上篇实现利用mybatis实现单表增删改查，今天利用mybatis实现多表联合查询。 1.创建数据库mybatis2，建立student、class、student_class三张表 DROP TABLE IF EXISTS `class`; CREATE TABLE `class` ( `clas &lt;a href="http://www.cnblogs.com/zengcongcong/p/12198329.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/zengcongcong/p/12181490.html</id>
+    <title type="text">Mybatis实现单表增删改查操作 - 曾聪聪</title>
+    <summary type="text">mybatis是对持久层进行了封装、mybatis文档地址：https://mybatis.org/mybatis-3/zh/index.html 下面实现单表的增删改查操作。 1.新建maven项目命名为mybatis、并在pom.xml中引入相关依赖 &lt;?xml version="1.0" en</summary>
+    <published>2020-01-11T15:09:00Z</published>
+    <updated>2020-01-11T15:09:00Z</updated>
+    <author>
+      <name>曾聪聪</name>
+      <uri>http://www.cnblogs.com/zengcongcong/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/zengcongcong/p/12181490.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/zengcongcong/p/12181490.html" />
+    <content type="html">【摘要】mybatis是对持久层进行了封装、mybatis文档地址：https://mybatis.org/mybatis-3/zh/index.html 下面实现单表的增删改查操作。 1.新建maven项目命名为mybatis、并在pom.xml中引入相关依赖 &lt;?xml version="1.0" en &lt;a href="http://www.cnblogs.com/zengcongcong/p/12181490.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/zengcongcong/p/12178308.html</id>
+    <title type="text">解决mybaits配置错误：Cause: org.xml.sax.SAXParseException; lineNumber: 17; columnNumber: 119; 对实体 "characterEncoding" 的引用必须以 ';' 分隔符结尾。 - 曾聪聪</title>
+    <summary type="text">mybaits插入中文乱码，修改主配置参数为如下：【数据库连接时使用了默认的ISO编码格式，需要我们显式地指定编码格式。】 &lt;!-- 配置环境 --&gt; &lt;environments default="mysql"&gt; &lt;!-- 配置mysql的环境--&gt; &lt;environment id="mysql"&gt;</summary>
+    <published>2020-01-10T14:03:00Z</published>
+    <updated>2020-01-10T14:03:00Z</updated>
+    <author>
+      <name>曾聪聪</name>
+      <uri>http://www.cnblogs.com/zengcongcong/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/zengcongcong/p/12178308.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/zengcongcong/p/12178308.html" />
+    <content type="html">【摘要】mybaits插入中文乱码，修改主配置参数为如下：【数据库连接时使用了默认的ISO编码格式，需要我们显式地指定编码格式。】 &lt;!-- 配置环境 --&gt; &lt;environments default="mysql"&gt; &lt;!-- 配置mysql的环境--&gt; &lt;environment id="mysql"&gt; &lt;a href="http://www.cnblogs.com/zengcongcong/p/12178308.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/zengcongcong/p/12160990.html</id>
+    <title type="text">浅谈cookie与session - 曾聪聪</title>
+    <summary type="text">学校web作业做的不少，对cookie与session也用了蛮多，在此小计一些干货 由于HTTP协议是无状态的，连接建立成功后便释放了，那么如何知道xxx，yyy操作都属于zzz呢? cookie与session就是用来解决这个问题 SESSION与COOKIE的一些重要知识点：cookie与ses</summary>
+    <published>2020-01-07T05:28:00Z</published>
+    <updated>2020-01-07T05:28:00Z</updated>
+    <author>
+      <name>曾聪聪</name>
+      <uri>http://www.cnblogs.com/zengcongcong/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/zengcongcong/p/12160990.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/zengcongcong/p/12160990.html" />
+    <content type="html">【摘要】学校web作业做的不少，对cookie与session也用了蛮多，在此小计一些干货 由于HTTP协议是无状态的，连接建立成功后便释放了，那么如何知道xxx，yyy操作都属于zzz呢? cookie与session就是用来解决这个问题 SESSION与COOKIE的一些重要知识点：cookie与ses &lt;a href="http://www.cnblogs.com/zengcongcong/p/12160990.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/zengcongcong/p/12159125.html</id>
+    <title type="text">解决Andriod获取Session里面的值为空 - 曾聪聪</title>
+    <summary type="text">问题描述： 安卓课程设计，用户登陆时做了个验证码的功能，在WEB端可以正常运行。 在安卓跑时发现服务器端可以正确获取前端传来的验证码的值，但是从session里取验证码的值时却一直是null。 经过DEBUG发现两者的SESSIONID值不同了，根本不是一个SESSION对象，也不太清楚是什么原因造</summary>
+    <published>2020-01-06T15:41:00Z</published>
+    <updated>2020-01-06T15:41:00Z</updated>
+    <author>
+      <name>曾聪聪</name>
+      <uri>http://www.cnblogs.com/zengcongcong/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/zengcongcong/p/12159125.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/zengcongcong/p/12159125.html" />
+    <content type="html">【摘要】问题描述： 安卓课程设计，用户登陆时做了个验证码的功能，在WEB端可以正常运行。 在安卓跑时发现服务器端可以正确获取前端传来的验证码的值，但是从session里取验证码的值时却一直是null。 经过DEBUG发现两者的SESSIONID值不同了，根本不是一个SESSION对象，也不太清楚是什么原因造 &lt;a href="http://www.cnblogs.com/zengcongcong/p/12159125.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+</feed>

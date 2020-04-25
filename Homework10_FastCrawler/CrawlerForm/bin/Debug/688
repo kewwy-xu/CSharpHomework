@@ -1,0 +1,531 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>方帅 - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/SimpleMemory/bundle-SimpleMemory-mobile.min.css" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/fangsmile/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/fangsmile/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/fangsmile/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 177898;
+        var currentBlogApp = 'fangsmile';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'SimpleMemory';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    <div id="page_begin_html">
+        <link href="https://files.cnblogs.com/files/fangsmile/main.css" rel="stylesheet" />
+<link href="https://files.cnblogs.com/files/fangsmile/navigation.css" rel="stylesheet" />
+    </div>
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/fangsmile/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/fangsmile/">方帅</a>
+</h1>
+<h2>
+
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/fangsmile/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E6%96%B9%E5%B8%85">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/fangsmile/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<span id="stats_post_count">随笔 - 
+110&nbsp; </span>
+<span id="stats_article_count">文章 - 
+16&nbsp; </span>
+<span id="stats-comment_count">评论 - 
+19</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<!--done-->
+
+
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/fangsmile/archive/2017/01/13.html">2017年1月13日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/fangsmile/p/6277578.html">
+[置顶]    AxeSlide软件项目梳理
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：先介绍一下我负责的软件项目 AxeSlide斧子演示，估计大部分人没有听说过，但国外有一款叫Prezi的软件，应该有人使用过。 这是我们产品的官网http://www.axeslide.com/，里面有很多用户上传的作品看过一个之后就知道这个软件具体的作用了。 下面这个gif的效果就是用软件做出来的            <a href="https://www.cnblogs.com/fangsmile/p/6277578.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2017-01-13 18:03 方帅 阅读 (706) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=6277578" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/fangsmile/archive/2020/04/24.html">2020年4月24日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/fangsmile/p/12767393.html">
+    canvas绘制--圆角多边形
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：如下图，三角形ABC，我们绘制成圆角，顶点处是个圆弧。 知道多半形顶点坐标，利用canvas的api方法&#160;arcTo()&#160;就可以实现了。一个简单的实现： 1 &lt;!DOCTYPE html&gt; 2 &lt;html lang=&quot;en&quot;&gt; 3 4 &lt;head&gt; 5 &lt;meta charset=&quot;UTF-8&quot; /            <a href="https://www.cnblogs.com/fangsmile/p/12767393.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-24 14:46 方帅 阅读 (5) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12767393" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/fangsmile/archive/2020/03/18.html">2020年3月18日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/fangsmile/p/12517053.html">
+    Git回滚代码到某个commit
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：回退命令： $ git reset --hard HEAD^ 回退到上个版本$ git reset --hard HEAD~3 回退到前3次提交之前，以此类推，回退到n次提交之前$ git reset --hard commit_id 退到/进到 指定commit的sha码 强推到远程： $ git            <a href="https://www.cnblogs.com/fangsmile/p/12517053.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-03-18 14:00 方帅 阅读 (29) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12517053" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/fangsmile/archive/2020/03/16.html">2020年3月16日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/fangsmile/p/12502413.html">
+    静态资源打包：一个javescript 的src引用多个文件，一个link引用多个CSS文件
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：疑惑描述： 查看了淘宝网的首页源文件，看到这样的一个特殊的 &lt;script src=&quot;http://a.tbcdn.cn/??s/kissy/1.1.6/kissy-min.js,p/global/1.0/global-min.js,p/et/et.js?t=2011092320110301.js&quot;            <a href="https://www.cnblogs.com/fangsmile/p/12502413.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-03-16 10:52 方帅 阅读 (28) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12502413" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/fangsmile/archive/2020/03/05.html">2020年3月5日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/fangsmile/p/12419372.html">
+    Object.assign()的使用
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：一、Object.assign()对象的拷贝 Object.assign() 方法用于将所有可枚举属性的值从一个或多个源对象复制到目标对象。它将返回目标对象。 Object.assign(target, ...sources) 【target：目标对象】，【souce：源对象（可多个）】 举个栗子：            <a href="https://www.cnblogs.com/fangsmile/p/12419372.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-03-05 11:56 方帅 阅读 (18) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12419372" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/fangsmile/archive/2020/03/02.html">2020年3月2日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/fangsmile/p/12397096.html">
+    ES6 延展操作符
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：延展操作符（Spread operator） 延展操作符 = ...可以在函数调用/数组构造时，将数组表达式或者string在语法层面展开，还可以在构造对象时，将对象表达式按key-value的方式展开。 1 函数调用 2 function（...iterableObj） 3 4 数组构造或者字符串            <a href="https://www.cnblogs.com/fangsmile/p/12397096.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-03-02 18:01 方帅 阅读 (92) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12397096" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/fangsmile/p/12395034.html">
+    ES6 解构赋值
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：解构赋值 解构赋值可以方便快速的从数组或者对象中提取赋值给定义的变量。 获取数组中的值 从数组中获取值并赋值到变量中，变量的顺序与数组中对象顺序对应。 1 var foo = [1,2,3,4,5] 2 3 var [one,twe,three] = foo 4 console.log(one)//            <a href="https://www.cnblogs.com/fangsmile/p/12395034.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-03-02 12:52 方帅 阅读 (18) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12395034" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/fangsmile/archive/2019/12/18.html">2019年12月18日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/fangsmile/p/12061393.html">
+    Service Worker
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：1. Service Worker的身份 Service的意思是服务，Worker的意思是工人，那么Service Worker的意思就是服务员。这个员工是2014年6月HTML5新招的实习生，目前在试用中。在此之前，已经有一位老员工，它叫Web Worker。那么问题来了，Boss是谁？Boss就            <a href="https://www.cnblogs.com/fangsmile/p/12061393.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-12-18 18:33 方帅 阅读 (164) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12061393" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/fangsmile/archive/2019/11/27.html">2019年11月27日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/fangsmile/p/11943414.html">
+    dom元素上添加断点（使用dom breakpoint找到修改属性的javascript代码）
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：使用dom breakpoint能快速找到修改了某一个dom element的JavaScript code位于何处。在Chrome development tool里，选中想要inspect的dom element，右键选择Break on-&gt;Attributes modifications: 之            <a href="https://www.cnblogs.com/fangsmile/p/11943414.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-11-27 16:39 方帅 阅读 (111) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11943414" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/fangsmile/archive/2019/10/10.html">2019年10月10日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/fangsmile/p/11649683.html">
+    svg foreignObject的作用（文本换行，生成图片）
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：SVG内部利用foreignObject嵌入XHTML元素 &lt;foreignObject&gt;元素的作用是可以在其中使用具有其它XML命名空间的XML元素，换句话说借助&lt;foreignObject&gt;标签，我们可以直接在SVG内部嵌入XHTML元素，举个简单的例子： 可以看到&lt;foreignObject&gt;            <a href="https://www.cnblogs.com/fangsmile/p/11649683.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-10-10 18:00 方帅 阅读 (887) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11649683" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/fangsmile/archive/2019/10/09.html">2019年10月9日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/fangsmile/p/11642784.html">
+    计算贝塞尔曲线上点坐标
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：贝塞尔曲线上控制点坐标分别为：P0(3,8)，P1(2,3)，P2(2,7)，想要返回 10 个在贝塞尔曲线上的点 javascript代码如下：（从项目copy的代码，仅仅针对二维坐标dimersion = 2） java代码：            <a href="https://www.cnblogs.com/fangsmile/p/11642784.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-10-09 16:46 方帅 阅读 (793) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11642784" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+
+<div class="topicListFooter">
+    <div id="nav_next_page">
+        
+    <a href="https://www.cnblogs.com/fangsmile/default.html?page=2">
+        下一页
+    </a>
+
+    </div>    
+</div>
+
+
+
+
+
+
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 方帅
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    <div id="page_end_html">
+        <script src="https://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="https://files.cnblogs.com/files/fangsmile/navigation.js"></script>
+    </div>
+</body>
+</html>

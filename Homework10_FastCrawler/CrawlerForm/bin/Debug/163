@@ -1,0 +1,370 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    <meta property="og:description" content="Python 代码编辑器怎么选？PyCharm、VS Code、Jupyter Notebook 都各有特色，Jupyter 适合做数据分析这些需要可视化的操作，PyCharm 更适合做完整的 Pyt" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Python 代码编辑器怎么选？PyCharm、VS Code、Jupyter Notebook 都各有特色 - 其实还好啦 - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    <link id="MainCss" rel="stylesheet" href="/skins/coffee/bundle-coffee.min.css?v=pdMIVgsH8kXt-vOWnlL0N20TlHt3UyP9HzGgocfsP4s" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/coffee/bundle-coffee-mobile.min.css?v=na9bpAY4yh7uEWCcrXj3vfJM3VBse8YtU6-5fUUQPz0" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/python0921/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/python0921/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/python0921/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 589469;
+        var currentBlogApp = 'python0921';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'coffee';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    <div id="page_begin_html">
+        <img src="https://files.cnblogs.com/files/python0921/123.gif" width="150px" height="150px"><br>
+<b>加群免费送资料哟</b>
+    </div>
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+	<a href="https://www.cnblogs.com/python0921/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>			
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/python0921/">其实还好啦</a>
+</h1>
+<h2>
+
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		<div id="navigator">
+			
+<ul id="navList">
+	<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+	<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/python0921/">
+首页</a>
+</li>
+	<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+	<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E5%85%B6%E5%AE%9E%E8%BF%98%E5%A5%BD%E5%95%A6">
+联系</a></li>
+	<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+	<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/python0921/rss/">
+订阅</a>
+	
+<a id="blog_nav_rss_image" href="https://www.cnblogs.com/python0921/rss/">
+    <img src="/skins/coffee/images/xml.gif" alt="订阅" />
+</a></li>
+</ul>
+
+
+
+			<div class="blogStats">
+				
+				<!--done-->
+随笔- 
+160&nbsp;
+文章- 
+7&nbsp;
+评论- 
+14&nbsp;
+
+
+
+				
+			</div><!--end: blogStats -->
+		</div><!--end: navigator 博客导航栏 -->
+		<div id="post_detail">
+<!--done-->
+<div id="topics">
+	<div class="post">
+		<h1 class = "postTitle">
+			
+<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/python0921/p/12769942.html">Python 代码编辑器怎么选？PyCharm、VS Code、Jupyter Notebook 都各有特色</a>
+
+		</h1>
+		<div class="clear"></div>
+		<div class="postBody">
+			
+<div id="cnblogs_post_body" class="blogpost-body ">
+    <div class="title">
+<h1>&nbsp;</h1>
+</div>
+<div class="article-content">
+<div class="pgc-img"><img src="http://pb3.pstatp.com/large/dfic-imagehandler/ca1035be-ba3b-4938-bc34-bf7b20d67e71" alt="">
+<p class="pgc-img-caption">&nbsp;</p>
+</div>
+<p>&nbsp;</p>
+<p>Python 代码编辑器怎么选？PyCharm、VS Code、Jupyter Notebook 都各有特色，Jupyter 适合做数据分析这些需要可视化的操作，PyCharm 更适合做完整的 Python 项目。然而，因为交互式操作，很少会有开发者想到用 Jupyter 做 Debug。</p>
+<p>&nbsp;</p>
+<div class="pgc-img"><img src="http://pb3.pstatp.com/large/pgc-image/fd538384aa584507aadf682ab781f696" alt="">
+<p class="pgc-img-caption">&nbsp;</p>
+</div>
+<p>&nbsp;</p>
+<p>尽管很多读者可能认为 Jupyter 用来做展示和小型试验就足够了，Debug 并没有太大的需求，但弥补上 Jupyter 缺失的一环，能让它更好用，未来 Debug 也会作为默认模式。</p>
+<p>&nbsp;</p>
+<p>为什么 Jupyter 需要 Debug？</p>
+<p>&nbsp;</p>
+<p>Jupyter 这种工具虽然有很好的交互性能，但其也明白，对于大型代码库，最好还是用传统的 IDE 比较靠谱。因此为了弥补这一缺陷，Jupyter 项目在过去几年也希望通过 JupyterLab 来加强对大型代码库的处理过程。</p>
+<p>&nbsp;</p>
+<p>然而，JupyterLab 还是有一大缺陷，它不能通过可视化的方式进行 Debug，这限制了进一步的调试。这几天，Jupyter 团队表示，经过几个月的开发，他们很高兴能第一次发布 Jupyter 可视化 Debugger。</p>
+<p>&nbsp;</p>
+<p>虽然这只是第一版，但目前已经可以设置常见的断点 Debug，查看各种变量、执行模块等信息。</p>
+<p>&nbsp;</p>
+<div class="pgc-img"><img src="http://pb3.pstatp.com/large/pgc-image/ddc3771ac1564c7f8efe409f76e0031d" alt="">
+<p class="pgc-img-caption">&nbsp;</p>
+</div>
+<p>&nbsp;</p>
+<p>新工具的用法也很简单，很常见的 Debug 方式差不多。如果读者想要安装这个新工具，那么首先你需要为 JupyterLab 装前端插件：</p>
+<p>&nbsp;</p>
+<div class="pgc-img"><img src="http://pb3.pstatp.com/large/pgc-image/e5afa43a9c6d4f77b69e2863cadcf5b4" alt="">
+<p class="pgc-img-caption">&nbsp;</p>
+</div>
+<p>至于后端 Kernel，Jupyter 团队表示目前 kernel 需要实现 Jupyter Debug Protocol，因此暂时只能用xeus-python：</p>
+<div class="pgc-img"><img src="http://pb3.pstatp.com/large/pgc-image/ceef875b6bbd413e8b636bdb12f7eca0" alt="">
+<p class="pgc-img-caption">&nbsp;</p>
+</div>
+<p>只要装好前端与后端，我们就可以直接使用了。开发者还提供了 Debug 的线上体验版，不需要安装任何东西就能体验。</p>
+<p>&nbsp;</p>
+<p>在线 Debug 环境：</p>
+<p><span style="text-decoration: underline;">https://hub.gke.mybinder.org/user/jupyterlab-debugger-hwxovlw4/lab/tree/examples/index.ipynb</span></p>
+<p>&nbsp;</p>
+<p>Xeus-python：第一个支持 Jupyter Debug 的内核</p>
+<p>Xeus 是 Jupyter kernel protocol 的 C++实现，它本身并不是一个内核，而是能帮助构建内核的库。当开发者希望构建 Python、Lua 等拥有 C、C++ API 的语言内核时，它非常有用。</p>
+<p>目前已经有一些内核使用 xeus 进行开发，Xeus-python 内核是我们做 Python 开发时可选的一个内核，它去年就已经有发布。Xeus-python 之所以被 Jupyter 团队选为第一个实现 Debug 的内核，主要是它有以下两大优势：</p>
+<ul>
+<li>Xeus-python 具有可插拔的并发模型，它允许在不同的线程中运行 Control channel 的处理过程；</li>
+<li>Xeus-python 有非常轻量级的代码库，因此迭代与更新都非常方便。</li>
+</ul>
+<p>短期内，xeus-python 还会有进一步提升的计划，例如添加 Ipython 魔术方法，优化 xeus-python 的 PyPI 等。</p>
+<p>&nbsp;</p>
+<p>深入至 debugger 的前端架构</p>
+<p>JupyterLab 的 debugger 扩展针对用户对 IDE 的使用习惯提供了通常性功能：</p>
+<p>&nbsp;</p>
+<ul>
+<li>带有资源管理器的侧边栏，无序列表，源预览以及允许导航至调用堆栈</li>
+<li>可直接在代码旁（即在代码单元以及代码控制台中）设置断点的功能</li>
+<li>可视化的标记，指示当前执行停止的位置</li>
+</ul>
+<p>&nbsp;</p>
+<p>当使用 Jupyter 笔记本时，执行的状态保存在内核中。但是如果我们执行了一个 cell，然后又把整个 cell 删了，那么用户在 Dubug 的时候希望运行到那些代码又怎么办？</p>
+<p>&nbsp;</p>
+<p>如下动图所示，该插件支持特定用例，并能在只读模式下查看以前执行过的 cell。</p>
+<p>进入已删除的单元格</p>
+<div class="pgc-img"><img src="http://pb3.pstatp.com/large/pgc-image/85cfb673360348388cf5b858139f6a83" alt="">
+<p class="pgc-img-caption">&nbsp;</p>
+</div>
+<p>在 JupterLab 中调试代码控制台</p>
+<div class="pgc-img"><img src="http://pb3.pstatp.com/large/pgc-image/6b3fb9c1a0ec4c27bd89dfd428df4f2f" alt="">
+<p class="pgc-img-caption">&nbsp;</p>
+</div>
+<p>在 JupyterLab 中调试文件</p>
+<p>&nbsp;</p>
+<div class="pgc-img"><img src="http://pb3.pstatp.com/large/pgc-image/429e6a36d1254541a6cc01b3f2022d88" alt="">
+<p class="pgc-img-caption">&nbsp;</p>
+</div>
+<p>可以在 notebook 级别上启用调试，用户可以在调试 notebook 的同时在另一个 notebook 上工作。</p>
+<p>同时调试多个笔记本</p>
+<p>&nbsp;</p>
+<div class="pgc-img"><img src="http://pb3.pstatp.com/large/pgc-image/81af53b393e04700a9a9eacb9d6280e3" alt="">
+<p class="pgc-img-caption">&nbsp;</p>
+</div>
+<p>可以使用树状查看器和表状查看器检查变量：</p>
+<p>变量浏览器</p>
+<p>&nbsp;</p>
+<div class="pgc-img"><img src="http://pb3.pstatp.com/large/pgc-image/45bee75a06fb4a7487d9f6638eb34f25" alt="">
+<p class="pgc-img-caption">&nbsp;</p>
+</div>
+<p>&nbsp;</p>
+<p>JupyterLab 的 debugger 插件目标是与任何支持调试内核一并使用。通过 Debug Adapter Protocol，debugger 插件可以抽象出针对于特定语言的功能，并为用户提供匹配的调试界面。</p>
+<p>&nbsp;</p>
+<p>并且团队计划在 2020 年对 debugger 的体验进行重大改进，例如在变量浏览器中支持丰富的渲染，在 UI 中支持条件断点。</p>
+<p>&nbsp;</p>
+<p>VS Code 可视化 Debug 工具</p>
+<p>&nbsp;</p>
+<p>Debug 是条漫漫长路，不久前机器之心也介绍过一款 VS Code 实时可视化 debug 工具，在此也可以作为参考。以一种更优雅、更简洁的 debug 方式帮用户找到代码问题所在是未来优化的方向之一，而之前所介绍这款可视化 debug 能够快速展示数据结构。</p>
+<p>&nbsp;</p>
+<p>从效果层面上看此款工具更加惊艳，而且跟以往传统 debug 方式的展示形式完全不同，比如将断点设置为第 32 行定义双向链表，随后一行行运行代码就会在右图展现出对应的数据结构图。</p>
+<p>&nbsp;</p>
+<div class="pgc-img"><img src="http://pb3.pstatp.com/large/pgc-image/f2167a5616564c47b6dfb0a5771748e9" alt="">
+<p class="pgc-img-caption">&nbsp;</p>
+</div>
+<p>&nbsp;</p>
+<p>同时也会根据数据结构以不同的方式展现，例如树形、表格、曲线和图等。</p>
+<p>&nbsp;</p>
+<div class="pgc-img"><img src="http://pb3.pstatp.com/large/pgc-image/e0949abd48664bd58eb9e72bc3c58afa" alt="">
+<p class="pgc-img-caption">&nbsp;</p>
+</div>
+<p>&nbsp;</p>
+<p>同时还内置了其他可自定义的可视化调节器，可以根据面对不同的处理对象，可选择更易于理解的可视化方式。比如图表可视化，Plotly 可视化，Tree 可视化，网格可视化，文本可视化等等。</p>
+<p>Plotly 可视化</p>
+<div class="pgc-img"><img src="http://pb3.pstatp.com/large/pgc-image/7618c0156da0427cb1f1a521c3c8e6e7" alt="">
+<p class="pgc-img-caption">&nbsp;</p>
+</div>
+<p>AST 可视化</p>
+<p>&nbsp;</p>
+<div class="pgc-img"><img src="http://pb3.pstatp.com/large/pgc-image/5716011bca0344ffb62f84c0a00c7dd9" alt="">
+<p class="pgc-img-caption">&nbsp;</p>
+</div>
+<p>&nbsp;</p>
+<p>不过这款 VS Code 的 debug 工具开发者正在探讨其对 Python 的支持，而对于 Python 的完美支持会使得该项目更加便捷且适用。</p>
+<p>&nbsp;</p>
+<p>而对于 debug 来说，不管最终是采用的是 print（）大法，或是善用 assert 语句，亦或是以直接设置断点，包括各种新推出的 debug 工具。单从辅助工具角度层面看，只要它能够提高工作效率，不管是哪款 debug 工具，找到适合你的那便是值得一试。</p>
+<p>如果你处于想学Python或者正在学习Python，Python的教程不少了吧，但是是最新的吗？说不定你学了可能是两年前人家就学过的内容，在这小编分享一波2020最新的Python教程。获取方式，私信小编 &ldquo; 资料 &rdquo;，即可免费获取哦！</p>
+</div>
+</div>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+    <div id="blog_post_info"></div>
+    <div class="clear"></div>
+    <div id="post_next_prev"></div>
+</div>
+		</div>
+		<div class="postDesc">posted @ 
+<span id="post-date">2020-04-24 20:40</span>&nbsp;
+<a href="https://www.cnblogs.com/python0921/">其实还好啦</a>&nbsp;
+阅读(<span id="post_view_count">...</span>)&nbsp;
+评论(<span id="post_comment_count">...</span>)&nbsp;
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12769942" rel="nofollow">编辑</a>&nbsp;
+<a href="javascript:void(0)" onclick="AddToWz(12769942);return false;">收藏</a></div>
+	</div>
+	
+	
+</div><!--end: topics 文章、评论容器-->
+<script src="https://common.cnblogs.com/highlight/9.12.0/highlight.min.js"></script>
+<script>markdown_highlight();</script>
+<script>
+    var allowComments = true, cb_blogId = 589469, cb_blogApp = 'python0921', cb_blogUserGuid = 'c52fa2da-36f7-4e4e-15dd-08d7cc05a3a0';
+    var cb_entryId = 12769942, cb_entryCreatedDate = '2020-04-24 20:40', cb_postType = 1; 
+    loadViewCount(cb_entryId);
+</script><a name="!comments"></a>
+<div id="blog-comments-placeholder"></div>
+<script>
+    var commentManager = new blogCommentManager();
+    commentManager.renderComments(0);
+</script>
+
+<div id="comment_form" class="commentform">
+    <a name="commentform"></a>
+    <div id="divCommentShow"></div>
+    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+    <div id="comment_form_container"></div>
+    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+    <div id="ad_t2"></div>
+    <div id="opt_under_post"></div>
+    <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            googletag.defineSlot("/1090369/C1", [300, 250], "div-gpt-ad-1546353474406-0").addService(googletag.pubads());
+            googletag.defineSlot("/1090369/C2", [468, 60], "div-gpt-ad-1539008685004-0").addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    </script>
+    <div id="cnblogs_c1" class="c_ad_block">
+        <div id="div-gpt-ad-1546353474406-0" style="height:250px; width:300px;"></div>
+    </div>
+    <div id="under_post_news"></div>
+    <div id="cnblogs_c2" class="c_ad_block">
+        <div id="div-gpt-ad-1539008685004-0" style="height:60px; width:468px;">
+            <script>
+                if (new Date() >= new Date(2018, 9, 13)) {
+                    googletag.cmd.push(function () { googletag.display("div-gpt-ad-1539008685004-0"); });
+                }
+            </script>
+        </div>
+    </div>
+    <div id="under_post_kb"></div>
+    <div id="HistoryToday" class="c_ad_block"></div>
+    <script type="text/javascript">
+        fixPostBody();
+        deliverBigBanner();
+setTimeout(function() { incrementViewCount(cb_entryId); }, 50);        deliverAdT2();
+        deliverAdC1();
+        deliverAdC2();
+        loadNewsAndKb();
+        loadBlogSignature();
+LoadPostCategoriesTags(cb_blogId, cb_entryId);        LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+        GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+        loadOptUnderPost();
+        GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    </script>
+</div></div>
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+			<div id="calendar"><div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script></div>
+			
+			<DIV id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</DIV>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 其实还好啦
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    
+</body>
+</html>

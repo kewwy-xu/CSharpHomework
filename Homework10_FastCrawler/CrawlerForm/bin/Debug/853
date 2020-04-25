@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">博客园_常哥说编程</title>
+  <subtitle type="text"></subtitle>
+  <id>uuid:81160fd1-0930-4f2f-ab4e-c8169964ae05;id=191</id>
+  <updated>2020-04-24T07:58:47Z</updated>
+  <author>
+    <name>常哥说编程</name>
+    <uri>http://www.cnblogs.com/xiketang/</uri>
+  </author>
+  <generator>feed.cnblogs.com</generator>
+  <entry>
+    <id>http://www.cnblogs.com/xiketang/p/12768020.html</id>
+    <title type="text">女屌丝前端逆袭记（一）之浅谈float - 常哥说编程</title>
+    <summary type="text">提到前端，相信作为开发者的你或是正在看这篇文章的你并不陌生。前端可以说是直接与用户打交道的一个端口，不论是页面前端亦或是后端界面的前端，都是直接与用户对接的，因此前端设计对于一个网站或管理系统，都是至关重要的。一个好的前端能给用户视觉上的冲击，比如电商、门户等网站；也能给用户带去很好的体验，比如办公</summary>
+    <published>2020-04-24T07:59:00Z</published>
+    <updated>2020-04-24T07:59:00Z</updated>
+    <author>
+      <name>常哥说编程</name>
+      <uri>http://www.cnblogs.com/xiketang/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/xiketang/p/12768020.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/xiketang/p/12768020.html" />
+    <content type="html">【摘要】提到前端，相信作为开发者的你或是正在看这篇文章的你并不陌生。前端可以说是直接与用户打交道的一个端口，不论是页面前端亦或是后端界面的前端，都是直接与用户对接的，因此前端设计对于一个网站或管理系统，都是至关重要的。一个好的前端能给用户视觉上的冲击，比如电商、门户等网站；也能给用户带去很好的体验，比如办公 &lt;a href="http://www.cnblogs.com/xiketang/p/12768020.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/xiketang/p/12762554.html</id>
+    <title type="text">.NET Core3.1总体预览和第一个Core程序的创建 - 常哥说编程</title>
+    <summary type="text">小伙伴们大家好！欢迎阅读本贴，这里是常哥说编程的专栏，.NetCore已经出来一段时间了，很多小伙伴可能也开始了学习，但是.NetCore毕竟在学习上和我们常用的.NET Framework还是有很大差别的，为了帮助大家能尽快的进入.NetCore的开发，常哥把在喜科堂讲解的关于Core的内容都做了</summary>
+    <published>2020-04-23T09:59:00Z</published>
+    <updated>2020-04-23T09:59:00Z</updated>
+    <author>
+      <name>常哥说编程</name>
+      <uri>http://www.cnblogs.com/xiketang/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/xiketang/p/12762554.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/xiketang/p/12762554.html" />
+    <content type="html">【摘要】小伙伴们大家好！欢迎阅读本贴，这里是常哥说编程的专栏，.NetCore已经出来一段时间了，很多小伙伴可能也开始了学习，但是.NetCore毕竟在学习上和我们常用的.NET Framework还是有很大差别的，为了帮助大家能尽快的进入.NetCore的开发，常哥把在喜科堂讲解的关于Core的内容都做了 &lt;a href="http://www.cnblogs.com/xiketang/p/12762554.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/xiketang/p/12760244.html</id>
+    <title type="text">基于Snap7实现与西门子PLC通信 - 常哥说编程</title>
+    <summary type="text">如果你对西门子PLC通信或者上位机开发稍微有一点研究的话，应该对Snap7有所耳闻。 Snap7是一个基于以太网与西门子S7系列PLC通信的开源库，在世界领域应用很广。但也许是因为资料比较少，而且很多都是纯英文，在国内反而没有大规模的应用。 作为一个技术开发人员，所有未知领域的事物都是值得探索的。于</summary>
+    <published>2020-04-23T05:36:00Z</published>
+    <updated>2020-04-23T05:36:00Z</updated>
+    <author>
+      <name>常哥说编程</name>
+      <uri>http://www.cnblogs.com/xiketang/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/xiketang/p/12760244.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/xiketang/p/12760244.html" />
+    <content type="html">【摘要】如果你对西门子PLC通信或者上位机开发稍微有一点研究的话，应该对Snap7有所耳闻。 Snap7是一个基于以太网与西门子S7系列PLC通信的开源库，在世界领域应用很广。但也许是因为资料比较少，而且很多都是纯英文，在国内反而没有大规模的应用。 作为一个技术开发人员，所有未知领域的事物都是值得探索的。于 &lt;a href="http://www.cnblogs.com/xiketang/p/12760244.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/xiketang/p/12759544.html</id>
+    <title type="text">小白学习倍福的必经之路 - 常哥说编程</title>
+    <summary type="text">最近因为一些学员的要求，研究了一下倍福PLC。很早就听说过倍福，虽然和西门子同样属于德国的品牌，但是两者走的路线和风格却截然不同，西门子不管是推广还是市场占有率方面都要高于倍福，但是倍福也有它的优势，它是EtherCAT总线的先驱者，基于通用的Windows系统，很早就提出了软PLC这样的概念，连编</summary>
+    <published>2020-04-23T03:26:00Z</published>
+    <updated>2020-04-23T03:26:00Z</updated>
+    <author>
+      <name>常哥说编程</name>
+      <uri>http://www.cnblogs.com/xiketang/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/xiketang/p/12759544.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/xiketang/p/12759544.html" />
+    <content type="html">【摘要】最近因为一些学员的要求，研究了一下倍福PLC。很早就听说过倍福，虽然和西门子同样属于德国的品牌，但是两者走的路线和风格却截然不同，西门子不管是推广还是市场占有率方面都要高于倍福，但是倍福也有它的优势，它是EtherCAT总线的先驱者，基于通用的Windows系统，很早就提出了软PLC这样的概念，连编 &lt;a href="http://www.cnblogs.com/xiketang/p/12759544.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/xiketang/p/12750806.html</id>
+    <title type="text">S7通信协议之你不知道的事儿 - 常哥说编程</title>
+    <summary type="text">在电气学习的路上，西门子PLC应该是我的启蒙PLC，从早期的S7-300/400 PLC搭建Profibus-DP网络开始接触，到后来的S7-200Smart PLC，再到现在的S7-1200/1500 PLC博途软件，基本上西门子的每款PLC都接触并使用过。 在上位机开发的路上，西门子PLC也一直</summary>
+    <published>2020-04-22T03:22:00Z</published>
+    <updated>2020-04-22T03:22:00Z</updated>
+    <author>
+      <name>常哥说编程</name>
+      <uri>http://www.cnblogs.com/xiketang/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/xiketang/p/12750806.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/xiketang/p/12750806.html" />
+    <content type="html">【摘要】在电气学习的路上，西门子PLC应该是我的启蒙PLC，从早期的S7-300/400 PLC搭建Profibus-DP网络开始接触，到后来的S7-200Smart PLC，再到现在的S7-1200/1500 PLC博途软件，基本上西门子的每款PLC都接触并使用过。 在上位机开发的路上，西门子PLC也一直 &lt;a href="http://www.cnblogs.com/xiketang/p/12750806.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/xiketang/p/12745178.html</id>
+    <title type="text">.NetCore程序在Linux上面部署的实现 - 常哥说编程</title>
+    <summary type="text">我们知道.NetCore能够实现跨平台的根本就是内置Kestrel服务器实现请求处理和不同操作系统上反向代理的实现。在windows操作系统上IIS反向代理配置非常简单。但是Linux上就较为麻烦了。今天常老师在这里就给朋友们详细聊一下在Linux上面实现.NetCore程序部署的完整过程，对于做.</summary>
+    <published>2020-04-21T07:52:00Z</published>
+    <updated>2020-04-21T07:52:00Z</updated>
+    <author>
+      <name>常哥说编程</name>
+      <uri>http://www.cnblogs.com/xiketang/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/xiketang/p/12745178.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/xiketang/p/12745178.html" />
+    <content type="html">【摘要】我们知道.NetCore能够实现跨平台的根本就是内置Kestrel服务器实现请求处理和不同操作系统上反向代理的实现。在windows操作系统上IIS反向代理配置非常简单。但是Linux上就较为麻烦了。今天常老师在这里就给朋友们详细聊一下在Linux上面实现.NetCore程序部署的完整过程，对于做. &lt;a href="http://www.cnblogs.com/xiketang/p/12745178.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+</feed>

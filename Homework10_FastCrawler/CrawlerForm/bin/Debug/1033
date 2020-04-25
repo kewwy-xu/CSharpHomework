@@ -1,0 +1,737 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>iwiniwin - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    
+    <link type="text/css" rel="stylesheet" href="https://www.cnblogs.com/iwiniwin/custom.css?v=XIHbmeK9ZoXzOHVPs6OfMR3LYJE=" />
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/SimpleMemory/bundle-SimpleMemory-mobile.min.css" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/iwiniwin/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/iwiniwin/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/iwiniwin/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 512371;
+        var currentBlogApp = 'iwiniwin';
+        var cb_enable_mathjax = true;
+        var isLogined = false;
+        var skinName = 'SimpleMemory';
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], processClass: 'math', processEscapes: true },
+        TeX: {
+        equationNumbers: { autoNumber: ['AMS'], useLabelIds: true },
+        extensions: ['extpfeil.js', 'mediawiki-texvc.js'],
+        Macros: {bm: "\\boldsymbol"}
+        },
+        'HTML-CSS': { linebreaks: { automatic: true } },
+        SVG: { linebreaks: { automatic: true } }
+        });
+    </script>
+    <script src="https://mathjax.cnblogs.com/2_7_5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+</head>
+<body>
+    <a name="top"></a>
+    <div id="page_begin_html">
+        <div id="page_begin_html">
+        <a href="https://github.com/iwiniwin" target="_blank"><img style="z-index:2;position: fixed; top: 0; right: 0; border: 0;" src="https://images.cnblogs.com/cnblogs_com/iwiniwin/1454738/o_200318162833forkmeongithub.png"></a>
+    </div>
+
+    </div>
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/iwiniwin/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/iwiniwin/">IWINIWIN</a>
+</h1>
+<h2>
+Triumph in the Skies
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/iwiniwin/">
+首页</a>
+</li>
+<li>
+
+
+</li>
+<li>
+</li>
+<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/iwiniwin/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<span id="stats_post_count">随笔 - 
+32&nbsp; </span>
+<span id="stats_article_count">文章 - 
+0&nbsp; </span>
+<span id="stats-comment_count">评论 - 
+3</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<!--done-->
+
+
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/iwiniwin/archive/2020/04/24.html">2020年4月24日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/iwiniwin/p/12769893.html">
+    【剑指Offer】链表中倒数第k个结点
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：题目描述 输入一个链表，输出该链表中倒数第k个结点。 解法 基本思路是使用两个辅助指针p, q，让p先走k 1步后，p, q两个指针再一起走 这样当p指针走到链表的末尾时，q指针刚好走到的就是倒数第k个结点 如下图所示 实现代码 更多算法题目的完整描述，AC代码，以及解题思路可以查看GitHub仓库            <a href="https://www.cnblogs.com/iwiniwin/p/12769893.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-24 20:33 iwiniwin 阅读 (6) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12769893" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/iwiniwin/archive/2020/04/23.html">2020年4月23日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/iwiniwin/p/12758571.html">
+    【剑指Offer】数值的整数次方
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：求数值的整数次方，给定一个double类型的浮点数base和int类型的整数exponent。求base的exponent次方。保证base和exponent不同时为0。分析递归，整数的快速幂等多种解法            <a href="https://www.cnblogs.com/iwiniwin/p/12758571.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-23 09:27 iwiniwin 阅读 (31) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12758571" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/iwiniwin/archive/2020/04/07.html">2020年4月7日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/iwiniwin/p/12633644.html">
+    聊一聊那些线性时间复杂度的排序算法
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：实际上，基于比较和交换的排序算法，它们的时间复杂度的下限就是O(nlog2n)。冒泡排序，插入排序等自不必多说，时间复杂度是O(n2)，即使强如快速排序，堆排序等也只是达到了O(nlog2n)的复杂度。那么那些传说中可以突破O(nlog2n)下限，达到线性时间复杂度O(n)的排序算法到底是什么样的呢            <a href="https://www.cnblogs.com/iwiniwin/p/12633644.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-07 09:45 iwiniwin 阅读 (198) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12633644" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/iwiniwin/archive/2020/04/03.html">2020年4月3日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/iwiniwin/p/12624090.html">
+    观察者模式最佳实践，构建自己的一套事件分发系统
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：基于观察者模式，构建自己的一套事件分发系统。由常见的引用耦合问题，引出观察者模式，进而利用观察者模式的最佳实践，事件分发系统来解决耦合问题。文章详细解读了事件分发系统的实现步骤，以及需要注意的一些坑。            <a href="https://www.cnblogs.com/iwiniwin/p/12624090.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-03 09:09 iwiniwin 阅读 (375) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12624090" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/iwiniwin/archive/2020/04/01.html">2020年4月1日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/iwiniwin/p/12609549.html">
+    常见排序算法总结分析之选择排序与归并排序-C#实现
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：本篇文章是排序算法总结与分析系列的第二篇，介绍选择排序中的简单选择排序与堆排序，以及常用的归并排序。排序算法总结与分析系列是对常用的算法进行一个汇总分析，包括每个算法的基本思想，实现代码，时间复杂度，空间复杂度，稳定性，算法分析等。涵盖的算法，目前包括但不限于冒泡排序，快速排序，简单插入排序，希尔排序，简单选择排序，堆排序，归并排序，后续还会增加对基数排序，计数排序的介绍。            <a href="https://www.cnblogs.com/iwiniwin/p/12609549.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-01 09:04 iwiniwin 阅读 (184) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12609549" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/iwiniwin/archive/2020/03/29.html">2020年3月29日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/iwiniwin/p/12589405.html">
+    常见排序算法总结分析之交换排序与插入排序-C#实现
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：每每遇到关于排序算法的问题总是不能很好的解决，对一些概念，思想以及具体实现的认识也是模棱两可。归根结底，还是掌握不够熟练。以前只是看别人写，看了就忘。现在打算自己写，写些自己的东西，做个总结。本篇是这个总结的开始，所以我们先来阐述一下本次总结中会用到的一些概念。
+排序是如何分类的？可以从不同的的角度对排序进行分类，这里我是根据排序的策略对本次总结中涉及到的排序算法进行分类            <a href="https://www.cnblogs.com/iwiniwin/p/12589405.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-03-29 22:22 iwiniwin 阅读 (102) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12589405" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/iwiniwin/archive/2020/03/22.html">2020年3月22日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/iwiniwin/p/12547800.html">
+    3D游戏中各种空间变换到底是怎么回事
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：每一个游戏可以呈现炫丽效果的背后，需要进行一系列的复杂计算，同时也伴随着各种各样的顶点空间变换。渲染游戏的过程可以理解成是把一个个顶点经过层层处理最终转化到屏幕上的过程，本文就旨在说明，顶点是经过了哪些坐标空间后，最终被画在了我们的屏幕上。            <a href="https://www.cnblogs.com/iwiniwin/p/12547800.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-03-22 19:57 iwiniwin 阅读 (238) 评论 (1)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12547800" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/iwiniwin/archive/2020/03/20.html">2020年3月20日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/iwiniwin/p/12533913.html">
+    学习Shader所需的数学基础（矩阵）
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：在三维数学中，我们通常会使用矩阵来进行变换。一个矩阵可以把一个矢量从一个坐标空间转换到另一个坐标空间。本篇文章就对矩阵相关的数学知识做了记录总结。            <a href="https://www.cnblogs.com/iwiniwin/p/12533913.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-03-20 21:43 iwiniwin 阅读 (78) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12533913" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/iwiniwin/archive/2020/03/19.html">2020年3月19日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/iwiniwin/p/12526496.html">
+    学习Shader所需的数学基础（坐标系，点和矢量）
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：数学对于计算机图形学的重要性是不言而喻的。在学习Shader之前，首先就要打好数学基础，好在入门Unity Shader所需的数学知识都是线性代数中很基础的的内容。按部就班的来，第一篇文章记录总结的是坐标系，点，矢量等概念以及简单的运算。本文主要源自《Unity Shader入门精要》一书的读书笔记。            <a href="https://www.cnblogs.com/iwiniwin/p/12526496.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-03-19 22:41 iwiniwin 阅读 (56) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12526496" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/iwiniwin/archive/2020/03/18.html">2020年3月18日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/iwiniwin/p/12515439.html">
+    一篇文章搞懂到底什么是渲染流水线
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：我们将图像绘制的流程称为渲染流水线，是由CPU和GPU协作完成的。一般一个渲染流程可以分成3个概念阶段，分别是：应用阶段（Application Stage），几何阶段（Geometry Stage），光栅化阶段（Rasterizer Stage）。            <a href="https://www.cnblogs.com/iwiniwin/p/12515439.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-03-18 12:24 iwiniwin 阅读 (194) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12515439" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+
+<div class="topicListFooter">
+    <div id="nav_next_page">
+        
+    <a href="https://www.cnblogs.com/iwiniwin/default.html?page=2">
+        下一页
+    </a>
+
+    </div>    
+</div>
+
+
+
+
+
+
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 iwiniwin
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    <div id="page_end_html">
+        <script type="text/javascript">
+var divSideBar
+var contentTag = false;
+
+function showContents() {
+    divSideBar.style.display = 'block';
+    contentTag = true;
+}
+function hideContents() {
+    divSideBar.style.display = 'none';
+    contentTag = false;
+}
+
+function onViewDirectory(){
+    if(!contentTag){
+        showContents();
+        
+    }else{
+        hideContents();
+        
+    }
+}
+
+//自定义定时器[当元素加载完成时执行回调函数]
+function customTimer(inpId, fn) {
+    if ($(inpId).length) {
+        fn();
+    }
+    else {
+        var intervalId = setInterval(function () {
+            if ($(inpId).length) {  //如果存在了
+                clearInterval(intervalId);  //则关闭定时器
+                customTimer(inpId, fn);     //执行自身
+            }
+        }, 100);
+    }
+}
+
+//页面加载完成时执行
+$(function () {
+    //添加顶部
+    customTimer("#div_digg", function () {
+        var div_html = "<div class=''>\
+                <a  href='javascript:;' onclick='onViewDirectory()'>查看目录</a>\
+                <br/><a href='#top'>返回顶部</a>\
+           </div>";
+        $("#div_digg").append(div_html);
+        //tbCommentBody
+    });
+});
+
+/*  
+    这段代码按H2、H3格式生成两级菜单
+    写博客按H2、H3格式写，不然生成不了
+    Markdown写作按##、###两级目录写
+    当然你也可以改写代码成三级菜单
+*/
+var BlogDirectory = {
+    /* 获取元素位置，距浏览器左边界的距离（left）和距浏览器上边界的距离（top）*/
+    getElementPosition:function (ele) {
+        var topPosition = 0;
+        var leftPosition = 0;
+        while (ele){
+            topPosition += ele.offsetTop;
+            leftPosition += ele.offsetLeft;
+            ele = ele.offsetParent;
+        }
+        return {top:topPosition, left:leftPosition};
+    },
+    /*获取滚动条当前位置 */
+    getScrollBarPosition:function () {
+        var scrollBarPosition = document.body.scrollTop || document.documentElement.scrollTop;
+        return  scrollBarPosition;
+    },
+    /* 移动滚动条，finalPos 为目的位置，internal 为移动速度 */
+    moveScrollBar:function(finalpos, interval) {
+        //若不支持此方法，则退出
+        if(!window.scrollTo) {
+            return false;
+        }
+        
+        //窗体滚动时，禁用鼠标滚轮
+        window.onmousewheel = function(){
+            return false;
+        };
+        
+        //清除计时
+        if (document.body.movement) {
+            clearTimeout(document.body.movement);
+        }
+        
+        //获取滚动条当前位置
+        var currentpos =BlogDirectory.getScrollBarPosition();
+
+        var dist = 0;
+        //到达预定位置，则解禁鼠标滚轮，并退出
+        if (currentpos == finalpos) {
+            window.onmousewheel = function(){
+                return true;
+            }
+            return true;
+        }
+        //未到达，则计算下一步所要移动的距离
+        if (currentpos < finalpos) {
+            dist = Math.ceil((finalpos - currentpos)/10);
+            currentpos += dist;
+        }
+        if (currentpos > finalpos) {
+            dist = Math.ceil((currentpos - finalpos)/10);
+            currentpos -= dist;
+        }
+
+        var scrTop = BlogDirectory.getScrollBarPosition();//获取滚动条当前位置
+        window.scrollTo(0, currentpos);//移动窗口
+        if(BlogDirectory.getScrollBarPosition() == scrTop)//若已到底部，则解禁鼠标滚轮，并退出
+        {
+            window.onmousewheel = function(){
+                return true;
+            }
+            return true;
+        }
+
+        //进行下一步移动
+        var repeat = "BlogDirectory.moveScrollBar(" + finalpos + "," + interval + ")";
+        document.body.movement = setTimeout(repeat, interval);
+    },
+
+    htmlDecode:function (text){
+        var temp = document.createElement("div");
+        temp.innerHTML = text;
+        var output = temp.innerText || temp.textContent;
+        temp = null;
+        return output;
+    },
+    
+    /*
+    创建博客目录，id表示包含博文正文的 div 容器的 id，
+    mt 和 st 分别表示主标题和次级标题的标签名称（如 H2、H3，大写或小写都可以！），
+    interval 表示移动的速度
+    */
+    createBlogDirectory:function (id, lt, mt, st, interval){
+        //获取博文正文div容器
+        var elem = document.getElementById(id);
+        if(!elem) return false;
+        //获取div中所有元素结点
+        var nodes = elem.getElementsByTagName("*");
+        //创建博客目录的div容器
+        divSideBar = document.createElement('DIV');
+        divSideBar.className = 'uprightsideBar';
+        divSideBar.setAttribute('id', 'uprightsideBar');
+        divSideBar.style.display = 'none';
+
+        var span = document.createElement('span');
+        divSideBar.appendChild(span);
+        span.style.fontSize = "18px"
+        span.style.fontWeight = "bold"
+        var txt = document.createTextNode('目录');
+        span.appendChild(txt);
+
+        var divSideBarContents = document.createElement('DIV');
+        divSideBarContents.setAttribute('id', 'sideBarContents');
+        divSideBar.appendChild(divSideBarContents);
+        //创建自定义列表
+        var dlist = document.createElement("dl");
+        divSideBarContents.appendChild(dlist);
+        var num = 0;//统计找到的mt和st
+        lt = lt.toUpperCase();//转化成大写
+        mt = mt.toUpperCase();//转化成大写
+        st = st.toUpperCase();//转化成大写
+        //遍历所有元素结点
+        for(var i=0; i<nodes.length; i++)
+        {
+            if(nodes[i].nodeName == lt|| nodes[i].nodeName == mt|| nodes[i].nodeName == st)
+            {
+                //获取标题文本
+                var nodetext = nodes[i].innerHTML.replace(/<\/?[^>]+>/g,"");//innerHTML里面的内容可能有HTML标签，所以用正则表达式去除HTML的标签
+                nodetext = nodetext.replace(/ /ig, "");//替换掉所有的
+                nodetext = BlogDirectory.htmlDecode(nodetext);
+                //插入锚
+                nodes[i].setAttribute("id", "blogTitle" + num);
+                var item;
+                switch(nodes[i].nodeName)
+                {
+                    case lt:    //若为主标题
+                        item = document.createElement("dt");
+                        item.setAttribute("id", "lt");
+                        break;
+                    case mt:    //若为主标题
+                        item = document.createElement("dt");
+                        break;
+                    case st:    //若为子标题
+                        item = document.createElement("dd");
+                        break;
+                }
+
+                //创建锚链接
+                var itemtext = document.createTextNode(nodetext);
+                item.appendChild(itemtext);
+                item.setAttribute("name", num);
+                //添加鼠标点击触发函数
+                item.onclick = function(){        
+                var pos = BlogDirectory.getElementPosition(document.getElementById("blogTitle" + this.getAttribute("name")));
+                    if(!BlogDirectory.moveScrollBar(pos.top, interval)) return false;
+                };
+                //将自定义表项加入自定义列表中
+                dlist.appendChild(item);
+                num++;
+            }
+        }
+
+        if(num == 0) return false;
+        document.body.appendChild(divSideBar);
+    }
+
+};
+
+window.onload=function(){
+    /* 页面加载完成之后生成博客目录 */
+    BlogDirectory.createBlogDirectory("cnblogs_post_body","h1","h2", "h3",20);
+}
+</script>
+    </div>
+</body>
+</html>

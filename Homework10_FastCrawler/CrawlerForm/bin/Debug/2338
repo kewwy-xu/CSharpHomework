@@ -1,0 +1,472 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>随笔列表第2页 - 八重樱 - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    <link id="MainCss" rel="stylesheet" href="/skins/blacklowkey/bundle-blacklowkey.min.css?v=Fx4xdLkGuHnlaG7xntG_wAnZrnorJWp5u_TWKqbvMF0" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/blacklowkey/bundle-blacklowkey-mobile.min.css?v=cYvlxMu_nd6MVfg-vi7YqOC6FaZ7VHFsDM166vO_ekA" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/a609251438/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/a609251438/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/a609251438/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 557004;
+        var currentBlogApp = 'a609251438';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'BlackLowKey';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/a609251438/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/a609251438/">Raylove</a>
+</h1>
+<h2>
+
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/a609251438/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E5%85%AB%E9%87%8D%E6%A8%B1">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/a609251438/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<span id="stats_post_count">随笔 - 
+257&nbsp; </span>
+<span id="stats_article_count">文章 - 
+0&nbsp; </span>
+<span id="stats-comment_count">评论 - 
+19</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<!--done-->
+
+
+<div id="homepage_top_pager" class="topicListFooter">
+    
+
+<div class="pager">
+    <a href="https://www.cnblogs.com/a609251438/default.html?page=1">上一页</a>
+    
+    
+        <a href="https://www.cnblogs.com/a609251438/default.html?page=1">1</a>
+    2
+        <a href="https://www.cnblogs.com/a609251438/default.html?page=3">3</a>
+        <a href="https://www.cnblogs.com/a609251438/default.html?page=4">4</a>
+        <a href="https://www.cnblogs.com/a609251438/default.html?page=5">5</a>
+        <a href="https://www.cnblogs.com/a609251438/default.html?page=6">6</a>
+    ···
+    <a href="https://www.cnblogs.com/a609251438/default.html?page=26">26</a>
+    <a href="https://www.cnblogs.com/a609251438/default.html?page=3">下一页</a>
+</div>
+</div>
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/a609251438/archive/2020/04/21.html">2020年4月21日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/a609251438/p/12744294.html">
+    php中常用的4种运行方式
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：本篇文章给大家介绍一下php的4种常用运行方式：CGI、FastCGI、APACHE2HANDLER和CLI。有一定的参考价值，有需要的朋友可以参考一下，希望对大家有所帮助。 PHP的4种常用运行方式：CGI、FastCGI、APACHE2HANDLER、CLI。 1、CGI CGI即通用网关接口（            <a href="https://www.cnblogs.com/a609251438/p/12744294.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-21 14:14 八重樱 阅读 (47) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12744294" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/a609251438/archive/2020/04/20.html">2020年4月20日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/a609251438/p/12740071.html">
+    基于 Redis 的订阅与发布
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：Github 仓库 demo-redis-subscribe 创建项目 $ composer create hyperf/biz-skeleton demo-redis-subscribe dev-master Installing hyperf/biz-skeleton (dev-master 1            <a href="https://www.cnblogs.com/a609251438/p/12740071.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-20 20:05 八重樱 阅读 (39) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12740071" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/a609251438/p/12738722.html">
+    PHP+MySQL 千万级数据处理案例（一）（分表）
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：场景 一个金融公司有 500w 投资用户，每天充值投资 50w 笔，那么该公司每年将近有 1 亿条充值记录，那么我们改如何处理这个充值订单表的数据呢？难不成都放一张表里面，那万一哪天我让你去统计满足某个需求的记录，1 亿条数据里面检索你会累死 mysql 的！今天我们就来讲述一下如何去处理这种情况。            <a href="https://www.cnblogs.com/a609251438/p/12738722.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-20 16:44 八重樱 阅读 (121) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12738722" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/a609251438/p/12738084.html">
+    PHP 语法六数组使用及内部结构
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：说明 这里基于 php7.2.5 进行测试，php7 之后内部结构变化应该不是太大，但与 php5.X 有差别。我们今天学习 PHP 中的数组语法，数组在 PHP 中堪称万能结构，什么都能存什么都能放，非常灵活，因为 PHP 没有其他语言的如 map、list 等结构，PHParray 就够了。 们            <a href="https://www.cnblogs.com/a609251438/p/12738084.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-20 15:30 八重樱 阅读 (10) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12738084" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/a609251438/archive/2020/04/18.html">2020年4月18日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/a609251438/p/12726968.html">
+    MySQL 的主从复制（高级篇）
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：首先要明白为什么要用 mysql 的主从复制： 1–在从服务器可以执行查询工作 (即我们常说的读功能)，降低主服务器压力；（主库写，从库读，降压） 2–在从主服务器进行备份，避免备份期间影响主服务器服务；（确保数据安全） 3–当主服务器出现问题时，可以切换到从服务器。（提升性能） 来说一下主从复制的            <a href="https://www.cnblogs.com/a609251438/p/12726968.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-18 17:29 八重樱 阅读 (50) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12726968" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/a609251438/p/12726156.html">
+    设计模式不得不知道的 UML 类图
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：前言 码字不易，希望大家多提宝贵意见。我们要给别人讲解一个问题的时候，最直观的方法莫过于用图形的方式去讲解，而不是枯燥的文字。毕竟我们还是个孩子的时候，图画更能给我们带来触动，而文字我们因为一些认知的问题会导致一些理解能力上的偏差。设计模式里面的 UML 类图就是可以让你给别人讲解设计理念的时候，不            <a href="https://www.cnblogs.com/a609251438/p/12726156.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-18 15:34 八重樱 阅读 (34) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12726156" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/a609251438/p/12725714.html">
+    常见的 PHP 面试题和答案分享
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：如何直接将输出显示给浏览器？ 将输出直接显示给浏览器，我们必须使用特殊标记 &lt;？=and？&gt;。 PHP 是否支持多重继承？ PHP 只支持单继承。PHP 的类使用关键字&#160;extends&#160;继承另一个类 获取图片属性（size, width, 和 height）的函数是什么？ 获取图片大小 size：g            <a href="https://www.cnblogs.com/a609251438/p/12725714.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-18 14:10 八重樱 阅读 (39) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12725714" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/a609251438/archive/2020/04/17.html">2020年4月17日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/a609251438/p/12720757.html">
+    sl-im 基于 swoft+layim 的聊天室
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：简介 sl-im&#160;是基于&#160;Swoft&#160;微服务协程框架和&#160;Layim&#160;网页聊天系统 所开发出来的聊天室。 体验地址 sl-im&#160;https://im.gaobinzhan.com 演示图 功能 登录注册（Http） 单点登录（Websocket） 私聊（Websocket） 群聊（Websocket）            <a href="https://www.cnblogs.com/a609251438/p/12720757.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-17 16:23 八重樱 阅读 (27) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12720757" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/a609251438/p/12720322.html">
+    阿里云-workerman 服务器环境配置
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：1、购买阿里云 centos 服务器 2、下载 Linux一键安装web环境 ，并copy到服务器 3、执行一键安装包(./install.sh),会自动清理之前一键安装包安装过的环境。 4、根据需要选择相应软件版本 5、查看密码： 标准版:cat /alidata/account.log 专业版:            <a href="https://www.cnblogs.com/a609251438/p/12720322.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-17 15:32 八重樱 阅读 (42) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12720322" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/a609251438/p/12719986.html">
+    PHP 语法引用使用及实现
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：说明 这里基于 php7.2.5 进行测试，php7 之后内部结构变化应该不是太大，但与 php5.X 有差别。 什么是引用 在 PHP 中引用是一种数据类型 (结构)，是指 指向同一个类型的数据结构，来看具体存储结构 struct _zend_reference { // 引用计数用于垃圾回收 先            <a href="https://www.cnblogs.com/a609251438/p/12719986.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-17 14:52 八重樱 阅读 (25) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12719986" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+
+<div class="topicListFooter">
+    <div id="nav_next_page">
+        
+
+    </div>    
+</div>
+
+
+<div id="homepage_bottom_pager" class="topicListFooter">
+    
+
+<div class="pager">
+    <a href="https://www.cnblogs.com/a609251438/default.html?page=1">上一页</a>
+    
+    
+        <a href="https://www.cnblogs.com/a609251438/default.html?page=1">1</a>
+    2
+        <a href="https://www.cnblogs.com/a609251438/default.html?page=3">3</a>
+        <a href="https://www.cnblogs.com/a609251438/default.html?page=4">4</a>
+        <a href="https://www.cnblogs.com/a609251438/default.html?page=5">5</a>
+        <a href="https://www.cnblogs.com/a609251438/default.html?page=6">6</a>
+    ···
+    <a href="https://www.cnblogs.com/a609251438/default.html?page=26">26</a>
+    <a href="https://www.cnblogs.com/a609251438/default.html?page=3">下一页</a>
+</div>
+</div>
+
+
+
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 八重樱
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    
+</body>
+</html>

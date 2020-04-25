@@ -1,0 +1,437 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    <meta property="og:description" content="一、前言 &amp;#183; 最近有网友反应初学Linx不会安装，找了许多教程不是太全面，总会遇到一些要不是启动不了，要不是连不上网，各种问题，为了让大家能够顺利的安装，小乐写了一个非常详细的教程，让大家少" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>最新VMware虚拟机安装Linux系统(详细教程) - 付宗乐 - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    
+    <link type="text/css" rel="stylesheet" href="https://www.cnblogs.com/fuzongle/custom.css?v=5RsXQ6IZa&#x2B;SMbtRAptUa79zpLT0=" />
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/blacklowkey/bundle-blacklowkey-mobile.min.css?v=cYvlxMu_nd6MVfg-vi7YqOC6FaZ7VHFsDM166vO_ekA" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/fuzongle/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/fuzongle/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/fuzongle/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 485906;
+        var currentBlogApp = 'fuzongle';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'BlackLowKey';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    <div id="page_begin_html">
+        <!-- 首页样式 -->
+<link href="https://files.cnblogs.com/files/liyunhua/cnblogBlack.css" rel="stylesheet" />
+
+<a href="https://gitee.com/fuzongle"><img style="position: fixed; top: 0; right: 0; border: 0;z-index: 10000;" src="https://files.cnblogs.com/files/landeanfen/o_github.bmp"></a>
+
+
+<!-- 背景动画 -->
+<canvas id="c_n9" width="1920" height="990" style="position: fixed; top: 0px; left: 0px; z-index: -1; opacity: 0.5;"></canvas>
+<script src="https://files.cnblogs.com/files/jingmoxukong/canvas-nest.min.js" defer></script>
+
+
+
+
+
+<!--火箭  -->
+<style>
+#back-top {
+     position: fixed;
+     bottom: 10px;
+     right: 5px;
+     z-index: 99;
+}
+#back-top span {
+     width: 50px;
+     height: 64px;
+     display: block;
+     background:url(http://images.cnblogs.com/cnblogs_com/seanshao/855033/o_rocket.png) no-repeat center center;
+}
+#back-top a{outline:none}
+</style>
+<script type="text/javascript">
+$(function() {
+	// hide #back-top first
+	$("#back-top").hide();
+	// fade in #back-top
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 500) {
+			$('#back-top').fadeIn();
+		} else {
+			$('#back-top').fadeOut();
+		}
+	});
+	// scroll body to 0px on click
+	$('#back-top a').click(function() {
+		$('body,html').animate({
+			scrollTop: 0
+		}, 800);
+		return false;
+	});
+});
+</script>
+<p id="back-top" style="display:none"><a href="#top"><span></span></a></p>
+
+<!-- 添加打赏功能按键  -->
+<script src="http://static.tctip.com/tctip-1.0.0.min.js" defer></script>
+<script>  
+  new tctip({
+    top: '60%',
+    button: {
+      id: 9,
+      type: 'dashang',
+    },
+    list: [
+      {
+        type: 'alipay',
+        qrImg: 'https://files-cdn.cnblogs.com/files/fuzongle/zfb.bmp'
+      }, 
+      {
+        type: 'wechat',
+        qrImg: 'https://files-cdn.cnblogs.com/files/fuzongle/wx.bmp'
+      }
+    ]
+  }).init()
+</script>
+    </div>
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/fuzongle/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/fuzongle/">付宗乐个人博客</a>
+</h1>
+<h2>
+心静如水-代码如飞
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/fuzongle/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E4%BB%98%E5%AE%97%E4%B9%90">
+联系</a></li>
+<li>
+
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<span id="stats_post_count">随笔 - 
+18&nbsp; </span>
+<span id="stats_article_count">文章 - 
+0&nbsp; </span>
+<span id="stats-comment_count">评论 - 
+11</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		<div id="post_detail">
+    <!--done-->
+    <div id="topics">
+        <div class="post">
+            <h1 class = "postTitle">
+                
+<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/fuzongle/p/12769811.html">最新VMware虚拟机安装Linux系统(详细教程)</a>
+
+            </h1>
+            <div class="clear"></div>
+            <div class="postBody">
+                
+<div id="cnblogs_post_body" class="blogpost-body ">
+    <p>一、前言</p>
+<p>&middot;　　最近有网友反应初学Linx不会安装，找了许多教程不是太全面，总会遇到一些要不是启动不了，要不是连不上网，各种问题，为了让大家能够顺利的安装，小乐写了一个非常详细的教程，让大家少入坑。</p>
+<p>二、背景介绍</p>
+<p>　　Linux，全称GNU/Linux，是一套免费使用和自由传播的<a href="https://baike.baidu.com/item/%E7%B1%BBUNIX/9032872" target="_blank" data-lemmaid="9032872">类UNIX</a>操作系统，其内核由<a href="https://baike.baidu.com/item/%E6%9E%97%E7%BA%B3%E6%96%AF%C2%B7%E6%9C%AC%E7%BA%B3%E7%AC%AC%E5%85%8B%E7%89%B9%C2%B7%E6%89%98%E7%93%A6%E5%85%B9/1034429" target="_blank" data-lemmaid="1034429">林纳斯&middot;本纳第克特&middot;托瓦兹</a>于1991年第一次释出，它主要受到Minix和Unix思想的启发，是一个基于<a href="https://baike.baidu.com/item/POSIX" target="_blank">POSIX</a>和Unix的多用户、<a href="https://baike.baidu.com/item/%E5%A4%9A%E4%BB%BB%E5%8A%A1/1011764" target="_blank" data-lemmaid="1011764">多任务</a>、支持<a href="https://baike.baidu.com/item/%E5%A4%9A%E7%BA%BF%E7%A8%8B/1190404" target="_blank" data-lemmaid="1190404">多线程</a>和多<a href="https://baike.baidu.com/item/CPU" target="_blank">CPU</a>的操作系统。它能运行主要的Unix工具软件、应用程序和网络协议。它支持<a href="https://baike.baidu.com/item/32%E4%BD%8D/5812218" target="_blank" data-lemmaid="5812218">32位</a>和<a href="https://baike.baidu.com/item/64%E4%BD%8D" target="_blank">64位</a>硬件。Linux继承了Unix以网络为核心的设计思想，是一个性能稳定的多用户网络操作系统。Linux有上百种不同的发行版，如基于社区开发的<a href="https://baike.baidu.com/item/debian/748667" target="_blank" data-lemmaid="748667">debian</a>、<a href="https://baike.baidu.com/item/archlinux/10857530" target="_blank" data-lemmaid="10857530">archlinux</a>，和基于商业开发的<a href="https://baike.baidu.com/item/Red%20Hat%20Enterprise%20Linux/10770503" target="_blank" data-lemmaid="10770503">Red Hat Enterprise Linux</a>、<a href="https://baike.baidu.com/item/SUSE/60409" target="_blank" data-lemmaid="60409">SUSE</a>、<a href="https://baike.baidu.com/item/oracle%20%20linux/6876458" target="_blank" data-lemmaid="6876458">oracle linux</a>等。</p>
+<p>三、准备工作</p>
+<p>　　1.<span style="color: #3366ff;"><strong><a href="https://www.cnblogs.com/fuzongle/p/12760193.html" target="_blank"><span style="color: #3366ff;">VMware</span></a></strong></span>软件(注意：如过不会安装此软件教程地址<a href="https://www.cnblogs.com/fuzongle/p/12760193.html">https://www.cnblogs.com/fuzongle/p/12760193.html</a>)，常见的虚拟机软件有 VMware Workstation（简称 VMware）、VirtualBox、Microsoft Virtual PC 等，其中 VMware 市场占有率最高，所以本节以 VMware 为例来讲解 Linux 的安装。</p>
+<p>　　2.镜像：CentOS-6.4-i386-bin-DVD1（注意：如果没有此镜像可以在官网下载：<a href="https://www.linux.org/pages/download/">https://www.linux.org/pages/download/</a>，如果不会下载可以翻到最下面获取文件下载）</p>
+<p>四、开始安装CentOS</p>
+<p>　　1.创建新的虚拟机，如下图所示：　　</p>
+<p>　　<img src="https://img2020.cnblogs.com/blog/1578696/202004/1578696-20200424114105690-1702434877.png" alt=""></p>
+<p>2.点击自定义选项，下一步，如下图所示：</p>
+<p>&nbsp;<img src="https://img2020.cnblogs.com/blog/1578696/202004/1578696-20200424114205971-1706260209.png" alt=""></p>
+<p>&nbsp;</p>
+<p>&nbsp;3.点击下一步即可，硬件默认的就可以，如下图所示：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1578696/202004/1578696-20200424114451062-317081392.png" alt=""></p>
+<p>&nbsp;</p>
+<p>&nbsp;4.点击选项稍后安装系统后，点击下一步，如下图所示：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1578696/202004/1578696-20200424114703570-1319427380.png" alt=""></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;5.选择要安装的系统Linux，选择linux的版本，版本安装的是6.4版本，点击下一步，如下图所示：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1578696/202004/1578696-20200424114750251-1573417247.png" alt=""></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;6.设置虚拟机安装的名字，名字随意，位置是自己安装虚拟机让你选择文件夹位置，点击下一步，如下图所示：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1578696/202004/1578696-20200424115041519-1581276254.png" alt=""></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;7.设置系统配置项，默认即可，也可根据电脑的自身情况配置，点击下一步，如下图所示：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1578696/202004/1578696-20200424115317671-1072837873.png" alt=""></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;8.选择内存，根据自己的系统性能配置，作者是按照默认的，点击下一步，如下图所示：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1578696/202004/1578696-20200424120347112-1322602915.png" alt=""></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;9.选择网络配置NAT，点击下一步，如下图所示：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1578696/202004/1578696-20200424120440813-806491804.png" alt=""></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;10.选择SSCSI控制器，推荐配置即可，点击下一步，如下图所示：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1578696/202004/1578696-20200424120504810-2109548273.png" alt=""></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;11.选择磁盘的类型，推荐即可，点击下一步，如下图所示：</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;<img src="https://img2020.cnblogs.com/blog/1578696/202004/1578696-20200424120600595-597604646.png" alt=""></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;12.磁盘选择创建新的磁盘，点击下一步，如下图所示：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1578696/202004/1578696-20200424120659817-1030451215.png" alt=""></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;13.选择磁盘的大小，可以自己设置，本文设置为20G，点击下一步,如下图所示：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1578696/202004/1578696-20200424120748469-1961057720.png" alt=""></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;14.设置磁盘文件存储的位置，点击下一步，如下图所示：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1578696/202004/1578696-20200424121806509-47548698.png" alt=""></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;15.点击自定义硬件配置，如下图所示：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1578696/202004/1578696-20200424121948911-1046572436.png" alt=""></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;16.点击CD/DVD选项，右侧选择使用ISO映像文件，选择上面准备好的CentOS-6.4-i386-bin-DVD1包，点击关闭，如下图所示：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1578696/202004/1578696-20200424122155808-1180949510.png" alt=""></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;17.点击完成，到此我们的系统已经安装成功了。</p>
+<p><img src="https://img2020.cnblogs.com/blog/1578696/202004/1578696-20200424122403824-1785502248.png" alt=""></p>
+<p>&nbsp;</p>
+<p>&nbsp;五、开始配置CentOS系统</p>
+<p>　1.点击安装好的虚拟机点击开启，如下图所示：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1578696/202004/1578696-20200424134844205-111503245.png" alt=""></p>
+<p>&nbsp;</p>
+<p>&nbsp;2.把光标放入虚拟机中，选第一个，按下回车即可，如下图所示：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1578696/202004/1578696-20200424193148853-757701760.png" alt=""></p>
+<p>&nbsp;</p>
+<p>&nbsp;3.跳过光盘质量测试提示，将键盘按下右键选择Skip，回车即可，出现ok后再次回车，如下图所示：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1578696/202004/1578696-20200424193512729-357880665.png" alt=""></p>
+<p>&nbsp;</p>
+<p>&nbsp;4.选择键盘为中文,点击下一步，如下图所示：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1578696/202004/1578696-20200424193627962-795689457.png" alt=""></p>
+<p>&nbsp;</p>
+<p>&nbsp;5.选择美式键盘，点击next，如下图所示：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1578696/202004/1578696-20200424193756704-593335956.png" alt=""></p>
+<p>&nbsp;</p>
+<p>&nbsp;6.选择基本存储设备，点击下一步即可，如下图所示：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1578696/202004/1578696-20200424193846201-1101895638.png" alt=""></p>
+<p>&nbsp;</p>
+<p>&nbsp;7.点击&ldquo;是 忽略所有数据&rdquo;，点击下一步,如下图所示：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1578696/202004/1578696-20200424193940351-174498223.png" alt=""></p>
+<p>&nbsp;</p>
+<p>&nbsp;8.此步骤最关键，不配置好会装好了系统之后，没有网，仔细配置，如下图所示：</p>
+<p><img src="https://img2020.cnblogs.com/blog/1578696/202004/1578696-20200424194205752-761784408.png" alt=""></p>
+<p>&nbsp;</p>
+<p>&nbsp;9.查看自己的vm8 IP地址，如下图是我自己的地址：</p>
+<p>&nbsp;</p>
+</div>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+    <div id="blog_post_info"></div>
+    <div class="clear"></div>
+    <div id="post_next_prev"></div>
+</div>
+            </div>
+            <div class="postDesc">posted @ 
+<span id="post-date">2020-04-24 20:11</span>&nbsp;
+<a href="https://www.cnblogs.com/fuzongle/">付宗乐</a>&nbsp;
+阅读(<span id="post_view_count">...</span>)&nbsp;
+评论(<span id="post_comment_count">...</span>)&nbsp;
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12769811" rel="nofollow">编辑</a>&nbsp;
+<a href="javascript:void(0)" onclick="AddToWz(12769811);return false;">收藏</a></div>
+        </div>
+	    
+	    
+    </div><!--end: topics 文章、评论容器-->
+</div>
+<script src="https://common.cnblogs.com/highlight/9.12.0/highlight.min.js"></script>
+<script>markdown_highlight();</script>
+<script>
+    var allowComments = true, cb_blogId = 485906, cb_blogApp = 'fuzongle', cb_blogUserGuid = '6d0b4865-54f7-4f74-51f8-08d670e7b7f7';
+    var cb_entryId = 12769811, cb_entryCreatedDate = '2020-04-24 20:11', cb_postType = 1; 
+    loadViewCount(cb_entryId);
+</script><a name="!comments"></a>
+<div id="blog-comments-placeholder"></div>
+<script>
+    var commentManager = new blogCommentManager();
+    commentManager.renderComments(0);
+</script>
+
+<div id="comment_form" class="commentform">
+    <a name="commentform"></a>
+    <div id="divCommentShow"></div>
+    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+    <div id="comment_form_container"></div>
+    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+    <div id="ad_t2"></div>
+    <div id="opt_under_post"></div>
+    <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            googletag.defineSlot("/1090369/C1", [300, 250], "div-gpt-ad-1546353474406-0").addService(googletag.pubads());
+            googletag.defineSlot("/1090369/C2", [468, 60], "div-gpt-ad-1539008685004-0").addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    </script>
+    <div id="cnblogs_c1" class="c_ad_block">
+        <div id="div-gpt-ad-1546353474406-0" style="height:250px; width:300px;"></div>
+    </div>
+    <div id="under_post_news"></div>
+    <div id="cnblogs_c2" class="c_ad_block">
+        <div id="div-gpt-ad-1539008685004-0" style="height:60px; width:468px;">
+            <script>
+                if (new Date() >= new Date(2018, 9, 13)) {
+                    googletag.cmd.push(function () { googletag.display("div-gpt-ad-1539008685004-0"); });
+                }
+            </script>
+        </div>
+    </div>
+    <div id="under_post_kb"></div>
+    <div id="HistoryToday" class="c_ad_block"></div>
+    <script type="text/javascript">
+        fixPostBody();
+        deliverBigBanner();
+setTimeout(function() { incrementViewCount(cb_entryId); }, 50);        deliverAdT2();
+        deliverAdC1();
+        deliverAdC2();
+        loadNewsAndKb();
+        loadBlogSignature();
+LoadPostCategoriesTags(cb_blogId, cb_entryId);        LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+        GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+        loadOptUnderPost();
+        GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    </script>
+</div>
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 付宗乐
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    <div id="page_end_html">
+        
+<script type="text/javascript">
+//生成目录索引列表
+function GenerateContentList()
+{
+    var jquery_h3_list = $('#cnblogs_post_body h1');//如果你的章节标题不是h3,只需要将这里的h3换掉即可
+    if(jquery_h3_list.length>0)
+    {
+        var content = '<a name="_labelTop"></a>';
+        content    += '<div id="navCategory">';     
+        content    += '<p style="font-size:16px"><b>阅读目录</b></p>';
+        content    += '<ul>';
+        for(var i =0;i<jquery_h3_list.length;i++)
+        {
+            var go_to_top = '<div style="text-align: right"><a href="#_labelTop">回到目录</a><a name="_label' + i + '"></a></div>';
+            $(jquery_h3_list[i]).before(go_to_top);
+            var li_content = '<li><a href="#_label' + i + '">' + $(jquery_h3_list[i]).text() + '</a></li>';
+            content += li_content;
+        }
+        content    += '</ul>';
+        content    += '</div>';
+        if($('#cnblogs_post_body').length != 0 )
+        {
+            $($('#cnblogs_post_body')[0]).prepend(content);
+        }
+    }    
+}
+GenerateContentList();
+</script>
+    </div>
+</body>
+</html>

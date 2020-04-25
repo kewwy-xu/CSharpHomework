@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">博客园_Raylove</title>
+  <subtitle type="text"></subtitle>
+  <id>uuid:81160fd1-0930-4f2f-ab4e-c8169964ae05;id=1074</id>
+  <updated>2020-04-24T11:40:41Z</updated>
+  <author>
+    <name>八重樱</name>
+    <uri>http://www.cnblogs.com/a609251438/</uri>
+  </author>
+  <generator>feed.cnblogs.com</generator>
+  <entry>
+    <id>http://www.cnblogs.com/a609251438/p/12769695.html</id>
+    <title type="text">通过 Swoole\Table 实现 Swoole 多进程数据共享 - 八重樱</title>
+    <summary type="text">第三方存储媒介 前面我们介绍了基于 Swoole 的 Process 及 Process\Pool 模块在 PHP 中实现多进程管理，但是多进程模式下进程间是相互隔离的，无法共享数据和变量，即便是通过 global 定义的全局或超全局变量，也只是在所属进程中有效，如果要在 Swoole 实现的多进程</summary>
+    <published>2020-04-24T11:40:00Z</published>
+    <updated>2020-04-24T11:40:00Z</updated>
+    <author>
+      <name>八重樱</name>
+      <uri>http://www.cnblogs.com/a609251438/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/a609251438/p/12769695.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/a609251438/p/12769695.html" />
+    <content type="html">【摘要】第三方存储媒介 前面我们介绍了基于 Swoole 的 Process 及 Process\Pool 模块在 PHP 中实现多进程管理，但是多进程模式下进程间是相互隔离的，无法共享数据和变量，即便是通过 global 定义的全局或超全局变量，也只是在所属进程中有效，如果要在 Swoole 实现的多进程 &lt;a href="http://www.cnblogs.com/a609251438/p/12769695.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/a609251438/p/12767506.html</id>
+    <title type="text">关于PHP7.0与PHP5.6下Laravel博客应用性能对比分析详解 - 八重樱</title>
+    <summary type="text">目前我安装的 Homestead 虚拟机版本是 2.1.8： 该版本 Homestead 上预装的 PHP 版本是 5.6.15： 我们使用 ab 命令（Apache 提供的性能测试工具）在该版本中测试 Laravel 应用（以目前正在讲的使用Laravel开发的博客应用为例）性能，我们模拟 100</summary>
+    <published>2020-04-24T07:02:00Z</published>
+    <updated>2020-04-24T07:02:00Z</updated>
+    <author>
+      <name>八重樱</name>
+      <uri>http://www.cnblogs.com/a609251438/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/a609251438/p/12767506.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/a609251438/p/12767506.html" />
+    <content type="html">【摘要】目前我安装的 Homestead 虚拟机版本是 2.1.8： 该版本 Homestead 上预装的 PHP 版本是 5.6.15： 我们使用 ab 命令（Apache 提供的性能测试工具）在该版本中测试 Laravel 应用（以目前正在讲的使用Laravel开发的博客应用为例）性能，我们模拟 100 &lt;a href="http://www.cnblogs.com/a609251438/p/12767506.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/a609251438/p/12767228.html</id>
+    <title type="text">thinkphp中__construct()和__initialize()的介绍 - 八重樱</title>
+    <summary type="text">关于thinkphp中的__construct()和_initialize()的理解 网上有很多的说法和用法，自己测试了一下，下面是根据测试结果并结合自己的理解得出的结论，如有不对的地方，欢迎大家纠正！！！ 我们先看一下Thinkphp自带的Controlle类的内容（ThinkPHP\Librar</summary>
+    <published>2020-04-24T06:25:00Z</published>
+    <updated>2020-04-24T06:25:00Z</updated>
+    <author>
+      <name>八重樱</name>
+      <uri>http://www.cnblogs.com/a609251438/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/a609251438/p/12767228.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/a609251438/p/12767228.html" />
+    <content type="html">【摘要】关于thinkphp中的__construct()和_initialize()的理解 网上有很多的说法和用法，自己测试了一下，下面是根据测试结果并结合自己的理解得出的结论，如有不对的地方，欢迎大家纠正！！！ 我们先看一下Thinkphp自带的Controlle类的内容（ThinkPHP\Librar &lt;a href="http://www.cnblogs.com/a609251438/p/12767228.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/a609251438/p/12761548.html</id>
+    <title type="text">使用redis-dump与redis-load方式迁移redis数据库 - 八重樱</title>
+    <summary type="text">实际生产场景中，有可能会因为迁移机房或者更换物理机等原因需要在生产环境迁移redis数据。本文就来为大家介绍一下迁移redis数据的方法。 迁移redis数据一般有如下3种方式： 1、第三方工具redis-dump，redis-load 2、aof机制，需要开启aof功能 3、rdb存储机制 这里介</summary>
+    <published>2020-04-23T08:09:00Z</published>
+    <updated>2020-04-23T08:09:00Z</updated>
+    <author>
+      <name>八重樱</name>
+      <uri>http://www.cnblogs.com/a609251438/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/a609251438/p/12761548.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/a609251438/p/12761548.html" />
+    <content type="html">【摘要】实际生产场景中，有可能会因为迁移机房或者更换物理机等原因需要在生产环境迁移redis数据。本文就来为大家介绍一下迁移redis数据的方法。 迁移redis数据一般有如下3种方式： 1、第三方工具redis-dump，redis-load 2、aof机制，需要开启aof功能 3、rdb存储机制 这里介 &lt;a href="http://www.cnblogs.com/a609251438/p/12761548.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/a609251438/p/12760514.html</id>
+    <title type="text">Laravel v7.7 发布 容器支持可变参数 - 八重樱</title>
+    <summary type="text">Laravel 团队昨天发布了 v7.7.0，其中包含容器支持的构造函数支持可变参数，一些新的 HTTP 客户端功能，Blueprint 新增 rawIndex() 方法以及 7.x 分支中的所有最新功能，修复和更改 ： HTTP 客户端 GET 请求 支持数组 Daniel Mason 贡献了 H</summary>
+    <published>2020-04-23T06:18:00Z</published>
+    <updated>2020-04-23T06:18:00Z</updated>
+    <author>
+      <name>八重樱</name>
+      <uri>http://www.cnblogs.com/a609251438/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/a609251438/p/12760514.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/a609251438/p/12760514.html" />
+    <content type="html">【摘要】Laravel 团队昨天发布了 v7.7.0，其中包含容器支持的构造函数支持可变参数，一些新的 HTTP 客户端功能，Blueprint 新增 rawIndex() 方法以及 7.x 分支中的所有最新功能，修复和更改 ： HTTP 客户端 GET 请求 支持数组 Daniel Mason 贡献了 H &lt;a href="http://www.cnblogs.com/a609251438/p/12760514.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/a609251438/p/12755713.html</id>
+    <title type="text">让你的Laravel 应用运行速度飞起来！（利用PHP OPcache） - 八重樱</title>
+    <summary type="text">什么是 Opcache 每一次执行 PHP 脚本的时候，该脚本都需要被编译成字节码，而 OPcache 可以对该字节码进行缓存，这样，下次请求同一个脚本的时候，该脚本就不需要重新编译，这极大节省了脚本的执行时间，从而让应用运行速度更快，同时也节省了服务器的开销。 用数字说话 我们当然很想知道到底进行</summary>
+    <published>2020-04-22T12:35:00Z</published>
+    <updated>2020-04-22T12:35:00Z</updated>
+    <author>
+      <name>八重樱</name>
+      <uri>http://www.cnblogs.com/a609251438/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/a609251438/p/12755713.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/a609251438/p/12755713.html" />
+    <content type="html">【摘要】什么是 Opcache 每一次执行 PHP 脚本的时候，该脚本都需要被编译成字节码，而 OPcache 可以对该字节码进行缓存，这样，下次请求同一个脚本的时候，该脚本就不需要重新编译，这极大节省了脚本的执行时间，从而让应用运行速度更快，同时也节省了服务器的开销。 用数字说话 我们当然很想知道到底进行 &lt;a href="http://www.cnblogs.com/a609251438/p/12755713.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/a609251438/p/12755280.html</id>
+    <title type="text">为什么我们还会继续使用 PHP ? - 八重樱</title>
+    <summary type="text">我们来开门见山地说。 PHP 是一门奇葩的语言。它既不快，语法又不漂亮。还没有遵守良好的软件开发实践。 但我还是使用它开发了很多软件。 那么问题就很明显了 为什么今天还在使用 PHP ？ 除了个人理想主义的偏好以外，还有很多理由。这才是我们要讨论的范围。为什么选 PHP 作为我的 Web 开发语言？</summary>
+    <published>2020-04-22T11:12:00Z</published>
+    <updated>2020-04-22T11:12:00Z</updated>
+    <author>
+      <name>八重樱</name>
+      <uri>http://www.cnblogs.com/a609251438/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/a609251438/p/12755280.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/a609251438/p/12755280.html" />
+    <content type="html">【摘要】我们来开门见山地说。 PHP 是一门奇葩的语言。它既不快，语法又不漂亮。还没有遵守良好的软件开发实践。 但我还是使用它开发了很多软件。 那么问题就很明显了 为什么今天还在使用 PHP ？ 除了个人理想主义的偏好以外，还有很多理由。这才是我们要讨论的范围。为什么选 PHP 作为我的 Web 开发语言？ &lt;a href="http://www.cnblogs.com/a609251438/p/12755280.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/a609251438/p/12751828.html</id>
+    <title type="text">吊打面试官系列：Redis 性能优化的 13 条军规大全 - 八重樱</title>
+    <summary type="text">1.缩短键值对的存储长度 键值对的长度是和性能成反比的，比如我们来做一组写入数据的性能测试，执行结果如下： 从以上数据可以看出，在 key 不变的情况下，value 值越大操作效率越慢，因为 Redis 对于同一种数据类型会使用不同的内部编码进行存储，比如字符串的内部编码就有三种：int（整数编码）</summary>
+    <published>2020-04-22T06:22:00Z</published>
+    <updated>2020-04-22T06:22:00Z</updated>
+    <author>
+      <name>八重樱</name>
+      <uri>http://www.cnblogs.com/a609251438/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/a609251438/p/12751828.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/a609251438/p/12751828.html" />
+    <content type="html">【摘要】1.缩短键值对的存储长度 键值对的长度是和性能成反比的，比如我们来做一组写入数据的性能测试，执行结果如下： 从以上数据可以看出，在 key 不变的情况下，value 值越大操作效率越慢，因为 Redis 对于同一种数据类型会使用不同的内部编码进行存储，比如字符串的内部编码就有三种：int（整数编码） &lt;a href="http://www.cnblogs.com/a609251438/p/12751828.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/a609251438/p/12747942.html</id>
+    <title type="text">Laravel 7.6 发布 - 八重樱</title>
+    <summary type="text">Laravel 团队昨天发布了 v7.6.0，其中包含 13 个新功能以及 7.x 分支的最新修复和更改： 集合新增 “until” 方法 Jason McCreary 贡献了 Collection::until() 方法， 该方法可以循环遍历集合直到元素满足条件再将该元素返回： // Before</summary>
+    <published>2020-04-21T13:22:00Z</published>
+    <updated>2020-04-21T13:22:00Z</updated>
+    <author>
+      <name>八重樱</name>
+      <uri>http://www.cnblogs.com/a609251438/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/a609251438/p/12747942.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/a609251438/p/12747942.html" />
+    <content type="html">【摘要】Laravel 团队昨天发布了 v7.6.0，其中包含 13 个新功能以及 7.x 分支的最新修复和更改： 集合新增 “until” 方法 Jason McCreary 贡献了 Collection::until() 方法， 该方法可以循环遍历集合直到元素满足条件再将该元素返回： // Before &lt;a href="http://www.cnblogs.com/a609251438/p/12747942.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/a609251438/p/12745793.html</id>
+    <title type="text"> Laravel 8 新功能：使用 schema:dump 来加速 Migration 和测试 - 八重樱</title>
+    <summary type="text">Laravel 8 将于今年晚些时候发布一个新的 schema:dump 命令。 此命令对现有项目非常有用，因为它删除了不再需要的旧迁移并加快了测试和 CI process。 Taylor Otwell 在他的 pull request 中解释了此功能： 此 PR 增加了 php artisan s</summary>
+    <published>2020-04-21T08:57:00Z</published>
+    <updated>2020-04-21T08:57:00Z</updated>
+    <author>
+      <name>八重樱</name>
+      <uri>http://www.cnblogs.com/a609251438/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/a609251438/p/12745793.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/a609251438/p/12745793.html" />
+    <content type="html">【摘要】Laravel 8 将于今年晚些时候发布一个新的 schema:dump 命令。 此命令对现有项目非常有用，因为它删除了不再需要的旧迁移并加快了测试和 CI process。 Taylor Otwell 在他的 pull request 中解释了此功能： 此 PR 增加了 php artisan s &lt;a href="http://www.cnblogs.com/a609251438/p/12745793.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+</feed>

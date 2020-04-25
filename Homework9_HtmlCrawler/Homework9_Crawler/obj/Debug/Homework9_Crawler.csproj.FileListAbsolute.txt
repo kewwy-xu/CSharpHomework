@@ -1,0 +1,13 @@
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework9_Crawler\obj\Debug\Homework9_Crawler.csprojAssemblyReference.cache
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework9_Crawler\obj\Debug\Homework9_Crawler.Properties.Resources.resources
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework9_Crawler\obj\Debug\Homework9_Crawler.csproj.GenerateResource.cache
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework9_Crawler\bin\Debug\Homework9_Crawler.exe.config
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework9_Crawler\bin\Debug\Homework9_Crawler.exe
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework9_Crawler\bin\Debug\Homework9_Crawler.pdb
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework9_Crawler\obj\Debug\Homework9_Crawler.exe
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework9_Crawler\obj\Debug\Homework9_Crawler.pdb
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework9_Crawler\obj\Debug\Homework9_Crawler.Form1.resources
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework9_Crawler\bin\Debug\Homework9_console.exe
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework9_Crawler\bin\Debug\Homework9_console.pdb
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework9_Crawler\bin\Debug\Homework9_console.exe.config
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework9_Crawler\obj\Debug\Homework9_Crawler.csproj.CopyComplete

@@ -1,0 +1,281 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    <meta property="og:description" content="如下，是 spark 相关系列的一些文章汇总，持续更新中...... Spark RPC spark 源码分析之五--Spark RPC剖析之创建NettyRpcEnv spark 源码分析之六--S" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Spark 源码分析系列 - JohnnyBai - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    <link id="MainCss" rel="stylesheet" href="/skins/custom/bundle-custom.min.css?v=1ssrnY3Il79Ok472qeVrpxlSprSXcHhYPgZC5S3wtVM" />
+    <link type="text/css" rel="stylesheet" href="https://www.cnblogs.com/johnny666888/custom.css?v=7rnz5TtMcHt9VmgMA7H/K8T8fSI=" />
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/custom/bundle-custom-mobile.min.css?v=-Yh290MhQyDeXLmvKTSses9H6-49lqbpXFh55zvS0w8" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/johnny666888/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/johnny666888/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/johnny666888/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 240095;
+        var currentBlogApp = 'johnny666888';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'Custom';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/johnny666888/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/johnny666888/">求知</a>
+</h1>
+<h2>
+
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/johnny666888/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/JohnnyBai">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/johnny666888/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<span id="stats_post_count">随笔 - 
+50&nbsp; </span>
+<span id="stats_article_count">文章 - 
+1&nbsp; </span>
+<span id="stats-comment_count">评论 - 
+4</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		<div id="post_detail">
+    <!--done-->
+    <div id="topics">
+        <div class="post">
+            <h1 class = "postTitle">
+                
+<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/johnny666888/p/11259944.html">Spark 源码分析系列</a>
+
+            </h1>
+            <div class="clear"></div>
+            <div class="postBody">
+                
+<div id="cnblogs_post_body" class="blogpost-body ">
+    <p>如下，是 spark 相关系列的一些文章汇总，持续更新中......</p>
+<h2>Spark RPC</h2>
+<p><a id="post_title_link_11122907" href="https://www.cnblogs.com/johnny666888/p/11122907.html">spark 源码分析之五--Spark RPC剖析之创建NettyRpcEnv</a></p>
+<p><a id="post_title_link_11128634" href="https://www.cnblogs.com/johnny666888/p/11128634.html">spark 源码分析之六--Spark RPC剖析之Dispatcher和Inbox、Outbox剖析</a></p>
+<p><a id="post_title_link_11135539" href="https://www.cnblogs.com/johnny666888/p/11135539.html">spark 源码分析之七--Spark RPC剖析之RpcEndPoint和RpcEndPointRef剖析</a></p>
+<p><a id="post_title_link_11135899" href="https://www.cnblogs.com/johnny666888/p/11135899.html">spark 源码分析之八--Spark RPC剖析之TransportContext和TransportClientFactory剖析</a></p>
+<p><a id="post_title_link_11153640" href="https://www.cnblogs.com/johnny666888/p/11153640.html">spark 源码分析之十--Spark RPC剖析之TransportResponseHandler、TransportRequestHandler和TransportChannelHandler剖析</a></p>
+<p><a id="post_title_link_11153263" href="https://www.cnblogs.com/johnny666888/p/11153263.html">spark 源码分析之九--Spark RPC剖析之StreamManager和RpcHandler</a></p>
+<p><a id="post_title_link_11153655" href="https://www.cnblogs.com/johnny666888/p/11153655.html">spark 源码分析之十一--Spark RPC剖析之TransportClient、TransportServer剖析</a></p>
+<p><a id="post_title_link_11160486" href="https://www.cnblogs.com/johnny666888/p/11160486.html">spark 源码分析之十二--Spark RPC剖析之Spark RPC总结</a></p>
+<h2>Spark 存储</h2>
+<p><a id="post_title_link_11190380" href="https://www.cnblogs.com/johnny666888/p/11190380.html">spark 源码分析之十三 -- SerializerManager剖析</a></p>
+<p><a id="post_title_link_11190397" href="https://www.cnblogs.com/johnny666888/p/11190397.html">spark 源码分析之十四 -- broadcast 是如何实现的？</a></p>
+<p><a id="post_title_link_11197519" href="https://www.cnblogs.com/johnny666888/p/11197519.html">spark 源码分析之十五 -- Spark内存管理剖析</a></p>
+<p><a id="post_title_link_11210233" href="https://www.cnblogs.com/johnny666888/p/11210233.html">spark 源码分析之十六 -- Spark内存存储剖析</a></p>
+<p><a id="post_title_link_11212899" href="https://www.cnblogs.com/johnny666888/p/11212899.html">spark 源码分析之十七 -- Spark磁盘存储剖析</a></p>
+<p><a id="post_title_link_11226984" href="https://www.cnblogs.com/johnny666888/p/11226984.html">spark 源码分析之十八 -- Spark存储体系剖析</a></p>
+<h2>Spark Streaming</h2>
+<p><a id="post_title_link_11087316" href="https://www.cnblogs.com/johnny666888/p/11087316.html">spark streaming 接收kafka消息之一 -- 两种接收方式</a></p>
+<p><a id="post_title_link_11080499" href="https://www.cnblogs.com/johnny666888/p/11080499.html">spark streaming 接收kafka消息之二 -- 运行在driver端的receiver</a></p>
+<p><a id="post_title_link_11087408" href="https://www.cnblogs.com/johnny666888/p/11087408.html">spark streaming 接收kafka消息之三 -- kafka broker 如何处理 fetch 请求</a></p>
+<p><a id="post_title_link_11100334" href="https://www.cnblogs.com/johnny666888/p/11100334.html">spark streaming 接收kafka消息之四 -- 运行在 worker 上的 receiver</a></p>
+<p><a id="post_title_link_11100462" href="https://www.cnblogs.com/johnny666888/p/11100462.html">spark streaming 接收kafka消息之五 -- spark streaming 和 kafka 的对接总结</a></p>
+<h2>Spark 任务调度</h2>
+<p><a id="post_title_link_11111957" href="https://www.cnblogs.com/johnny666888/p/11111957.html">spark 源码分析之一 -- RDD的四种依赖关系</a></p>
+<p><a id="post_title_link_11116052" href="https://www.cnblogs.com/johnny666888/p/11116052.html">spark 源码分析之二 -- SparkContext 的初始化过程</a></p>
+<p><a id="post_title_link_11117559" href="https://www.cnblogs.com/johnny666888/p/11117559.html">spark 源码分析之三 -- LiveListenerBus介绍</a></p>
+<p><a id="post_title_link_11122802" href="https://www.cnblogs.com/johnny666888/p/11122802.html">spark 源码分析之四 -- TaskScheduler的创建和启动过程</a></p>
+<p><a id="post_title_link_11233982" href="https://www.cnblogs.com/johnny666888/p/11233982.html">spark 源码分析之十九 -- DAG的生成和Stage的划分</a></p>
+<p><a id="post_title_link_11251642" href="https://www.cnblogs.com/johnny666888/p/11251642.html">spark 源码分析之二十 -- Stage的提交</a></p>
+<p><a id="post_title_link_11256493" href="https://www.cnblogs.com/johnny666888/p/11256493.html">spark 源码分析之二十一 -- Task的执行流程</a>&nbsp;</p>
+<h2>Spark任务计算</h2>
+<p><a id="cb_post_title_url" href="https://www.cnblogs.com/johnny666888/p/11277947.html">spark 源码分析之二十二-- Task的内存管理</a></p>
+<p><a id="post_title_link_11265502" href="https://www.cnblogs.com/johnny666888/p/11265502.html">spark shuffle的写操作之准备工作</a></p>
+<p><a id="post_title_link_11291592" href="https://www.cnblogs.com/johnny666888/p/11291592.html">spark shuffle写操作三部曲之BypassMergeSortShuffleWriter</a></p>
+<p><a id="post_title_link_11291546" href="https://www.cnblogs.com/johnny666888/p/11291546.html">spark shuffle写操作三部曲之UnsafeShuffleWriter</a></p>
+<p><a id="post_title_link_11291546" href="https://www.cnblogs.com/johnny666888/p/11291546.html"></a><a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/johnny666888/p/11285540.html">spark shuffle写操作三部曲之SortShuffleWriter</a></p>
+<p><a id="post_title_link_11313477" href="https://www.cnblogs.com/johnny666888/p/11313477.html">spark shuffle读操作</a>&nbsp;</p>
+<h2>Spark SQL</h2>
+<p><a class="postTitle2" href="https://www.cnblogs.com/johnny666888/p/12343338.html">spark sql 执行计划生成案例</a></p>
+<p><a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/johnny666888/p/12345142.html">如何查看SparkSQL 生成的抽象语法树？</a></p>
+<p><a class="entry" href="https://www.cnblogs.com/johnny666888/p/12372424.html" target="_blank">Spark SQL 之自定义删除外部表</a></p>
+<p><a class="entry" href="https://www.cnblogs.com/johnny666888/p/12374895.html" target="_blank">spark sql 自定义之 thriftserver 高可用</a></p>
+<p><a class="entry" href="https://www.cnblogs.com/johnny666888/p/12382919.html" target="_blank">spark sql 之drop partition定制</a></p>
+<h2>其他</h2>
+<p><a class="link-post-title" href="https://www.cnblogs.com/johnny666888/p/12571916.html">修改Apache Livy 源码使其支持动态资源分配和堆外内存分配</a></p>
+<p><a class="entry" href="https://www.cnblogs.com/johnny666888/p/12770325.html" target="_blank">spark 集群优化</a></p>
+</div>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+    <div id="blog_post_info"></div>
+    <div class="clear"></div>
+    <div id="post_next_prev"></div>
+</div>
+            </div>
+            <div class="postDesc">posted @ 
+<span id="post-date">2019-07-28 16:58</span>&nbsp;
+<a href="https://www.cnblogs.com/johnny666888/">JohnnyBai</a>&nbsp;
+阅读(<span id="post_view_count">...</span>)&nbsp;
+评论(<span id="post_comment_count">...</span>)&nbsp;
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11259944" rel="nofollow">编辑</a>&nbsp;
+<a href="javascript:void(0)" onclick="AddToWz(11259944);return false;">收藏</a></div>
+        </div>
+	    
+	    
+    </div><!--end: topics 文章、评论容器-->
+</div>
+<script src="https://common.cnblogs.com/highlight/9.12.0/highlight.min.js"></script>
+<script>markdown_highlight();</script>
+<script>
+    var allowComments = true, cb_blogId = 240095, cb_blogApp = 'johnny666888', cb_blogUserGuid = 'a53735de-3342-e511-b908-9dcfd8948a71';
+    var cb_entryId = 11259944, cb_entryCreatedDate = '2019-07-28 16:58', cb_postType = 1; 
+    loadViewCount(cb_entryId);
+</script><a name="!comments"></a>
+<div id="blog-comments-placeholder"></div>
+<script>
+    var commentManager = new blogCommentManager();
+    commentManager.renderComments(0);
+</script>
+
+<div id="comment_form" class="commentform">
+    <a name="commentform"></a>
+    <div id="divCommentShow"></div>
+    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+    <div id="comment_form_container"></div>
+    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+    <div id="ad_t2"></div>
+    <div id="opt_under_post"></div>
+    <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            googletag.defineSlot("/1090369/C1", [300, 250], "div-gpt-ad-1546353474406-0").addService(googletag.pubads());
+            googletag.defineSlot("/1090369/C2", [468, 60], "div-gpt-ad-1539008685004-0").addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    </script>
+    <div id="cnblogs_c1" class="c_ad_block">
+        <div id="div-gpt-ad-1546353474406-0" style="height:250px; width:300px;"></div>
+    </div>
+    <div id="under_post_news"></div>
+    <div id="cnblogs_c2" class="c_ad_block">
+        <div id="div-gpt-ad-1539008685004-0" style="height:60px; width:468px;">
+            <script>
+                if (new Date() >= new Date(2018, 9, 13)) {
+                    googletag.cmd.push(function () { googletag.display("div-gpt-ad-1539008685004-0"); });
+                }
+            </script>
+        </div>
+    </div>
+    <div id="under_post_kb"></div>
+    <div id="HistoryToday" class="c_ad_block"></div>
+    <script type="text/javascript">
+        fixPostBody();
+        deliverBigBanner();
+setTimeout(function() { incrementViewCount(cb_entryId); }, 50);        deliverAdT2();
+        deliverAdC1();
+        deliverAdC2();
+        loadNewsAndKb();
+        loadBlogSignature();
+LoadPostCategoriesTags(cb_blogId, cb_entryId);        LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+        GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+        loadOptUnderPost();
+        GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    </script>
+</div>
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 JohnnyBai
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    
+</body>
+</html>

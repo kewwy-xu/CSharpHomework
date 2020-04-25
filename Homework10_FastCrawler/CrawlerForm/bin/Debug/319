@@ -1,0 +1,363 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    <meta property="og:description" content="第三方存储媒介 前面我们介绍了基于 Swoole 的&amp;#160;Process&amp;#160;及&amp;#160;Process\Pool&amp;#160;模块在 PHP 中实现多进程管理，但是多进程模式下进程间是相" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>通过 Swoole\Table 实现 Swoole 多进程数据共享 - 八重樱 - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    <link id="MainCss" rel="stylesheet" href="/skins/blacklowkey/bundle-blacklowkey.min.css?v=Fx4xdLkGuHnlaG7xntG_wAnZrnorJWp5u_TWKqbvMF0" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/blacklowkey/bundle-blacklowkey-mobile.min.css?v=cYvlxMu_nd6MVfg-vi7YqOC6FaZ7VHFsDM166vO_ekA" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/a609251438/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/a609251438/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/a609251438/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 557004;
+        var currentBlogApp = 'a609251438';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'BlackLowKey';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/a609251438/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/a609251438/">Raylove</a>
+</h1>
+<h2>
+
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/a609251438/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E5%85%AB%E9%87%8D%E6%A8%B1">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/a609251438/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<span id="stats_post_count">随笔 - 
+257&nbsp; </span>
+<span id="stats_article_count">文章 - 
+0&nbsp; </span>
+<span id="stats-comment_count">评论 - 
+19</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		<div id="post_detail">
+    <!--done-->
+    <div id="topics">
+        <div class="post">
+            <h1 class = "postTitle">
+                
+<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/a609251438/p/12769695.html">通过 Swoole\Table 实现 Swoole 多进程数据共享</a>
+
+            </h1>
+            <div class="clear"></div>
+            <div class="postBody">
+                
+<div id="cnblogs_post_body" class="blogpost-body ">
+    <h3>第三方存储媒介</h3>
+<p>前面我们介绍了基于 Swoole 的&nbsp;<code>Process</code>&nbsp;及&nbsp;<code>Process\Pool</code>&nbsp;模块在 PHP 中实现多进程管理，但是多进程模式下进程间是相互隔离的，无法共享数据和变量，即便是通过&nbsp;<code>global</code>&nbsp;定义的全局或超全局变量，也只是在所属进程中有效，如果要在 Swoole 实现的多进程间共享数据，需要借助第三方存储媒介实现：</p>
+<ul>
+<li>数据库：MySQL、MongoDB</li>
+<li>缓存：Redis、Memcached</li>
+<li>磁盘文件</li>
+</ul>
+<p>但是这也会引入新的问题，多进程同时操作一条记录或一个文件存在并发访问问题，以数据库操作为例，两个进程可能会同时读取一条数据，或者一个进程对某条记录进行更新处理时，另一个进程也来读取这条记录并进行操作，会导致最终结果数据与预期不一致的情况，这个时候，我们就需要引入锁的概念，当一个进程（比如进程A）对某个记录进行写操作时，对该记录加锁，这样其它进程就无法操作该条记录， 直到进程 A 事务提交再释放这个锁，让其他进程可以进行操作。</p>
+<h3>内存共享</h3>
+<h3>PHP 相关扩展</h3>
+<p>对于单机操作来说，除了这些第三方存储媒介之外，还可以通过共享内存的方式实现进程间数据读写操作，有多个 PHP 扩展可以支持共享内存数据操作：</p>
+<ul>
+<li><a class=" wrap external" href="https://link.zhihu.com/?target=https%3A//www.php.net/manual/zh/book.sem.php" rel="nofollow noreferrer" target="_blank" data-za-detail-view-id="1043">Semaphore 扩展</a>：可通过该扩展包提供的&nbsp;<code>shm_get_var</code>&nbsp;和&nbsp;<code>shm_put_var</code>&nbsp;函数实现内存共享数据的读写操作；</li>
+<li><a class=" wrap external" href="https://link.zhihu.com/?target=https%3A//www.php.net/manual/zh/book.shmop.php" rel="nofollow noreferrer" target="_blank" data-za-detail-view-id="1043">Shmop 扩展</a>：可通过该扩展包提供的&nbsp;<code>shmop_read</code>&nbsp;和&nbsp;<code>shmop_write</code>&nbsp;函数实现内存共享数据的读写操作；</li>
+<li><a class=" wrap external" href="https://link.zhihu.com/?target=https%3A//www.php.net/manual/zh/book.apcu.php" rel="nofollow noreferrer" target="_blank" data-za-detail-view-id="1043">APCu（APC User Cache）扩展</a>：可通过该扩展包提供的&nbsp;<code>apc_fetch</code>&nbsp;和&nbsp;<code>apc_store</code>&nbsp;实现内存共享数据的读写操作。</li>
+</ul>
+<h3>Swoole Table</h3>
+<p>但是上述扩展要么不支持锁，要么高并发时性能比较差，所以 Swoole 自己实现了一个共享内存读写工具 &mdash;&mdash;&nbsp;<code>Swoole\Table</code>，该工具是一个基于共享内存和锁实现的高性能并发数据结构，可用于解决多进程/多线程数据共享和同步加锁问题：</p>
+<ul>
+<li>性能强悍，单线程每秒可读写200万次；</li>
+<li>应用代码无需加锁，内置行锁自旋锁，所有操作均是多线程/多进程安全，用户层完全不需要考虑数据同步问题；</li>
+<li>支持多进程，可用于多进程之间共享数据；</li>
+<li>使用行锁，而不是全局锁，仅当 2 个进程在同一 CPU 时间，并发读取同一条数据才会进行发生抢锁。</li>
+</ul>
+<p><code>Swoole\Table</code>&nbsp;支持以 Key-Value 方式读写，使用起来非常简单：</p>
+<div class="highlight">
+<div class="cnblogs_Highlighter">
+<pre class="brush:csharp;gutter:true;">&lt;?php
+
+// 初始化一个容量为 1024 的 Swoole Table
+$table = new \Swoole\Table(1024);
+// 在 Table 中新增 id 列
+$table-&gt;column('id', \Swoole\Table::TYPE_INT);
+// 在 Table 中新增 name 列，长度为 50
+$table-&gt;column('name', \Swoole\Table::TYPE_STRING, 10);
+// 在 Table 中新泽 score 列
+$table-&gt;column('score', \Swoole\Table::TYPE_FLOAT);
+// 创建这个 Swoole Table
+$table-&gt;create();
+
+
+// 设置 Key-Value 值
+$table-&gt;set('student-1', ['id' =&gt; 1, 'name' =&gt; '学小君', 'score' =&gt; 80]);
+$table-&gt;set('student-2', ['id' =&gt; 2, 'name' =&gt; '学院君', 'score' =&gt; 90]);
+
+// 如果指定 Key 值存在则打印对应 Value 值
+if ($table-&gt;exist('student-1')) {
+    echo "Student-" . $table-&gt;get('student-1', 'id') . ':' . $table-&gt;get('student-1', 'name').":".
+        $table-&gt;get('student-1', 'score') . "\n";
+}
+
+// 自增操作
+$table-&gt;incr('student-2', 'score', 5);
+// 自减操作
+$table-&gt;decr('student-2', 'score', 5);
+
+// 表中总记录数
+$count = $table-&gt;count();
+
+// 删除指定表记录
+$table-&gt;del('student-1');
+</pre>
+</div>
+<p>　　</p>
+</div>
+<p>此外&nbsp;<code>Swoole\Table</code>&nbsp;类还实现了迭代器接口，支持通过&nbsp;<code>foreach</code>&nbsp;进行遍历。</p>
+<h3>在 Laravel 中使用 Swoole\Table</h3>
+<p>如果要在 Laravel 中集成 Swoole 使用&nbsp;<code>Swoole\Table</code>，以&nbsp;<a class=" wrap external" href="https://link.zhihu.com/?target=https%3A//github.com/hhxsv5/laravel-s%23use-swooletable" rel="nofollow noreferrer" target="_blank" data-za-detail-view-id="1043">LaravelS 扩展包</a>为例，首先要在配置文件&nbsp;<code>config/laravels.php</code>&nbsp;中定义&nbsp;<code>swoole_tables</code>&nbsp;配置项：</p>
+<div class="highlight">
+<div class="cnblogs_Highlighter">
+<pre class="brush:csharp;gutter:true;">'swoole_tables'            =&gt; [
+    'ws' =&gt; [ // 表名，会加上 Table 后缀，比如这里是 wsTable
+        'size'   =&gt; 102400, //  表容量
+        'column' =&gt; [ // 表字段，字段名为 value
+            ['name' =&gt; 'value', 'type' =&gt; \Swoole\Table::TYPE_INT, 'size' =&gt; 8],
+        ],
+    ],
+    ... // 还可以定义其它表
+],
+</pre>
+</div>
+<p>　　</p>
+</div>
+<p>然后我们可以在代码中通过<code>swoole</code>实例上的<code>wsTable</code>属性访问 SwooleTable：</p>
+<div class="highlight">
+<div class="cnblogs_Highlighter">
+<pre class="brush:csharp;gutter:true;">class WebSocketService implements WebSocketHandlerInterface
+{
+    ...
+
+    // 连接建立时触发
+    public function onOpen(Server $server, Request $request)
+    {
+        // 在触发 WebSocket 连接建立事件之前，Laravel 应用初始化的生命周期已经结束，你可以在这里获取 Laravel 请求和会话数据
+        // 调用 push 方法向客户端推送数据，fd 是客户端连接标识字段
+        Log::info('WebSocket 连接建立:' . $request-&gt;fd);
+        app('swoole')-&gt;wsTable-&gt;set('fd:' . $request-&gt;fd, ['value' =&gt; $request-&gt;fd]);
+        $server-&gt;push($request-&gt;fd, 'Welcome to WebSocket Server built on LaravelS');
+    }
+
+    // 收到消息时触发
+    public function onMessage(Server $server, Frame $frame)
+    {
+        foreach (app('swoole')-&gt;wsTable as $key =&gt; $row) {
+            if (strpos($key, 'fd:') === 0 &amp;&amp; $server-&gt;exist($row['value'])) {
+                Log::info('Receive message from client: ' . $row['value']);
+                // 调用 push 方法向客户端推送数据
+                $server-&gt;push($frame-&gt;fd, 'This is a message sent from WebSocket Server at ' . date('Y-m-d H:i:s'));
+            }
+        }
+    }
+    
+    ...
+
+}
+</pre>
+</div>
+<p>　　</p>
+</div>
+<p>然后我们参考<a class=" wrap external" href="https://link.zhihu.com/?target=https%3A//xueyuanjun.com/post/19700.html" rel="nofollow noreferrer" target="_blank" data-za-detail-view-id="1043">在 Laravel 中集成 Swoole 实现 WebSocket 服务器</a>这篇教程从客户端向 WebSocket 服务器发起请求，即可在最新日志文件中看到相应的日志信息：</p>
+<div class="highlight">
+<div class="cnblogs_Highlighter">
+<pre class="brush:csharp;gutter:true;">[2020-04-24 19:39:03] local.INFO: WebSocket 连接建立:1  
+[2020-04-24 19:39:07] local.INFO: Receive message from client: 1
+</pre>
+</div>
+<p>　　</p>
+<pre><br /><br /></pre>
+</div>
+</div>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+    <div id="blog_post_info"></div>
+    <div class="clear"></div>
+    <div id="post_next_prev"></div>
+</div>
+            </div>
+            <div class="postDesc">posted @ 
+<span id="post-date">2020-04-24 19:40</span>&nbsp;
+<a href="https://www.cnblogs.com/a609251438/">八重樱</a>&nbsp;
+阅读(<span id="post_view_count">...</span>)&nbsp;
+评论(<span id="post_comment_count">...</span>)&nbsp;
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12769695" rel="nofollow">编辑</a>&nbsp;
+<a href="javascript:void(0)" onclick="AddToWz(12769695);return false;">收藏</a></div>
+        </div>
+	    
+	    
+    </div><!--end: topics 文章、评论容器-->
+</div>
+<script src="https://common.cnblogs.com/highlight/9.12.0/highlight.min.js"></script>
+<script>markdown_highlight();</script>
+<script>
+    var allowComments = true, cb_blogId = 557004, cb_blogApp = 'a609251438', cb_blogUserGuid = '09ab19f8-f95d-4bb5-26bc-08d75c4cd385';
+    var cb_entryId = 12769695, cb_entryCreatedDate = '2020-04-24 19:40', cb_postType = 1; 
+    loadViewCount(cb_entryId);
+</script><a name="!comments"></a>
+<div id="blog-comments-placeholder"></div>
+<script>
+    var commentManager = new blogCommentManager();
+    commentManager.renderComments(0);
+</script>
+
+<div id="comment_form" class="commentform">
+    <a name="commentform"></a>
+    <div id="divCommentShow"></div>
+    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+    <div id="comment_form_container"></div>
+    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+    <div id="ad_t2"></div>
+    <div id="opt_under_post"></div>
+    <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            googletag.defineSlot("/1090369/C1", [300, 250], "div-gpt-ad-1546353474406-0").addService(googletag.pubads());
+            googletag.defineSlot("/1090369/C2", [468, 60], "div-gpt-ad-1539008685004-0").addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    </script>
+    <div id="cnblogs_c1" class="c_ad_block">
+        <div id="div-gpt-ad-1546353474406-0" style="height:250px; width:300px;"></div>
+    </div>
+    <div id="under_post_news"></div>
+    <div id="cnblogs_c2" class="c_ad_block">
+        <div id="div-gpt-ad-1539008685004-0" style="height:60px; width:468px;">
+            <script>
+                if (new Date() >= new Date(2018, 9, 13)) {
+                    googletag.cmd.push(function () { googletag.display("div-gpt-ad-1539008685004-0"); });
+                }
+            </script>
+        </div>
+    </div>
+    <div id="under_post_kb"></div>
+    <div id="HistoryToday" class="c_ad_block"></div>
+    <script type="text/javascript">
+        fixPostBody();
+        deliverBigBanner();
+setTimeout(function() { incrementViewCount(cb_entryId); }, 50);        deliverAdT2();
+        deliverAdC1();
+        deliverAdC2();
+        loadNewsAndKb();
+        loadBlogSignature();
+LoadPostCategoriesTags(cb_blogId, cb_entryId);        LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+        GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+        loadOptUnderPost();
+        GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    </script>
+</div>
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 八重樱
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    
+</body>
+</html>

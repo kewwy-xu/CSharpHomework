@@ -1,0 +1,321 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    <meta property="og:description" content="（一）binlog2sql介绍binlog2sql是国内MySQL大佬danfengcao开发，许多MySQL爱好者参与改进的一款MySQL binlog解析软件。根据不同选项，可以得到原始SQL、回" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>使用binlog2sql工具来恢复数据库 - gegeman - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    <link id="MainCss" rel="stylesheet" href="/skins/lessismoreright/bundle-lessismoreright.min.css?v=r7HROo-7bHpj9wQ7aMjjOlbCdKigSxO_AFRYzTkcpKo" />
+    <link type="text/css" rel="stylesheet" href="https://www.cnblogs.com/lijiaman/custom.css?v=xsZbuptzcnWLs5&#x2B;5cXePreCvjno=" />
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/lessismoreright/bundle-lessismoreright-mobile.min.css?v=FJjyQba01xzuYKRyPpSwE1bMq69pRjxrz5wp2oZZGLY" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/lijiaman/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/lijiaman/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/lijiaman/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 298216;
+        var currentBlogApp = 'lijiaman';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'LessIsMoreRight';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    <div id="home">
+    <div id="header">
+        <div id="blogTitle">
+            
+<div class="title"><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/lijiaman/">满格</a>
+</div>
+<div class="subtitle">
+
+</div>
+
+        </div>
+        <div id="navigator">
+            
+<ul id="navList">
+    <li id="nav_sitehome"><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+    <li id="nav_myhome">
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/lijiaman/">
+首页</a>
+</li>
+    <li id="nav_newpost">
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+    <li id="nav_contact">
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/gegeman">
+联系</a></li>
+    <li id="nav_rss">
+</li>
+    <li id="nav_admin">
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+            <div class="blogStats">
+                
+<span id="stats_post_count">随笔 - 
+132&nbsp;</span>
+<span id="stats_article_count">文章 - 
+0&nbsp;</span>
+<!-- <span id="stats-comment_count"></span> -->
+<span id="stats_comment_count">评论 - 
+20</span>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="mainContent">
+            <div class="forFlow">
+                <div id="post_detail">
+    <div id="topics">
+        <div class="post">
+            <h1 class="postTitle">
+                
+<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/lijiaman/p/12770397.html">使用binlog2sql工具来恢复数据库</a>
+
+            </h1>
+            <div class="clear"></div>
+            <div class="postBody">
+                
+<div id="cnblogs_post_body" class="blogpost-body ">
+    <p><strong>（一）binlog2sql介绍</strong></p><p>binlog2sql是国内MySQL大佬<a href="https://github.com/danfengcao">danfengcao</a>开发，许多MySQL爱好者参与改进的一款MySQL binlog解析软件。根据不同选项，可以得到原始SQL、回滚SQL、去除主键的SQL等。</p><p>github地址为：<a href="https://github.com/danfengcao/binlog2sql">https://github.com/danfengcao/binlog2sql</a></p><p>该工具主要用于：</p><ul><li>数据快速回滚（闪回）；</li><li>从binlog生成标准SQL；</li></ul><p>适用MySQL版本：MySQL5.6 、MySQL5.7</p><p><br></p><p><strong>（二）安装binlog2sql</strong></p><p><p><div class="cnblogs_code" style="padding: 5px; border: 1px solid rgb(204, 204, 204); border-image: none; background-color: rgb(245, 245, 245);"><pre><span style="color: rgb(0, 0, 0);"># 安装git
+shell</span>&gt; <span style="color: rgb(0, 0, 255);">yum</span> <span style="color: rgb(0, 0, 255);">install</span> -<span style="color: rgb(0, 0, 0);">y git
+
+# 安装pip工具
+shell</span>&gt; <span style="color: rgb(0, 0, 255);">yum</span> <span style="color: rgb(0, 0, 255);">install</span> -y epel-<span style="color: rgb(0, 0, 0);">release
+shell</span>&gt; <span style="color: rgb(0, 0, 255);">yum</span> <span style="color: rgb(0, 0, 255);">install</span> -y python-<span style="color: rgb(0, 0, 0);">pip
+
+
+# 安装binlog2sql
+shell</span>&gt; git clone https:<span style="color: rgb(0, 128, 0);">//</span><span style="color: rgb(0, 128, 0);">github.com/danfengcao/binlog2sql.git &amp;&amp; cd binlog2sql</span>
+shell&gt; pip <span style="color: rgb(0, 0, 255);">install</span> -r requirements.txt</pre></div><p><strong><br></strong></p><p><strong>（三）使用binlog2sql</strong></p><p>要使用binlog2sql，MySQL服务器需要设置以下参数：</p><div class="cnblogs_code" style="padding: 5px; border: 1px solid rgb(204, 204, 204); border-image: none; background-color: rgb(245, 245, 245);"><pre><span style="color: rgb(0, 0, 0);">[mysqld]
+server_id </span>= <span style="color: rgb(128, 0, 128);">1</span><span style="color: rgb(0, 0, 0);">
+log_bin </span>= /var/log/mysql/mysql-<span style="color: rgb(0, 0, 0);">bin.log
+max_binlog_size </span>=<span style="color: rgb(0, 0, 0);"> 100M
+binlog_format </span>=<span style="color: rgb(0, 0, 0);"> row
+binlog_row_image </span>= full</pre></div><p><br></p><p>binlog2sql在使用时需要连接到shuju库上，连接用户的权限为：</p><div class="cnblogs_code" style="padding: 5px; border: 1px solid rgb(204, 204, 204); border-image: none; background-color: rgb(245, 245, 245);"><pre><span style="color: rgb(0, 0, 255);">select</span>,spuer<span style="color: rgb(128, 128, 128);">/</span><span style="color: rgb(0, 0, 255);">replication</span> client,<span style="color: rgb(0, 0, 255);">replication</span><span style="color: rgb(0, 0, 0);"> slave
+
+</span><span style="color: rgb(0, 128, 128);">--</span><span style="color: rgb(0, 128, 128);"> 建议授权：</span>
+<span style="color: rgb(0, 0, 255);">grant</span> <span style="color: rgb(0, 0, 255);">select</span>,<span style="color: rgb(0, 0, 255);">replication</span> slave,<span style="color: rgb(0, 0, 255);">replication</span> client <span style="color: rgb(0, 0, 255);">on</span> <span style="color: rgb(128, 128, 128);">*</span>.<span style="color: rgb(128, 128, 128);">*</span> <span style="color: rgb(0, 0, 255);">to</span> <span style="color: rgb(255, 0, 255);">user</span>;</pre></div><p><br></p><p>binlog2sql的语法为：</p><div class="cnblogs_code" style="padding: 5px; border: 1px solid rgb(204, 204, 204); border-image: none; background-color: rgb(245, 245, 245);"><pre>[root@masterdb binlog2sql]# <span style="color: rgb(0, 0, 255);">pwd</span>
+/root/binlog2sql/<span style="color: rgb(0, 0, 0);">binlog2sql
+[root@masterdb binlog2sql]# python binlog2sql.py </span>--<span style="color: rgb(0, 0, 0);">help
+usage: binlog2sql.py [</span>-h HOST] [-u USER] [-<span style="color: rgb(0, 0, 0);">p [PASSWORD [PASSWORD ...]]]
+                     [</span>-P PORT] [--start-<span style="color: rgb(0, 0, 255);">file</span><span style="color: rgb(0, 0, 0);"> START_FILE]
+                     [</span>--start-position START_POS] [--stop-<span style="color: rgb(0, 0, 255);">file</span><span style="color: rgb(0, 0, 0);"> END_FILE]
+                     [</span>--stop-position END_POS] [--start-<span style="color: rgb(0, 0, 0);">datetime START_TIME]
+                     [</span>--stop-datetime STOP_TIME] [--stop-never] [--<span style="color: rgb(0, 0, 0);">help]
+                     [</span>-<span style="color: rgb(0, 0, 0);">d [DATABASES [DATABASES ...]]]
+                     [</span>-t [TABLES [TABLES ...]]] [--only-<span style="color: rgb(0, 0, 0);">dml]
+                     [</span>--sql-type [SQL_TYPE [SQL_TYPE ...]]] [-K] [-<span style="color: rgb(0, 0, 0);">B]
+                     [</span>--back-interval BACK_INTERVAL]</pre></div><p>语法解析：</p><p><strong>MySQL链接配置参数</strong></p><ul><li>-h host; –p password; –u user,-P port</li></ul><p><strong>解析模式参数：</strong></p><ul><li>--stop-never : 持续解析binlog，同步至执行命令时最新的binlog位置，默认false。</li><li>-K , --no-primary-key ： 对insert语句去除主键，默认false。</li><li>-B , --flashback : 生成回滚SQL，可解析大文件，不受内存限制，默认false。与stop-never或no-primary-key不能同时添加。</li><li>--back-interval :在-B模式下，每打印1000条回滚SQL，SLEEP多少秒，默认为1。</li></ul><p><strong>范围控制参数：</strong></p><ul><li>--start-file ：起始解析文件，只需文件名，无需全路径。<strong>必需参数</strong>。</li><li>--stop-file / --end-file : 终止解析文件，默认为start-file同一个文件，若解析模式为stop-never，则该参数失效。</li><li>--start-position / --start-pos : 起始解析位置，默认start-file文件起始位置。</li><li>--stop-position / --stop-pos : 终止解析位置，默认stop-file终点位置。</li><li>--start-datetime ：起始解析时间，格式为’%Y-%m-%d %H:%M:%S’。</li><li>--stop-datetime ：终止解析时间，格式为’%Y-%m-%d %H:%M:%S’</li></ul><p><strong>对象过滤参数：</strong></p><ul><li>-d , --databases : 只解析目标DB的sql，多个数据库用空格隔开，如：-d db1 db2。</li><li>-t&nbsp; , --tables : 只解析目标表的sql，多张表用空格隔开，如：-t table1 table2。</li><li>--only-dml ：只解析DML，忽略DDL。</li><li>--sql-type : 只解析指定类型，支持INSERT,UPDATE,DELETE。多个类型用空格隔开，如--sql-type INSERT UPDATE，默认全解析。</li></ul><p><br></p><p><strong>（四）binlog2sql测试</strong></p><p><strong>测试目的</strong>：本次实验模拟误删除数据，通过使用binlog2sql将数据找回来。</p><p><font style="background-color: rgb(247, 150, 70);">STEP1</font>：构造测试数据</p><div class="cnblogs_code" style="padding: 5px; border: 1px solid rgb(204, 204, 204); border-image: none; background-color: rgb(245, 245, 245);"><pre><span style="color: rgb(0, 128, 128);">--</span><span style="color: rgb(0, 128, 128);">构造测试表</span>
+<span style="color: rgb(0, 0, 255);">create</span> <span style="color: rgb(0, 0, 255);">table</span><span style="color: rgb(0, 0, 0);"> test01
+ (
+    id        </span><span style="color: rgb(0, 0, 255);">int</span>          <span style="color: rgb(0, 0, 255);">primary</span> <span style="color: rgb(0, 0, 255);">key</span><span style="color: rgb(0, 0, 0);">,
+    name      </span><span style="color: rgb(0, 0, 255);">varchar</span>(<span style="color: rgb(128, 0, 0); font-weight: bold;">30</span>)  <span style="color: rgb(128, 128, 128);">not</span> <span style="color: rgb(0, 0, 255);">null</span><span style="color: rgb(0, 0, 0);">,
+    birthday  date         </span><span style="color: rgb(128, 128, 128);">not</span> <span style="color: rgb(0, 0, 255);">null</span><span style="color: rgb(0, 0, 0);">
+ );
+</span><span style="color: rgb(128, 128, 128);">-</span><span style="color: rgb(0, 0, 0);">插入3条数据
+</span><span style="color: rgb(0, 0, 255);">insert</span> <span style="color: rgb(0, 0, 255);">into</span> test01 <span style="color: rgb(0, 0, 255);">values</span>(<span style="color: rgb(128, 0, 0); font-weight: bold;">1</span>,<span style="color: rgb(255, 0, 0);">'</span><span style="color: rgb(255, 0, 0);">小明</span><span style="color: rgb(255, 0, 0);">'</span>,<span style="color: rgb(255, 0, 0);">'</span><span style="color: rgb(255, 0, 0);">1993-01-02</span><span style="color: rgb(255, 0, 0);">'</span><span style="color: rgb(0, 0, 0);">);
+ </span><span style="color: rgb(0, 0, 255);">insert</span> <span style="color: rgb(0, 0, 255);">into</span> test01 <span style="color: rgb(0, 0, 255);">values</span>(<span style="color: rgb(128, 0, 0); font-weight: bold;">2</span>,<span style="color: rgb(255, 0, 0);">'</span><span style="color: rgb(255, 0, 0);">小华</span><span style="color: rgb(255, 0, 0);">'</span>,<span style="color: rgb(255, 0, 0);">'</span><span style="color: rgb(255, 0, 0);">1994-08-15</span><span style="color: rgb(255, 0, 0);">'</span><span style="color: rgb(0, 0, 0);">);
+ </span><span style="color: rgb(0, 0, 255);">insert</span> <span style="color: rgb(0, 0, 255);">into</span> test01 <span style="color: rgb(0, 0, 255);">values</span>(<span style="color: rgb(128, 0, 0); font-weight: bold;">3</span>,<span style="color: rgb(255, 0, 0);">'</span><span style="color: rgb(255, 0, 0);">小丽</span><span style="color: rgb(255, 0, 0);">'</span>,<span style="color: rgb(255, 0, 0);">'</span><span style="color: rgb(255, 0, 0);">1995-07-12</span><span style="color: rgb(255, 0, 0);">'</span><span style="color: rgb(0, 0, 0);">);
+
+mysql</span><span style="color: rgb(128, 128, 128);">&gt;</span> <span style="color: rgb(0, 0, 255);">select</span> <span style="color: rgb(128, 128, 128);">*</span> <span style="color: rgb(0, 0, 255);">from</span><span style="color: rgb(0, 0, 0);"> test01;
+ </span><span style="color: rgb(128, 128, 128);">+</span><span style="color: rgb(0, 128, 128);">--</span><span style="color: rgb(0, 128, 128);">--+--------+------------+</span>
+ <span style="color: rgb(128, 128, 128);">|</span> id <span style="color: rgb(128, 128, 128);">|</span> name   <span style="color: rgb(128, 128, 128);">|</span> birthday   <span style="color: rgb(128, 128, 128);">|</span>
+ <span style="color: rgb(128, 128, 128);">+</span><span style="color: rgb(0, 128, 128);">--</span><span style="color: rgb(0, 128, 128);">--+--------+------------+</span>
+ <span style="color: rgb(128, 128, 128);">|</span>  <span style="color: rgb(128, 0, 0); font-weight: bold;">1</span> <span style="color: rgb(128, 128, 128);">|</span> 小明   <span style="color: rgb(128, 128, 128);">|</span> <span style="color: rgb(128, 0, 0); font-weight: bold;">1993</span><span style="color: rgb(128, 128, 128);">-</span><span style="color: rgb(128, 0, 0); font-weight: bold;">01</span><span style="color: rgb(128, 128, 128);">-</span><span style="color: rgb(128, 0, 0); font-weight: bold;">02</span> <span style="color: rgb(128, 128, 128);">|</span>
+ <span style="color: rgb(128, 128, 128);">|</span>  <span style="color: rgb(128, 0, 0); font-weight: bold;">2</span> <span style="color: rgb(128, 128, 128);">|</span> 小华   <span style="color: rgb(128, 128, 128);">|</span> <span style="color: rgb(128, 0, 0); font-weight: bold;">1994</span><span style="color: rgb(128, 128, 128);">-</span><span style="color: rgb(128, 0, 0); font-weight: bold;">08</span><span style="color: rgb(128, 128, 128);">-</span><span style="color: rgb(128, 0, 0); font-weight: bold;">15</span> <span style="color: rgb(128, 128, 128);">|</span>
+ <span style="color: rgb(128, 128, 128);">|</span>  <span style="color: rgb(128, 0, 0); font-weight: bold;">3</span> <span style="color: rgb(128, 128, 128);">|</span> 小丽   <span style="color: rgb(128, 128, 128);">|</span> <span style="color: rgb(128, 0, 0); font-weight: bold;">1995</span><span style="color: rgb(128, 128, 128);">-</span><span style="color: rgb(128, 0, 0); font-weight: bold;">07</span><span style="color: rgb(128, 128, 128);">-</span><span style="color: rgb(128, 0, 0); font-weight: bold;">12</span> <span style="color: rgb(128, 128, 128);">|</span>
+ <span style="color: rgb(128, 128, 128);">+</span><span style="color: rgb(0, 128, 128);">--</span><span style="color: rgb(0, 128, 128);">--+--------+------------+</span>
+<span style="color: rgb(128, 0, 0); font-weight: bold;">3</span> rows <span style="color: rgb(128, 128, 128);">in</span> <span style="color: rgb(0, 0, 255);">set</span> (<span style="color: rgb(128, 0, 0); font-weight: bold;">0.00</span> sec)</pre></div>
+<p><br>
+<font style="background-color: rgb(247, 150, 70);">STEP2</font>：模拟误删除数据<br>
+</p>
+<div class="cnblogs_code" style="padding: 5px; border: 1px solid rgb(204, 204, 204); border-image: none; background-color: rgb(245, 245, 245);"><pre>mysql<span style="color: rgb(128, 128, 128);">&gt;</span> <span style="color: rgb(0, 0, 255);">delete</span> <span style="color: rgb(0, 0, 255);">from</span><span style="color: rgb(0, 0, 0);"> test01;
+Query OK, </span><span style="color: rgb(128, 0, 0); font-weight: bold;">3</span> rows affected (<span style="color: rgb(128, 0, 0); font-weight: bold;">0.00</span> sec)</pre></div><p><br><font style="background-color: rgb(247, 150, 70);">
+STEP3</font>：确认最后的日志<br>
+</p>
+<div class="cnblogs_code" style="padding: 5px; border: 1px solid rgb(204, 204, 204); border-image: none; background-color: rgb(245, 245, 245);"><pre>mysql<span style="color: rgb(128, 128, 128);">&gt;</span><span style="color: rgb(0, 0, 0);"> show master status;
+</span><span style="color: rgb(128, 128, 128);">+</span><span style="color: rgb(0, 128, 128);">--</span><span style="color: rgb(0, 128, 128);">-----------------+----------+--------------+------------------+-------------------+</span>
+<span style="color: rgb(128, 128, 128);">|</span> <span style="color: rgb(0, 0, 255);">File</span>              <span style="color: rgb(128, 128, 128);">|</span> Position <span style="color: rgb(128, 128, 128);">|</span> Binlog_Do_DB <span style="color: rgb(128, 128, 128);">|</span> Binlog_Ignore_DB <span style="color: rgb(128, 128, 128);">|</span> Executed_Gtid_Set <span style="color: rgb(128, 128, 128);">|</span>
+<span style="color: rgb(128, 128, 128);">+</span><span style="color: rgb(0, 128, 128);">--</span><span style="color: rgb(0, 128, 128);">-----------------+----------+--------------+------------------+-------------------+</span>
+<span style="color: rgb(128, 128, 128);">|</span> master<span style="color: rgb(128, 128, 128);">-</span>bin.<span style="color: rgb(128, 0, 0); font-weight: bold;">000001</span> <span style="color: rgb(128, 128, 128);">|</span>     <span style="color: rgb(128, 0, 0); font-weight: bold;">1600</span> <span style="color: rgb(128, 128, 128);">|</span>              <span style="color: rgb(128, 128, 128);">|</span>                  <span style="color: rgb(128, 128, 128);">|</span>                   <span style="color: rgb(128, 128, 128);">|</span>
+<span style="color: rgb(128, 128, 128);">+</span><span style="color: rgb(0, 128, 128);">--</span><span style="color: rgb(0, 128, 128);">-----------------+----------+--------------+------------------+-------------------+</span>
+<span style="color: rgb(128, 0, 0); font-weight: bold;">1</span> row <span style="color: rgb(128, 128, 128);">in</span> <span style="color: rgb(0, 0, 255);">set</span> (<span style="color: rgb(128, 0, 0); font-weight: bold;">0.00</span> sec)</pre></div><p><br>
+<font style="background-color: rgb(247, 150, 70);">STEP4</font>：解析出标准SQL，用于定位回滚的开始和结束位置<br>
+</p>
+<div class="cnblogs_code" style="padding: 5px; border: 1px solid rgb(204, 204, 204); border-image: none; background-color: rgb(245, 245, 245);"><pre><span style="color: rgb(255, 0, 0);">[</span><span style="color: rgb(255, 0, 0);">root@masterdb binlog2sql</span><span style="color: rgb(255, 0, 0);">]</span># python binlog2sql.py <span style="color: rgb(128, 128, 128);">-</span>h127.<span style="color: rgb(128, 0, 0); font-weight: bold;">0.0</span>.<span style="color: rgb(128, 0, 0); font-weight: bold;">1</span> <span style="color: rgb(128, 128, 128);">-</span>P3306 <span style="color: rgb(128, 128, 128);">-</span>uroot <span style="color: rgb(128, 128, 128);">-</span>p123456 <span style="color: rgb(128, 128, 128);">-</span>dlijiamandb <span style="color: rgb(128, 128, 128);">-</span>t test01 <span style="color: rgb(0, 128, 128);">--</span><span style="color: rgb(0, 128, 128);">sql-type DELETE --start-file='master-bin.000001'</span>
+ <span style="color: rgb(0, 0, 255);">USE</span><span style="color: rgb(0, 0, 0);"> lijiamandb;
+ </span><span style="color: rgb(0, 0, 255);">create</span> <span style="color: rgb(0, 0, 255);">table</span><span style="color: rgb(0, 0, 0);"> test01
+ (
+    id        </span><span style="color: rgb(0, 0, 255);">int</span>          <span style="color: rgb(0, 0, 255);">primary</span> <span style="color: rgb(0, 0, 255);">key</span><span style="color: rgb(0, 0, 0);">,
+    name      </span><span style="color: rgb(0, 0, 255);">varchar</span>(<span style="color: rgb(128, 0, 0); font-weight: bold;">30</span>)  <span style="color: rgb(128, 128, 128);">not</span> <span style="color: rgb(0, 0, 255);">null</span><span style="color: rgb(0, 0, 0);">,
+    birthday  date         </span><span style="color: rgb(128, 128, 128);">not</span> <span style="color: rgb(0, 0, 255);">null</span><span style="color: rgb(0, 0, 0);">
+ );
+ </span><span style="color: rgb(0, 0, 255);">DELETE</span> <span style="color: rgb(0, 0, 255);">FROM</span> `lijiamandb`.`test01` <span style="color: rgb(0, 0, 255);">WHERE</span> `birthday`<span style="color: rgb(128, 128, 128);">=</span><span style="color: rgb(255, 0, 0);">'</span><span style="color: rgb(255, 0, 0);">1993-01-02</span><span style="color: rgb(255, 0, 0);">'</span> <span style="color: rgb(128, 128, 128);">AND</span> `id`<span style="color: rgb(128, 128, 128);">=</span><span style="color: rgb(128, 0, 0); font-weight: bold;">1</span> <span style="color: rgb(128, 128, 128);">AND</span> `name`<span style="color: rgb(128, 128, 128);">=</span><span style="color: rgb(255, 0, 0);">'</span><span style="color: rgb(255, 0, 0);">小明</span><span style="color: rgb(255, 0, 0);">'</span> LIMIT <span style="color: rgb(128, 0, 0); font-weight: bold;">1</span>; #start <span style="color: rgb(128, 0, 0); font-weight: bold;">1287</span> <span style="color: rgb(0, 0, 255);">end</span> <span style="color: rgb(128, 0, 0); font-weight: bold;">1569</span> time <span style="color: rgb(128, 0, 0); font-weight: bold;">2020</span><span style="color: rgb(128, 128, 128);">-</span><span style="color: rgb(128, 0, 0); font-weight: bold;">04</span><span style="color: rgb(128, 128, 128);">-</span><span style="color: rgb(128, 0, 0); font-weight: bold;">24</span> <span style="color: rgb(128, 0, 0); font-weight: bold;">13</span>:<span style="color: rgb(128, 0, 0); font-weight: bold;">40</span>:<span style="color: rgb(128, 0, 0); font-weight: bold;">26</span>
+ <span style="color: rgb(0, 0, 255);">DELETE</span> <span style="color: rgb(0, 0, 255);">FROM</span> `lijiamandb`.`test01` <span style="color: rgb(0, 0, 255);">WHERE</span> `birthday`<span style="color: rgb(128, 128, 128);">=</span><span style="color: rgb(255, 0, 0);">'</span><span style="color: rgb(255, 0, 0);">1994-08-15</span><span style="color: rgb(255, 0, 0);">'</span> <span style="color: rgb(128, 128, 128);">AND</span> `id`<span style="color: rgb(128, 128, 128);">=</span><span style="color: rgb(128, 0, 0); font-weight: bold;">2</span> <span style="color: rgb(128, 128, 128);">AND</span> `name`<span style="color: rgb(128, 128, 128);">=</span><span style="color: rgb(255, 0, 0);">'</span><span style="color: rgb(255, 0, 0);">小华</span><span style="color: rgb(255, 0, 0);">'</span> LIMIT <span style="color: rgb(128, 0, 0); font-weight: bold;">1</span>; #start <span style="color: rgb(128, 0, 0); font-weight: bold;">1287</span> <span style="color: rgb(0, 0, 255);">end</span> <span style="color: rgb(128, 0, 0); font-weight: bold;">1569</span> time <span style="color: rgb(128, 0, 0); font-weight: bold;">2020</span><span style="color: rgb(128, 128, 128);">-</span><span style="color: rgb(128, 0, 0); font-weight: bold;">04</span><span style="color: rgb(128, 128, 128);">-</span><span style="color: rgb(128, 0, 0); font-weight: bold;">24</span> <span style="color: rgb(128, 0, 0); font-weight: bold;">13</span>:<span style="color: rgb(128, 0, 0); font-weight: bold;">40</span>:<span style="color: rgb(128, 0, 0); font-weight: bold;">26</span>
+ <span style="color: rgb(0, 0, 255);">DELETE</span> <span style="color: rgb(0, 0, 255);">FROM</span> `lijiamandb`.`test01` <span style="color: rgb(0, 0, 255);">WHERE</span> `birthday`<span style="color: rgb(128, 128, 128);">=</span><span style="color: rgb(255, 0, 0);">'</span><span style="color: rgb(255, 0, 0);">1995-07-12</span><span style="color: rgb(255, 0, 0);">'</span> <span style="color: rgb(128, 128, 128);">AND</span> `id`<span style="color: rgb(128, 128, 128);">=</span><span style="color: rgb(128, 0, 0); font-weight: bold;">3</span> <span style="color: rgb(128, 128, 128);">AND</span> `name`<span style="color: rgb(128, 128, 128);">=</span><span style="color: rgb(255, 0, 0);">'</span><span style="color: rgb(255, 0, 0);">小丽</span><span style="color: rgb(255, 0, 0);">'</span> LIMIT <span style="color: rgb(128, 0, 0); font-weight: bold;">1</span>; #start <span style="color: rgb(128, 0, 0); font-weight: bold;">1287</span> <span style="color: rgb(0, 0, 255);">end</span> <span style="color: rgb(128, 0, 0); font-weight: bold;">1569</span> time <span style="color: rgb(128, 0, 0); font-weight: bold;">2020</span><span style="color: rgb(128, 128, 128);">-</span><span style="color: rgb(128, 0, 0); font-weight: bold;">04</span><span style="color: rgb(128, 128, 128);">-</span><span style="color: rgb(128, 0, 0); font-weight: bold;">24</span> <span style="color: rgb(128, 0, 0); font-weight: bold;">13</span>:<span style="color: rgb(128, 0, 0); font-weight: bold;">40</span>:<span style="color: rgb(128, 0, 0); font-weight: bold;">26</span></pre></div><p>值得注意的是，虽然我指定了只解析DELETE语句，但还是把DDL给解析出来了。</p><p><br>
+<font style="background-color: rgb(247, 150, 70);">STEP5</font>：解析出回滚SQL<br>
+</p>
+<div class="cnblogs_code" style="padding: 5px; border: 1px solid rgb(204, 204, 204); border-image: none; background-color: rgb(245, 245, 245);"><pre><span style="color: rgb(255, 0, 0);">[</span><span style="color: rgb(255, 0, 0);">root@masterdb binlog2sql</span><span style="color: rgb(255, 0, 0);">]</span># python binlog2sql.py <span style="color: rgb(128, 128, 128);">-</span>h127.<span style="color: rgb(128, 0, 0); font-weight: bold;">0.0</span>.<span style="color: rgb(128, 0, 0); font-weight: bold;">1</span> <span style="color: rgb(128, 128, 128);">-</span>P3306 <span style="color: rgb(128, 128, 128);">-</span>uroot <span style="color: rgb(128, 128, 128);">-</span>p123456 <span style="color: rgb(0, 128, 128);">--</span><span style="color: rgb(0, 128, 128);">flashback  -dlijiamandb -t test01 --sql-type DELETE --start-file='master-bin.000001' </span>
+<span style="color: rgb(0, 0, 255);">INSERT</span> <span style="color: rgb(0, 0, 255);">INTO</span> `lijiamandb`.`test01`(`birthday`, `id`, `name`) <span style="color: rgb(0, 0, 255);">VALUES</span> (<span style="color: rgb(255, 0, 0);">'</span><span style="color: rgb(255, 0, 0);">1995-07-12</span><span style="color: rgb(255, 0, 0);">'</span>, <span style="color: rgb(128, 0, 0); font-weight: bold;">3</span>, <span style="color: rgb(255, 0, 0);">'</span><span style="color: rgb(255, 0, 0);">小丽</span><span style="color: rgb(255, 0, 0);">'</span>); #start <span style="color: rgb(128, 0, 0); font-weight: bold;">1287</span> <span style="color: rgb(0, 0, 255);">end</span> <span style="color: rgb(128, 0, 0); font-weight: bold;">1569</span> time <span style="color: rgb(128, 0, 0); font-weight: bold;">2020</span><span style="color: rgb(128, 128, 128);">-</span><span style="color: rgb(128, 0, 0); font-weight: bold;">04</span><span style="color: rgb(128, 128, 128);">-</span><span style="color: rgb(128, 0, 0); font-weight: bold;">24</span> <span style="color: rgb(128, 0, 0); font-weight: bold;">13</span>:<span style="color: rgb(128, 0, 0); font-weight: bold;">40</span>:<span style="color: rgb(128, 0, 0); font-weight: bold;">26</span>
+<span style="color: rgb(0, 0, 255);">INSERT</span> <span style="color: rgb(0, 0, 255);">INTO</span> `lijiamandb`.`test01`(`birthday`, `id`, `name`) <span style="color: rgb(0, 0, 255);">VALUES</span> (<span style="color: rgb(255, 0, 0);">'</span><span style="color: rgb(255, 0, 0);">1994-08-15</span><span style="color: rgb(255, 0, 0);">'</span>, <span style="color: rgb(128, 0, 0); font-weight: bold;">2</span>, <span style="color: rgb(255, 0, 0);">'</span><span style="color: rgb(255, 0, 0);">小华</span><span style="color: rgb(255, 0, 0);">'</span>); #start <span style="color: rgb(128, 0, 0); font-weight: bold;">1287</span> <span style="color: rgb(0, 0, 255);">end</span> <span style="color: rgb(128, 0, 0); font-weight: bold;">1569</span> time <span style="color: rgb(128, 0, 0); font-weight: bold;">2020</span><span style="color: rgb(128, 128, 128);">-</span><span style="color: rgb(128, 0, 0); font-weight: bold;">04</span><span style="color: rgb(128, 128, 128);">-</span><span style="color: rgb(128, 0, 0); font-weight: bold;">24</span> <span style="color: rgb(128, 0, 0); font-weight: bold;">13</span>:<span style="color: rgb(128, 0, 0); font-weight: bold;">40</span>:<span style="color: rgb(128, 0, 0); font-weight: bold;">26</span>
+<span style="color: rgb(0, 0, 255);">INSERT</span> <span style="color: rgb(0, 0, 255);">INTO</span> `lijiamandb`.`test01`(`birthday`, `id`, `name`) <span style="color: rgb(0, 0, 255);">VALUES</span> (<span style="color: rgb(255, 0, 0);">'</span><span style="color: rgb(255, 0, 0);">1993-01-02</span><span style="color: rgb(255, 0, 0);">'</span>, <span style="color: rgb(128, 0, 0); font-weight: bold;">1</span>, <span style="color: rgb(255, 0, 0);">'</span><span style="color: rgb(255, 0, 0);">小明</span><span style="color: rgb(255, 0, 0);">'</span>); #start <span style="color: rgb(128, 0, 0); font-weight: bold;">1287</span> <span style="color: rgb(0, 0, 255);">end</span> <span style="color: rgb(128, 0, 0); font-weight: bold;">1569</span> time <span style="color: rgb(128, 0, 0); font-weight: bold;">2020</span><span style="color: rgb(128, 128, 128);">-</span><span style="color: rgb(128, 0, 0); font-weight: bold;">04</span><span style="color: rgb(128, 128, 128);">-</span><span style="color: rgb(128, 0, 0); font-weight: bold;">24</span> <span style="color: rgb(128, 0, 0); font-weight: bold;">13</span>:<span style="color: rgb(128, 0, 0); font-weight: bold;">40</span>:<span style="color: rgb(128, 0, 0); font-weight: bold;">26</span></pre></div><p><br><font style="background-color: rgb(247, 150, 70);">
+STEP6</font>：还原到数据库<br>
+</p><p><div class="cnblogs_code" style="padding: 5px; border: 1px solid rgb(204, 204, 204); border-image: none; background-color: rgb(245, 245, 245);"><pre><span style="color: rgb(255, 0, 0);">[</span><span style="color: rgb(255, 0, 0);">root@masterdb binlog2sql</span><span style="color: rgb(255, 0, 0);">]</span># mysql <span style="color: rgb(128, 128, 128);">-</span>uroot <span style="color: rgb(128, 128, 128);">-</span><span style="color: rgb(0, 0, 0);">p123456 lijiamandb
+
+mysql</span><span style="color: rgb(128, 128, 128);">&gt;</span> <span style="color: rgb(0, 0, 255);">INSERT</span> <span style="color: rgb(0, 0, 255);">INTO</span> `lijiamandb`.`test01`(`birthday`, `id`, `name`) <span style="color: rgb(0, 0, 255);">VALUES</span> (<span style="color: rgb(255, 0, 0);">'</span><span style="color: rgb(255, 0, 0);">1995-07-12</span><span style="color: rgb(255, 0, 0);">'</span>, <span style="color: rgb(128, 0, 0); font-weight: bold;">3</span>, <span style="color: rgb(255, 0, 0);">'</span><span style="color: rgb(255, 0, 0);">小丽</span><span style="color: rgb(255, 0, 0);">'</span>); #start <span style="color: rgb(128, 0, 0); font-weight: bold;">1287</span> <span style="color: rgb(0, 0, 255);">end</span> <span style="color: rgb(128, 0, 0); font-weight: bold;">1569</span> time <span style="color: rgb(128, 0, 0); font-weight: bold;">2020</span><span style="color: rgb(128, 128, 128);">-</span><span style="color: rgb(128, 0, 0); font-weight: bold;">04</span><span style="color: rgb(128, 128, 128);">-</span><span style="color: rgb(128, 0, 0); font-weight: bold;">24</span> <span style="color: rgb(128, 0, 0); font-weight: bold;">13</span>:<span style="color: rgb(128, 0, 0); font-weight: bold;">40</span>:<span style="color: rgb(128, 0, 0); font-weight: bold;">26</span>
+<span style="color: rgb(128, 0, 0); font-weight: bold;">69</span> time <span style="color: rgb(128, 0, 0); font-weight: bold;">2020</span><span style="color: rgb(128, 128, 128);">-</span><span style="color: rgb(128, 0, 0); font-weight: bold;">04</span><span style="color: rgb(128, 128, 128);">-</span><span style="color: rgb(128, 0, 0); font-weight: bold;">24</span> <span style="color: rgb(128, 0, 0); font-weight: bold;">13</span>:<span style="color: rgb(128, 0, 0); font-weight: bold;">40</span>:<span style="color: rgb(128, 0, 0); font-weight: bold;">26</span>
+<span style="color: rgb(0, 0, 255);">INSERT</span> <span style="color: rgb(0, 0, 255);">INTO</span> `lijiamandb`.`test01`(`birthday`, `id`, `name`) <span style="color: rgb(0, 0, 255);">VALUES</span> (<span style="color: rgb(255, 0, 0);">'</span><span style="color: rgb(255, 0, 0);">1993-01-02</span><span style="color: rgb(255, 0, 0);">'</span>, <span style="color: rgb(128, 0, 0); font-weight: bold;">1</span>, <span style="color: rgb(255, 0, 0);">'</span><span style="color: rgb(255, 0, 0);">小明</span><span style="color: rgb(255, 0, 0);">'</span>); #start <span style="color: rgb(128, 0, 0); font-weight: bold;">1287</span> <span style="color: rgb(0, 0, 255);">end</span> <span style="color: rgb(128, 0, 0); font-weight: bold;">1569</span> time <span style="color: rgb(128, 0, 0); font-weight: bold;">2020</span><span style="color: rgb(128, 128, 128);">-</span><span style="color: rgb(128, 0, 0); font-weight: bold;">04</span><span style="color: rgb(128, 128, 128);">-</span><span style="color: rgb(128, 0, 0); font-weight: bold;">24</span> <span style="color: rgb(128, 0, 0); font-weight: bold;">13</span>:<span style="color: rgb(128, 0, 0); font-weight: bold;">40</span>:26Query OK, <span style="color: rgb(128, 0, 0); font-weight: bold;">1</span> row affected (<span style="color: rgb(128, 0, 0); font-weight: bold;">0.00</span><span style="color: rgb(0, 0, 0);"> sec)
+
+mysql</span><span style="color: rgb(128, 128, 128);">&gt;</span> <span style="color: rgb(0, 0, 255);">INSERT</span> <span style="color: rgb(0, 0, 255);">INTO</span> `lijiamandb`.`test01`(`birthday`, `id`, `name`) <span style="color: rgb(0, 0, 255);">VALUES</span> (<span style="color: rgb(255, 0, 0);">'</span><span style="color: rgb(255, 0, 0);">1994-08-15</span><span style="color: rgb(255, 0, 0);">'</span>, <span style="color: rgb(128, 0, 0); font-weight: bold;">2</span>, <span style="color: rgb(255, 0, 0);">'</span><span style="color: rgb(255, 0, 0);">小华</span><span style="color: rgb(255, 0, 0);">'</span>); #start <span style="color: rgb(128, 0, 0); font-weight: bold;">1287</span> <span style="color: rgb(0, 0, 255);">end</span> <span style="color: rgb(128, 0, 0); font-weight: bold;">1569</span> time <span style="color: rgb(128, 0, 0); font-weight: bold;">2020</span><span style="color: rgb(128, 128, 128);">-</span><span style="color: rgb(128, 0, 0); font-weight: bold;">04</span><span style="color: rgb(128, 128, 128);">-</span><span style="color: rgb(128, 0, 0); font-weight: bold;">24</span> <span style="color: rgb(128, 0, 0); font-weight: bold;">13</span>:<span style="color: rgb(128, 0, 0); font-weight: bold;">40</span>:<span style="color: rgb(128, 0, 0); font-weight: bold;">26</span><span style="color: rgb(0, 0, 0);">
+Query OK, </span><span style="color: rgb(128, 0, 0); font-weight: bold;">1</span> row affected (<span style="color: rgb(128, 0, 0); font-weight: bold;">0.01</span><span style="color: rgb(0, 0, 0);"> sec)
+
+mysql</span><span style="color: rgb(128, 128, 128);">&gt;</span> <span style="color: rgb(0, 0, 255);">INSERT</span> <span style="color: rgb(0, 0, 255);">INTO</span> `lijiamandb`.`test01`(`birthday`, `id`, `name`) <span style="color: rgb(0, 0, 255);">VALUES</span> (<span style="color: rgb(255, 0, 0);">'</span><span style="color: rgb(255, 0, 0);">1993-01-02</span><span style="color: rgb(255, 0, 0);">'</span>, <span style="color: rgb(128, 0, 0); font-weight: bold;">1</span>, <span style="color: rgb(255, 0, 0);">'</span><span style="color: rgb(255, 0, 0);">小明</span><span style="color: rgb(255, 0, 0);">'</span>); #start <span style="color: rgb(128, 0, 0); font-weight: bold;">1287</span> <span style="color: rgb(0, 0, 255);">end</span> <span style="color: rgb(128, 0, 0); font-weight: bold;">1569</span> time <span style="color: rgb(128, 0, 0); font-weight: bold;">2020</span><span style="color: rgb(128, 128, 128);">-</span><span style="color: rgb(128, 0, 0); font-weight: bold;">04</span><span style="color: rgb(128, 128, 128);">-</span><span style="color: rgb(128, 0, 0); font-weight: bold;">24</span> <span style="color: rgb(128, 0, 0); font-weight: bold;">13</span>:<span style="color: rgb(128, 0, 0); font-weight: bold;">40</span>:<span style="color: rgb(128, 0, 0); font-weight: bold;">26</span><span style="color: rgb(0, 0, 0);">
+Query OK, </span><span style="color: rgb(128, 0, 0); font-weight: bold;">1</span> row affected (<span style="color: rgb(128, 0, 0); font-weight: bold;">0.00</span><span style="color: rgb(0, 0, 0);"> sec)
+
+mysql</span><span style="color: rgb(128, 128, 128);">&gt;</span> <span style="color: rgb(0, 0, 255);">select</span> <span style="color: rgb(128, 128, 128);">*</span> <span style="color: rgb(0, 0, 255);">from</span><span style="color: rgb(0, 0, 0);"> test01;
+</span><span style="color: rgb(128, 128, 128);">+</span><span style="color: rgb(0, 128, 128);">--</span><span style="color: rgb(0, 128, 128);">--+--------+------------+</span>
+ <span style="color: rgb(128, 128, 128);">|</span> id <span style="color: rgb(128, 128, 128);">|</span> name   <span style="color: rgb(128, 128, 128);">|</span> birthday   <span style="color: rgb(128, 128, 128);">|</span>
+<span style="color: rgb(128, 128, 128);">+</span><span style="color: rgb(0, 128, 128);">--</span><span style="color: rgb(0, 128, 128);">--+--------+------------+</span>
+ <span style="color: rgb(128, 128, 128);">|</span>  <span style="color: rgb(128, 0, 0); font-weight: bold;">1</span> <span style="color: rgb(128, 128, 128);">|</span> 小明   <span style="color: rgb(128, 128, 128);">|</span> <span style="color: rgb(128, 0, 0); font-weight: bold;">1993</span><span style="color: rgb(128, 128, 128);">-</span><span style="color: rgb(128, 0, 0); font-weight: bold;">01</span><span style="color: rgb(128, 128, 128);">-</span><span style="color: rgb(128, 0, 0); font-weight: bold;">02</span> <span style="color: rgb(128, 128, 128);">|</span>
+ <span style="color: rgb(128, 128, 128);">|</span>  <span style="color: rgb(128, 0, 0); font-weight: bold;">2</span> <span style="color: rgb(128, 128, 128);">|</span> 小华   <span style="color: rgb(128, 128, 128);">|</span> <span style="color: rgb(128, 0, 0); font-weight: bold;">1994</span><span style="color: rgb(128, 128, 128);">-</span><span style="color: rgb(128, 0, 0); font-weight: bold;">08</span><span style="color: rgb(128, 128, 128);">-</span><span style="color: rgb(128, 0, 0); font-weight: bold;">15</span> <span style="color: rgb(128, 128, 128);">|</span>
+ <span style="color: rgb(128, 128, 128);">|</span>  <span style="color: rgb(128, 0, 0); font-weight: bold;">3</span> <span style="color: rgb(128, 128, 128);">|</span> 小丽   <span style="color: rgb(128, 128, 128);">|</span> <span style="color: rgb(128, 0, 0); font-weight: bold;">1995</span><span style="color: rgb(128, 128, 128);">-</span><span style="color: rgb(128, 0, 0); font-weight: bold;">07</span><span style="color: rgb(128, 128, 128);">-</span><span style="color: rgb(128, 0, 0); font-weight: bold;">12</span> <span style="color: rgb(128, 128, 128);">|</span>
+<span style="color: rgb(128, 128, 128);">+</span><span style="color: rgb(0, 128, 128);">--</span><span style="color: rgb(0, 128, 128);">--+--------+------------+</span>
+<span style="color: rgb(128, 0, 0); font-weight: bold;">3</span> rows <span style="color: rgb(128, 128, 128);">in</span> <span style="color: rgb(0, 0, 255);">set</span> (<span style="color: rgb(128, 0, 0); font-weight: bold;">0.00</span> sec)</pre></div><br>
+<p><strong>（五）总结</strong></p><p>使用binlog2sql最大的好处就是解析出来的SQL语句非常直观，并且在注释中还包含了时间，这对于我们去查找故障发生点非常实用。想一想之前用过的mysqlbinlog工具，解析出来的结果中含有大量无关的信息，为我们排查问题增加了难度，而binlog2sql解析出来的SQL非常干净，便于我们排查问题，恢复数据。</p><p><br></p><p><br></p><p><br></p><table style="width: 800px;" border="0" cellspacing="0" cellpadding="2"><tbody><tr><td width="800" valign="top" bgcolor="#ccff66"><p><strong>相关文档集合：</strong></p><p>1.<a href="https://www.cnblogs.com/lijiaman/p/12301998.html" target="_blank">MySQL日志--二进制日志(binlog)</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br> 2.<a href="https://www.cnblogs.com/lijiaman/p/12763691.html" target="_blank">使用mysqlbinlog查看二进制日志</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>3.<a href="https://www.cnblogs.com/lijiaman/p/12764268.html" target="_blank">MySQL使用mysqldump+binlog完整恢复被删除的数据库</a> <br>4.<a href="https://www.cnblogs.com/lijiaman/p/12770397.html" target="_blank">使用binlog2sql工具来恢复数据库</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>5.<a href="https://www.cnblogs.com/lijiaman/p/12770415.html" target="_blank">MySQL闪回工具—MyFlash</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br></p></td></tr></tbody></table>
+</div>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+    <div id="blog_post_info"></div>
+    <div class="clear"></div>
+    <div id="post_next_prev"></div>
+</div>
+            </div>
+            <div class="postDesc">posted @ 
+<span id="post-date">2020-04-24 21:35</span>&nbsp;
+<a href="https://www.cnblogs.com/lijiaman/">gegeman</a>&nbsp;
+阅读(<span id="post_view_count">...</span>)&nbsp;
+评论(<span id="post_comment_count">...</span>)&nbsp;
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12770397" rel="nofollow">编辑</a>&nbsp;
+<a href="javascript:void(0)" onclick="AddToWz(12770397);return false;">收藏</a></div>
+        </div>
+<script src="https://common.cnblogs.com/highlight/9.12.0/highlight.min.js"></script>
+<script>markdown_highlight();</script>
+<script>
+    var allowComments = true, cb_blogId = 298216, cb_blogApp = 'lijiaman', cb_blogUserGuid = 'f45def91-3b73-e511-9fc1-ac853d9f53cc';
+    var cb_entryId = 12770397, cb_entryCreatedDate = '2020-04-24 21:35', cb_postType = 1; 
+    loadViewCount(cb_entryId);
+</script><a name="!comments"></a>
+<div id="blog-comments-placeholder"></div>
+<script>
+    var commentManager = new blogCommentManager();
+    commentManager.renderComments(0);
+</script>
+
+<div id="comment_form" class="commentform">
+    <a name="commentform"></a>
+    <div id="divCommentShow"></div>
+    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+    <div id="comment_form_container"></div>
+    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+    <div id="ad_t2"></div>
+    <div id="opt_under_post"></div>
+    <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            googletag.defineSlot("/1090369/C1", [300, 250], "div-gpt-ad-1546353474406-0").addService(googletag.pubads());
+            googletag.defineSlot("/1090369/C2", [468, 60], "div-gpt-ad-1539008685004-0").addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    </script>
+    <div id="cnblogs_c1" class="c_ad_block">
+        <div id="div-gpt-ad-1546353474406-0" style="height:250px; width:300px;"></div>
+    </div>
+    <div id="under_post_news"></div>
+    <div id="cnblogs_c2" class="c_ad_block">
+        <div id="div-gpt-ad-1539008685004-0" style="height:60px; width:468px;">
+            <script>
+                if (new Date() >= new Date(2018, 9, 13)) {
+                    googletag.cmd.push(function () { googletag.display("div-gpt-ad-1539008685004-0"); });
+                }
+            </script>
+        </div>
+    </div>
+    <div id="under_post_kb"></div>
+    <div id="HistoryToday" class="c_ad_block"></div>
+    <script type="text/javascript">
+        fixPostBody();
+        deliverBigBanner();
+setTimeout(function() { incrementViewCount(cb_entryId); }, 50);        deliverAdT2();
+        deliverAdC1();
+        deliverAdC2();
+        loadNewsAndKb();
+        loadBlogSignature();
+LoadPostCategoriesTags(cb_blogId, cb_entryId);        LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+        GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+        loadOptUnderPost();
+        GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    </script>
+</div>    </div>
+</div>
+            </div>
+        </div>
+
+        <div id="sideBar">
+            <div id="sideBarMain">
+                
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+                <div id="calendar"><div id="blog-calendar" style="display:none"></div></div>                
+                <script>loadBlogDefaultCalendar();</script>
+                <div id="leftcontentcontainer">
+                    <!-- begin:SingleColumn -->
+                    <div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+                    <!-- end:  SingleColumn -->
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+    <div id="footer">
+        <!--done-->
+Copyright &copy; 2020 gegeman
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+    </div>
+</div>
+
+    
+</body>
+</html>

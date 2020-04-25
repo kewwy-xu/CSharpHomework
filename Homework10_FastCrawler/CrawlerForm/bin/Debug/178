@@ -1,0 +1,501 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>曾聪聪 - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    <link id="MainCss" rel="stylesheet" href="/skins/blacklowkey/bundle-blacklowkey.min.css?v=Fx4xdLkGuHnlaG7xntG_wAnZrnorJWp5u_TWKqbvMF0" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/blacklowkey/bundle-blacklowkey-mobile.min.css?v=cYvlxMu_nd6MVfg-vi7YqOC6FaZ7VHFsDM166vO_ekA" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/zengcongcong/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/zengcongcong/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/zengcongcong/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 491385;
+        var currentBlogApp = 'zengcongcong';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'BlackLowKey';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/zengcongcong/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/zengcongcong/">生命不息，折腾不止</a>
+</h1>
+<h2>
+
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/zengcongcong/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E6%9B%BE%E8%81%AA%E8%81%AA">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/zengcongcong/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<span id="stats_post_count">随笔 - 
+97&nbsp; </span>
+<span id="stats_article_count">文章 - 
+0&nbsp; </span>
+<span id="stats-comment_count">评论 - 
+3</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<!--done-->
+
+
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/zengcongcong/archive/2020/04/24.html">2020年4月24日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/zengcongcong/p/12769937.html">
+    浅析Java7中的ConcurrentHashMap
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：引入ConcurrentHashMap 模拟使用hashmap在多线程场景下发生线程不安全现象 运行结果如下，由于fail fast机制的存在，出现了并发修改失败的错误 如何解决该问题呢？ 方式一：使用hashtable 方式二：使用Collections.synchronizedMap 方式三：使            <a href="https://www.cnblogs.com/zengcongcong/p/12769937.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-24 20:39 曾聪聪 阅读 (8) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12769937" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/zengcongcong/archive/2020/04/23.html">2020年4月23日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/zengcongcong/p/12754067.html">
+    浅析CopyOnWriteArrayList
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：CopyOnWriteArrayList引入 模拟传统的ArrayList出现线程不安全的现象 运行结果如下：由于fail fast机制的存在，抛出了modcount修改异常的错误(modcount是ArrayList源码中的一个变量，用来表示修改的次数，因为ArrayList不是为并发情况而设计的            <a href="https://www.cnblogs.com/zengcongcong/p/12754067.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-23 12:45 曾聪聪 阅读 (138) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12754067" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/zengcongcong/archive/2020/04/22.html">2020年4月22日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/zengcongcong/p/12751761.html">
+    浅析CAS与AtomicInteger原子类
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：一：CAS简介 CAS：Compare And Swap(字面意思是比较与交换)，JUC包中大量使用到了CAS，比如我们的atomic包下的原子类就是基于CAS来实现。区别于悲观锁synchronized，CAS是乐观锁的一种实现，在某些场合使用它可以提高我们的并发性能。 在CAS中，主要是涉及到三            <a href="https://www.cnblogs.com/zengcongcong/p/12751761.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-22 14:14 曾聪聪 阅读 (109) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12751761" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/zengcongcong/archive/2020/01/19.html">2020年1月19日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/zengcongcong/p/12213715.html">
+    IDEA左侧不以树形结构展示项目结构
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：机子重启后发现IDEA变这样了 关闭idea，删除该项目下的.idea目录，在重新打开即可解决            <a href="https://www.cnblogs.com/zengcongcong/p/12213715.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-01-19 14:56 曾聪聪 阅读 (89) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12213715" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/zengcongcong/archive/2020/01/16.html">2020年1月16日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/zengcongcong/p/12203683.html">
+    maven常见问题
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：使用maven有段时间，期间陆陆续续出过一些问题，记录下。 1.设置本地仓库 maven下载并正确安装后需要配置本地仓库位置,项目优先从本地仓库加载jar包，在maven安装目录的conf\settings.xml中进行设置【默认本地仓库位置在 ${user.dir}/.m2/repository，            <a href="https://www.cnblogs.com/zengcongcong/p/12203683.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-01-16 23:00 曾聪聪 阅读 (43) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12203683" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/zengcongcong/archive/2020/01/15.html">2020年1月15日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/zengcongcong/p/12198329.html">
+    Mybatis实现多表联合查询
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：上篇实现利用mybatis实现单表增删改查，今天利用mybatis实现多表联合查询。 1.创建数据库mybatis2，建立student、class、student_class三张表 DROP TABLE IF EXISTS `class`; CREATE TABLE `class` ( `clas            <a href="https://www.cnblogs.com/zengcongcong/p/12198329.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-01-15 19:27 曾聪聪 阅读 (353) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12198329" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/zengcongcong/archive/2020/01/11.html">2020年1月11日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/zengcongcong/p/12181490.html">
+    Mybatis实现单表增删改查操作
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：mybatis是对持久层进行了封装、mybatis文档地址：https://mybatis.org/mybatis-3/zh/index.html 下面实现单表的增删改查操作。 1.新建maven项目命名为mybatis、并在pom.xml中引入相关依赖 &lt;?xml version=&quot;1.0&quot; en            <a href="https://www.cnblogs.com/zengcongcong/p/12181490.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-01-11 23:09 曾聪聪 阅读 (40) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12181490" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/zengcongcong/archive/2020/01/10.html">2020年1月10日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/zengcongcong/p/12178308.html">
+    解决mybaits配置错误：Cause: org.xml.sax.SAXParseException; lineNumber: 17; columnNumber: 119; 对实体 &quot;characterEncoding&quot; 的引用必须以 &#39;;&#39; 分隔符结尾。
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：mybaits插入中文乱码，修改主配置参数为如下：【数据库连接时使用了默认的ISO编码格式，需要我们显式地指定编码格式。】 &lt;!-- 配置环境 --&gt; &lt;environments default=&quot;mysql&quot;&gt; &lt;!-- 配置mysql的环境--&gt; &lt;environment id=&quot;mysql&quot;&gt;            <a href="https://www.cnblogs.com/zengcongcong/p/12178308.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-01-10 22:03 曾聪聪 阅读 (193) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12178308" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/zengcongcong/archive/2020/01/07.html">2020年1月7日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/zengcongcong/p/12160990.html">
+    浅谈cookie与session
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：学校web作业做的不少，对cookie与session也用了蛮多，在此小计一些干货 由于HTTP协议是无状态的，连接建立成功后便释放了，那么如何知道xxx，yyy操作都属于zzz呢? cookie与session就是用来解决这个问题 SESSION与COOKIE的一些重要知识点：cookie与ses            <a href="https://www.cnblogs.com/zengcongcong/p/12160990.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-01-07 13:28 曾聪聪 阅读 (26) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12160990" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/zengcongcong/archive/2020/01/06.html">2020年1月6日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/zengcongcong/p/12159125.html">
+    解决Andriod获取Session里面的值为空
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：问题描述： 安卓课程设计，用户登陆时做了个验证码的功能，在WEB端可以正常运行。 在安卓跑时发现服务器端可以正确获取前端传来的验证码的值，但是从session里取验证码的值时却一直是null。 经过DEBUG发现两者的SESSIONID值不同了，根本不是一个SESSION对象，也不太清楚是什么原因造            <a href="https://www.cnblogs.com/zengcongcong/p/12159125.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-01-06 23:41 曾聪聪 阅读 (41) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12159125" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+
+<div class="topicListFooter">
+    <div id="nav_next_page">
+        
+    <a href="https://www.cnblogs.com/zengcongcong/default.html?page=2">
+        下一页
+    </a>
+
+    </div>    
+</div>
+
+
+
+
+
+
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 曾聪聪
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    
+</body>
+</html>

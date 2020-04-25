@@ -1,0 +1,304 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="never" />
+    <meta property="og:description" content="本文始发于个人公众号： TechFlow ，原创不易，求个关注 今天是 高等数学专题的第13篇 文章，我们来看看定积分究竟应该怎么计算。 定积分的实际意义 通过之前的文章，我们基本上熟悉了定积分这个概" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>高等数学——手撕牛顿莱布尼茨公式 - TechFlow2019 - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    <link id="MainCss" rel="stylesheet" href="/skins/simplememory/bundle-simplememory.min.css?v=OL4qeo1LNGlN1rKIhv5UctANvt0M6Nx6kLzr_ffx3Xk" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/SimpleMemory/bundle-SimpleMemory-mobile.min.css" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/techflow/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/techflow/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/techflow/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 569749;
+        var currentBlogApp = 'techflow';
+        var cb_enable_mathjax = true;
+        var isLogined = false;
+        var skinName = 'SimpleMemory';
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], processClass: 'math', processEscapes: true },
+        TeX: {
+        equationNumbers: { autoNumber: ['AMS'], useLabelIds: true },
+        extensions: ['extpfeil.js', 'mediawiki-texvc.js'],
+        Macros: {bm: "\\boldsymbol"}
+        },
+        'HTML-CSS': { linebreaks: { automatic: true } },
+        SVG: { linebreaks: { automatic: true } }
+        });
+    </script>
+    <script src="https://mathjax.cnblogs.com/2_7_5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/techflow/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/techflow/">TechFlow2019</a>
+</h1>
+<h2>
+
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/techflow/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/TechFlow2019">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/techflow/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<span id="stats_post_count">随笔 - 
+119&nbsp; </span>
+<span id="stats_article_count">文章 - 
+0&nbsp; </span>
+<span id="stats-comment_count">评论 - 
+46</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		<div id="post_detail">
+    <!--done-->
+    <div id="topics">
+        <div class="post">
+            <h1 class = "postTitle">
+                
+<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/techflow/p/12770388.html">高等数学——手撕牛顿莱布尼茨公式</a>
+
+            </h1>
+            <div class="clear"></div>
+            <div class="postBody">
+                
+<div id="cnblogs_post_body" class="blogpost-body cnblogs-markdown">
+    <p>本文始发于个人公众号：<strong>TechFlow</strong>，原创不易，求个关注</p>
+<br>
+<p>今天是<strong>高等数学专题的第13篇</strong>文章，我们来看看定积分究竟应该怎么计算。</p>
+<br>
+<h2 id="定积分的实际意义">定积分的实际意义</h2>
+<br>
+<p>通过之前的文章，我们基本上熟悉了定积分这个概念和它的一些简单性质，今天终于到了正题，我们要试着来算一算这个积分了。</p>
+<p>我们先来回忆一下对定积分的直观感受，它可以代表一段曲形面积，比如：</p>
+<p><img src="https://user-gold-cdn.xitu.io/2020/4/24/171ac61f353f31c5?w=1530&amp;h=1080&amp;f=jpeg&amp;s=36749" alt=""></p>
+<p>如果我们把上图当中的f(x)看成是<strong>速度函数</strong>，<strong>x轴看成是时间</strong>，那么f(x)就表示时刻x时物体运动的速度。那么我们把所有瞬时移动的距离累加，就得到了物体在某个时间段内的<strong>位移矢量</strong>，而这个位移长度恰好就是我们曲形的面积。我们把定积分和物理上的位移进行挂钩之后，很容易得出一个结论，在物理学上，一个物体发生的位移和时间也是一一映射的关系，所以这也是一个函数。</p>
+<p>有了这个结论之后，我们就可以做一个假设，假设一个函数s(t)满足：</p>
+<p><div class="math display">\[s(t) = \int_a^t f(t)dt
+\]</div></p><p>其中的a是一个定值，我们可以认为是<strong>位移发生的起始时刻</strong>，s(t)就是物体位移和时间的函数。所以a到b这段时间内发生的位移就等于<span class="math inline">\(s(b) - s(a) = \int_a^b f(t)dt\)</span>.</p>
+<br>
+<h2 id="计算推导">计算推导</h2>
+<br>
+<p>当我们把定积分和物理位移挂钩的时候，我们距离求解它已经很接近了。</p>
+<p>根据物理上的定义，物体的运动速度其实就等于位置矢量随时间的变化率，虽然不够严谨，但其实这是一个微分量，可以近似<strong>看成是位移函数的导数</strong>。当然这个只是直观的认识，我们还需要用严谨的数学语言来表达。</p>
+<p>我们假设f(x)函数在区间[a, b]上连续，并且<span class="math inline">\(\Phi(x) = \int_a^x f(t)dt, (a \leq x \leq b)\)</span>，我们试着证明<span class="math inline">\(\Phi'(x) = f(x)\)</span>。</p>
+<p>我们取一个绝对值足够小的<span class="math inline">\(\Delta x\)</span>，使得<span class="math inline">\(x + \Delta x \in (a, b)\)</span>，那么：</p>
+<p><div class="math display">\[\Phi(x + \Delta x) = \int_a^{x+\Delta x}f(t)dt
+\]</div></p><p>我们用它减去<span class="math inline">\(\Phi(x)\)</span>，得到：</p>
+<p><div class="math display">\[\begin{aligned}
+\Delta \Phi &amp;= \Phi(x+\Delta x) - \Phi(x) \\
+&amp;= \int_a^{x+\Delta x} f(t)dt - \int_a^x f(t)dt\\
+&amp;= \int_x^{x+\Delta x}f(t)dt
+\end{aligned}
+\]</div></p><p>根据我们积分中值定理，可以得到，存在<span class="math inline">\(\xi \in (x, x+\Delta x)\)</span>，使得：</p>
+<p><div class="math display">\[\begin{aligned}
+\Delta \Phi &amp;= f(\xi) \Delta x\\
+\frac{\Delta \Phi}{\Delta x} &amp;= f(\xi)
+\end{aligned}
+\]</div></p><p>由于f(x)在[a, b]上连续，并且<span class="math inline">\(\Delta x\to 0\)</span>，所以<span class="math inline">\(\xi \to x\)</span>，因此<span class="math inline">\(\lim_{\Delta x \to 0} f(\xi) = f(x)\)</span>，进一步就证明了<span class="math inline">\(\Phi(x)\)</span>的导数存在，并且：</p>
+<p><div class="math display">\[\Phi'(x) = f(x)
+\]</div></p><p>到这里已经距离我们的目标非常接近了，只差最后一步。这最重要的一步有两个数学大牛对它声明主权，一个是牛顿，另一个是莱布尼茨。这也是数学界一桩非常出名的公案，这背后的故事背景非常复杂，属于典型的公说公有理婆说婆有理的桥段。有一部著名的纪录片叫做《<strong>一部微积分的恩怨史</strong>》讲的就是这一段故事，感兴趣的同学可以去B站围观一下。</p>
+<p>为了避免引战，很多课本上都把它叫做牛顿-莱布尼茨公式，用两个人的名字共同命名。</p>
+<br>
+<h2 id="牛顿-莱布尼茨公式">牛顿-莱布尼茨公式</h2>
+<br>
+<p>根据原函数的定义，从上面的结论当中我们可以得到<span class="math inline">\(\Phi(x)\)</span>是函数<span class="math inline">\(f(x)\)</span>在[a, b]上的一个<strong>原函数</strong>。我们假设F(x)也是f(x)的一个原函数，所以我们可以知道<span class="math inline">\(F(x) - \Phi(x) = C\)</span>，这里的C是一个常数。</p>
+<p>令x = a，那么可以得到<span class="math inline">\(F(a) - \Phi(a) = C\)</span>，根据<span class="math inline">\(\Phi(x)\)</span>的定义，我们可以知道<span class="math inline">\(\Phi(a) = 0\)</span>，所以<span class="math inline">\(F(a) = C\)</span>，并且<span class="math inline">\(\Phi(x) = \int_a^x f(t)dt\)</span>，代入可以得到：</p>
+<p><div class="math display">\[\begin{aligned}
+F(x) - \Phi(x) &amp;= C\\
+F(x) - \int_a^x f(t)dt &amp;= F(a)\\
+\int_a^x f(t)dt &amp;= F(x) - F(a)
+\end{aligned}
+\]</div></p><p>我们把b代入，可以得到<span class="math inline">\(\int_a^x f(x)dx = F(b) - F(a)\)</span>，这个式子就是牛顿莱布尼茨公式。</p>
+<p>我们回顾一下上面的推导过程，难度并不大，但是几个<strong>代换处理非常巧妙</strong>，不然的话即使我们可以得到结论，也并不严谨。</p>
+<br>
+<h2 id="总结">总结</h2>
+<br>
+<p>有了定积分的计算公式之后，很多我们之前无法解决的问题就都可以解决了，由此奠定了整个微积分的基础，不仅推动了数学的发展，也带动了理工科几乎所有的学科。在各大理工学科之中几乎都有<strong>用到微积分进行一些复杂的计算</strong>，即使是看起来和数学不那么相关的计算机领域也不例外，这也是大学里为什么给所有理工科的学生开设了这门课的原因。</p>
+<p>但遗憾的是，在我们学习的时候往往很难预见它的重要性，然而当我们预见这一点的时候，往往已经是很多年之后，没有那样的环境和时间给我们去好好学习了。</p>
+<p>今天的文章就是这些，如果觉得有所收获，请顺手点个<strong>关注或者转发</strong>吧，你们的举手之劳对我来说很重要。</p>
+<p><img src="https://user-gold-cdn.xitu.io/2020/4/24/171ac6225af717da?w=258&amp;h=258&amp;f=png&amp;s=23988" alt=""></p>
+
+</div>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+    <div id="blog_post_info"></div>
+    <div class="clear"></div>
+    <div id="post_next_prev"></div>
+</div>
+            </div>
+            <div class="postDesc">posted @ 
+<span id="post-date">2020-04-24 21:34</span>&nbsp;
+<a href="https://www.cnblogs.com/techflow/">TechFlow2019</a>&nbsp;
+阅读(<span id="post_view_count">...</span>)&nbsp;
+评论(<span id="post_comment_count">...</span>)&nbsp;
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12770388" rel="nofollow">编辑</a>&nbsp;
+<a href="javascript:void(0)" onclick="AddToWz(12770388);return false;">收藏</a></div>
+        </div>
+	    
+	    
+    </div><!--end: topics 文章、评论容器-->
+</div>
+<script src="https://common.cnblogs.com/highlight/9.12.0/highlight.min.js"></script>
+<script>markdown_highlight();</script>
+<script>
+    var allowComments = true, cb_blogId = 569749, cb_blogApp = 'techflow', cb_blogUserGuid = '9eb32f80-09d7-4c19-e763-08d7804a3aa0';
+    var cb_entryId = 12770388, cb_entryCreatedDate = '2020-04-24 21:34', cb_postType = 1; 
+    loadViewCount(cb_entryId);
+</script><a name="!comments"></a>
+<div id="blog-comments-placeholder"></div>
+<script>
+    var commentManager = new blogCommentManager();
+    commentManager.renderComments(0);
+</script>
+
+<div id="comment_form" class="commentform">
+    <a name="commentform"></a>
+    <div id="divCommentShow"></div>
+    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+    <div id="comment_form_container"></div>
+    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+    <div id="ad_t2"></div>
+    <div id="opt_under_post"></div>
+    <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            googletag.defineSlot("/1090369/C1", [300, 250], "div-gpt-ad-1546353474406-0").addService(googletag.pubads());
+            googletag.defineSlot("/1090369/C2", [468, 60], "div-gpt-ad-1539008685004-0").addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    </script>
+    <div id="cnblogs_c1" class="c_ad_block">
+        <div id="div-gpt-ad-1546353474406-0" style="height:250px; width:300px;"></div>
+    </div>
+    <div id="under_post_news"></div>
+    <div id="cnblogs_c2" class="c_ad_block">
+        <div id="div-gpt-ad-1539008685004-0" style="height:60px; width:468px;">
+            <script>
+                if (new Date() >= new Date(2018, 9, 13)) {
+                    googletag.cmd.push(function () { googletag.display("div-gpt-ad-1539008685004-0"); });
+                }
+            </script>
+        </div>
+    </div>
+    <div id="under_post_kb"></div>
+    <div id="HistoryToday" class="c_ad_block"></div>
+    <script type="text/javascript">
+        fixPostBody();
+        deliverBigBanner();
+setTimeout(function() { incrementViewCount(cb_entryId); }, 50);        deliverAdT2();
+        deliverAdC1();
+        deliverAdC2();
+        loadNewsAndKb();
+        loadBlogSignature();
+LoadPostCategoriesTags(cb_blogId, cb_entryId);        LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+        GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+        loadOptUnderPost();
+        GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    </script>
+</div>
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 TechFlow2019
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    <div id="page_end_html">
+        
+
+    </div>
+</body>
+</html>

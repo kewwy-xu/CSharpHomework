@@ -1,0 +1,533 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="never" />
+    <meta property="og:description" content="再问你这个问题，这篇文章丢给他" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>为啥程序会有bug？ - Zachary_Fan - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    <link id="MainCss" rel="stylesheet" href="/skins/codinglife/bundle-codinglife.min.css?v=hlpQ1CJDwwJXDxv2HNauUmW3NjyWzoMaw1uER19SLT0" />
+    <link type="text/css" rel="stylesheet" href="https://www.cnblogs.com/Zachary-Fan/custom.css?v=Z0yh717W5BSQqCWn6YfkL40yjco=" />
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/codinglife/bundle-codinglife-mobile.min.css?v=XjHfryC9ctsatIZz1dHn7TsRIqmwz9c3aj_6SCfHSDM" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/Zachary-Fan/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/Zachary-Fan/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/Zachary-Fan/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 114384;
+        var currentBlogApp = 'Zachary-Fan';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'CodingLife';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/Zachary-Fan/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/Zachary-Fan/">Zachary_Fan</a>
+</h1>
+<h2>
+
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/Zachary-Fan/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/Zachary_Fan">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/Zachary-Fan/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<span id="stats_post_count">随笔 - 
+81&nbsp; </span>
+<span id="stats_article_count">文章 - 
+0&nbsp; </span>
+<span id="stats-comment_count">评论 - 
+606</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		<div id="post_detail">
+    <!--done-->
+    <div id="topics">
+        <div class="post">
+            <h1 class = "postTitle">
+                
+<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/Zachary-Fan/p/bugwhy.html">为啥程序会有bug？</a>
+
+            </h1>
+            <div class="clear"></div>
+            <div class="postBody">
+                
+    <div id="cnblogs_post_description" style="display: none">
+        再问你这个问题，这篇文章丢给他
+    </div>
+<div id="cnblogs_post_body" class="blogpost-body ">
+    <blockquote>
+<p data-mpa-powered-by="yiban.io"><em><strong>如果这是第二次看到我的文章，欢迎右侧扫码订阅我哟~&nbsp; 👉</strong></em></p>
+<p>本文长度为<strong>4818字</strong>，建议阅读<strong>13</strong><strong>分钟。</strong></p>
+<p><strong>坚持原创，每一篇都是用心之作～</strong></p>
+</blockquote>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>这是一篇半娱乐性的吐槽文章，权当给广大技术人员解解闷：）。</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>哈哈哈，然后我要开始讲一个经常在发生的事实了。（<span style="color: #888888; font-size: 12px;">程序员们可能会感到一些不适</span><img src="https://res.wx.qq.com/mpres/htmledition/images/icon/common/emotion_panel/emoji_ios/u1F602.png" alt="" width="21" height="21" data-ratio="1" data-type="xmt-emoji" data-w="19" />）</p>
+<p>&nbsp;</p>
+<p>99.999999999%做技术的都会被问到或者被吐槽到：&ldquo;你的程序怎么又出bug了！&rdquo;</p>
+<p>&nbsp;</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://img2018.cnblogs.com/blog/397048/201903/397048-20190323000255114-1618284011.jpg" alt="" width="351" height="320" /></p>
+<p style="text-align: center;"><span style="font-size: 12px; color: #888888;">▲图片来源于网络，版权归原作者所有</span></p>
+<p>&nbsp;</p>
+<p>反正，我作为程序员的内心世界是：如同一万只草泥马飞奔而过，难以压抑内心的激动，每次都差点忍不住想说&ldquo;你写篇几百字的作文还有错别字呢，我码个几万行的代码还不允许出错了？&ldquo;</p>
+<p>&nbsp;</p>
+<p>可能同样是做技术的你此时在不断点头，哈哈。</p>
+<p>&nbsp;</p>
+<p>但是这么讲毕竟也缓解不了矛盾，我们还是得摆事实讲道理不是？</p>
+<p>&nbsp;</p>
+<p>啥都不怕，就怕程序员有文化！</p>
+<p>&nbsp;</p>
+<p>所以，Z哥想来带你好好分析一下这个事情，当你再遇到这个情况的时候，可以拿这些观点来反驳（<span style="color: #888888; font-size: 12px;">不是做技术的也可以了解下程序员的难处，谁没个难处呢，多多包容</span>）</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2 class="active brush"><strong>什么是Bug</strong></h2>
+<p>任何一个「问题」的产生，本身是没有好坏之分的，但是为什么会有的就不被care，甚至还会很喜欢，而有的会被吐槽呢？根本原因是因为产生了利益损失。</p>
+<p>&nbsp;</p>
+<p>比如年前拼多多出问题送了很多无门槛券。</p>
+<p>&nbsp;</p>
+<p>作为一个用户，自然很喜欢，夸你夸到飞起，怎么会吐槽你呢。但是作为利益损失方，必然破口大骂，害我倾家荡产！</p>
+<p>&nbsp;</p>
+<p>所以，<strong>如果没有产生利益损失，我想其他人也不会来找你吐槽</strong>。</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="p1">但是「问题」就等于「bug」吗？我认为并不是，<strong>「问题」不等于「 bug」</strong>。</p>
+<p class="p2">&nbsp;</p>
+<p class="p1">因为程序员的职责是什么？拿造房子来比喻的话，我认为最核心的工作真的和&ldquo;搬砖&rdquo;（非贬义词）无异，就是根据设计师（产品经理）设计好的设计图砌砖（编码），建成和设计图纸上一模一样的建筑。</p>
+<p class="p2">&nbsp;</p>
+<p class="p1">所以，如果一个东西造出来与设计不符，那么它可以说是bug或者缺陷（缺斤少两不完整）。否则，并不是bug，但可以被称之为「漏洞」（完全没考虑到的），表示不在预料之内的情况。</p>
+<p class="p2">&nbsp;</p>
+<p class="p1">之前看到过一个形象的比喻：<strong>你家里的窗可以从外面打开，那叫漏洞。你家里的窗打不开，那叫bug</strong>。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">但是要承认，bug是必然存在的。为什么？它是如何出现的呢？</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">&nbsp;</p>
+<h2 class="active brush"><strong>Bug是如何出现的</strong></h2>
+<p class="p1">正如前面所说，程序员做的是&ldquo;造房子&rdquo;的事情。这件事完整的步骤分为3步。</p>
+<p>&nbsp;</p>
+<ol class=" list-paddingleft-2">
+<li>
+<p class="p1">与产品经理讨论并确定功能（确定一个可以实现的设计图纸）</p>
+</li>
+<li>
+<p class="p1">将每个单独的元件抽象出来（确定施工方案）</p>
+</li>
+<li>
+<p class="p1">将相关的元件实现并进行组合，完成建设（带上材料开始施工）</p>
+</li>
+</ol>
+<p class="p1">&nbsp;</p>
+<p class="p1">&nbsp;</p>
+<p class="p1"><strong>第一步，&ldquo;与产品经理讨论并确定功能&rdquo;主要是沟通，靠&ldquo;看&rdquo;和&ldquo;理解&rdquo;</strong>。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">但是沟通本身是一个有损耗的过程，特别是在职责非常明确的组织中，产品经理啪啦啪啦讲了很多，到实际做的时候你必然还是会去翻阅需求原型、需求文档之类的重新理解一下。这个时候就是一个非常危险的时期。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">比如像下面这个的答案是什么？</p>
+<p class="p1">&nbsp;</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://img2018.cnblogs.com/blog/397048/201903/397048-20190323171646590-1514477336.png" alt="" width="261" height="261" /></p>
+<p style="text-align: center;"><span style="font-size: 12px; color: #888888;">▲图片来源于网络，版权归原作者所有</span></p>
+<p>&nbsp;</p>
+<p class="p1">答案是17？不对。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">我猜你可能没注意到这些地方。</p>
+<p class="p1">&nbsp;</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://img2018.cnblogs.com/blog/397048/201903/397048-20190323171744933-1133603202.jpg" alt="" width="278" height="279" /></p>
+<p style="text-align: center;"><span style="font-size: 12px; color: #888888;">▲图片来源于网络，版权归原作者所有</span></p>
+<p class="p1">&nbsp;</p>
+<p class="p1">为了让你有深刻的印象，这个举例可能比较刻意和夸张一些，但是我想在你的身边，由于没注意到或者理解有误的现象肯定很常见。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">沟通是相互的，这锅只让程序员背的话的确太委屈了点。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">&nbsp;</p>
+<p class="p1"><strong>第二步，&ldquo;将每个单独的元件抽象出来&rdquo;这主要是一个人抽象能力的体现</strong>。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">但是抽象是啥？抽象是&ldquo;透过现象看到本质&rdquo;的能力，这个能力理论上是可以无限增长的。随着你对相关信息的掌握越多，这个能力会越强，会无限趋近于100%，但永远不会真正达到100%，因为没人知道怎么才算100%。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">所以，当你具备的信息没那么多的时候，是不是就抽象的不是那么合理？不合理会导致什么？虽然不会直接产生bug，但是会更容易产生bug。但是人不都是需要经历这么一个成长的过程么？</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">可以说，精通一项能力的背后都是踩着无数的bug过来的。要么在来这个组织之前已经踩过了，要么在这个组织里踩。因此，前者的薪资也比后者高。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">所以，<strong>如果过分苛求没有bug，等于是在扼杀每个人成长的机会，并且在透支未来的可能性</strong>。人会变得非常保守、不敢尝试新事物。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">但是外部环境在不断变化，新事物总会被动的需要去接纳（技术的更新越来越快，趋势不可逆），然而对新事物的接受能力又得不到锻炼，一旦遇到这种情况，在接触新事物的时候会产生更多的问题（欠下的债总要还的）。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">第三步，&ldquo;将相关的元件实现并进行组合，完成建设&rdquo;这就是实际的coding过程，而<strong>coding是一个主观的，完全由人主观掌控的事情</strong>。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">人毕竟不是机器，不可能不犯错，就如前面提到的写文章的时候出现错别字一样。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">可能你会说，有测试人员啊，测试的工作不就是通过逆向思维来给程序员查缺补漏吗？</p>
+<p class="p2">&nbsp;</p>
+<p class="p1">的确是的，但测试的介入只是降低错误率，只是让不出现bug的概率小数点后多几位</p>
+<p class="p1">，指望发现100%的问题还是不太现实的。至少在当下的条件下是这样，为什么呢？因为代码的本质是各种逻辑的组合。</p>
+<p class="p2">&nbsp;</p>
+<p class="p1">比如，一个完整的业务流程有10个环节，每个环节有3种可能性，这是一个什么复杂度的系统？3 ^ 10 = 59049个分支（理论上存在的可能性数量），想要100%覆盖这些场景，付出的成本几乎是不可接受的。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">然而我们实际的系统中遇到的个别场景甚至还要复杂的多。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">其实每个正在运行的系统都有bug，包括我们每天在使用一些热门系统（玩游戏的小伙伴们肯定熟悉&ldquo;卡bug&rdquo;这个词）。只是这些bug有没有被执行到，有没有被发现，被多少人发现而已。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">那么，我们只能举手投降吗？那倒不至于，办法还是有的。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">&nbsp;</p>
+<h2 class="active brush"><strong>减少bug的惯性想法</strong></h2>
+<p class="p1">首先最容易想到的一点是，增加测试人员。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">这也是最容易看得到的&ldquo;成本&rdquo;一种方式，毕竟招一个人就得支出一份工资啊。所以，增加测试人员这个方案是最不容易被老板们采纳的方案。除非你可以说服这个人力成本的投入小于获得的价值。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">另外，这个方案其实还增加了沟通成本，沟通的「隐性成本」其实非常大，但是往往容易被忽略。（关于沟通成本，感兴趣的可以看我之前写的《<a href="http://mp.weixin.qq.com/s?__biz=MzU2NzEwMDc4OQ==&amp;mid=2247483713&amp;idx=1&amp;sn=588e4d65d193e6cfd9bfef7535be9076&amp;chksm=fca3155bcbd49c4d0e03a2edf6f366384fb8367d2fb95d083326376dbdf2be5a7ab925b29e35&amp;scene=21#wechat_redirect" target="_blank" data-itemshowtype="0" data-linktype="2">就简单聊聊沟通效率问题</a>》）</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">其次会想到的就是程序员代码写的严谨一点，仔细一点啊。这也是一种缺啥补啥的惯性思维。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">先撇开到底能不能达到严谨一点，仔细一点的目的。那怕达到了，他会产生什么结果呢？可能是下面3种。</p>
+<p class="p1">&nbsp;</p>
+<ol class=" list-paddingleft-2">
+<li>
+<p class="p1">更多的条件验证</p>
+</li>
+<li>
+<p class="p1">更多的单元测试</p>
+</li>
+<li>
+<p class="p1">更多的抽象提炼</p>
+</li>
+</ol>
+<p class="p1">&nbsp;</p>
+<p class="p1">可以确定的是，这些工作会增加2样硬性的东西，投入的时间和整体的复杂度。时间很好理解，我们就来聊聊复杂度。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">一个常识是，越简单的东西越不容易产生bug。比如1+1=2，出现bug的可能性无非就是加号写成来减号，1写成了4之类。但是，1+1=2，并且1*1=1，并且1/1=1，。。。等等这些验证条件越多，那么由于验证条件自身的错误而产生问题的可能性反而更多。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">所以，<strong>代码的复杂度和产生bug的概率是成正比的，并且具有「边际效用递减」的效果</strong>。这就意味着，做更多的验证带来的收益会越来越小。</p>
+<p class="p1">&nbsp;</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://img2018.cnblogs.com/blog/397048/201903/397048-20190323172951096-214623125.jpg" alt="" width="602" height="358" /></p>
+<p class="p1">&nbsp;</p>
+<p class="p1">因此，这个方案哪怕真能执行到位，也不是一个特别好的方案。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">那有没有相对靠谱一些的办法呢？有，但需要我们换一个角度来看待这个问题。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">&nbsp;</p>
+<h2 class="active brush"><strong>换一个角度看待bug</strong></h2>
+<p class="p1">既然无法100%避免bug，那我们可以换个角度考虑一下，如何让解决bug的过程更快，甚至快到你都没有察觉。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">解决bug主要就是做2件事，找到bug的产生点，然后修复它。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">每天都在解决bug的程序员们应该知道，这事<strong>最费时间的是&ldquo;找bug&rdquo;的过程</strong>。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">因为&ldquo;修复bug&rdquo;是一个技术性问题，这个对不同人的差异其实是很小的，因为程序员们每天在写的代码都是差不多的，非常同质化的，况且还有标准答案&ldquo;文档&rdquo;可以参考。比如，都知道string.concat()是拼接，string.split()是分割。该用分割的地方不小心用了拼接，那改掉就好。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">但是&ldquo;找bug&rdquo;就不是这样了。比如，你刚刚改完一行代码后发布出现的问题，你不用找就知道问题出现在哪。但是让你排查一个刚接手没多久的系统肯定是一脸懵逼。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">根本原因在于，这个过程不像技术性问题具有确定性，它是充满不确定性的，处在一个&ldquo;混沌&rdquo;的环境中。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">所以，<strong>对待bug的重点就变成了：如何更快的发现和找到bug</strong>。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">关于这点Z哥的建议是：</p>
+<ol class=" list-paddingleft-2">
+<li>
+<p class="p1">打好日志</p>
+</li>
+<li>
+<p class="p1">学会利用工具</p>
+</li>
+<li>
+<p class="p1">每次的迭代规模尽可能的小</p>
+</li>
+</ol>
+<p class="p1">&nbsp;</p>
+<p class="p1">首先，打好日志。日志其实就是我们在编码的时候安插在程序中&ldquo;记录员&rdquo;，它替我们记录着我们认为容易出现问题的地方所产生的信息。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">但是系统无时无刻都在运行着，必然会产生大量的日志信息，如何从这些信息中快速的找到关键信息，就是需要考虑的问题。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">另外，如果每个人都随意的用自己喜欢的记录日志的方式，那么从风格迥异的日志中找你需要的信息就变得很头疼，时间不一致，格式不一致等等。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">所以，要做好打日志这个事情，就需要定义一个标准，比如必须要有时间，包含当前上下文的参数等等。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">我们还可以给日志做一下归类，定义不同的日志级别，在记录的时候带上前缀。比如【info】、【warning】、【error】之类。如此一来，平时更着重关注的就是error级别的信息，而且由于将其他级别的信息剥离了出去，使得这里的数据量大大减少，更便于查看。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">不过，日志记录毕竟是一个在做&ldquo;预判&rdquo;，如果日志中没有记录到怎么办呢？这里提醒大家<strong>不要先想着怎么调试</strong>。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">如果你面对的系统是一个单体应用倒还好。如果你面对的是一个大型的分布式系统，调试的效率低不说，这事你一个人可能还完不成。而且，如果你直接调试生产环境的话，说不准还会产生什么副作用，摊上新的问题<img src="https://res.wx.qq.com/mpres/htmledition/images/icon/common/emotion_panel/emoji_wx/2_05.png" alt="" width="21" height="21" data-ratio="1" data-type="xmt-emoji" data-w="19" />。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">找bug本质上是一个排除法的过程，设断点调试也是如此。但是从起点开始一步一步的做排除法效率太低了。应该先通过自己的经验、拥有的部分信息先逻辑推理一下，缩小排查的范围。哪怕你最终还是需要调试的话，先做这个事情也会让后续的工作更高效一些。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">第二点，利用工具。<strong>这里的&ldquo;工具&rdquo;不要简单的理解成利用&ldquo;调试工具&rdquo;</strong>。正如上面提到的，找bug的本质是一个排除法的过程，那么任何能够帮你更高效的做排除法的工具都是可以利用的。比如，</p>
+<ul class=" list-paddingleft-2">
+<li>
+<p class="p1">从系统的「事件查看器」中获取更多的环境信息。</p>
+</li>
+<li>
+<p class="p1">利用windows平台的windbg、lunix平台的MAT之类的工具直接分析抓到的dump文件。</p>
+</li>
+<li>
+<p class="p1">借助可视化工具更高效的发现问题，如FlameGraph等。</p>
+</li>
+</ul>
+<p class="p1">&nbsp;</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">另外，如果能主动的告诉你哪里出现bug了，就更棒了。所以，我们可以搭建一套查看方便，信息同步及时的日志框架，以便让有价值的信息第一时间呈现在你的面前。如果有高效的筛选功能就更好了。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">很多日志框架Z哥没用过，就不发表什么言论了，但是elasticsearch + logstash + kibana这套用起来还是很爽的，体系也比较成熟，部署起来也很简单，大家可以尝试一下。再配上ElastAlert或者Sentinl，可以把实时预警机制也包含了。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">最后，每次的迭代规模尽可能的小。这个说起来容易，做起来难，因为这是由整个团队的文化来决定的。这个点的内容完全可以单独开一篇讲，这里就简要阐述下。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">MVP（Minimum Viable Product）式的小步快跑，其实除了让系统或者产品的功能演进更科学之外，还可以让每次迭代所面临的风险更小。正如前面提到的，你改一行代码发布上去，如果出问题，你说问题在哪？</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">相对的，再想象一下，一次性发布一个开发了半年的版本，前一晚能睡的安稳不？<img src="https://res.wx.qq.com/mpres/htmledition/images/icon/common/emotion_panel/emoji_ios/u1F602.png" alt="" width="24" height="24" data-ratio="1" data-type="xmt-emoji" data-w="19" /></p>
+<p class="p1">&nbsp;</p>
+<p class="p1">&nbsp;</p>
+<h2 class="active brush"><strong>总结</strong></h2>
+<p class="p1">好了，我们总结一下。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">这篇呢Z哥先阐述了我对&ldquo;什么是bug&rdquo;的理解，然后分析了bug是如何产生的，以及我们可能会做的一些惯性选择。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">最后给你的建议是，<strong>以如何更快的找到bug为出发点来考虑。通过「打好日志」、「学会利用工具」、「每次的迭代规模尽可能的小」这3种方式来进行</strong>。</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">&nbsp;</p>
+<p class="p1">不过话说回来，虽然我们无法避免出bug（一个项目开发完后没测出bug？你问任何一个技术人员都说&ldquo;做梦呢&rdquo;），但是争取让bug更少是我们的本职工作。</p>
+<p>&nbsp;</p>
+<p>因为对bug容忍度低的另一层含义是，大家对系统的依赖越来越重，越来越多的事情在通过程序完成，而不是人力。</p>
+<p>&nbsp;</p>
+<p>但是再有人咄咄逼人，就把这篇文章丢给他！</p>
+<p class="p1">&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<hr />
+<p>&nbsp;</p>
+<p>相关文章：</p>
+<ul class=" list-paddingleft-2">
+<li>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MzU2NzEwMDc4OQ==&amp;mid=2247483713&amp;idx=1&amp;sn=588e4d65d193e6cfd9bfef7535be9076&amp;chksm=fca3155bcbd49c4d0e03a2edf6f366384fb8367d2fb95d083326376dbdf2be5a7ab925b29e35&amp;scene=21#wechat_redirect" target="_blank" data-itemshowtype="0" data-linktype="2">就简单聊聊沟通效率问题</a></p>
+</li>
+</ul>
+<p>&nbsp;</p>
+<hr />
+<p>&nbsp;</p>
+<p>作者：<strong><a href="https://zacharyfan.com" target="_blank">Zachary</a><br /></strong></p>
+<p>出处：<a href="https://zacharyfan.com/archives/657.html">https://zacharyfan.com/archives/657.html</a></p>
+<p>&nbsp;</p>
+<p>如果你喜欢这篇文章，可以点一下右下角的「<strong>推荐</strong>」。</p>
+<p>&nbsp;</p>
+<p>这样可以给我一点反馈。: )</p>
+<p>&nbsp;</p>
+<p>谢谢你的举手之劳。</p>
+<p>&nbsp;</p>
+<div id="cnblogs_post_body" class="blogpost-body">
+<blockquote>
+<p>▶关于作者：张帆（Zachary，个人微信号：Zachary-ZF）。坚持用心打磨每一篇高质量原创。欢迎<span style="font-size: 18px;"><strong>扫描右侧</strong></span>的二维码~。</p>
+<p><strong>定期发表原创内容：架构设计丨分布式系统丨产品丨运营丨一些思考。</strong></p>
+
+
+
+
+
+
+</blockquote>
+
+
+
+
+
+
+</div>
+</div>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+    <div id="blog_post_info"></div>
+    <div class="clear"></div>
+    <div id="post_next_prev"></div>
+</div>
+            </div>
+            <div class="postDesc">posted @ 
+<span id="post-date">2019-03-27 08:47</span>&nbsp;
+<a href="https://www.cnblogs.com/Zachary-Fan/">Zachary_Fan</a>&nbsp;
+阅读(<span id="post_view_count">...</span>)&nbsp;
+评论(<span id="post_comment_count">...</span>)&nbsp;
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=10582230" rel="nofollow">编辑</a>&nbsp;
+<a href="javascript:void(0)" onclick="AddToWz(10582230);return false;">收藏</a></div>
+        </div>
+	    
+	    
+    </div><!--end: topics 文章、评论容器-->
+</div>
+<script src="https://common.cnblogs.com/highlight/9.12.0/highlight.min.js"></script>
+<script>markdown_highlight();</script>
+<script>
+    var allowComments = true, cb_blogId = 114384, cb_blogApp = 'Zachary-Fan', cb_blogUserGuid = '4e9743d1-e082-e111-aa3f-842b2b196315';
+    var cb_entryId = 10582230, cb_entryCreatedDate = '2019-03-27 08:47', cb_postType = 1; 
+    loadViewCount(cb_entryId);
+</script><a name="!comments"></a>
+<div id="blog-comments-placeholder"></div>
+<script>
+    var commentManager = new blogCommentManager();
+    commentManager.renderComments(0);
+</script>
+
+<div id="comment_form" class="commentform">
+    <a name="commentform"></a>
+    <div id="divCommentShow"></div>
+    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+    <div id="comment_form_container"></div>
+    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+    <div id="ad_t2"></div>
+    <div id="opt_under_post"></div>
+    <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            googletag.defineSlot("/1090369/C1", [300, 250], "div-gpt-ad-1546353474406-0").addService(googletag.pubads());
+            googletag.defineSlot("/1090369/C2", [468, 60], "div-gpt-ad-1539008685004-0").addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    </script>
+    <div id="cnblogs_c1" class="c_ad_block">
+        <div id="div-gpt-ad-1546353474406-0" style="height:250px; width:300px;"></div>
+    </div>
+    <div id="under_post_news"></div>
+    <div id="cnblogs_c2" class="c_ad_block">
+        <div id="div-gpt-ad-1539008685004-0" style="height:60px; width:468px;">
+            <script>
+                if (new Date() >= new Date(2018, 9, 13)) {
+                    googletag.cmd.push(function () { googletag.display("div-gpt-ad-1539008685004-0"); });
+                }
+            </script>
+        </div>
+    </div>
+    <div id="under_post_kb"></div>
+    <div id="HistoryToday" class="c_ad_block"></div>
+    <script type="text/javascript">
+        fixPostBody();
+        deliverBigBanner();
+setTimeout(function() { incrementViewCount(cb_entryId); }, 50);        deliverAdT2();
+        deliverAdC1();
+        deliverAdC2();
+        loadNewsAndKb();
+        loadBlogSignature();
+LoadPostCategoriesTags(cb_blogId, cb_entryId);        LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+        GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+        loadOptUnderPost();
+        GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    </script>
+</div>
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 Zachary_Fan
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    <div id="page_end_html">
+        <script type="text/javascript" language="javascript"> 
+//为右下角推荐推荐区域添加关注按钮
+window.onload = function () {
+    $('#div_digg').prepend(' <div id="suspension" style="padding-bottom: 5px"><a style="float:right" href="javascript:void(0);" onclick="hideSuspension()">点击隐藏</a><img style="width:120px;height:120px"  src="https://images.cnblogs.com/cnblogs_com/Zachary-Fan/555236/o_%E5%85%AC%E4%BC%97%E5%8F%B7QRCode.jpg" /><br/><span>欢迎加入作者的小圈子 --> <b>跨界架构师</b>。</span><br/><span>定期发表作者的思考：技术、产品、运营等。</span></div><div style="padding-bottom: 5px"><span class="icon_favorite" style="padding-top: 2px"></span><a onclick="follow(\'4e9743d1-e082-e111-aa3f-842b2b196315\');" href="javascript:void(0);" style="font-weight: bold; padding-left:5px;">关注一下博主吧</a> </div>');
+}
+
+function hideSuspension(){
+    document.getElementById('suspension').style.display='none';
+}
+</script>
+    </div>
+</body>
+</html>

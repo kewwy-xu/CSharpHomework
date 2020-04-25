@@ -1,0 +1,501 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Serverless - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    <link id="MainCss" rel="stylesheet" href="/skins/codinglife/bundle-codinglife.min.css?v=hlpQ1CJDwwJXDxv2HNauUmW3NjyWzoMaw1uER19SLT0" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/codinglife/bundle-codinglife-mobile.min.css?v=XjHfryC9ctsatIZz1dHn7TsRIqmwz9c3aj_6SCfHSDM" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/serverlesscloud/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/serverlesscloud/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/serverlesscloud/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 572667;
+        var currentBlogApp = 'serverlesscloud';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'CodingLife';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/serverlesscloud/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/serverlesscloud/">腾讯云 Serverless</a>
+</h1>
+<h2>
+
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/serverlesscloud/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/Serverless">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/serverlesscloud/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<span id="stats_post_count">随笔 - 
+56&nbsp; </span>
+<span id="stats_article_count">文章 - 
+0&nbsp; </span>
+<span id="stats-comment_count">评论 - 
+1</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<!--done-->
+
+
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/serverlesscloud/archive/2020/04/24.html">2020年4月24日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/serverlesscloud/p/12769657.html">
+    首届 ServerlessDays &#183; China 大会来啦！
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：小伙伴们，你们知道 &quot;ServerlessDays&quot; 么？ 如果你知道 Serverless 技术，但不知道 ServerlessDays 的话，那你就真的 out 了！ ServerlessDays 是由社区发起、面向开发人员的无服务器技术会议。过去，ServerlessDays 在全球举办了近             <a href="https://www.cnblogs.com/serverlesscloud/p/12769657.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-24 19:32 Serverless 阅读 (11) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12769657" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/serverlesscloud/archive/2020/04/22.html">2020年4月22日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/serverlesscloud/p/12756253.html">
+    腾讯云正式发布 Serverless Framework
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：4 月 21 日 14:00，腾讯云召开了 Serverless Framework 线上发布会，会议邀请到了 serverless.com CEO Austen Collins 、腾讯云中间件总经理 &amp; 首席架构师 Yunong Xiao 等重磅嘉宾进行相关分享和探讨，本次发布会在腾讯云大学、哔哩            <a href="https://www.cnblogs.com/serverlesscloud/p/12756253.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-22 21:51 Serverless 阅读 (18) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12756253" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/serverlesscloud/archive/2020/04/21.html">2020年4月21日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/serverlesscloud/p/12744076.html">
+    通过 Serverless 架构构建更好的软件
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：我们软件工具行业为开发者提供的支持还很不到位，无法帮助他们构建更好的软件。 尽管在过去 30 年中，我们开发软件的方式已经发生了巨大变化。就可用的技术和工具而言，我们确实已经取得了巨大进步。 但这些发展对开发者的生产效率实际上有什么作用呢？ 使构建软件变得更容易了吗？ 更便宜了吗？ 更迅速了吗？ 在            <a href="https://www.cnblogs.com/serverlesscloud/p/12744076.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-21 13:44 Serverless 阅读 (14) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12744076" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/serverlesscloud/archive/2020/04/20.html">2020年4月20日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/serverlesscloud/p/12739028.html">
+    Serverless 实战：通过 Serverless 架构实现监控告警
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：在实际生产中，我们经常需要做一些监控脚本来监控网站服务或者 API 服务是否可用。传统的方法是使用网站监控平台（例如 DNSPod 监控、360 网站服务监控，以及阿里云监控等），它们的原理是通过用户自己设置要监控的服务地址和监测的时间阈值，由监控平台定期发起请求对网站或服务的可用性进行判断。 这些            <a href="https://www.cnblogs.com/serverlesscloud/p/12739028.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-20 17:14 Serverless 阅读 (14) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12739028" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/serverlesscloud/archive/2020/04/17.html">2020年4月17日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/serverlesscloud/p/12719237.html">
+    腾讯云 Serverless Framework 正式发布会
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：2020 年 4 月 21 日（周二）14：00，腾讯云 Serverless Framework 将正式召开线上发布会，这是由腾讯云提供的专为中国开发人员定制的 Serverless Framework 版本。此版本中，我们发布了全新的组件（Component）机制、云引擎部署支持、实时日志和调试            <a href="https://www.cnblogs.com/serverlesscloud/p/12719237.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-17 13:10 Serverless 阅读 (34) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12719237" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/serverlesscloud/archive/2020/04/16.html">2020年4月16日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/serverlesscloud/p/12712096.html">
+    实时日志：腾讯云 Serverless Python 运行时支持日志实时输出
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：开发前言 作为一名 Serverless 架构的重度使用者，我一直对调试感到恐慌：经常在测试接口的时候，会通过网页/PostMan 触发函数，然后没得到预期的结果，我就只能傻乎乎的一直点控制台的日志，等待他能早点出来结果，看看为啥和我预期结果不同。 虽然说 10S，20S 的日志输出还能接受，但是在            <a href="https://www.cnblogs.com/serverlesscloud/p/12712096.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-16 13:02 Serverless 阅读 (18) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12712096" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/serverlesscloud/archive/2020/04/14.html">2020年4月14日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/serverlesscloud/p/12700907.html">
+    实验室站迁移 Serverless 之路（上）
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：本文为 Serverless 社区成员撰稿。作者高晨远，研发工程师，熟悉 Python 开发，常写 Web 和爬虫 前言 2 月份，TencentServerless 举办了系列在线课堂分享，讲解了 Serverless 概念、架构、最佳实践以及如何开发一个 component 等技术知识。 因为对            <a href="https://www.cnblogs.com/serverlesscloud/p/12700907.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-14 20:27 Serverless 阅读 (21) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12700907" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/serverlesscloud/archive/2020/04/13.html">2020年4月13日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/serverlesscloud/p/12691940.html">
+    生存指南之 CORS + API Gateway
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：本文介绍了跨域资源共享的基本知识，以及如何避免云函数上 Serverless web API 的问题 构建 Web API 是 Serverless 应用中最流行的用例之一，您能在不增加其他操作开销的情况下，获得简单、可扩展的后端优势。 然而，如果您的网页正在调用后端 API，那么必须处理 &quot;跨域资            <a href="https://www.cnblogs.com/serverlesscloud/p/12691940.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-13 16:01 Serverless 阅读 (14) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12691940" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/serverlesscloud/archive/2020/04/09.html">2020年4月9日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/serverlesscloud/p/12665453.html">
+    腾讯云 Serverless Framework 正式发布公告
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：今天，我们很高兴地宣布，腾讯 Serverless Framework 已正式发布。这是由腾讯云提供的专为中国开发人员定制的 Serverless Framework 版本。 在此版本中我们发布了一些新功能。这些新功能为 Serverless 应用程序开发提供了顶级的顺畅体验。我们诚挚的邀请您试用此            <a href="https://www.cnblogs.com/serverlesscloud/p/12665453.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-09 11:05 Serverless 阅读 (52) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12665453" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/serverlesscloud/archive/2020/04/08.html">2020年4月8日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/serverlesscloud/p/12659067.html">
+     一名时尚艺术家转行到科技行业的历程
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：Serverless 团队新成员 Charmmie 是从高级时装行业转行到技术领域的，本文是她的故事，太酷了。 我是一名艺术家、时尚行业从业者。讲真的，我从没想过自己有一天会像现在这样，坐在旧金山一家科技初创公司的办公桌前撰写这篇博客。 事实上，我过去对科技持抗拒态度（只是「过去」）。我认为科技没什            <a href="https://www.cnblogs.com/serverlesscloud/p/12659067.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-08 12:06 Serverless 阅读 (15) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12659067" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+
+<div class="topicListFooter">
+    <div id="nav_next_page">
+        
+    <a href="https://www.cnblogs.com/serverlesscloud/default.html?page=2">
+        下一页
+    </a>
+
+    </div>    
+</div>
+
+
+
+
+
+
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 Serverless
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    
+</body>
+</html>

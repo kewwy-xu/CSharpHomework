@@ -1,0 +1,526 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>随笔列表第2页 - TechFlow2019 - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    <link id="MainCss" rel="stylesheet" href="/skins/simplememory/bundle-simplememory.min.css?v=OL4qeo1LNGlN1rKIhv5UctANvt0M6Nx6kLzr_ffx3Xk" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/SimpleMemory/bundle-SimpleMemory-mobile.min.css" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/techflow/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/techflow/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/techflow/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 569749;
+        var currentBlogApp = 'techflow';
+        var cb_enable_mathjax = true;
+        var isLogined = false;
+        var skinName = 'SimpleMemory';
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], processClass: 'math', processEscapes: true },
+        TeX: {
+        equationNumbers: { autoNumber: ['AMS'], useLabelIds: true },
+        extensions: ['extpfeil.js', 'mediawiki-texvc.js'],
+        Macros: {bm: "\\boldsymbol"}
+        },
+        'HTML-CSS': { linebreaks: { automatic: true } },
+        SVG: { linebreaks: { automatic: true } }
+        });
+    </script>
+    <script src="https://mathjax.cnblogs.com/2_7_5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/techflow/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/techflow/">TechFlow2019</a>
+</h1>
+<h2>
+
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/techflow/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/TechFlow2019">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/techflow/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<span id="stats_post_count">随笔 - 
+119&nbsp; </span>
+<span id="stats_article_count">文章 - 
+0&nbsp; </span>
+<span id="stats-comment_count">评论 - 
+46</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<!--done-->
+
+
+<div id="homepage_top_pager" class="topicListFooter">
+    
+
+<div class="pager">
+    <a href="https://www.cnblogs.com/techflow/default.html?page=1">上一页</a>
+    
+    
+        <a href="https://www.cnblogs.com/techflow/default.html?page=1">1</a>
+    2
+        <a href="https://www.cnblogs.com/techflow/default.html?page=3">3</a>
+        <a href="https://www.cnblogs.com/techflow/default.html?page=4">4</a>
+        <a href="https://www.cnblogs.com/techflow/default.html?page=5">5</a>
+        <a href="https://www.cnblogs.com/techflow/default.html?page=6">6</a>
+    ···
+    <a href="https://www.cnblogs.com/techflow/default.html?page=12">12</a>
+    <a href="https://www.cnblogs.com/techflow/default.html?page=3">下一页</a>
+</div>
+</div>
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/techflow/archive/2020/04/15.html">2020年4月15日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/techflow/p/12707459.html">
+    【硬核】使用替罪羊树实现KD-Tree的增删改查
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：本文始发于个人公众号： TechFlow ，原创不易，求个关注 今天是机器学习的第16篇文章，我们来继续上周KD Tree的话题。 如果有没有看过上篇文章或者是最新关注的小伙伴，可以点击一下下方的传送门： 【硬核】机器学习与数据结构的完美结合——KD Tree 旋转不可行分析 上周我们实现了KD T            <a href="https://www.cnblogs.com/techflow/p/12707459.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-15 19:28 TechFlow2019 阅读 (144) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12707459" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/techflow/archive/2020/04/14.html">2020年4月14日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/techflow/p/12700821.html">
+    Python——详解__str__, __repr__和__format__
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：本文始发于个人公众号： TechFlow ，原创不易，求个关注 今天是Python专题的第10篇文章，我们来聊聊Python当中的类。 打印实例 我们先从类和对象当中最简单的打印输出开始讲起，打印一个实例是一个非常不起眼的应用，但是在实际的编程当中却非常重要。原因也很简单，因为我们debug的时候往            <a href="https://www.cnblogs.com/techflow/p/12700821.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-14 20:12 TechFlow2019 阅读 (96) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12700821" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/techflow/archive/2020/04/13.html">2020年4月13日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/techflow/p/12693957.html">
+    GoLang——Hello World，打开新世界的大门
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：本文始发于个人公众号： TechFlow ，原创不易，求个关注 今天是Go语言系列的第一篇文章，我们来聊聊这门新的语言和它的基础语法。 浅谈Golang 作为程序员而言，往往对于学习新的语言都是有抗拒的。如果你用惯了Java，那么你可能不太愿意去学Python，如果你刚学C或者C++可能你也会看不上            <a href="https://www.cnblogs.com/techflow/p/12693957.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-13 21:09 TechFlow2019 阅读 (277) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12693957" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/techflow/p/12693828.html">
+    LeetCode49，一题学会hash算法
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：本文始发于个人公众号： TechFlow ，原创不易，求个关注 今天是LeetCode专题的第30篇文章，一起来看一道字符串分组的问题。 题意 这题的题意很简单，给定一个字符串数组，要求将所有字符串按照构成分组。 举个例子，比如给定的数组是[eat, ate, tea, tan, nat, bat]            <a href="https://www.cnblogs.com/techflow/p/12693828.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-13 20:48 TechFlow2019 阅读 (32) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12693828" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/techflow/archive/2020/04/12.html">2020年4月12日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/techflow/p/12687735.html">
+    spark——spark中常说RDD，究竟RDD是什么？
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：本文始发于个人公众号： TechFlow ，原创不易，求个关注 今天是spark专题第二篇文章，我们来看spark非常重要的一个概念——RDD。 在上一讲当中我们在本地安装好了spark，虽然我们只有local一个集群，但是仍然不妨碍我们进行实验。spark最大的特点就是无论集群的资源如何，进行计算            <a href="https://www.cnblogs.com/techflow/p/12687735.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-12 21:20 TechFlow2019 阅读 (150) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12687735" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/techflow/p/12687271.html">
+    LeetCode48， 如何让矩阵原地旋转90度
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：本文始发于个人公众号： TechFlow ，原创不易，求个关注 今天是LeetCode第29篇，我们来看一道简单的矩阵旋转问题。 题意 题目的要求很简单，给定一个二维方形矩阵，要求返回矩阵旋转90度之后的结果。 下面我们来看两个例子： 题解 这个动图一看就明白了，也就是说我们需要将一个二维矩阵顺时针            <a href="https://www.cnblogs.com/techflow/p/12687271.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-12 20:06 TechFlow2019 阅读 (36) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12687271" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/techflow/archive/2020/04/11.html">2020年4月11日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/techflow/p/12679209.html">
+    浅谈分布式集群管理系统的一些细节【二】
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：本文始发于个人公众号： TechFlow ，原创不易，求个关注 今天是分布式专题的第12篇文章，我们继续来看集群资源管理系统。 上一篇的文章当中我们简单了解了一下什么是分布式集群资源管理，它的诞生背景和解决的问题是什么，以及它大概有哪些优点和不足。上一章的内容比较表面，没有过多深入原理，这一篇文章我            <a href="https://www.cnblogs.com/techflow/p/12679209.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-11 13:37 TechFlow2019 阅读 (730) 评论 (2)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12679209" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/techflow/archive/2020/04/10.html">2020年4月10日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/techflow/p/12672690.html">
+    高等数学——简单直观地了解定积分
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：本文始发于个人公众号：TechFlow，原创不易，求个关注 今天是 高等数学第11 篇文章，我们来看看定积分的相关内容。 对于很多人来说定积分的内容其实早在高中就已经接触过了，比如在高中物理当中，我们经常使用一种叫做” 微元法 “的方法来解决一些物理问题。但实际上所谓的”微元法“本质上来说其实就是一            <a href="https://www.cnblogs.com/techflow/p/12672690.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-10 12:38 TechFlow2019 阅读 (51) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12672690" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/techflow/archive/2020/04/09.html">2020年4月9日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/techflow/p/12665935.html">
+    树形DP——动态规划与数据结构的结合，在树上做DP
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：本文始发于个人公众号： TechFlow ，原创不易，求个关注 今天是算法与数据结构的第15篇，也是动态规划系列的第4篇。 之前的几篇文章当中一直在聊背包问题，不知道大家有没有觉得有些腻味了。虽然经典的文章当中背包一共有九讲，但除了竞赛选手，我们能理解到单调优化就已经非常出色了。像是带有依赖的背包问            <a href="https://www.cnblogs.com/techflow/p/12665935.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-09 11:57 TechFlow2019 阅读 (184) 评论 (2)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12665935" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/techflow/archive/2020/04/08.html">2020年4月8日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/techflow/p/12658354.html">
+    机器学习——详解KD-Tree原理
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：本文始发于个人公众号： TechFlow ，原创不易，求个关注 今天是机器学习的第15篇文章，之前的文章当中讲了Kmeans的相关优化，还讲了大名鼎鼎的EM算法。有些小伙伴表示喜欢看这些硬核的，于是今天上点硬菜，我们来看一个机器学习领域经常用到的数据结构——KD Tree。 从线段树到KD树 在讲K            <a href="https://www.cnblogs.com/techflow/p/12658354.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-08 10:34 TechFlow2019 阅读 (147) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12658354" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+
+<div class="topicListFooter">
+    <div id="nav_next_page">
+        
+
+    </div>    
+</div>
+
+
+<div id="homepage_bottom_pager" class="topicListFooter">
+    
+
+<div class="pager">
+    <a href="https://www.cnblogs.com/techflow/default.html?page=1">上一页</a>
+    
+    
+        <a href="https://www.cnblogs.com/techflow/default.html?page=1">1</a>
+    2
+        <a href="https://www.cnblogs.com/techflow/default.html?page=3">3</a>
+        <a href="https://www.cnblogs.com/techflow/default.html?page=4">4</a>
+        <a href="https://www.cnblogs.com/techflow/default.html?page=5">5</a>
+        <a href="https://www.cnblogs.com/techflow/default.html?page=6">6</a>
+    ···
+    <a href="https://www.cnblogs.com/techflow/default.html?page=12">12</a>
+    <a href="https://www.cnblogs.com/techflow/default.html?page=3">下一页</a>
+</div>
+</div>
+
+
+
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 TechFlow2019
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    <div id="page_end_html">
+        
+
+    </div>
+</body>
+</html>

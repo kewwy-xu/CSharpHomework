@@ -1,0 +1,484 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>叶修语 - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    <link id="MainCss" rel="stylesheet" href="/skins/watercolor_ergonomic/bundle-watercolor_ergonomic.min.css?v=DZqwSz8wWGlnQiL-PISb8UnNObQNyupdPI63GXs9eOI" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/watercolor_ergonomic/bundle-watercolor_ergonomic-mobile.min.css?v=ADiCwO2hOTdd5yYidcx7eob7ix2VJI4o_TXjEycTHjs" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/yxy6/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/yxy6/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/yxy6/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 502458;
+        var currentBlogApp = 'yxy6';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'watercolor_ergonomic';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    <div id="maincontainer">
+	<div id="header">
+		
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/yxy6/">叶修语</a>
+</h1>
+<div id="tagline">
+
+</div>
+<div id="menubar">
+<div id="blogstats"><span>posts(
+15)</span>
+<span>comments(
+1)</span>
+<span>trackbacks(
+0)</span>
+
+</div>
+<ul>
+	<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+	<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E5%8F%B6%E4%BF%AE%E8%AF%AD">
+联系</a></li>
+	<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/yxy6/rss/">
+订阅</a></li>
+	<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>		
+</ul>
+<script>
+    $("#blog_nav_sitehome").removeClass("menu").addClass("home");
+    $("#blog_nav_contact").removeClass("menu").addClass("contact");
+    $("#blog_nav_contact").removeClass("menu").addClass("contact");
+    $("#blog_nav_admin").removeClass("menu").addClass("admin");
+</script>
+</div>
+
+
+
+
+
+	</div>
+	<div id="content">
+		<div id="left">
+			
+				
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+				
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+							
+		</div>
+		<div id="right">
+			
+
+
+
+
+		
+
+<div class="container">
+<div class="containerheader">
+	<h3>		  
+	<a href="https://www.cnblogs.com/yxy6/archive/2020/04/24.html" style="display:inline-block;border-width:0px;">
+2020年4月24日</a>
+	</h3>
+</div>
+<div class="containercontent">
+
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/yxy6/p/12767911.html">
+    电脑小知识：Windows 10是用什么语言写的？到底有多少行代码？
+</a>
+</h2>
+			
+
+    <div class="c_b_p_desc">
+摘要：这是微软的内核工程师 Axel Rietschin在Quora的一个回答。 Windows 10 的code base 和Windows 8.x , 7 , Vista , XP , 2000 和Windows NT的code base 是相同的，当然是演化过来的，其中的每一代都进行了重大的重构，增            <a href="https://www.cnblogs.com/yxy6/p/12767911.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+			
+			<p class="postfoot">
+
+posted @ 2020-04-24 15:48 叶修语 阅读 (4) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12767911" rel="nofollow">
+    编辑
+</a>
+</p>
+		</div>
+
+</div>
+<div class="containerfooter"></div>
+</div>
+
+
+		
+
+<div class="container">
+<div class="containerheader">
+	<h3>		  
+	<a href="https://www.cnblogs.com/yxy6/archive/2020/04/17.html" style="display:inline-block;border-width:0px;">
+2020年4月17日</a>
+	</h3>
+</div>
+<div class="containercontent">
+
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/yxy6/p/12720860.html">
+    普通程序员快速成长为编程高手？掌握 5 个方法，让你先人一步！
+</a>
+</h2>
+			
+
+    <div class="c_b_p_desc">
+摘要：对我来说，一个好的程序员应该是努力去追求尽可能无错的高质量的符合需求的代码实现。 一些人也许认为好的程序员是那些懂得多门编程语言，懂得很牛技术的程序员，是的，这在某些情况下是对的。但归根到底，无论你用什么样的技术，什么样的语言，所有的程序被写出来，其功能都要符合需求以及尽可能地健壮无错和高质量。 我            <a href="https://www.cnblogs.com/yxy6/p/12720860.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+			
+			<p class="postfoot">
+
+posted @ 2020-04-17 16:36 叶修语 阅读 (29) 评论 (1)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12720860" rel="nofollow">
+    编辑
+</a>
+</p>
+		</div>
+
+</div>
+<div class="containerfooter"></div>
+</div>
+
+
+		
+
+<div class="container">
+<div class="containerheader">
+	<h3>		  
+	<a href="https://www.cnblogs.com/yxy6/archive/2020/04/16.html" style="display:inline-block;border-width:0px;">
+2020年4月16日</a>
+	</h3>
+</div>
+<div class="containercontent">
+
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/yxy6/p/12713444.html">
+    程序人生丨 对你的编程技术提高最有效的方法是什么？值得一看！
+</a>
+</h2>
+			
+
+    <div class="c_b_p_desc">
+摘要：StackExchange.com上有两个贴子，贴子名叫“What is the single most effective thing you did to improve your programming skills?” – 对你的编程技术提高最有效的一件事是什么？回复的人中给了很多很不错的建            <a href="https://www.cnblogs.com/yxy6/p/12713444.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+			
+			<p class="postfoot">
+
+posted @ 2020-04-16 15:56 叶修语 阅读 (15) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12713444" rel="nofollow">
+    编辑
+</a>
+</p>
+		</div>
+
+</div>
+<div class="containerfooter"></div>
+</div>
+
+
+		
+
+<div class="container">
+<div class="containerheader">
+	<h3>		  
+	<a href="https://www.cnblogs.com/yxy6/archive/2020/04/14.html" style="display:inline-block;border-width:0px;">
+2020年4月14日</a>
+	</h3>
+</div>
+<div class="containercontent">
+
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/yxy6/p/12702204.html">
+    程序员面试：C/C++求职者必备 20 道面试题，一道试题一份信心！
+</a>
+</h2>
+			
+
+    <div class="c_b_p_desc">
+摘要：面试真是痛并快乐的一件事，痛在被虐的体无完肤，快乐在可以短时间内积累很多问题，加速学习。 在我们准备面试的时候，遇到的面试题有难有易，不能因为容易，我们就轻视，更不能因为难，我们就放弃。我们面对高薪就业的态度永远不变，那就是坚持、坚持、再坚持。出现问题，找原因；遇到困难，想办法。我们一直坚信只有在坚            <a href="https://www.cnblogs.com/yxy6/p/12702204.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+			
+			<p class="postfoot">
+
+posted @ 2020-04-14 23:25 叶修语 阅读 (21) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12702204" rel="nofollow">
+    编辑
+</a>
+</p>
+		</div>
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/yxy6/p/12698713.html">
+    知乎神回复：长期当程序员会失去什么？知乎大牛的回答引人深思！
+</a>
+</h2>
+			
+
+    <div class="c_b_p_desc">
+摘要：看奇葩说，主持人大赛，总觉得他们知识面很广，对很多事物都有独特的见解。看薛兆丰老师的经济学讲义时，总觉得我们对世界运行的规律缺乏了解。作为程序员，或许执着于技术，却很少思考我们的世界，我们的人生，这是不是一种失去？ 失去能超越虽结构复杂但其实逻辑异常简洁简单且干净的确定方法论，去审视我们所生活的这个            <a href="https://www.cnblogs.com/yxy6/p/12698713.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+			
+			<p class="postfoot">
+
+posted @ 2020-04-14 16:14 叶修语 阅读 (54) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12698713" rel="nofollow">
+    编辑
+</a>
+</p>
+		</div>
+
+</div>
+<div class="containerfooter"></div>
+</div>
+
+
+		
+
+<div class="container">
+<div class="containerheader">
+	<h3>		  
+	<a href="https://www.cnblogs.com/yxy6/archive/2020/04/13.html" style="display:inline-block;border-width:0px;">
+2020年4月13日</a>
+	</h3>
+</div>
+<div class="containercontent">
+
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/yxy6/p/12692063.html">
+    网上传言：程序员 = 宅男，程序员真的都宅吗？现实情况是这样！
+</a>
+</h2>
+			
+
+    <div class="c_b_p_desc">
+摘要：认识的程序员都算比较宅的。身边的同事都是这样。如果出门要求他同去，他基本不会拒绝，但很少主动出门，认为在外面玩是浪费时间。我也天天纳闷，别人怎么那么闲，天天有时间出去玩呢？还老是鄙视我们这种天天学习的人。 宅男不一定是程序员，但程序员大部分都是宅男。 因为如果在赶一个项目的话，可能会经常加班，下班后            <a href="https://www.cnblogs.com/yxy6/p/12692063.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+			
+			<p class="postfoot">
+
+posted @ 2020-04-13 16:15 叶修语 阅读 (45) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12692063" rel="nofollow">
+    编辑
+</a>
+</p>
+		</div>
+
+</div>
+<div class="containerfooter"></div>
+</div>
+
+
+		
+
+<div class="container">
+<div class="containerheader">
+	<h3>		  
+	<a href="https://www.cnblogs.com/yxy6/archive/2020/04/10.html" style="display:inline-block;border-width:0px;">
+2020年4月10日</a>
+	</h3>
+</div>
+<div class="containercontent">
+
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/yxy6/p/12674209.html">
+    编程初学者，哪几种编程语言最值得你去学习？其实你应该这样做！
+</a>
+</h2>
+			
+
+    <div class="c_b_p_desc">
+摘要：有不少零基础的小白有私下咨询我，有哪些最有用或最好的编程语言适宜学习？ 首先选择哪个编程语言不谈，我认为答案取决于你想通过编程来做什么。 几种编程语言简述 C语言——&#160;Dennis Ritchie Dennis MacAlistair Ritchie是一位美国计算机科学家，于1967年到1973年间            <a href="https://www.cnblogs.com/yxy6/p/12674209.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+			
+			<p class="postfoot">
+
+posted @ 2020-04-10 16:15 叶修语 阅读 (38) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12674209" rel="nofollow">
+    编辑
+</a>
+</p>
+		</div>
+
+</div>
+<div class="containerfooter"></div>
+</div>
+
+
+		
+
+<div class="container">
+<div class="containerheader">
+	<h3>		  
+	<a href="https://www.cnblogs.com/yxy6/archive/2020/04/09.html" style="display:inline-block;border-width:0px;">
+2020年4月9日</a>
+	</h3>
+</div>
+<div class="containercontent">
+
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/yxy6/p/12670125.html">
+    C/C++编程笔记：《C语言》—— 数组知识详解，学编程建议收藏！
+</a>
+</h2>
+			
+
+    <div class="c_b_p_desc">
+摘要：作者：龙跃十二链接：https://www.imooc.com/article/300814 ，微信公众号：龙跃十二 数组的基本概念 我们把一组数据的集合称为数组（Array），它所包含的每一个数据叫做数组元素（Element），所包含的数据的个数称为数组长度（Length），数组中的每个元素都有一            <a href="https://www.cnblogs.com/yxy6/p/12670125.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+			
+			<p class="postfoot">
+
+posted @ 2020-04-09 22:29 叶修语 阅读 (131) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12670125" rel="nofollow">
+    编辑
+</a>
+</p>
+		</div>
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/yxy6/p/12667408.html">
+    细数程序员 10 种“辛酸与无奈”，程序员网友直言：这也太真实了！
+</a>
+</h2>
+			
+
+    <div class="c_b_p_desc">
+摘要：1、有人曾说，做程序员的人，都是疯子，做长了往往入戏太深，成天与代码打交道，话都很少说，所以评论程序员们都是以后连妞都泡不到的人，我听后，我可以这样说，泡妞好比一个方法，他人是学习方法，而程序员呢，是能制造方法。 2、做程序员的女朋友幸福不？这个问题记得以前有人问过我女朋友，我当时当场回答那人，我说            <a href="https://www.cnblogs.com/yxy6/p/12667408.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+			
+			<p class="postfoot">
+
+posted @ 2020-04-09 15:46 叶修语 阅读 (139) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12667408" rel="nofollow">
+    编辑
+</a>
+</p>
+		</div>
+
+</div>
+<div class="containerfooter"></div>
+</div>
+
+
+		
+
+<div class="container">
+<div class="containerheader">
+	<h3>		  
+	<a href="https://www.cnblogs.com/yxy6/archive/2020/04/08.html" style="display:inline-block;border-width:0px;">
+2020年4月8日</a>
+	</h3>
+</div>
+<div class="containercontent">
+
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/yxy6/p/12660949.html">
+    程序人生丨程序员的发展之路，怎样的发展决定你拥有怎样的薪资！
+</a>
+</h2>
+			
+
+    <div class="c_b_p_desc">
+摘要：我见证过许多的程序员的成长，他们很多人在进入成熟期之后，技术上相对较高，一般项目开发起来比较自信，没有什么太大的困难，有的职位上也有所提升，成了项目经理、设计师，有的甚至是到了管理者的位置。又经过很长时间，这些程序员却在也没有什么变化和发展，工作稳定、情绪稳定，好像一切都在按部就班地进行着。有的程序            <a href="https://www.cnblogs.com/yxy6/p/12660949.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+			
+			<p class="postfoot">
+
+posted @ 2020-04-08 16:49 叶修语 阅读 (34) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12660949" rel="nofollow">
+    编辑
+</a>
+</p>
+		</div>
+
+</div>
+<div class="containerfooter"></div>
+</div>
+
+
+
+<div class="topicListFooter">
+    <div id="nav_next_page">
+        
+    <a href="https://www.cnblogs.com/yxy6/default.html?page=2">
+        下一页
+    </a>
+
+    </div>    
+</div>
+
+
+
+
+
+
+
+
+		</div>
+	</div>	
+	<div class="clearing">&nbsp;</div>
+</div>
+<div id="footer">
+	Powered by:<br /> 
+
+
+<a href="https://www.cnblogs.com/" id="Footer1_Hyperlink3" style="font-size: 12px; font-family: Verdana">博客园</a><br />
+Copyright &copy; 2020 叶修语
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+</div>
+
+
+    
+</body>
+</html>

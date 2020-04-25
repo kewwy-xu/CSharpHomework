@@ -1,0 +1,723 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>李志涛 - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    <link id="MainCss" rel="stylesheet" href="/skins/hover/bundle-hover.min.css?v=4g9VRwEunu0VTeVQV676B9zlptl8ucyilUBAFWqEsMA" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/hover/bundle-hover-mobile.min.css?v=ADiCwO2hOTdd5yYidcx7eob7ix2VJI4o_TXjEycTHjs" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/lizherui/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/lizherui/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/lizherui/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 354992;
+        var currentBlogApp = 'lizherui';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'Hover';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    
+<div id="top">
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/lizherui/">李志涛</a>
+</h1>
+</div>
+<p id="tagline">
+
+</p>
+
+
+<div id="leftmenu">
+	
+		
+<h3>导航</h3>
+<ul>
+			<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+			<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/lizherui/">
+首页</a>
+</li>
+			<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+			<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E6%9D%8E%E5%BF%97%E6%B6%9B">
+联系</a></li>
+			<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/lizherui/rss/">
+订阅</a>
+<a id="blog_nav_rss_image" href="https://www.cnblogs.com/lizherui/rss/">
+    <img src="/skins/hover/images/xml.gif" alt="订阅" />
+</a></li>
+			<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div id="calendar"><div id="blog-calendar" style="display:none"></div></div>                
+                    <script>loadBlogDefaultCalendar();</script>
+		<h3>统计</h3>
+	<ul>
+		<li>随笔 - 
+23</li>
+		<li>文章 - 
+0</li>
+		<li>评论 - 
+5</li>
+		<li>引用 - 
+0</li>
+	</ul>
+
+
+		
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+		<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+	
+</div>
+<div id="main">
+	
+
+
+
+
+		
+<p class="date">
+	<span>2020年4月24日		  
+	<a href="https://www.cnblogs.com/lizherui/archive/2020/04/24.html" style="height: 15px; width: 12px; border-width: 0">#</a>
+	</span>
+</p>
+
+
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/lizherui/p/12769889.html">
+    TDDL当前进展及技术规划
+</a>
+</h2>
+			
+			
+
+    <div class="c_b_p_desc">
+摘要：一、选型背景 公司营收业绩高速增长，业务快速向前奔跑，对基础技术上线既要超、快、猛，又要保证服务质量，所以前期选型稳妥方案为MySQL router，但他的核心功能上仅支持读写分离、读写库高可用、动态增删DB节点，而读写性能却无法应对每月大幅增长的数据。对业务拆分同时进行分库分表势在必行。基于以上场            <a href="https://www.cnblogs.com/lizherui/p/12769889.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			
+			<p class="postfoot">		
+				
+
+posted @ 2020-04-24 20:30 李志涛 阅读 (4) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12769889" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/lizherui/p/12769878.html">
+    es技术规划
+</a>
+</h2>
+			
+			
+
+    <div class="c_b_p_desc">
+摘要：一、业务背景 es服务当前没有专门的部门负责维护和开发，交由各端自行负责维护，随着公司业务查询和统计需求非常多，会面临居多方面问题和挑战： 无人(专业RD或部门)负责 无专业的人进行维护，遇到问题几乎无人处理 缺乏性能评估 查询和统计相关语句执行无指标评价体系 运维效率较低 无操作友好且高效的web            <a href="https://www.cnblogs.com/lizherui/p/12769878.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			
+			<p class="postfoot">		
+				
+
+posted @ 2020-04-24 20:27 李志涛 阅读 (18) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12769878" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+
+
+
+		
+<p class="date">
+	<span>2020年4月9日		  
+	<a href="https://www.cnblogs.com/lizherui/archive/2020/04/09.html" style="height: 15px; width: 12px; border-width: 0">#</a>
+	</span>
+</p>
+
+
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/lizherui/p/12666149.html">
+    工程师技能图谱
+</a>
+</h2>
+			
+			
+
+    <div class="c_b_p_desc">
+摘要：软素质提升 有效沟通 《关键对话》 团队合作 《六顶思考帽》 文档写作 《麦肯锡写作武器》 《结构思考力丛书》 《金字塔原理》 工作汇报 《向上管理的艺术：如何正确汇报工作》 技术规划 参考《OKR工作法》 《工作计划》 项目管理 《最后期限》 《项目管理知识体系指南》 《项目管理融会贯通》 《软件            <a href="https://www.cnblogs.com/lizherui/p/12666149.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			
+			<p class="postfoot">		
+				
+
+posted @ 2020-04-09 12:45 李志涛 阅读 (15) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12666149" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+
+
+
+		
+<p class="date">
+	<span>2020年4月8日		  
+	<a href="https://www.cnblogs.com/lizherui/archive/2020/04/08.html" style="height: 15px; width: 12px; border-width: 0">#</a>
+	</span>
+</p>
+
+
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/lizherui/p/12661637.html">
+    caseStudy-xxx-push kafka集群高峰期写入超时
+</a>
+</h2>
+			
+			
+
+    <div class="c_b_p_desc">
+摘要：问题描述 5月底到6月初期间，一旦push kafka集群流量到达高峰，Kafka Producer就会出现写入超时，会丢失部分消息。解决此问题周期比较长，是个循序渐进的过程影响范围：部分topics的推送消息丢失故障处理人：xxx 处理过程 05月29日 16:00 xxx组织push超时讨论会议            <a href="https://www.cnblogs.com/lizherui/p/12661637.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			
+			<p class="postfoot">		
+				
+
+posted @ 2020-04-08 18:09 李志涛 阅读 (20) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12661637" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/lizherui/p/12660853.html">
+    滴滴基于RocketMQ架构演变调研
+</a>
+</h2>
+			
+			
+
+    <div class="c_b_p_desc">
+摘要：业务问题 据滴滴介绍2014年使用的Kafka-0.8.2，一个核心业务在使用Kafka的时候，出现了集群数据写入抖动非常严重的情况，经常会有数据写失败。 • 随着业务增长，Topic的数据增多，集群负载增大，性能下降•	有个文件读写锁bug，会导致副本重新复制，复制的时候有大量的读，我们存储盘用的            <a href="https://www.cnblogs.com/lizherui/p/12660853.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			
+			<p class="postfoot">		
+				
+
+posted @ 2020-04-08 16:37 李志涛 阅读 (35) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12660853" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/lizherui/p/12659030.html">
+    网易音乐消息队列实践调研
+</a>
+</h2>
+			
+			
+
+    <div class="c_b_p_desc">
+摘要：业务背景 网易云音乐从13年4月上线以来，业务和用户突飞猛进。后台技术也从传统的 Tomcat 集群到分布式微服务快速演进和迭代，在业务的不断催生下，诞生了云音乐的 RPC，API 网关和链路跟踪等多种服务，消息队列也从 RabbitMQ 集群迁移到 Kafka集群。对于消息队列，更多处于使用阶段，            <a href="https://www.cnblogs.com/lizherui/p/12659030.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			
+			<p class="postfoot">		
+				
+
+posted @ 2020-04-08 14:42 李志涛 阅读 (373) 评论 (2)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12659030" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+
+
+
+		
+<p class="date">
+	<span>2020年4月7日		  
+	<a href="https://www.cnblogs.com/lizherui/archive/2020/04/07.html" style="height: 15px; width: 12px; border-width: 0">#</a>
+	</span>
+</p>
+
+
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/lizherui/p/12656777.html">
+    奇虎360的Kafka实践调研
+</a>
+</h2>
+			
+			
+
+    <div class="c_b_p_desc">
+摘要：业务问题 跨IDC读写导致带宽压力大问题。多个业务还可能有重复consume和produce，造成跨IDC网络的极大浪费， 另外跨IDC网络并不稳定，经常遇到一些异常 业务直接使用官方裸客户端有困难，要进行二次封装 异常情况会catch不全 使用好kafka对业务有较高要求 客户端容错不能完全cov            <a href="https://www.cnblogs.com/lizherui/p/12656777.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			
+			<p class="postfoot">		
+				
+
+posted @ 2020-04-07 22:46 李志涛 阅读 (38) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12656777" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/lizherui/p/12655425.html">
+    Apache RocketMQ调研
+</a>
+</h2>
+			
+			
+
+    <div class="c_b_p_desc">
+摘要：一、发展历程 早期淘宝内部有两套消息中间件系统：Notify和Napoli。 先有的Notify(至今12历史)，后来因有序场景需求，且恰好当时Kafka开源(2011年)，所以参照Kafka的设计理念自研了RocketMQ。 目前Notify和RocketMQ二者的定位如下: RocketQ 主要            <a href="https://www.cnblogs.com/lizherui/p/12655425.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			
+			<p class="postfoot">		
+				
+
+posted @ 2020-04-07 21:43 李志涛 阅读 (226) 评论 (3)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12655425" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+
+
+
+		
+<p class="date">
+	<span>2020年4月6日		  
+	<a href="https://www.cnblogs.com/lizherui/archive/2020/04/06.html" style="height: 15px; width: 12px; border-width: 0">#</a>
+	</span>
+</p>
+
+
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/lizherui/p/12650254.html">
+    caseStudy-20180913-Kafka进程挂掉&amp;解决办法
+</a>
+</h2>
+			
+			
+
+    <div class="c_b_p_desc">
+摘要：问题描述 2018年xx月xx日 下午4点20分左右 xxx无意中看到xxx正在排查线上Kafka集群遇到的问题，随后问明情况，有一台机器上Kafka进程挂了，当时他正在lark平台上查看错误日志信息，随后我一起加入排查问题。事故起止时间：2018年xx月xx日 16时30分~2018年9月13日             <a href="https://www.cnblogs.com/lizherui/p/12650254.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			
+			<p class="postfoot">		
+				
+
+posted @ 2020-04-06 22:42 李志涛 阅读 (24) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12650254" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/lizherui/p/12632988.html">
+    大流量大负载的Kafka集群优化实战
+</a>
+</h2>
+			
+			
+
+    <div class="c_b_p_desc">
+摘要：前言背景 算法优化改版有大需求要上线，在线特征dump数据逐步放量，最终达到现有Kafka集群5倍的流量，预计峰值达到万兆网卡80%左右(集群有几十个物理节点，有几PB的容量，网卡峰值流出流量会达到800MB左右/sec、写入消息QPS为100w+ msgs/sec)。上下游服务需要做扩容评估，提前            <a href="https://www.cnblogs.com/lizherui/p/12632988.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			
+			<p class="postfoot">		
+				
+
+posted @ 2020-04-06 20:53 李志涛 阅读 (248) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12632988" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/lizherui/p/12642325.html">
+    caseStudy-20181216-Kafka(xxx)集群故障&amp;解决办法
+</a>
+</h2>
+			
+			
+
+    <div class="c_b_p_desc">
+摘要：1.问题描述 2018-12-16 23:53起，因10.120.14.1节点出现问题，已经无法ssh上去，导致xxx lag延迟上升，在17日凌晨1:43掉线，落在该节点但leader partition无法转移，凌晨3点磁盘故障，恢复后集群大面积不可用，直至凌晨7:30以后集群逐渐恢复起止时间：            <a href="https://www.cnblogs.com/lizherui/p/12642325.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			
+			<p class="postfoot">		
+				
+
+posted @ 2020-04-06 15:32 李志涛 阅读 (22) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12642325" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/lizherui/p/12642217.html">
+    caseStudy-20190312 xxx kafka集群因文件描述符超阀值引起集群不可用
+</a>
+</h2>
+			
+			
+
+    <div class="c_b_p_desc">
+摘要：1.问题描述 事故起止时间：第一次 2019年03月05日 20时30分~ 21时20分第二次 2019年03月06日 17时43分~ 18时21分第三次 2019年03月10日 17时43分~ 03月11日10时21分事故影响：客户端生产消费不可用，机器学习训练暂停负责人：xxx、xxx、xxx             <a href="https://www.cnblogs.com/lizherui/p/12642217.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			
+			<p class="postfoot">		
+				
+
+posted @ 2020-04-06 15:12 李志涛 阅读 (15) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12642217" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/lizherui/p/12642014.html">
+    Kafka客户端二次封装扩展总体设计
+</a>
+</h2>
+			
+			
+
+    <div class="c_b_p_desc">
+摘要：前言背景 消息系统经过多年使用和运维管理平台开发迭代，能较好支持支撑业务发展，公司主流语言为java，但缺乏一个基于Kafka二次封装简单好用的java客户端。遇到问题如下所示： 使用好kafka客户端对业务要求高，非专业技术方向很难有精力全面掌握 异常情况会catch不全 客户端生产消息及双活机房            <a href="https://www.cnblogs.com/lizherui/p/12642014.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			
+			<p class="postfoot">		
+				
+
+posted @ 2020-04-06 14:33 李志涛 阅读 (32) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12642014" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/lizherui/p/12641906.html">
+    2018年工作规划-Kafka方向OKR
+</a>
+</h2>
+			
+			
+
+    <div class="c_b_p_desc">
+摘要：1.资源优化与提升 资源利用率提升10%，再下线至少8台机器 用户使用收集与优化 2.kafka客户端重构 支持双活机房 优雅重启 安全性加强(访问认证/授权/隔离) 调度调配多集群间访问 API接口简化，达到开箱即用 发送消息容灾、容错、降级支持 消息轨迹跟踪支持，帮助业务排查异常 消息发送耗时，            <a href="https://www.cnblogs.com/lizherui/p/12641906.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			
+			<p class="postfoot">		
+				
+
+posted @ 2020-04-06 14:09 李志涛 阅读 (21) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12641906" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/lizherui/p/12640840.html">
+    针对Kafka的centos系统参数优化
+</a>
+</h2>
+			
+			
+
+    <div class="c_b_p_desc">
+摘要：TCP网络优化 sudo vim /etc/sysctl.conf vm.max_map_count=655360net.core.rmem_default=262144net.core.rmem_max=2097152net.core.wmem_default=262144net.core.wme            <a href="https://www.cnblogs.com/lizherui/p/12640840.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			
+			<p class="postfoot">		
+				
+
+posted @ 2020-04-06 13:54 李志涛 阅读 (34) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12640840" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+
+
+
+		
+<p class="date">
+	<span>2020年2月7日		  
+	<a href="https://www.cnblogs.com/lizherui/archive/2020/02/07.html" style="height: 15px; width: 12px; border-width: 0">#</a>
+	</span>
+</p>
+
+
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/lizherui/p/12275193.html">
+    脚本kafka-configs.sh用法解析
+</a>
+</h2>
+			
+			
+
+    <div class="c_b_p_desc">
+摘要：引用博客来自李志涛：https://www.cnblogs.com/lizherui/p/12275193.html 前言介绍 网络上针对脚本kafka-configs.sh用法，也有一些各种文章，但都不系统不全面，介绍的内容是有缺失的，总让人看起来很懂，用起来难，例如：动态配置内部关系不清晰、有些            <a href="https://www.cnblogs.com/lizherui/p/12275193.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			
+			<p class="postfoot">		
+				
+
+posted @ 2020-02-07 23:57 李志涛 阅读 (243) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12275193" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/lizherui/p/12271285.html">
+    Kafka动态配置实现原理解析
+</a>
+</h2>
+			
+			
+
+    <div class="c_b_p_desc">
+摘要：引用博客来自李志涛：https://www.cnblogs.com/lizherui/p/12271285.html 问题导读 Apache Kafka在全球包括世界500强及互联网公司在内广泛使用，得益于它强大的功能和不断完善的生态。作者带领团队及从事Kafka一线工作有几年时间了，所思所想及实践            <a href="https://www.cnblogs.com/lizherui/p/12271285.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			
+			<p class="postfoot">		
+				
+
+posted @ 2020-02-07 23:28 李志涛 阅读 (471) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12271285" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+
+
+
+		
+<p class="date">
+	<span>2019年12月17日		  
+	<a href="https://www.cnblogs.com/lizherui/archive/2019/12/17.html" style="height: 15px; width: 12px; border-width: 0">#</a>
+	</span>
+</p>
+
+
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/lizherui/p/12056893.html">
+    动态配置实现原理解析参考资料
+</a>
+</h2>
+			
+			
+
+    <div class="c_b_p_desc">
+摘要：Release Notes - Kafka - Version 0.8.1：https://archive.apache.org/dist/kafka/0.8.1/RELEASE_NOTES.htmlRelease Notes - Kafka - Version 0.10.1.0：https://a            <a href="https://www.cnblogs.com/lizherui/p/12056893.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			
+			<p class="postfoot">		
+				
+
+posted @ 2019-12-17 21:11 李志涛 阅读 (31) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12056893" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/lizherui/p/12056792.html">
+    Topics类型配置
+</a>
+</h2>
+			
+			
+
+    <div class="c_b_p_desc">
+摘要：配置项 备注 segment.bytes 分段文件大小，最大2GB segment.ms 强制新建段文件间隔阀值时间 segment.jitter.ms 段文件抖动时间 segment.index.bytes 段索引文件大小 flush.messages 此项配置指定时间间隔：强制进行fsync日志            <a href="https://www.cnblogs.com/lizherui/p/12056792.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			
+			<p class="postfoot">		
+				
+
+posted @ 2019-12-17 20:53 李志涛 阅读 (28) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12056792" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+		<div class="post">
+			<h2>
+
+<a class="postTitle2" href="https://www.cnblogs.com/lizherui/p/12056760.html">
+    Brokers类型配置
+</a>
+</h2>
+			
+			
+
+    <div class="c_b_p_desc">
+摘要：引用博客来自李志涛：https:////www.cnblogs.com/lizherui/p/12056760.html 模块 配置项 作用域 备注 DynamicConnectionQuota max.connectionsmax.connections.per.ipmax.connections            <a href="https://www.cnblogs.com/lizherui/p/12056760.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+			
+			<p class="postfoot">		
+				
+
+posted @ 2019-12-17 20:48 李志涛 阅读 (33) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12056760" rel="nofollow">
+    编辑
+</a>
+
+			</p>
+		</div>
+
+
+
+
+<div class="topicListFooter">
+    <div id="nav_next_page">
+        
+    <a href="https://www.cnblogs.com/lizherui/default.html?page=2">
+        下一页
+    </a>
+
+    </div>    
+</div>
+
+
+
+
+
+
+
+
+</div>
+<p id="footer">
+	Powered by: 
+	<br />
+	
+	
+<a href="https://www.cnblogs.com/" id="Footer1_Hyperlink3" style="font-size: 12px; font-family: Verdana">博客园</a>
+	<br />
+	Copyright &copy; 2020 李志涛
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+</p>
+
+
+
+
+    
+</body>
+</html>

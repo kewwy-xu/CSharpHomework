@@ -1,0 +1,553 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>岑亮 - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    <link id="MainCss" rel="stylesheet" href="/skins/summergarden/bundle-summergarden.min.css?v=VU1dFS4587gn2X8grE6LlrhwScli3SW5N_Dod2a5NAU" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/summergarden/bundle-summergarden-mobile.min.css?v=qqfeWJjwG2yHc4G3o4D_aAh8NdA2Uspy5vjuqwOEq0c" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/cenliang/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/cenliang/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/cenliang/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 233981;
+        var currentBlogApp = 'cenliang';
+        var cb_enable_mathjax = true;
+        var isLogined = false;
+        var skinName = 'summerGarden';
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], processClass: 'math', processEscapes: true },
+        TeX: {
+        equationNumbers: { autoNumber: ['AMS'], useLabelIds: true },
+        extensions: ['extpfeil.js', 'mediawiki-texvc.js'],
+        Macros: {bm: "\\boldsymbol"}
+        },
+        'HTML-CSS': { linebreaks: { automatic: true } },
+        SVG: { linebreaks: { automatic: true } }
+        });
+    </script>
+    <script src="https://mathjax.cnblogs.com/2_7_5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+	<a href="https://www.cnblogs.com/cenliang/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>			
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/cenliang/">岑亮</a>
+</h1>
+<h2>
+
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+
+			<ul id="navList">
+				<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+				<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/cenliang/">
+首页</a>
+</li>
+				<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+				<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E5%B2%91%E4%BA%AE">
+联系</a></li>
+				<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+				<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/cenliang/rss/">
+订阅</a>
+				
+<a id="blog_nav_rss_image" href="https://www.cnblogs.com/cenliang/rss/">
+    <img src="/skins/summergarden/images/xml.gif" alt="订阅" />
+</a></li>
+			</ul>
+
+
+
+		<div class="blogStats">
+			
+			<!--done-->
+随笔 - 
+221&nbsp;
+文章 - 
+0&nbsp;
+评论 - 
+3&nbsp;
+
+
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<!--done-->
+
+
+
+
+		
+
+<div class="day">
+	<div class="dayTitle">
+		<a href="https://www.cnblogs.com/cenliang/archive/2018/11/06.html">
+2018年11月6日</a>				  
+	</div>
+
+	
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/cenliang/p/9916803.html">
+[置顶]    数据库简史（精简版）
+</a>
+
+			</div>
+			<div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：一、RDBMS（关系数据库，Relational DBMS） 数据库&#160;早期史 1961年，GE（通用电气公司，General Electric Company）的Charles Bachman ，开发了IDS（集成数据存储，Integrated Data Store），这是世界上第一个NDBMS（网            <a href="https://www.cnblogs.com/cenliang/p/9916803.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+			<div class="clear"></div>
+			<div class="postDesc">
+
+posted @ 2018-11-06 18:06 岑亮 阅读 (2906) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=9916803" rel="nofollow">
+    编辑
+</a>
+</div>
+			<div class="clear"></div>
+
+</div>
+
+
+		
+
+<div class="day">
+	<div class="dayTitle">
+		<a href="https://www.cnblogs.com/cenliang/archive/2020/04/24.html">
+2020年4月24日</a>				  
+	</div>
+
+	
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/cenliang/p/12767240.html">
+    主流数据库 数据字典
+</a>
+
+			</div>
+			<div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：AUTHOR: CenLiang DATE: 2020/04/24 REV: 2.0 Oracle、MySQL、PostgreSQL、DB2、Hive 数据字典 1、Oracle 数据字典 2、MySQL 数据字典 sql 2.1 mysql 表 SELECT TABLE_SCHEMA AS &#39;库名            <a href="https://www.cnblogs.com/cenliang/p/12767240.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+			<div class="clear"></div>
+			<div class="postDesc">
+
+posted @ 2020-04-24 14:26 岑亮 阅读 (4) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12767240" rel="nofollow">
+    编辑
+</a>
+</div>
+			<div class="clear"></div>
+
+</div>
+
+
+		
+
+<div class="day">
+	<div class="dayTitle">
+		<a href="https://www.cnblogs.com/cenliang/archive/2018/11/06.html">
+2018年11月6日</a>				  
+	</div>
+
+	
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/cenliang/p/9916803.html">
+    数据库简史（精简版）
+</a>
+
+			</div>
+			<div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：一、RDBMS（关系数据库，Relational DBMS） 数据库&#160;早期史 1961年，GE（通用电气公司，General Electric Company）的Charles Bachman ，开发了IDS（集成数据存储，Integrated Data Store），这是世界上第一个NDBMS（网            <a href="https://www.cnblogs.com/cenliang/p/9916803.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+			<div class="clear"></div>
+			<div class="postDesc">
+
+posted @ 2018-11-06 18:06 岑亮 阅读 (2906) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=9916803" rel="nofollow">
+    编辑
+</a>
+</div>
+			<div class="clear"></div>
+
+</div>
+
+
+		
+
+<div class="day">
+	<div class="dayTitle">
+		<a href="https://www.cnblogs.com/cenliang/archive/2018/08/03.html">
+2018年8月3日</a>				  
+	</div>
+
+	
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/cenliang/p/9413027.html">
+    Python 配置pypi国内源
+</a>
+
+			</div>
+			<div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：2018-08-03 # 阿里云 http://mirrors.aliyun.com/pypi/simple/ # 中国科技大学 https://pypi.mirrors.ustc.edu.cn/simple/ #豆瓣(douban) http://pypi.douban.com/simple/ #            <a href="https://www.cnblogs.com/cenliang/p/9413027.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+			<div class="clear"></div>
+			<div class="postDesc">
+
+posted @ 2018-08-03 11:15 岑亮 阅读 (75) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=9413027" rel="nofollow">
+    编辑
+</a>
+</div>
+			<div class="clear"></div>
+
+</div>
+
+
+		
+
+<div class="day">
+	<div class="dayTitle">
+		<a href="https://www.cnblogs.com/cenliang/archive/2018/06/05.html">
+2018年6月5日</a>				  
+	</div>
+
+	
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/cenliang/p/9139890.html">
+    读书清单2020
+</a>
+
+			</div>
+			<div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：2018-06-05 核心技能2020 [CLC] TP316.89 [Author] 余洪春 [Title] Linux集群和自动化运维 [Pub] 机械工业出版社 [PubYr] 2016 [ISBN] 9787111544388[CLC] TP316.81 [Author] 余洪春 [Titl            <a href="https://www.cnblogs.com/cenliang/p/9139890.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+			<div class="clear"></div>
+			<div class="postDesc">
+
+posted @ 2018-06-05 15:07 岑亮 阅读 (118) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=9139890" rel="nofollow">
+    编辑
+</a>
+</div>
+			<div class="clear"></div>
+
+</div>
+
+
+		
+
+<div class="day">
+	<div class="dayTitle">
+		<a href="https://www.cnblogs.com/cenliang/archive/2018/03/22.html">
+2018年3月22日</a>				  
+	</div>
+
+	
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/cenliang/p/8627123.html">
+    mysql 服务器巡检脚本
+</a>
+
+			</div>
+			<div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：2018-03-22 crontab -l /data/backup/scripts/check_server.sh #! /bin/bash ### AUTHOR: cenliang ### EMAIL: xuanniaoxi@sina.com ### DATE: 2018/03/22 ### R            <a href="https://www.cnblogs.com/cenliang/p/8627123.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+			<div class="clear"></div>
+			<div class="postDesc">
+
+posted @ 2018-03-22 21:59 岑亮 阅读 (199) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=8627123" rel="nofollow">
+    编辑
+</a>
+</div>
+			<div class="clear"></div>
+			<div class="postSeparator"></div>
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/cenliang/p/8627068.html">
+    mysql 数据库备份脚本
+</a>
+
+			</div>
+			<div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：2018-03-22 crontab -l /data/backup/scripts/backup_mysql.sh            <a href="https://www.cnblogs.com/cenliang/p/8627068.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+			<div class="clear"></div>
+			<div class="postDesc">
+
+posted @ 2018-03-22 21:54 岑亮 阅读 (78) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=8627068" rel="nofollow">
+    编辑
+</a>
+</div>
+			<div class="clear"></div>
+			<div class="postSeparator"></div>
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/cenliang/p/8627045.html">
+    mysql 批量杀进程脚本
+</a>
+
+			</div>
+			<div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：2018-03-22 批量杀死Sleep状态的进程 /data/backup/scripts/kill_sleep.sh #kill_sleep.sh #mysql批量杀死sleep进程 #!/bin/bash source /etc/profile source /root/.bash_profi            <a href="https://www.cnblogs.com/cenliang/p/8627045.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+			<div class="clear"></div>
+			<div class="postDesc">
+
+posted @ 2018-03-22 21:52 岑亮 阅读 (108) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=8627045" rel="nofollow">
+    编辑
+</a>
+</div>
+			<div class="clear"></div>
+
+</div>
+
+
+		
+
+<div class="day">
+	<div class="dayTitle">
+		<a href="https://www.cnblogs.com/cenliang/archive/2018/03/14.html">
+2018年3月14日</a>				  
+	</div>
+
+	
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/cenliang/p/8565182.html">
+    Hadoop nn 主备切换导致HBase集群挂掉，HBase rs自动下线问题
+</a>
+
+			</div>
+			<div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：2018-03-14 Hadoop nn 主备切换导致HBase集群挂掉问题 HBase rs自动下线问题 rs挂之前有过长时间的gc，导致长时间未与ZooKeeper通信，从而被zookeeper认为已经离线，触发了org.apache.hadoop.hbase.YouAreDeadExcepti            <a href="https://www.cnblogs.com/cenliang/p/8565182.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+			<div class="clear"></div>
+			<div class="postDesc">
+
+posted @ 2018-03-14 09:43 岑亮 阅读 (555) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=8565182" rel="nofollow">
+    编辑
+</a>
+</div>
+			<div class="clear"></div>
+
+</div>
+
+
+		
+
+<div class="day">
+	<div class="dayTitle">
+		<a href="https://www.cnblogs.com/cenliang/archive/2018/03/12.html">
+2018年3月12日</a>				  
+	</div>
+
+	
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/cenliang/p/8549779.html">
+    IT 技能栈
+</a>
+
+			</div>
+			<div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：2018-03-12            <a href="https://www.cnblogs.com/cenliang/p/8549779.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+			<div class="clear"></div>
+			<div class="postDesc">
+
+posted @ 2018-03-12 16:02 岑亮 阅读 (74) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=8549779" rel="nofollow">
+    编辑
+</a>
+</div>
+			<div class="clear"></div>
+
+</div>
+
+
+		
+
+<div class="day">
+	<div class="dayTitle">
+		<a href="https://www.cnblogs.com/cenliang/archive/2018/02/28.html">
+2018年2月28日</a>				  
+	</div>
+
+	
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/cenliang/p/8485011.html">
+    HBase 永久RIT(Region-In-Transition)问题
+</a>
+
+			</div>
+			<div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：2018-02-28 HBase 永久RIT(Region-In-Transition)问题：异常关机导致HBase表损坏和丢失，大量Regions 处于Offline状态，无法上线。 问题1：启动HBase时，HBase Regionserver Web UI，一直停留在The RegionSer            <a href="https://www.cnblogs.com/cenliang/p/8485011.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+			<div class="clear"></div>
+			<div class="postDesc">
+
+posted @ 2018-02-28 18:05 岑亮 阅读 (10960) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=8485011" rel="nofollow">
+    编辑
+</a>
+</div>
+			<div class="clear"></div>
+
+</div>
+
+
+
+<div class="topicListFooter">
+    <div id="nav_next_page">
+        
+    <a href="https://www.cnblogs.com/cenliang/default.html?page=2">
+        下一页
+    </a>
+
+    </div>    
+</div>
+
+
+
+
+
+
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+			<div id="calendar"><div id="calendar"><div id="blog-calendar" style="display:none"></div></div>                
+                    <script>loadBlogDefaultCalendar();</script></div>
+			
+			<DIV id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</DIV>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 岑亮
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    
+</body>
+</html>

@@ -1,0 +1,480 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>前端大哥大 - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    <link id="MainCss" rel="stylesheet" href="/skins/simpleblue/bundle-simpleblue.min.css?v=MH15aYd6DmX-6TABpA2xkiKENy3GAhiM2dh5rOPH89I" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/simpleblue/bundle-simpleblue-mobile.min.css?v=X7swQJ1TyCJAf6FMVjDPbYhUAiMdNFddEy1-m0_TbFQ" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/TT485480/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/TT485480/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/TT485480/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 582892;
+        var currentBlogApp = 'TT485480';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'SimpleBlue';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    <div id="home">
+    <div id="header">
+        <div id="blogTitle">
+            
+<div class="title"><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/TT485480/">前端大哥大</a>
+</div>
+<div class="subtitle">
+
+</div>
+
+        </div>
+        <div id="navigator">
+            
+<ul id="navList">
+    <li id="nav_sitehome"><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+    <li id="nav_myhome">
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/TT485480/">
+首页</a>
+</li>
+    <li id="nav_newpost">
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+    <li id="nav_contact">
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E5%89%8D%E7%AB%AF%E5%A4%A7%E5%93%A5%E5%A4%A7">
+联系</a></li>
+    <li id="nav_rss">
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/TT485480/rss/">
+订阅</a></li>
+    <li id="nav_admin">
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+            <div class="blogStats">
+                
+<span id="stats_post_count">随笔 - 
+70&nbsp;</span>
+<span id="stats_article_count">文章 - 
+0&nbsp;</span>
+<!-- <span id="stats-comment_count"></span> -->
+<span id="stats_comment_count">评论 - 
+5</span>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="mainContent">
+            <div class="forFlow">
+                
+
+
+
+
+
+
+    
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/TT485480/archive/2020/04/24.html">2020年4月24日</a>
+    </div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/TT485480/p/12769861.html">
+    web前端能拿多少钱？非科班的能转到web前端吗？
+</a>
+
+        </div>
+        <div class="postCon">
+            
+
+    <div class="c_b_p_desc">
+摘要：有人说，现在前端都饱合了，找不到工作。 那是他水平不行，是他找不到工作。去拉钩，智联看看，大把的高薪职位。问题是他拿不到。 要项目没项目，好吧，有时候学历也能唬人，但是学历也不行的，指望面试官是个渣渣吗？基本不可能，别说面试，可能简历都过不了，这种情况，能找到高薪工作那才叫活见鬼了。 看看现在web            <a href="https://www.cnblogs.com/TT485480/p/12769861.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <div class="clear"></div>
+        <div class="postDesc">
+            
+
+posted @ 2020-04-24 20:22 前端大哥大 阅读 (10) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12769861" rel="nofollow">
+    编辑
+</a>
+
+        </div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/TT485480/p/12765905.html">
+    2020，学到什么程度可以找一份前端工作？
+</a>
+
+        </div>
+        <div class="postCon">
+            
+
+    <div class="c_b_p_desc">
+摘要：能否找到工作，看有没有公司接手类似的前端小白。 根据你的描述，你的web前端水平基本上处于切图仔，如果有一家公司愿意给你offer，就算不要薪水也要努力进去，先学技术为先。 另外，你目前只是刚刚入门，离初级前端工程师还有一段距离。 就跟我之前回答过的一个问题相似，“拿4K的前端开发都会做些什么”，道            <a href="https://www.cnblogs.com/TT485480/p/12765905.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <div class="clear"></div>
+        <div class="postDesc">
+            
+
+posted @ 2020-04-24 10:48 前端大哥大 阅读 (58) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12765905" rel="nofollow">
+    编辑
+</a>
+
+        </div>
+        <div class="clear"></div>
+</div>
+    
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/TT485480/archive/2020/04/23.html">2020年4月23日</a>
+    </div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/TT485480/p/12758721.html">
+    0基础入门前端，会遇到哪些困难？
+</a>
+
+        </div>
+        <div class="postCon">
+            
+
+    <div class="c_b_p_desc">
+摘要：前端是什么？ 工作流程为从UI处得到原型图或者效果图，在项目（网站、微信公众号、小程序、WEBAPP）中还原图片效果，然后与后台进行各种数据交互。 目前的前端市场整体还是处于迅速发展期，市场对于前端的需求也一直比较大。市场对于中高级的前端工程师需求更加迫切，所以就算入了前端的门，也需要不断的提升自己            <a href="https://www.cnblogs.com/TT485480/p/12758721.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <div class="clear"></div>
+        <div class="postDesc">
+            
+
+posted @ 2020-04-23 09:48 前端大哥大 阅读 (52) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12758721" rel="nofollow">
+    编辑
+</a>
+
+        </div>
+        <div class="clear"></div>
+</div>
+    
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/TT485480/archive/2020/04/22.html">2020年4月22日</a>
+    </div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/TT485480/p/12750592.html">
+    如何成长为高级web前端工程师？
+</a>
+
+        </div>
+        <div class="postCon">
+            
+
+    <div class="c_b_p_desc">
+摘要：随着近几年前端和后端的界限融合，各个企业对于这个岗位的要求也不仅仅只是局限于切切图，写写JS，掌握前端框架就行了。那么如何成长为高级web前端工程师呢？首要任务就是提升编程核心内功，建立健全算法知识体系。下面我们来看看如何掌握数据结构与算法知识，完成高级web前端工程师的成功转变 1、为什么要学数据            <a href="https://www.cnblogs.com/TT485480/p/12750592.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <div class="clear"></div>
+        <div class="postDesc">
+            
+
+posted @ 2020-04-22 10:58 前端大哥大 阅读 (70) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12750592" rel="nofollow">
+    编辑
+</a>
+
+        </div>
+        <div class="clear"></div>
+</div>
+    
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/TT485480/archive/2020/04/21.html">2020年4月21日</a>
+    </div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/TT485480/p/12744634.html">
+    各个阶段的前端得会哪些“特殊”技能？
+</a>
+
+        </div>
+        <div class="postCon">
+            
+
+    <div class="c_b_p_desc">
+摘要：学web前端的你现在出于那个阶段呢？ 入门：能做东西出来了。 合格：能做出优秀的东西来了。 大牛：不光做东西还会吹牛的了。 哈哈哈，不开玩笑了，下文为你详细说明： 入门web前端工程师要求： 能比较熟练的使用HTML+CSS 写出不考虑兼容性的页面，然后还能用jquery来实现页面的比较简单的DOM            <a href="https://www.cnblogs.com/TT485480/p/12744634.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <div class="clear"></div>
+        <div class="postDesc">
+            
+
+posted @ 2020-04-21 14:51 前端大哥大 阅读 (81) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12744634" rel="nofollow">
+    编辑
+</a>
+
+        </div>
+        <div class="clear"></div>
+</div>
+    
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/TT485480/archive/2020/04/20.html">2020年4月20日</a>
+    </div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/TT485480/p/12736113.html">
+    小白转前端，学习哪些知识点才能不走弯路？
+</a>
+
+        </div>
+        <div class="postCon">
+            
+
+    <div class="c_b_p_desc">
+摘要：今天给大家整理出来了web前端工程师初级阶段需要掌握的内容，很全面，希望大家好好阅读，看看自己掌握的知识点和文章里面写的还相差多少。 什么是初级web前端工程师？ 按照我的想法，我把前端工程师分为了入门、初级、中级、高级这四个级别， 入门级别指的是了解什么是前端（前端到底是什么其实很多人还是不清楚的            <a href="https://www.cnblogs.com/TT485480/p/12736113.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <div class="clear"></div>
+        <div class="postDesc">
+            
+
+posted @ 2020-04-20 10:02 前端大哥大 阅读 (66) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12736113" rel="nofollow">
+    编辑
+</a>
+
+        </div>
+        <div class="clear"></div>
+</div>
+    
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/TT485480/archive/2020/04/18.html">2020年4月18日</a>
+    </div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/TT485480/p/12726068.html">
+    转行web前端开发，需要哪些工具和需要学习什么？
+</a>
+
+        </div>
+        <div class="postCon">
+            
+
+    <div class="c_b_p_desc">
+摘要：今天我们来谈谈Web和前端开发过程中需要学习什么？前端开发需要使用什么开发工具？也简单介绍前端开发前景和薪水。 前端工程师的主要职责： 前端工程师在不同的公司有不同的功能，但性质相似。 1、网站设计与网页界面开发 2、做网站界面开发 3、Web界面开发，前端数据绑定，前台逻辑 4、设计、开发、数据             <a href="https://www.cnblogs.com/TT485480/p/12726068.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <div class="clear"></div>
+        <div class="postDesc">
+            
+
+posted @ 2020-04-18 15:22 前端大哥大 阅读 (95) 评论 (1)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12726068" rel="nofollow">
+    编辑
+</a>
+
+        </div>
+        <div class="clear"></div>
+</div>
+    
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/TT485480/archive/2020/04/17.html">2020年4月17日</a>
+    </div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/TT485480/p/12720009.html">
+    1个月快速入门Web前端开发，怎么学？
+</a>
+
+        </div>
+        <div class="postCon">
+            
+
+    <div class="c_b_p_desc">
+摘要：在不知不觉中，前端工程师火了。甚至很多人都不知道为什么这样一个职位会这么火，市场的供不应求直接导致前端工程师的待遇提高。另外一方面就是前端技术的更新迭代，导致大部分技术人员跟不上。因此越来越多的人想转型做前端开发了，下面我们来谈谈，如何快速入门前端开发。 零基础学web前端开发要怎么去学?首先要学习            <a href="https://www.cnblogs.com/TT485480/p/12720009.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <div class="clear"></div>
+        <div class="postDesc">
+            
+
+posted @ 2020-04-17 14:54 前端大哥大 阅读 (114) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12720009" rel="nofollow">
+    编辑
+</a>
+
+        </div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/TT485480/p/12717736.html">
+    致准备转行web前端：你的入门学习方法正确吗？
+</a>
+
+        </div>
+        <div class="postCon">
+            
+
+    <div class="c_b_p_desc">
+摘要：这是一篇来自前端大牛前辈的学习心德，好好看哦~其实本文可以说是“起于前端，但不止于前端。”希望能够给同行一些可行性的建议吧。 “能度一人是一人吧！” 1、Github，Github，Github 重要的事情所以说三遍。如今前端圈大热，除了前端项目天生开源的优势之外，Github这个网站功不可没。可以            <a href="https://www.cnblogs.com/TT485480/p/12717736.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <div class="clear"></div>
+        <div class="postDesc">
+            
+
+posted @ 2020-04-17 09:35 前端大哥大 阅读 (46) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12717736" rel="nofollow">
+    编辑
+</a>
+
+        </div>
+        <div class="clear"></div>
+</div>
+    
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/TT485480/archive/2020/04/16.html">2020年4月16日</a>
+    </div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/TT485480/p/12715345.html">
+    转职做web前端，一开始别走弯了！
+</a>
+
+        </div>
+        <div class="postCon">
+            
+
+    <div class="c_b_p_desc">
+摘要：1、如何开始学习web前端知识 不少人想要学习web前端知识，一方面是喜欢那些华丽的网页特效，另一方面则是想成为全栈式工程师。那么就今天就来教你学习前端知识，如何从入门到高手。 第一阶段，你要从最基础的HTML/CSS 开始，简单地说，HTML 就是一堆非常简单的标签，而 CSS 则是把你画画的流程            <a href="https://www.cnblogs.com/TT485480/p/12715345.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <div class="clear"></div>
+        <div class="postDesc">
+            
+
+posted @ 2020-04-16 20:15 前端大哥大 阅读 (75) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12715345" rel="nofollow">
+    编辑
+</a>
+
+        </div>
+        <div class="clear"></div>
+</div>
+
+<div class="topicListFooter">
+    <div id="nav_next_page">
+        
+    <a href="https://www.cnblogs.com/TT485480/default.html?page=2">
+        下一页
+    </a>
+
+    </div>    
+</div>
+
+
+
+
+            </div>
+        </div>
+
+        <div id="sideBar">
+            <div id="sideBarMain">
+                
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+                <div id="calendar"><div id="blog-calendar" style="display:none"></div></div>                
+                <script>loadBlogDefaultCalendar();</script>
+                <div id="leftcontentcontainer">
+                    <!-- begin:SingleColumn -->
+                    <div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+                    <!-- end:  SingleColumn -->
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+    <div id="footer">
+        <!--done-->
+Copyright &copy; 2020 前端大哥大
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+    </div>
+</div>
+
+    
+</body>
+</html>

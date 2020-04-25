@@ -1,0 +1,387 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="never" />
+    <meta property="og:description" content="开发目的 我经常使用图片。公众号文章发文也好，还是生活中要使用素材。图片是一种比文字更加直观的载体。但是图片更加占用带宽，很多软件都对图片有大小限制。图片太大也会影响加载速度。我试过几款图片压缩工具，" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>尝试用python开发一款图片压缩工具1：尝试 pillow库 - 和牛 - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    <link id="MainCss" rel="stylesheet" href="/skins/blacklowkey/bundle-blacklowkey.min.css?v=Fx4xdLkGuHnlaG7xntG_wAnZrnorJWp5u_TWKqbvMF0" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/blacklowkey/bundle-blacklowkey-mobile.min.css?v=cYvlxMu_nd6MVfg-vi7YqOC6FaZ7VHFsDM166vO_ekA" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/heniu/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/heniu/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/heniu/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 442046;
+        var currentBlogApp = 'heniu';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'BlackLowKey';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/heniu/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/heniu/">和牛</a>
+</h1>
+<h2>
+
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/heniu/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E5%92%8C%E7%89%9B">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/heniu/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<span id="stats_post_count">随笔 - 
+14&nbsp; </span>
+<span id="stats_article_count">文章 - 
+0&nbsp; </span>
+<span id="stats-comment_count">评论 - 
+27</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		<div id="post_detail">
+    <!--done-->
+    <div id="topics">
+        <div class="post">
+            <h1 class = "postTitle">
+                
+<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/heniu/p/12769842.html">尝试用python开发一款图片压缩工具1：尝试 pillow库</a>
+
+            </h1>
+            <div class="clear"></div>
+            <div class="postBody">
+                
+<div id="cnblogs_post_body" class="blogpost-body ">
+    <div class="markdown-here-wrapper" style="text-align: left;" data-md-url="https://i-beta.cnblogs.com/articles/edit">
+<h3 id="-" style="margin: 1.3em 0px 1em; padding: 0px; font-weight: bold; font-size: 1.3em; text-align: left;"><span style="font-size: 18px; font-family: 'Microsoft YaHei';">开发目的</span></h3>
+<p style="margin: 0px 0px 1.2em !important; text-align: left;"><span style="font-size: 18px; font-family: 'Microsoft YaHei';">我经常使用图片。公众号文章发文也好，还是生活中要使用素材。图片是一种比文字更加直观的载体。</span><br /><span style="font-size: 18px; font-family: 'Microsoft YaHei';">但是图片更加占用带宽，很多软件都对图片有大小限制。图片太大也会影响加载速度。</span><br /><span style="font-size: 18px; font-family: 'Microsoft YaHei';">我试过几款图片压缩工具，比如 tinypng 和 tinyjpg 非常好用，体验也非常棒。</span><br /><span style="font-size: 18px; font-family: 'Microsoft YaHei';">但是它存在几个局限的地方：</span></p>
+<ul style="margin: 1.2em 0px; padding-left: 2em; text-align: left;">
+<li style="margin: 0.5em 0px;"><span style="font-size: 18px; font-family: 'Microsoft YaHei';">1， 每次不能超过 20 张图片，因为 tinypng 是一个 web 网站，一次上传太多势必影响</span><br /><span style="font-size: 18px; font-family: 'Microsoft YaHei';">速度和服务器压力；</span></li>
+<li style="margin: 0.5em 0px;"><span style="font-size: 18px; font-family: 'Microsoft YaHei';">2，不能控制压缩比例，这一点 compressjpeg.com 做的很好，可以对每一张图片进行控制</span></li>
+<li style="margin: 0.5em 0px;"><span style="font-size: 18px; font-family: 'Microsoft YaHei';">3，写文章的时候我 markdown 用得非常多，所以我希望在压缩的时候顺便上传到图床。</span></li>
+
+</ul>
+<p style="margin: 0px 0px 1.2em !important; text-align: left;"><span style="font-size: 18px; font-family: 'Microsoft YaHei';">所以希望自己能做一款简单好用的图片工具，顺便定制一些自己常用的功能。</span></p>
+<h3 id="-" style="margin: 1.3em 0px 1em; padding: 0px; font-weight: bold; font-size: 1.3em; text-align: left;"><span style="font-size: 18px; font-family: 'Microsoft YaHei';">初步设想</span></h3>
+<p style="margin: 0px 0px 1.2em !important; text-align: left;"><span style="font-size: 18px; font-family: 'Microsoft YaHei';">我的初步设想是这样的：</span><br /><span style="font-size: 18px; font-family: 'Microsoft YaHei';">1， 先通过命令行的形式来使用，非常方便，后面如果有需求再写界面。</span></p>
+<pre><span style="font-size: 18px; font-family: 'Microsoft YaHei';"><code style="font-size: 0.85em; font-family: Consolas, Inconsolata, Courier, monospace; margin: 0px 0.15em; padding: 0.5em 0.7em; white-space: pre; border: 1px solid #cccccc; background-color: #f8f8f8; border-radius: 3px; display: block !important; overflow: auto;">picom 图片名称.jpg
+</code></span></pre>
+<p style="margin: 0px 0px 1.2em !important; text-align: left;"><span style="font-size: 18px; font-family: 'Microsoft YaHei';">这条命令可以对图片进行智能压缩。格式为原来的格式，生成的新图片名字为</span><br /><span style="font-size: 18px; font-family: 'Microsoft YaHei';">图片名称_picom.jpg</span></p>
+<p style="margin: 0px 0px 1.2em !important; text-align: left;"><br /><span style="font-size: 18px; font-family: 'Microsoft YaHei';">2，指定新文件名</span></p>
+<pre><span style="font-size: 18px; font-family: 'Microsoft YaHei';"><code style="font-size: 0.85em; font-family: Consolas, Inconsolata, Courier, monospace; margin: 0px 0.15em; padding: 0.5em 0.7em; white-space: pre; border: 1px solid #cccccc; background-color: #f8f8f8; border-radius: 3px; display: block !important; overflow: auto;">picom name.jpg -o new_name.png
+</code></span></pre>
+<p style="margin: 0px 0px 1.2em !important; text-align: left;"><span style="font-size: 18px; font-family: 'Microsoft YaHei';">图片的格式也将根据新的文件名称跟着变化</span></p>
+<p style="margin: 0px 0px 1.2em !important; text-align: left;"><br /><span style="font-size: 18px; font-family: 'Microsoft YaHei';">3，只指定格式</span></p>
+<pre><span style="font-size: 18px; font-family: 'Microsoft YaHei';"><code style="font-size: 0.85em; font-family: Consolas, Inconsolata, Courier, monospace; margin: 0px 0.15em; padding: 0.5em 0.7em; white-space: pre; border: 1px solid #cccccc; background-color: #f8f8f8; border-radius: 3px; display: block !important; overflow: auto;">picom name.jpg --format png
+</code></span></pre>
+<p style="margin: 0px 0px 1.2em !important; text-align: left;"><span style="font-size: 18px; font-family: 'Microsoft YaHei';">图片指定为新的格式，但是文件名还是默认的。</span></p>
+<p style="margin: 0px 0px 1.2em !important; text-align: left;"><br /><span style="font-size: 18px; font-family: 'Microsoft YaHei';">4，裁剪大小</span></p>
+<pre><span style="font-size: 18px; font-family: 'Microsoft YaHei';"><code style="font-size: 0.85em; font-family: Consolas, Inconsolata, Courier, monospace; margin: 0px 0.15em; padding: 0.5em 0.7em; white-space: pre; border: 1px solid #cccccc; background-color: #f8f8f8; border-radius: 3px; display: block !important; overflow: auto;">picom name.jpg --size normal
+</code></span></pre>
+<p style="margin: 0px 0px 1.2em !important; text-align: left;"><span style="font-size: 18px; font-family: 'Microsoft YaHei';">图片将被裁剪成正常大小，可以设置几档常用的</span></p>
+<p style="margin: 0px 0px 1.2em !important; text-align: left;"><br /><span style="font-size: 18px; font-family: 'Microsoft YaHei';">5，裁剪指定具体大小</span></p>
+<pre><span style="font-size: 18px; font-family: 'Microsoft YaHei';"><code style="font-size: 0.85em; font-family: Consolas, Inconsolata, Courier, monospace; margin: 0px 0.15em; padding: 0.5em 0.7em; white-space: pre; border: 1px solid #cccccc; background-color: #f8f8f8; border-radius: 3px; display: block !important; overflow: auto;">picom name.jpg --size 920*520
+</code></span></pre>
+<p style="margin: 0px 0px 1.2em !important; text-align: left;"><span style="font-size: 18px; font-family: 'Microsoft YaHei';">6, 上传到图床</span></p>
+<pre><span style="font-size: 18px; font-family: 'Microsoft YaHei';"><code style="font-size: 0.85em; font-family: Consolas, Inconsolata, Courier, monospace; margin: 0px 0.15em; padding: 0.5em 0.7em; white-space: pre; border: 1px solid #cccccc; background-color: #f8f8f8; border-radius: 3px; display: block !important; overflow: auto;">picom name.jpg --upload
+</code></span></pre>
+<p style="margin: 0px 0px 1.2em !important; text-align: left;"><span style="font-size: 18px; font-family: 'Microsoft YaHei';">上传到图床以后，返回图床地址。图床的地址用什么形式保存还在思考。</span></p>
+<h3 style="margin: 1.3em 0px 1em; padding: 0px; font-weight: bold; font-size: 1.3em; text-align: left;">&nbsp;</h3>
+<h3 id="-" style="margin: 1.3em 0px 1em; padding: 0px; font-weight: bold; font-size: 1.3em; text-align: left;"><span style="font-size: 18px; font-family: 'Microsoft YaHei';">可能涉及的知识和库</span></h3>
+<ul style="margin: 1.2em 0px; padding-left: 2em; text-align: left;">
+<li style="margin: 0.5em 0px;"><span style="font-size: 18px; font-family: 'Microsoft YaHei';">click 命令行工具</span></li>
+<li style="margin: 0.5em 0px;"><span style="font-size: 18px; font-family: 'Microsoft YaHei';">subprocess 子进程管理工具</span></li>
+<li style="margin: 0.5em 0px;"><span style="font-size: 18px; font-family: 'Microsoft YaHei';">pillow 库使用</span></li>
+<li style="margin: 0.5em 0px;"><span style="font-size: 18px; font-family: 'Microsoft YaHei';">pngquant (一个png图片有损压缩)</span></li>
+<li style="margin: 0.5em 0px;"><span style="font-size: 18px; font-family: 'Microsoft YaHei';">mozjpeg</span></li>
+<li style="margin: 0.5em 0px;"><span style="font-size: 18px; font-family: 'Microsoft YaHei';">optipng (png 无损压缩)</span></li>
+<li style="margin: 0.5em 0px;"><span style="font-size: 18px; font-family: 'Microsoft YaHei';">python 如何调用 c 代码</span></li>
+<li style="margin: 0.5em 0px;"><span style="font-size: 18px; font-family: 'Microsoft YaHei';">requests 库和 aiohttp / aiofile 库的使用</span></li>
+</ul>
+<h3 style="margin: 1.3em 0px 1em; padding: 0px; font-weight: bold; font-size: 1.3em; text-align: left;">&nbsp;</h3>
+<h3 id="-pillow-" style="margin: 1.3em 0px 1em; padding: 0px; font-weight: bold; font-size: 1.3em; text-align: left;"><span style="font-size: 18px; font-family: 'Microsoft YaHei';">尝试使用 pillow 库进行图片压缩</span></h3>
+<p style="margin: 0px 0px 1.2em !important; text-align: left;"><span style="font-size: 18px; font-family: 'Microsoft YaHei';">pillow 是 python 处理图片的一个非常厉害的库 , 带有图片压缩的功能。</span><br /><span style="font-size: 18px; font-family: 'Microsoft YaHei';">我先后尝试使用 pillow 的以下 API 对图片进行压缩，得到的结果不是很好。</span></p>
+<ul style="margin: 1.2em 0px; padding-left: 2em; text-align: left;">
+<li style="margin: 0.5em 0px;"><span style="font-size: 18px; font-family: 'Microsoft YaHei';">save(quality=50)</span></li>
+<li style="margin: 0.5em 0px;"><span style="font-size: 18px; font-family: 'Microsoft YaHei';">save(optimize=True)</span></li>
+<li style="margin: 0.5em 0px;"><span style="font-size: 18px; font-family: 'Microsoft YaHei';">quantize()</span></li>
+<li style="margin: 0.5em 0px;"><span style="font-size: 18px; font-family: 'Microsoft YaHei';">convert(&ldquo;RGB&rdquo;)</span></li>
+
+</ul>
+<p style="margin: 0px 0px 1.2em !important; text-align: left;">&nbsp;</p>
+<p style="margin: 0px 0px 1.2em !important; text-align: left;"><span style="font-size: 18px; font-family: 'Microsoft YaHei';">1，quality 参数</span><br /><span style="font-size: 18px; font-family: 'Microsoft YaHei';">save 方法当中的 quality 参数只适合用在 jpg 格式上，通常 80 左右的质量不会有明显的感觉。 用在 png 格式上无效，但是也不报错。</span><br /><span style="font-size: 18px; font-family: 'Microsoft YaHei';"><img src="https://i.loli.net/2020/04/24/nHAo1ZcRBWwPa7E.png" alt="image.png"></span><br /><span style="font-size: 18px; font-family: 'Microsoft YaHei';">2，optimize 参数</span><br /><span style="font-size: 18px; font-family: 'Microsoft YaHei';">optimize 参数直接压缩没有明显效果。</span><br /><span style="font-size: 18px; font-family: 'Microsoft YaHei';"><img src="https://i.loli.net/2020/04/24/c6fkMNdwpDFYAE5.png" alt="image.png"></span><br /><span style="font-size: 18px; font-family: 'Microsoft YaHei';">3，quantize 方法</span><br /><span style="font-size: 18px; font-family: 'Microsoft YaHei';">quantize 是主要用到的压缩优化函数，在 png 格式压缩上，能减少 70% 左右的空间，但是颜色差异明显。</span><br /><span style="font-size: 18px; font-family: 'Microsoft YaHei';"><img src="https://i.loli.net/2020/04/24/JFrVP73eGapoImE.png" alt="image.png"></span><br /><span style="font-size: 18px; font-family: 'Microsoft YaHei';">这是压缩后效果对比：</span><br /><span style="font-size: 18px; font-family: 'Microsoft YaHei';"><img src="https://i.loli.net/2020/04/24/Yw2V4m8OKjgQfMW.jpg" alt="quantize effect.jpg"></span></p>
+<p style="margin: 0px 0px 1.2em !important; text-align: left;">&nbsp;</p>
+<p style="margin: 0px 0px 1.2em !important; text-align: left;"><span style="font-size: 18px; font-family: 'Microsoft YaHei';">4， convert 方法</span><br /><span style="font-size: 18px; font-family: 'Microsoft YaHei';">通过把 png的RGBA 格式转化成 RGB 格式，可以减少大约 20% 的大小</span></p>
+<p style="margin: 0px 0px 1.2em !important; text-align: left;"><span style="font-size: 18px; font-family: 'Microsoft YaHei';">5，PNG 以 jpg 格式保存</span><br /><span style="font-size: 18px; font-family: 'Microsoft YaHei';">先通过 convert 方法转成 RGB 格式，然后另存为 jpg 格式，图片效果没有明显减弱，但是大小迅速减少。</span><br /><span style="font-size: 18px; font-family: 'Microsoft YaHei';"><img src="https://i.loli.net/2020/04/24/ijx5XsSA4wyU2o3.png" alt="image.png"></span></p>
+<h3 id="-" style="margin: 1.3em 0px 1em; padding: 0px; font-weight: bold; font-size: 1.3em; text-align: left;"><span style="font-size: 18px; font-family: 'Microsoft YaHei';">结论</span></h3>
+<p style="margin: 0px 0px 1.2em !important; text-align: left;"><span style="font-size: 18px; font-family: 'Microsoft YaHei';">pillow 目前不太适合做 PNG 图片压缩处理，jpg 可以作为备选。 pillow 的主要应用场景可以用在灰度转化，尺寸控制方面，这些功能等把核心的压缩问题解决以后再加。</span></p>
+<h3 id="-" style="margin: 1.3em 0px 1em; padding: 0px; font-weight: bold; font-size: 1.3em; text-align: left;"><span style="font-size: 18px; font-family: 'Microsoft YaHei';">参考资料</span></h3>
+<ul style="margin: 1.2em 0px; padding-left: 2em; text-align: left;">
+<li style="margin: 0.5em 0px;"><span style="font-size: 18px; font-family: 'Microsoft YaHei';"><a href="https://hellokugo.github.io/2016/09/10/python%E8%84%9A%E6%9C%AC%E5%AE%9E%E7%8E%B0%E5%9B%BE%E7%89%87%E5%8E%8B%E7%BC%A9/">tinypng, pngquant和pillow压缩图片</a></span></li>
+<li style="margin: 0.5em 0px;"><span style="font-size: 18px; font-family: 'Microsoft YaHei';"><a href="https://github.com/chrissimpkins/Crunch">Crunch压缩</a></span></li>
+<li style="margin: 0.5em 0px;"><span style="font-size: 18px; font-family: 'Microsoft YaHei';"><a href="https://github.com/meowtec/Imagine">Imagine:一个使用了pngquant 和 mozjpeg 的工具</a></span></li>
+<li style="margin: 0.5em 0px;"><span style="font-size: 18px; font-family: 'Microsoft YaHei';"><a href="http://optipng.sourceforge.net/">optipng:一个无损压缩库，缩小一半左右</a></span></li>
+<li style="margin: 0.5em 0px;"><span style="font-size: 18px; font-family: 'Microsoft YaHei';"><a href="http://zetcode.com/python/pillow/">pillow 参考教程</a></span></li>
+
+</ul>
+<div style="height: 0px; width: 0px; max-height: 0px; max-width: 0px; overflow: hidden; font-size: 0em; padding: 0px; margin: 0px; text-align: left;" title="MDH:PHA+IyMjIOW8gOWPkeebrueahDwvcD48cD7miJHnu4/luLjkvb/nlKjlm77niYfjgILlhazkvJfl
+j7fmlofnq6Dlj5HmlofkuZ/lpb3vvIzov5jmmK/nlJ/mtLvkuK3opoHkvb/nlKjntKDmnZDjgILl
+m77niYfmmK/kuIDnp43mr5TmloflrZfmm7TliqDnm7Top4LnmoTovb3kvZPjgII8L3A+PHA+5L2G
+5piv5Zu+54mH5pu05Yqg5Y2g55So5bim5a6977yM5b6I5aSa6L2v5Lu26YO95a+55Zu+54mH5pyJ
+5aSn5bCP6ZmQ5Yi244CC5Zu+54mH5aSq5aSn5Lmf5Lya5b2x5ZON5Yqg6L296YCf5bqm44CCPC9w
+PjxwPuaIkeivlei/h+WHoOasvuWbvueJh+WOi+e8qeW3peWFt++8jOavlOWmgiB0aW55cG5nIOWS
+jCB0aW55anBnIOmdnuW4uOWlveeUqO+8jOS9k+mqjOS5n+mdnuW4uOajkuOAgjxicj7kvYbmmK/l
+roPlrZjlnKjlh6DkuKrlsYDpmZDnmoTlnLDmlrnvvJo8L3A+PHA+LSAx77yMIOavj+asoeS4jeiD
+vei2hei/hyAyMCDlvKDlm77niYfvvIzlm6DkuLogdGlueXBuZyDmmK/kuIDkuKogd2ViIOe9keer
+me+8jOS4gOasoeS4iuS8oOWkquWkmuWKv+W/heW9seWTjTxicj4gIOmAn+W6puWSjOacjeWKoeWZ
+qOWOi+WKm++8mzxicj4tIDLvvIzkuI3og73mjqfliLbljovnvKnmr5TkvovvvIzov5nkuIDngrkg
+Y29tcHJlc3NqcGVnLmNvbSDlgZrnmoTlvojlpb3vvIzlj6/ku6Xlr7nmr4/kuIDlvKDlm77niYfo
+v5vooYzmjqfliLY8YnI+LSAz77yM5YaZ5paH56ug55qE5pe25YCZ5oiRIG1hcmtkb3duIOeUqOW+
+l+mdnuW4uOWkmu+8jOaJgOS7peaIkeW4jOacm+WcqOWOi+e8qeeahOaXtuWAmemhuuS+v+S4iuS8
+oOWIsOWbvuW6iuOAgjwvcD48cD48YnI+5omA5Lul5biM5pyb6Ieq5bex6IO95YGa5LiA5qy+566A
+5Y2V5aW955So55qE5Zu+54mH5bel5YW377yM6aG65L6/5a6a5Yi25LiA5Lqb6Ieq5bex5bi455So
+55qE5Yqf6IO944CCPC9wPjxwPjxicj4jIyMg5Yid5q2l6K6+5oOzPGJyPuaIkeeahOWIneatpeiu
+vuaDs+aYr+i/meagt+eahO+8mjwvcD48cD4x77yMIOWFiOmAmui/h+WRveS7pOihjOeahOW9ouW8
+j+adpeS9v+eUqO+8jOmdnuW4uOaWueS+v++8jOWQjumdouWmguaenOaciemcgOaxguWGjeWGmeeV
+jOmdouOAgjwvcD48cD5gYGA8YnI+cGljb20g5Zu+54mH5ZCN56ewLmpwZzxicj5gYGA8L3A+PHA+
+6L+Z5p2h5ZG95Luk5Y+v5Lul5a+55Zu+54mH6L+b6KGM5pm66IO95Y6L57yp44CC5qC85byP5Li6
+5Y6f5p2l55qE5qC85byP77yM55Sf5oiQ55qE5paw5Zu+54mH5ZCN5a2X5Li6PGJyPuWbvueJh+WQ
+jeensF9waWNvbS5qcGc8L3A+PHA+Mu+8jOaMh+WumuaWsOaWh+S7tuWQjTwvcD48cD5gYGA8YnI+
+cGljb20gbmFtZS5qcGcgLW8gbmV3X25hbWUucG5nIDxicj5gYGA8L3A+PHA+5Zu+54mH55qE5qC8
+5byP5Lmf5bCG5qC55o2u5paw55qE5paH5Lu25ZCN56ew6Lef552A5Y+Y5YyWPC9wPjxwPjPvvIzl
+j6rmjIflrprmoLzlvI88L3A+PHA+YGBgPGJyPnBpY29tIG5hbWUuanBnIC0tZm9ybWF0IHBuZzxi
+cj5gYGA8L3A+PHA+5Zu+54mH5oyH5a6a5Li65paw55qE5qC85byP77yM5L2G5piv5paH5Lu25ZCN
+6L+Y5piv6buY6K6k55qE44CCPC9wPjxwPjTvvIzoo4HliarlpKflsI88L3A+PHA+YGBgPGJyPnBp
+Y29tIG5hbWUuanBnIC0tc2l6ZSBub3JtYWw8YnI+YGBgPC9wPjxwPuWbvueJh+Wwhuiiq+ijgeWJ
+quaIkOato+W4uOWkp+Wwj++8jOWPr+S7peiuvue9ruWHoOaho+W4uOeUqOeahDwvcD48cD4177yM
+6KOB5Ymq5oyH5a6a5YW35L2T5aSn5bCPPC9wPjxwPmBgYDxicj5waWNvbSBuYW1lLmpwZyAtLXNp
+emUgOTIwKjUyMDxicj5gYGA8L3A+PHA+Niwg5LiK5Lyg5Yiw5Zu+5bqKPC9wPjxwPmBgYDxicj5w
+aWNvbSBuYW1lLmpwZyAtLXVwbG9hZDxicj5gYGA8L3A+PHA+5LiK5Lyg5Yiw5Zu+5bqK5Lul5ZCO
+77yM6L+U5Zue5Zu+5bqK5Zyw5Z2A44CC5Zu+5bqK55qE5Zyw5Z2A55So5LuA5LmI5b2i5byP5L+d
+5a2Y6L+Y5Zyo5oCd6ICD44CCPC9wPjxwPiMjIyDlj6/og73mtonlj4rnmoTnn6Xor4blkozlupM8
+L3A+PHA+LSBjbGljayDlkb3ku6TooYzlt6Xlhbc8YnI+LSBzdWJwcm9jZXNzIOWtkOi/m+eoi+eu
+oeeQhuW3peWFtzxicj4tIHBpbGxvdyDlupPkvb/nlKg8YnI+LSBwbmdxdWFudCAo5LiA5LiqcG5n
+5Zu+54mH5pyJ5o2f5Y6L57ypKTxicj4tIG1vempwZWc8YnI+LSBvcHRpcG5nIChwbmcg5peg5o2f
+5Y6L57ypKTxicj4tIHB5dGhvbiDlpoLkvZXosIPnlKggYyDku6PnoIE8YnI+LSByZXF1ZXN0cyDl
+upPlkowgYWlvaHR0cCAvIGFpb2ZpbGUg5bqT55qE5L2/55SoPC9wPjxwPiZuYnNwOzwvcD48cD4j
+IyMg5bCd6K+V5L2/55SoIHBpbGxvdyDlupPov5vooYzlm77niYfljovnvKk8L3A+PHA+cGlsbG93
+IOaYryBweXRob24g5aSE55CG5Zu+54mH55qE5LiA5Liq6Z2e5bi45Y6J5a6z55qE5bqTICwg5bim
+5pyJ5Zu+54mH5Y6L57yp55qE5Yqf6IO944CCPC9wPjxwPuaIkeWFiOWQjuWwneivleS9v+eUqCBw
+aWxsb3cg55qE5Lul5LiLIEFQSSDlr7nlm77niYfov5vooYzljovnvKnvvIzlvpfliLDnmoTnu5Pm
+npzkuI3mmK/lvojlpb3jgII8L3A+PHA+LSBzYXZlKHF1YWxpdHk9NTApPGJyPi0gc2F2ZShvcHRp
+bWl6ZT1UcnVlKTxicj4tIHF1YW50aXplKCk8YnI+LSBjb252ZXJ0KCJSR0IiKTwvcD48cD48YnI+
+Me+8jHF1YWxpdHkg5Y+C5pWwPC9wPjxwPnNhdmUg5pa55rOV5b2T5Lit55qEIHF1YWxpdHkg5Y+C
+5pWw5Y+q6YCC5ZCI55So5ZyoIGpwZyDmoLzlvI/kuIrvvIzpgJrluLggODAg5bem5Y+z55qE6LSo
+6YeP5LiN5Lya5pyJ5piO5pi+55qE5oSf6KeJ44CCIOeUqOWcqCBwbmcg5qC85byP5LiK5peg5pWI
+77yM5L2G5piv5Lmf5LiN5oql6ZSZ44CCPGJyPiFbaW1hZ2UucG5nXShodHRwczovL2kubG9saS5u
+ZXQvMjAyMC8wNC8yNC9uSEFvMVpjUkJXd1BhN0UucG5nKTwvcD48cD4y77yMb3B0aW1pemUg5Y+C
+5pWwPC9wPjxwPm9wdGltaXplIOWPguaVsOebtOaOpeWOi+e8qeayoeacieaYjuaYvuaViOaenOOA
+gjxicj4hW2ltYWdlLnBuZ10oaHR0cHM6Ly9pLmxvbGkubmV0LzIwMjAvMDQvMjQvYzZma01OZHdw
+REZZQUU1LnBuZyk8L3A+PHA+M++8jHF1YW50aXplIOaWueazlTwvcD48cD5xdWFudGl6ZSDmmK/k
+uLvopoHnlKjliLDnmoTljovnvKnkvJjljJblh73mlbDvvIzlnKggcG5nIOagvOW8j+WOi+e8qeS4
+iu+8jOiDveWHj+WwkSA3MCUg5bem5Y+z55qE56m66Ze077yM5L2G5piv6aKc6Imy5beu5byC5piO
+5pi+44CCPC9wPjxwPiFbaW1hZ2UucG5nXShodHRwczovL2kubG9saS5uZXQvMjAyMC8wNC8yNC9K
+RnJWUDczZUdhcG9JbUUucG5nKTwvcD48cD7ov5nmmK/ljovnvKnlkI7mlYjmnpzlr7nmr5TvvJo8
+YnI+IVtxdWFudGl6ZSBlZmZlY3QuanBnXShodHRwczovL2kubG9saS5uZXQvMjAyMC8wNC8yNC9Z
+dzJWNG04T0tqZ1FmTVcuanBnKTwvcD48cD48YnI+NO+8jCBjb252ZXJ0IOaWueazlTxicj7pgJro
+v4fmioogcG5n55qEUkdCQSDmoLzlvI/ovazljJbmiJAgUkdCIOagvOW8j++8jOWPr+S7peWHj+Ww
+keWkp+e6piAyMCUg55qE5aSn5bCPPC9wPjxwPjXvvIxQTkcg5LulIGpwZyDmoLzlvI/kv53lrZg8
+L3A+PHA+5YWI6YCa6L+HIGNvbnZlcnQg5pa55rOV6L2s5oiQIFJHQiDmoLzlvI/vvIznhLblkI7l
+j6blrZjkuLoganBnIOagvOW8j++8jOWbvueJh+aViOaenOayoeacieaYjuaYvuWHj+W8se+8jOS9
+huaYr+Wkp+Wwj+i/hemAn+WHj+WwkeOAgjxicj4hW2ltYWdlLnBuZ10oaHR0cHM6Ly9pLmxvbGku
+bmV0LzIwMjAvMDQvMjQvaWp4NVhzU0E0d3lVMm8zLnBuZyk8L3A+PHA+PGJyPiMjIyDnu5Porro8
+YnI+cGlsbG93IOebruWJjeS4jeWkqumAguWQiOWBmiBQTkcg5Zu+54mH5Y6L57yp5aSE55CG77yM
+anBnIOWPr+S7peS9nOS4uuWkh+mAieOAgiBwaWxsb3cg55qE5Li76KaB5bqU55So5Zy65pmv5Y+v
+5Lul55So5Zyo54Gw5bqm6L2s5YyW77yM5bC65a+45o6n5Yi25pa56Z2i77yM6L+Z5Lqb5Yqf6IO9
+562J5oqK5qC45b+D55qE5Y6L57yp6Zeu6aKY6Kej5Yaz5Lul5ZCO5YaN5Yqg44CCPC9wPjxwPjxi
+cj4jIyMg5Y+C6ICD6LWE5paZPC9wPjxwPi0gW3RpbnlwbmcsIHBuZ3F1YW505ZKMcGlsbG935Y6L
+57yp5Zu+54mHXShodHRwczovL2hlbGxva3Vnby5naXRodWIuaW8vMjAxNi8wOS8xMC9weXRob24l
+RTglODQlOUElRTYlOUMlQUMlRTUlQUUlOUUlRTclOEUlQjAlRTUlOUIlQkUlRTclODklODclRTUl
+OEUlOEIlRTclQkMlQTkvKTxicj4tIFtDcnVuY2jljovnvKldKGh0dHBzOi8vZ2l0aHViLmNvbS9j
+aHJpc3NpbXBraW5zL0NydW5jaCk8YnI+LSBbSW1hZ2luZTrkuIDkuKrkvb/nlKjkuoZwbmdxdWFu
+dCDlkowgbW96anBlZyDnmoTlt6XlhbddKGh0dHBzOi8vZ2l0aHViLmNvbS9tZW93dGVjL0ltYWdp
+bmUpPGJyPi0gW29wdGlwbmc65LiA5Liq5peg5o2f5Y6L57yp5bqT77yM57yp5bCP5LiA5Y2K5bem
+5Y+zXShodHRwOi8vb3B0aXBuZy5zb3VyY2Vmb3JnZS5uZXQvICk8YnI+LSBbcGlsbG93IOWPguiA
+g+aVmeeoi10oaHR0cDovL3pldGNvZGUuY29tL3B5dGhvbi9waWxsb3cvKTwvcD48cD4mbmJzcDs8
+L3A+"><span style="font-size: 18px; font-family: 'Microsoft YaHei';">​</span></div>
+</div>
+</div>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+    <div id="blog_post_info"></div>
+    <div class="clear"></div>
+    <div id="post_next_prev"></div>
+</div>
+            </div>
+            <div class="postDesc">posted @ 
+<span id="post-date">2020-04-24 20:22</span>&nbsp;
+<a href="https://www.cnblogs.com/heniu/">和牛</a>&nbsp;
+阅读(<span id="post_view_count">...</span>)&nbsp;
+评论(<span id="post_comment_count">...</span>)&nbsp;
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12769842" rel="nofollow">编辑</a>&nbsp;
+<a href="javascript:void(0)" onclick="AddToWz(12769842);return false;">收藏</a></div>
+        </div>
+	    
+	    
+    </div><!--end: topics 文章、评论容器-->
+</div>
+<script src="https://common.cnblogs.com/highlight/9.12.0/highlight.min.js"></script>
+<script>markdown_highlight();</script>
+<script>
+    var allowComments = true, cb_blogId = 442046, cb_blogApp = 'heniu', cb_blogUserGuid = '10b59032-baf8-43ce-1cb6-08d5dd9535dc';
+    var cb_entryId = 12769842, cb_entryCreatedDate = '2020-04-24 20:22', cb_postType = 1; 
+    loadViewCount(cb_entryId);
+</script><a name="!comments"></a>
+<div id="blog-comments-placeholder"></div>
+<script>
+    var commentManager = new blogCommentManager();
+    commentManager.renderComments(0);
+</script>
+
+<div id="comment_form" class="commentform">
+    <a name="commentform"></a>
+    <div id="divCommentShow"></div>
+    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+    <div id="comment_form_container"></div>
+    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+    <div id="ad_t2"></div>
+    <div id="opt_under_post"></div>
+    <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            googletag.defineSlot("/1090369/C1", [300, 250], "div-gpt-ad-1546353474406-0").addService(googletag.pubads());
+            googletag.defineSlot("/1090369/C2", [468, 60], "div-gpt-ad-1539008685004-0").addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    </script>
+    <div id="cnblogs_c1" class="c_ad_block">
+        <div id="div-gpt-ad-1546353474406-0" style="height:250px; width:300px;"></div>
+    </div>
+    <div id="under_post_news"></div>
+    <div id="cnblogs_c2" class="c_ad_block">
+        <div id="div-gpt-ad-1539008685004-0" style="height:60px; width:468px;">
+            <script>
+                if (new Date() >= new Date(2018, 9, 13)) {
+                    googletag.cmd.push(function () { googletag.display("div-gpt-ad-1539008685004-0"); });
+                }
+            </script>
+        </div>
+    </div>
+    <div id="under_post_kb"></div>
+    <div id="HistoryToday" class="c_ad_block"></div>
+    <script type="text/javascript">
+        fixPostBody();
+        deliverBigBanner();
+setTimeout(function() { incrementViewCount(cb_entryId); }, 50);        deliverAdT2();
+        deliverAdC1();
+        deliverAdC2();
+        loadNewsAndKb();
+        loadBlogSignature();
+LoadPostCategoriesTags(cb_blogId, cb_entryId);        LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+        GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+        loadOptUnderPost();
+        GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    </script>
+</div>
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 和牛
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    
+</body>
+</html>

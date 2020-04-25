@@ -1,0 +1,1212 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>冰湖一角 - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    <link id="MainCss" rel="stylesheet" href="/skins/coffee/bundle-coffee.min.css?v=pdMIVgsH8kXt-vOWnlL0N20TlHt3UyP9HzGgocfsP4s" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/coffee/bundle-coffee-mobile.min.css?v=na9bpAY4yh7uEWCcrXj3vfJM3VBse8YtU6-5fUUQPz0" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/bingyimeiling/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/bingyimeiling/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/bingyimeiling/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 422491;
+        var currentBlogApp = 'bingyimeiling';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'coffee';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+	<a href="https://www.cnblogs.com/bingyimeiling/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>			
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/bingyimeiling/">冰湖一角</a>
+</h1>
+<h2>
+
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		<div id="navigator">
+			
+<ul id="navList">
+	<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+	<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/bingyimeiling/">
+首页</a>
+</li>
+	<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+	<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E5%86%B0%E6%B9%96%E4%B8%80%E8%A7%92">
+联系</a></li>
+	<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+	<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/bingyimeiling/rss/">
+订阅</a>
+	
+<a id="blog_nav_rss_image" href="https://www.cnblogs.com/bingyimeiling/rss/">
+    <img src="/skins/coffee/images/xml.gif" alt="订阅" />
+</a></li>
+</ul>
+
+
+
+			<div class="blogStats">
+				
+				<!--done-->
+随笔- 
+75&nbsp;
+文章- 
+0&nbsp;
+评论- 
+11&nbsp;
+
+
+
+				
+			</div><!--end: blogStats -->
+		</div><!--end: navigator 博客导航栏 -->
+		
+<!--done-->
+
+
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bingyimeiling/archive/2020/04/24.html">2020年4月24日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bingyimeiling/p/12769465.html">
+[置顶]    Java实现将中文转成拼音和ASCII码
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：最近项目上遇到一个需求：模糊搜索姓名时既可以输入汉字也可以输入拼音进行搜索，这就要求在保存姓名时也要将其拼音保存起来。 好了，废话不说了，直接上代码！ 实现步骤： 1、pom.xml配置文件引入jar包 &lt;dependency&gt; &lt;groupId&gt;com.belerweb&lt;/groupId&gt; &lt;ar            <a href="https://www.cnblogs.com/bingyimeiling/p/12769465.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-24 19:02 冰湖一角 阅读 (4) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12769465" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bingyimeiling/p/12769373.html">
+[置顶]    Java对称加密算法
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：一、对称加密算法概念 加密密钥和解密密钥相同，大部分算法加密揭秘过程互逆。 特点：算法公开、（相比非对称加密）计算量小、加密速度快、效率高。 弱点：双方都使用同样的密钥，安全性得不到保证。 二、常见对称加密算法 1、DES已破解，不再安全，基本没有企业在用了是对称加密算法的基石，具有学习价值密钥长度            <a href="https://www.cnblogs.com/bingyimeiling/p/12769373.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-24 18:43 冰湖一角 阅读 (10) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12769373" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bingyimeiling/archive/2019/11/28.html">2019年11月28日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bingyimeiling/p/11953078.html">
+[置顶]    mysql通俗易懂的数据库连接池原理及模拟实现
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：什么是数据库连接池？ 当系统使用JDBC技术访问数据库时会创建一个connection对象，而该对象的创建过程是非常消耗资源的，并且创建对象的时间也特别长，假设系统一天有1万次的访问量，那么一天就会有1万个connection对象被创建，这极大的浪费数据库的资源，而且可能造成数据库服务器内存溢出，宕            <a href="https://www.cnblogs.com/bingyimeiling/p/11953078.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-11-28 19:56 冰湖一角 阅读 (249) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11953078" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bingyimeiling/archive/2019/10/18.html">2019年10月18日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bingyimeiling/p/11698468.html">
+[置顶]    单点登录（SSO）解决方案介绍
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：一、单点登录的介绍 单点登录（Single Sign On），简称为 SSO，是目前比较流行的企业业务整合的解决方案之一。SSO的定义是在多个应用系统中，用户只需要登录一次就可以访问所有相互信任的应用系统。 例如：百度旗下有很多的产品，比如百度贴吧、百度知道、百度文库等，只要登录百度账号，在任何一个            <a href="https://www.cnblogs.com/bingyimeiling/p/11698468.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-10-18 15:52 冰湖一角 阅读 (494) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11698468" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bingyimeiling/archive/2019/10/15.html">2019年10月15日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bingyimeiling/p/11679591.html">
+[置顶]    Java多线程编程
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：一、基本概念 Java 给多线程编程提供了内置的支持。 一条线程指的是进程中一个单一顺序的控制流，一个进程中可以并发多个线程，每条线程并行执行不同的任务。 多线程是多任务的一种特别的形式，但多线程使用了更小的资源开销。 这里定义和线程相关的另一个术语 - 进程：一个进程包括由操作系统分配的内存空间，            <a href="https://www.cnblogs.com/bingyimeiling/p/11679591.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-10-15 19:00 冰湖一角 阅读 (136) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11679591" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bingyimeiling/archive/2019/10/12.html">2019年10月12日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bingyimeiling/p/11663824.html">
+[置顶]    Java运算符及优先级（全）
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：运算符是一种特殊的符号，用以表示数据的运算、赋值和比较等。 Java运算符分为以下几种： • 算术运算符：+，-，*，/，%，++，-- • 赋值运算符：= •&#160;扩展后的赋值运算符：+=，-=，*=，/=，%=，&amp;=，|=，^=，&lt;&lt;=，&gt;&gt;=，&gt;&gt;&gt;= •&#160;位运算符：&amp;，|，~，^，&lt;&lt;，&gt;&gt;，&gt;            <a href="https://www.cnblogs.com/bingyimeiling/p/11663824.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-10-12 23:26 冰湖一角 阅读 (303) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11663824" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bingyimeiling/archive/2019/10/08.html">2019年10月8日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bingyimeiling/p/11637097.html">
+[置顶]    Java并发——线程池Executor框架
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：线程池 无限制的创建线程 若采用&quot;为每个任务分配一个线程&quot;的方式会存在一些缺陷，尤其是当需要创建大量线程时： 线程生命周期的开销非常高 资源消耗 稳定性 引入线程池 任务是一组逻辑工作单元，线程则是使任务异步执行的机制。当存在大量并发任务时，创建、销毁线程需要很大的开销，运用线程池可以大大减小开销。            <a href="https://www.cnblogs.com/bingyimeiling/p/11637097.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-10-08 19:21 冰湖一角 阅读 (251) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11637097" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bingyimeiling/archive/2019/09/23.html">2019年9月23日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bingyimeiling/p/11575024.html">
+[置顶]    零基础快速入门Java的秘诀
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：刚开始学习Java时要端正自己的学习的目标和态度，明确学习Java基础重点要做什么。 首先第一点，Java基础的学习，基础很重要，基础好地基牢，才能爬的高！ 大家要从以下4个方向努力： 如果以上4点都有提高了，那么Java学习的就比较扎实了，上面4个方向是相互促进了，可以学的很快很好。 JAVASE            <a href="https://www.cnblogs.com/bingyimeiling/p/11575024.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-09-23 22:01 冰湖一角 阅读 (196) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11575024" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bingyimeiling/archive/2019/09/16.html">2019年9月16日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bingyimeiling/p/11529403.html">
+[置顶]    Java的初始化块及执行过程详解
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：问题：Java对象初始化方式主要有哪几种？分别是什么？针对上面的问题，想必大家脑海中首先浮现出的答案是构造器，没错，构造器是Java中常用的对象初始化方式。 还有一种与构造器作用非常相似的是初始化块，它可以对Java对象进行初始化操作。下面主要阐述Java的初始化块及执行过程。 Java初始化块其实            <a href="https://www.cnblogs.com/bingyimeiling/p/11529403.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-09-16 20:47 冰湖一角 阅读 (398) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11529403" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bingyimeiling/archive/2019/09/12.html">2019年9月12日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bingyimeiling/p/11515506.html">
+[置顶]    2019最新版Java程序员零基础入门视频教程资料（全套）
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：为了解决Java学习初学者在网上找视频难的事情，本人整理了一份2019年度最新版的Java学习视频教程。希望看到这份视频的你们都能找到一份称心的工作，技术上都能得到进一步的提升，好东西就要分享给你们，加油！ 目录结构如下： 01、JavaSE基础 02、html 03、css 04、javascri            <a href="https://www.cnblogs.com/bingyimeiling/p/11515506.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-09-12 22:54 冰湖一角 阅读 (737) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11515506" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bingyimeiling/archive/2019/09/11.html">2019年9月11日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bingyimeiling/p/11505844.html">
+[置顶]    记一次tomcat内存大涨到溢出的经历
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：前一段时间提交了一个产品版本给测试人员测试，测试结果简直出人意料！ 测试一段时间后页面就卡死了，当时根据这个现象下意识的怀疑是卡到数据库这一层，然后查看数据库连接相关的参数，如意料之中的相似，连接数太多了！当把数据库连接数解决后，本以为这个bug解决了，但是... 测试一段时间后页面又卡死了！！！             <a href="https://www.cnblogs.com/bingyimeiling/p/11505844.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-09-11 14:03 冰湖一角 阅读 (170) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11505844" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bingyimeiling/archive/2019/08/31.html">2019年8月31日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bingyimeiling/p/11439411.html">
+[置顶]    Java程序员经典面试题+答案（全）
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：这套面试题主要目的是帮助那些还没有java软件开发实际工作经验，而正在努力寻找java软件开发工作的朋友在笔试时更好地赢得笔试和面试。 关注公众号【Java典籍】免费赠送一套Java入门视频教程一套！ 1、一个&quot;.java&quot;源文件中是否可以包括多个类（不是内部类）？有什么限制？ 可以有多个类，但只能            <a href="https://www.cnblogs.com/bingyimeiling/p/11439411.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-08-31 16:07 冰湖一角 阅读 (969) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11439411" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bingyimeiling/archive/2019/08/17.html">2019年8月17日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bingyimeiling/p/11369206.html">
+[置顶]    java读取本机磁盘及遍历磁盘文件
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：1. 获取本机所有盘符信息 默认获取磁盘空间单位是BT，操作系统是这样算的 1G=1024MB， 1MB=1024KB， 1KB=1024BT 以上运行结果如下： 其中W盘为网盘。 2.&#160;仅获取本地磁盘（除去网络磁盘等） 输出结果： 3.在某一磁盘新建文件 4.&#160;遍历某一个盘符的文件 5.遍历某一文            <a href="https://www.cnblogs.com/bingyimeiling/p/11369206.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-08-17 17:20 冰湖一角 阅读 (1445) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11369206" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bingyimeiling/archive/2019/04/14.html">2019年4月14日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bingyimeiling/p/10705938.html">
+[置顶]    Java 枚举类详解
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：1. 枚举类定义 在某些情况下，一个类的对象是有限而且固定的，比如季节类，它只有4个对象，这种实例有限而且固定的类，在Java里被称为枚举类。 2. 早期实现枚举的方式 这种定义季节的方式简单明了，但存在如下几个问题： 1）类型不安全：因为上面的每个季节实际上是一个int整数，因此完全可以把一个季节            <a href="https://www.cnblogs.com/bingyimeiling/p/10705938.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-04-14 17:52 冰湖一角 阅读 (332) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=10705938" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bingyimeiling/archive/2019/04/10.html">2019年4月10日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bingyimeiling/p/10685461.html">
+[置顶]    Java实现发送手机验证码功能（短信+语音）
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：利用第三方平台可以实现发送手机短信验证码和语音验证码的功能，本文使用框架是struts2+spring+hibernate，现就action层给出核心代码功能。 以上是干货分享，已测试验证过！ Java相关学习视频资料分享： https://www.cnblogs.com/bingyimeiling            <a href="https://www.cnblogs.com/bingyimeiling/p/10685461.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-04-10 19:16 冰湖一角 阅读 (580) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=10685461" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bingyimeiling/archive/2019/03/28.html">2019年3月28日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bingyimeiling/p/10615683.html">
+[置顶]    jquery ajax跨域请求后台的简单例子
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：一、简介AJAX 是与服务器交换数据的技术，它在不重载全部页面的情况下，实现了对部分网页的更新。 ajax() 方法通过 HTTP 请求加载远程数据。 该方法是 jQuery 底层 AJAX 实现。简单易用的高层实现见 $.get, $.post 等。$.ajax() 返回其创建的 XMLHttpR            <a href="https://www.cnblogs.com/bingyimeiling/p/10615683.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-03-28 16:06 冰湖一角 阅读 (169) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=10615683" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bingyimeiling/p/10614923.html">
+[置顶]    Java Excel导入导出（实战）
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：一、批量导入（将excel文件转成list） 1. 前台代码逻辑 1）首先在html页面加入下面的代码（可以忽略界面的样式） 2）其次在引入的js里加入以下代码 2. 后台java导入代码逻辑 1）action 层 2）service层 二、导出（将list转成excel文件） 导出可以分为全部导出            <a href="https://www.cnblogs.com/bingyimeiling/p/10614923.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-03-28 14:48 冰湖一角 阅读 (3321) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=10614923" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bingyimeiling/archive/2019/03/25.html">2019年3月25日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bingyimeiling/p/10596041.html">
+[置顶]    抽象类（abstract class）与接口（interface）的异同
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：抽象类：如果一个类中包含抽象方法，那么这个类就是抽象类。在Java语言中，可以通过把类或类中的某些方法声明为abstract（abstract只能修饰类或方法，不能修饰属性）来表示一个类是抽象类。 接口：接口就是指一个方法的集合，接口中的所有方法都没有方法体，在Java语言中，接口是通过关键字int            <a href="https://www.cnblogs.com/bingyimeiling/p/10596041.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-03-25 19:53 冰湖一角 阅读 (111) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=10596041" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bingyimeiling/archive/2019/03/22.html">2019年3月22日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bingyimeiling/p/10580447.html">
+[置顶]    Scanner类详解
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：Scanner类用于获取键盘输入（是一个基于正则表达式的文本扫描器），它可以从文件、字符串、输入流中解析出基本类型值和字符串值。Scanner类提供了多个构造器，不同的构造器可以接收文件、字符串和输入流作为数据源，用于从文件、字符串和输入流中解析数据。 Scanner类主要提供了两个方法来扫描输入：            <a href="https://www.cnblogs.com/bingyimeiling/p/10580447.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-03-22 20:14 冰湖一角 阅读 (307) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=10580447" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bingyimeiling/archive/2019/03/15.html">2019年3月15日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bingyimeiling/p/10533619.html">
+[置顶]    深入理解this关键字
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：Java提供了一个this关键字，this关键字总是指向调用该方法的对象。根据this出现的位置的不同，this作为对象的默认引用有两种情形。 1）构造器中引用该构造器正在初始化的对象。 2）在方法中引用调用该方法的对象。 this关键字最大的作用就是让类中一个方法，访问该类里的另一个方法或者实例变            <a href="https://www.cnblogs.com/bingyimeiling/p/10533619.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-03-15 21:36 冰湖一角 阅读 (276) 评论 (1)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=10533619" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bingyimeiling/archive/2020/04/24.html">2020年4月24日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bingyimeiling/p/12769465.html">
+    Java实现将中文转成拼音和ASCII码
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：最近项目上遇到一个需求：模糊搜索姓名时既可以输入汉字也可以输入拼音进行搜索，这就要求在保存姓名时也要将其拼音保存起来。 好了，废话不说了，直接上代码！ 实现步骤： 1、pom.xml配置文件引入jar包 &lt;dependency&gt; &lt;groupId&gt;com.belerweb&lt;/groupId&gt; &lt;ar            <a href="https://www.cnblogs.com/bingyimeiling/p/12769465.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-24 19:02 冰湖一角 阅读 (4) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12769465" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bingyimeiling/p/12769373.html">
+    Java对称加密算法
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：一、对称加密算法概念 加密密钥和解密密钥相同，大部分算法加密揭秘过程互逆。 特点：算法公开、（相比非对称加密）计算量小、加密速度快、效率高。 弱点：双方都使用同样的密钥，安全性得不到保证。 二、常见对称加密算法 1、DES已破解，不再安全，基本没有企业在用了是对称加密算法的基石，具有学习价值密钥长度            <a href="https://www.cnblogs.com/bingyimeiling/p/12769373.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-24 18:43 冰湖一角 阅读 (10) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12769373" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bingyimeiling/archive/2019/11/28.html">2019年11月28日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bingyimeiling/p/11953078.html">
+    mysql通俗易懂的数据库连接池原理及模拟实现
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：什么是数据库连接池？ 当系统使用JDBC技术访问数据库时会创建一个connection对象，而该对象的创建过程是非常消耗资源的，并且创建对象的时间也特别长，假设系统一天有1万次的访问量，那么一天就会有1万个connection对象被创建，这极大的浪费数据库的资源，而且可能造成数据库服务器内存溢出，宕            <a href="https://www.cnblogs.com/bingyimeiling/p/11953078.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-11-28 19:56 冰湖一角 阅读 (249) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11953078" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bingyimeiling/archive/2019/11/08.html">2019年11月8日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bingyimeiling/p/11820583.html">
+    Java后台使用httpclient入门HttpPost请求（form表单提交，File文件上传和传输Json数据）
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：一、HttpClient&#160;简介 HttpClient 是 Apache Jakarta Common 下的子项目，用来提供高效的、最新的、功能丰富的支持 HTTP 协议的客户端编程工具包，并且它支持 HTTP 协议最新的版本和建议。Java后台使用httpclient主要目的是为了模拟客户端的请求。            <a href="https://www.cnblogs.com/bingyimeiling/p/11820583.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-11-08 15:43 冰湖一角 阅读 (3232) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11820583" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bingyimeiling/archive/2019/10/18.html">2019年10月18日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bingyimeiling/p/11698468.html">
+    单点登录（SSO）解决方案介绍
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：一、单点登录的介绍 单点登录（Single Sign On），简称为 SSO，是目前比较流行的企业业务整合的解决方案之一。SSO的定义是在多个应用系统中，用户只需要登录一次就可以访问所有相互信任的应用系统。 例如：百度旗下有很多的产品，比如百度贴吧、百度知道、百度文库等，只要登录百度账号，在任何一个            <a href="https://www.cnblogs.com/bingyimeiling/p/11698468.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-10-18 15:52 冰湖一角 阅读 (494) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11698468" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bingyimeiling/archive/2019/10/15.html">2019年10月15日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bingyimeiling/p/11679591.html">
+    Java多线程编程
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：一、基本概念 Java 给多线程编程提供了内置的支持。 一条线程指的是进程中一个单一顺序的控制流，一个进程中可以并发多个线程，每条线程并行执行不同的任务。 多线程是多任务的一种特别的形式，但多线程使用了更小的资源开销。 这里定义和线程相关的另一个术语 - 进程：一个进程包括由操作系统分配的内存空间，            <a href="https://www.cnblogs.com/bingyimeiling/p/11679591.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-10-15 19:00 冰湖一角 阅读 (136) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11679591" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bingyimeiling/archive/2019/10/12.html">2019年10月12日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bingyimeiling/p/11663824.html">
+    Java运算符及优先级（全）
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：运算符是一种特殊的符号，用以表示数据的运算、赋值和比较等。 Java运算符分为以下几种： • 算术运算符：+，-，*，/，%，++，-- • 赋值运算符：= •&#160;扩展后的赋值运算符：+=，-=，*=，/=，%=，&amp;=，|=，^=，&lt;&lt;=，&gt;&gt;=，&gt;&gt;&gt;= •&#160;位运算符：&amp;，|，~，^，&lt;&lt;，&gt;&gt;，&gt;            <a href="https://www.cnblogs.com/bingyimeiling/p/11663824.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-10-12 23:26 冰湖一角 阅读 (303) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11663824" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bingyimeiling/archive/2019/10/08.html">2019年10月8日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bingyimeiling/p/11637097.html">
+    Java并发——线程池Executor框架
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：线程池 无限制的创建线程 若采用&quot;为每个任务分配一个线程&quot;的方式会存在一些缺陷，尤其是当需要创建大量线程时： 线程生命周期的开销非常高 资源消耗 稳定性 引入线程池 任务是一组逻辑工作单元，线程则是使任务异步执行的机制。当存在大量并发任务时，创建、销毁线程需要很大的开销，运用线程池可以大大减小开销。            <a href="https://www.cnblogs.com/bingyimeiling/p/11637097.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-10-08 19:21 冰湖一角 阅读 (251) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11637097" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bingyimeiling/archive/2019/09/23.html">2019年9月23日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bingyimeiling/p/11575024.html">
+    零基础快速入门Java的秘诀
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：刚开始学习Java时要端正自己的学习的目标和态度，明确学习Java基础重点要做什么。 首先第一点，Java基础的学习，基础很重要，基础好地基牢，才能爬的高！ 大家要从以下4个方向努力： 如果以上4点都有提高了，那么Java学习的就比较扎实了，上面4个方向是相互促进了，可以学的很快很好。 JAVASE            <a href="https://www.cnblogs.com/bingyimeiling/p/11575024.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-09-23 22:01 冰湖一角 阅读 (196) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11575024" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/bingyimeiling/archive/2019/09/20.html">2019年9月20日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/bingyimeiling/p/11560106.html">
+    给入门程序员的一些学习建议（一定要看）
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：之前有一些人问我java怎么学？其实我第一个建议是：“敲代码！敲代码！不光要看，更要干！”，很多人光看不练，视频收藏了一堆，就是不看，或者看了一堆视频，就是不敲。这种学习方式：没用！只有你敲了代码之后，这个内容才是你的。 当你学编程的时候，要看看你的键盘，以敲坏键盘为人生目标！什么时候你通过敲代码把            <a href="https://www.cnblogs.com/bingyimeiling/p/11560106.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-09-20 22:14 冰湖一角 阅读 (603) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11560106" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+
+<div class="topicListFooter">
+    <div id="nav_next_page">
+        
+    <a href="https://www.cnblogs.com/bingyimeiling/default.html?page=2">
+        下一页
+    </a>
+
+    </div>    
+</div>
+
+
+
+
+
+
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+			<div id="calendar"><div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script></div>
+			
+			<DIV id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</DIV>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 冰湖一角
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    
+</body>
+</html>

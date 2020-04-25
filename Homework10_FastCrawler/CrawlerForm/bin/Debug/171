@@ -1,0 +1,435 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>其实还好啦 - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    <link id="MainCss" rel="stylesheet" href="/skins/coffee/bundle-coffee.min.css?v=pdMIVgsH8kXt-vOWnlL0N20TlHt3UyP9HzGgocfsP4s" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/coffee/bundle-coffee-mobile.min.css?v=na9bpAY4yh7uEWCcrXj3vfJM3VBse8YtU6-5fUUQPz0" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/python0921/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/python0921/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/python0921/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 589469;
+        var currentBlogApp = 'python0921';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'coffee';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    <div id="page_begin_html">
+        <img src="https://files.cnblogs.com/files/python0921/123.gif" width="150px" height="150px"><br>
+<b>加群免费送资料哟</b>
+    </div>
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+	<a href="https://www.cnblogs.com/python0921/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>			
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/python0921/">其实还好啦</a>
+</h1>
+<h2>
+
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		<div id="navigator">
+			
+<ul id="navList">
+	<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+	<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/python0921/">
+首页</a>
+</li>
+	<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+	<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E5%85%B6%E5%AE%9E%E8%BF%98%E5%A5%BD%E5%95%A6">
+联系</a></li>
+	<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+	<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/python0921/rss/">
+订阅</a>
+	
+<a id="blog_nav_rss_image" href="https://www.cnblogs.com/python0921/rss/">
+    <img src="/skins/coffee/images/xml.gif" alt="订阅" />
+</a></li>
+</ul>
+
+
+
+			<div class="blogStats">
+				
+				<!--done-->
+随笔- 
+160&nbsp;
+文章- 
+7&nbsp;
+评论- 
+14&nbsp;
+
+
+
+				
+			</div><!--end: blogStats -->
+		</div><!--end: navigator 博客导航栏 -->
+		
+<!--done-->
+
+
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/python0921/archive/2020/04/24.html">2020年4月24日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/python0921/p/12769942.html">
+    Python 代码编辑器怎么选？PyCharm、VS Code、Jupyter Notebook 都各有特色
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：Python 代码编辑器怎么选？PyCharm、VS Code、Jupyter Notebook 都各有特色，Jupyter 适合做数据分析这些需要可视化的操作，PyCharm 更适合做完整的 Python 项目。然而，因为交互式操作，很少会有开发者想到用 Jupyter 做 Debug。 尽管很多            <a href="https://www.cnblogs.com/python0921/p/12769942.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-24 20:40 其实还好啦 阅读 (29) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12769942" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/python0921/p/12769734.html">
+    吃瓜的正确姿势，Python绘制罗志祥词云图
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：前言 文的文字及图片来源于网络,仅供学习、交流使用,不具有任何商业用途,版权归原作者所有,如有问题请及时联系我们以作处理。 这篇文章中向大家介绍了Python绘制词云的方法，不难看出绘制词云可以说是一个“吃瓜神器”，它可以让我们直观的看到新闻的核心内容。那么对于今天的大新闻，我们就继续用Python            <a href="https://www.cnblogs.com/python0921/p/12769734.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-24 19:50 其实还好啦 阅读 (28) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12769734" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/python0921/p/12768624.html">
+    爬虫与反爬相生相克，道高一丈魔高一尺，如何隐藏ID（附代码）
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：Python 反爬篇之 ID 混淆 作为爬虫的一方，如果知道了某个站点的数据自增 ID，那么就能轻而易举把整个站点都爬下来。 是不是有点耸人听闻，你去看很多大站例如油管、P 站等，他们都不会轻易把业务的自增 ID 暴露出来，而是用一种可逆的 hash 字符串替代。 其中，最常用的 ID 混淆就是 H            <a href="https://www.cnblogs.com/python0921/p/12768624.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-24 17:00 其实还好啦 阅读 (24) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12768624" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/python0921/p/12768081.html">
+    资料整理：python接口类
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：1开发原则（七大原则） 一：开放封闭原则 二：接口隔离原则（将不同接口对象一一展现出来，分别调用各自的接口，完成各自的功能） 三：依赖倒置原则 高级模块不能依赖低级模块，可以依赖抽象 规范的定义： 高层模块不应该依赖低层模块，两者都应该依赖抽象 抽象不应该依赖细节 细节应该依赖抽象 自己的理解（抽象            <a href="https://www.cnblogs.com/python0921/p/12768081.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-24 16:05 其实还好啦 阅读 (34) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12768081" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/python0921/p/12767125.html">
+    PyCharm 2020.1稳定版新增功能盘点，相信可以打开新世界的大门！
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：众所周知，PyCharm有一整套在使用Python语言可以提高其开发效率的工具，而且IDE提供了一些用于Django框架下专业Web开发的高级功能。本月PyCharm 2020.1 稳定版已经发布，rebase 分支的可视化操作，更智能的PyCharm 调试器，专为编码设计的字体等等，更多的新增功能            <a href="https://www.cnblogs.com/python0921/p/12767125.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-24 14:11 其实还好啦 阅读 (33) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12767125" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/python0921/p/12766923.html">
+    新手想掌握Python技能需要众多Python项目练习，适合项目有哪些？
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：适合新手练习的Python项目有哪些？简单易上手的Python项目汇总：Web 项目设计：内容聚合器、正则表达式查询工具、网址缩短、便利贴、功能、测验、GUI 项目设计：MP3 播放器、闹铃提醒工具、文件管理器、记账功能、命令行项目设计：通讯录、网站连接检查、批量文件重命名工具、目录树生成器。 一、            <a href="https://www.cnblogs.com/python0921/p/12766923.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-24 13:38 其实还好啦 阅读 (16) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12766923" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/python0921/archive/2020/04/23.html">2020年4月23日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/python0921/p/12764033.html">
+    使用python玩阴阳师，自动抽到SSR
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：前言 现在版本官方已经有了自动御魂、觉醒和探索的脚本了。 既然是这样那不如就搞一个抽卡的脚本好了，这样大佬（土豪，欧皇）们 几百连抽就不用画符，和点SSR点到手软了XD。 不简单的具体实现 1、通过adb截图判断是否在抽卡界面 2、在的话，使用matchTemplate()函数识别开始召唤的按钮 3            <a href="https://www.cnblogs.com/python0921/p/12764033.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-23 22:17 其实还好啦 阅读 (7) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12764033" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/python0921/p/12763985.html">
+    python里的内置函数你知道有多少个吗？
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：Python 内置函数最全汇总： 1 abs() 绝对值或复数的模 2 all() 接受一个迭代器，如果迭代器的所有元素都为真，那么返回True，否则返回False 3 any() 接受一个迭代器，如果迭代器里有一个元素为真，那么返回True，否则返回False 4 ascii() 调用对象的rep            <a href="https://www.cnblogs.com/python0921/p/12763985.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-23 22:11 其实还好啦 阅读 (41) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12763985" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/python0921/p/12763709.html">
+    为什么选择python？
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：Why python？ 那些最好的程序员不是为了得到更高的薪水或者得到公众的仰慕而编程，他们只是觉得这是一件有趣的事情。 —— Linux 之父 Linux Torvalds 作为一个使用主义的学习者，最关心的问题一定是“我为什么要选择python，学会之后我可以用来做什么？” 首先，对于初学者来说            <a href="https://www.cnblogs.com/python0921/p/12763709.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-23 21:35 其实还好啦 阅读 (56) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12763709" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/python0921/p/12761083.html">
+    Python爬虫用什么框架比较好？
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：前言 本文的文字及图片来源于网络,仅供学习、交流使用,不具有任何商业用途,版权归原作者所有,如有问题请及时联系我们以作处理。 Python爬虫一般用什么框架比较好？一般来讲，只有在遇到比较大型的需求时，才会使用Python爬虫框架。这样的做的主要目的，是为了方便管理以及扩展。本文将向大家推荐十个Py            <a href="https://www.cnblogs.com/python0921/p/12761083.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-23 15:27 其实还好啦 阅读 (62) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12761083" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+
+<div class="topicListFooter">
+    <div id="nav_next_page">
+        
+    <a href="https://www.cnblogs.com/python0921/default.html?page=2">
+        下一页
+    </a>
+
+    </div>    
+</div>
+
+
+
+
+
+
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+			<div id="calendar"><div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script></div>
+			
+			<DIV id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</DIV>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 其实还好啦
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    
+</body>
+</html>

@@ -1,0 +1,503 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>随笔列表第2页 - 蚂蚁style - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    <link id="MainCss" rel="stylesheet" href="/skins/coffee/bundle-coffee.min.css?v=pdMIVgsH8kXt-vOWnlL0N20TlHt3UyP9HzGgocfsP4s" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/coffee/bundle-coffee-mobile.min.css?v=na9bpAY4yh7uEWCcrXj3vfJM3VBse8YtU6-5fUUQPz0" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/zhaoletian/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/zhaoletian/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/zhaoletian/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 503265;
+        var currentBlogApp = 'zhaoletian';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'coffee';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+	<a href="https://www.cnblogs.com/zhaoletian/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>			
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/zhaoletian/">蚂蚁style</a>
+</h1>
+<h2>
+
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		<div id="navigator">
+			
+<ul id="navList">
+	<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+	<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/zhaoletian/">
+首页</a>
+</li>
+	<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+	<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E8%9A%82%E8%9A%81style">
+联系</a></li>
+	<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+	<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/zhaoletian/rss/">
+订阅</a>
+	
+<a id="blog_nav_rss_image" href="https://www.cnblogs.com/zhaoletian/rss/">
+    <img src="/skins/coffee/images/xml.gif" alt="订阅" />
+</a></li>
+</ul>
+
+
+
+			<div class="blogStats">
+				
+				<!--done-->
+随笔- 
+20&nbsp;
+文章- 
+3&nbsp;
+评论- 
+0&nbsp;
+
+
+
+				
+			</div><!--end: blogStats -->
+		</div><!--end: navigator 博客导航栏 -->
+		
+<!--done-->
+
+
+<div id="homepage_top_pager" class="topicListFooter">
+    
+
+<div class="pager">
+    <a href="https://www.cnblogs.com/zhaoletian/default.html?page=1">上一页</a>
+    
+    
+        <a href="https://www.cnblogs.com/zhaoletian/default.html?page=1">1</a>
+    2
+    
+    
+    
+</div>
+</div>
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/zhaoletian/archive/2019/11/11.html">2019年11月11日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/zhaoletian/p/11660142.html">
+    Maven从入门到精通（三）
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：我们已经了解了Maven的环境搭建以及POM的主要标签及作用,接下来我们要讲解一下Maven的仓库以及jar下载的一个过程 首先我们要明白仓库及以下一些概念 1、仓库： 在Maven中，任何一个依赖、插件或者项目构建的输出，都可以称之为构件。Maven核心程序仅仅定义了自动化构建项目的生命周期，但具            <a href="https://www.cnblogs.com/zhaoletian/p/11660142.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-11-11 13:35 蚂蚁style 阅读 (29) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11660142" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/zhaoletian/archive/2019/10/11.html">2019年10月11日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/zhaoletian/p/11656937.html">
+    Maven从入门到精通（二）
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：上一篇我们讲解了Maven项目的基本目录结构，也已经安装了Maven的开发环境，接下来我们要重点讲解一下Maven最核心的灵魂pom.xml文件 POM:Project Object Model 项目对象模型 把项目对象描述在pom.xml配置文件之中,只要我们研究明白pom.xml Maven我们            <a href="https://www.cnblogs.com/zhaoletian/p/11656937.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-10-11 22:11 蚂蚁style 阅读 (47) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11656937" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/zhaoletian/archive/2019/10/10.html">2019年10月10日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/zhaoletian/p/11644718.html">
+    Maven从入门到精通（一）
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：maven是一个项目管理工具,我的后续将会根据这个思维导图给大家由浅到深讲解Maven是如何管理我们的项目,以及我们如何更好的使用Maven maven在开发过程中功能主要有三个方面： 管理依赖 (POM引入依赖即可自动下载对应jar包) 自动化构建项目(源程序--&gt;(编译，测试，打包，安装，部属)            <a href="https://www.cnblogs.com/zhaoletian/p/11644718.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-10-10 10:52 蚂蚁style 阅读 (106) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11644718" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/zhaoletian/archive/2019/08/02.html">2019年8月2日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/zhaoletian/p/11286845.html">
+    swagger生成文档初步使用
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：在大部分情况下,公司都会要求提供详细的接口文档,对于开发来说,文档有时候在赶进度的情况下,也是一件头疼的事.而swagger的自动生成文档功能,就可以帮助我们减少工作量,对于文档的修改也可以在代码中随时修改,对于项目比较急的项目也不失为一种好的解决方案. 对于springboot项目,需要引入相关依            <a href="https://www.cnblogs.com/zhaoletian/p/11286845.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-08-02 18:36 蚂蚁style 阅读 (690) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11286845" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/zhaoletian/archive/2019/05/06.html">2019年5月6日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/zhaoletian/p/10821426.html">
+    浅谈spring配置定时任务的几种方式
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：网上看到好多关于定时任务的讲解，以前只简单使用过注解方式，今天项目中看到基于配置的方式实现定时任务，自己做个总结，作为备忘录吧。 基于注解方式的定时任务 首先spring-mvc.xml的配置文件中添加约束文件 其次需要配置注解驱动 添加你添加注解的扫描包 最后贴上定时任务包代码 基于配置的定时任务            <a href="https://www.cnblogs.com/zhaoletian/p/10821426.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-05-06 19:06 蚂蚁style 阅读 (3473) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=10821426" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/zhaoletian/archive/2019/03/28.html">2019年3月28日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/zhaoletian/p/10613427.html">
+    java 简单认识移位运算符和位运算符
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：移位运算符和位运算符本质上都是操作二进制位，因为计算机存储的是二进制数据，运算效率相对较高。 移位运算符:把整数的二进制位进行左移或右移 .左移一位,相当于这个数乘以2, 右移一位,相当于这个数除以2 位运算符： 按位与 &amp; 按位或 | 按位异或 ^            <a href="https://www.cnblogs.com/zhaoletian/p/10613427.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-03-28 10:42 蚂蚁style 阅读 (641) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=10613427" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/zhaoletian/p/10613173.html">
+    初识java java的加载与执行(JDK,JVM,JRE关系解释)
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：首先java代码是以 .java结尾的文件，通过javac命令编译生成.class编译生成字节码文件，再通过java命令，把字节码文件加载到内存内部，此时是类加载器ClassLoader执行加载,通过JIT对字节码文件进行解释执行，我们此时针对不同的操作系统，翻译成操作系统对应的机器语言。所有jav            <a href="https://www.cnblogs.com/zhaoletian/p/10613173.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-03-28 10:26 蚂蚁style 阅读 (44) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=10613173" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/zhaoletian/archive/2019/03/22.html">2019年3月22日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/zhaoletian/p/10576669.html">
+    java filter过滤器及责任链设计模式
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：Filter属于sevlet规范，翻译为过滤器。 Filter在web开发中有什么作用？ 案例一：一个web站点只有用户登录才能继续访问该站点的资源，那么需要用户每次访问都判断是否登陆，若在每个servlet中都写上登陆判断安全控制代码，代码冗余，复用性差，Filter可以很好的解决这个问题。 案例            <a href="https://www.cnblogs.com/zhaoletian/p/10576669.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-03-22 10:37 蚂蚁style 阅读 (1412) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=10576669" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/zhaoletian/archive/2019/03/21.html">2019年3月21日</a>
+    </div>
+
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/zhaoletian/p/10575279.html">
+    java  浅谈web系统当中的cookie和session会话机制
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：一　Cookie: 1.　Cookie翻译为小甜饼，有一种特殊的味道。cookie主要用来在(浏览器)客户端做记号用的。Cookie不属于java,Cookie是一种通用的机制，属于HTTP协议的一部分，也就是说PHP开发都会涉及到Cookie. 2.　Cookie在web开发中的作用是什么呢？存储            <a href="https://www.cnblogs.com/zhaoletian/p/10575279.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-03-21 22:35 蚂蚁style 阅读 (254) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=10575279" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+
+</div>
+
+
+
+<div class="topicListFooter">
+    <div id="nav_next_page">
+        
+
+    </div>    
+</div>
+
+
+<div id="homepage_bottom_pager" class="topicListFooter">
+    
+
+<div class="pager">
+    <a href="https://www.cnblogs.com/zhaoletian/default.html?page=1">上一页</a>
+    
+    
+        <a href="https://www.cnblogs.com/zhaoletian/default.html?page=1">1</a>
+    2
+    
+    
+    
+</div>
+</div>
+
+
+
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+			<div id="calendar"><div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script></div>
+			
+			<DIV id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</DIV>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 蚂蚁style
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    
+</body>
+</html>

@@ -1,0 +1,475 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>八重樱 - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    <link id="MainCss" rel="stylesheet" href="/skins/blacklowkey/bundle-blacklowkey.min.css?v=Fx4xdLkGuHnlaG7xntG_wAnZrnorJWp5u_TWKqbvMF0" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/blacklowkey/bundle-blacklowkey-mobile.min.css?v=cYvlxMu_nd6MVfg-vi7YqOC6FaZ7VHFsDM166vO_ekA" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/a609251438/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/a609251438/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/a609251438/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 557004;
+        var currentBlogApp = 'a609251438';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'BlackLowKey';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/a609251438/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/a609251438/">Raylove</a>
+</h1>
+<h2>
+
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/a609251438/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E5%85%AB%E9%87%8D%E6%A8%B1">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/a609251438/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<span id="stats_post_count">随笔 - 
+257&nbsp; </span>
+<span id="stats_article_count">文章 - 
+0&nbsp; </span>
+<span id="stats-comment_count">评论 - 
+19</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<!--done-->
+
+
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/a609251438/archive/2020/03/17.html">2020年3月17日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/a609251438/p/12510476.html">
+[置顶]    基于RabbitMQ和Swoole实现的一个完整的异步任务系统
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：从最开始的使用redis实现的单进程消费的异步任务系统到加入swoole的多进程消费模式，现在，我们的异步任务系统终于又能迈进一步。 因为有了前面两个简单系统的经验，这回基于RabbitMQ的异步任务系统设计的的更加完善，包括多进程消费，异常重试等。 系统介绍 消费端架构图 从图中可以看到，我们这个            <a href="https://www.cnblogs.com/a609251438/p/12510476.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-03-17 14:25 八重樱 阅读 (132) 评论 (1)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12510476" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/a609251438/archive/2020/04/24.html">2020年4月24日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/a609251438/p/12769695.html">
+    通过 Swoole\Table 实现 Swoole 多进程数据共享
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：第三方存储媒介 前面我们介绍了基于 Swoole 的&#160;Process&#160;及&#160;Process\Pool&#160;模块在 PHP 中实现多进程管理，但是多进程模式下进程间是相互隔离的，无法共享数据和变量，即便是通过&#160;global&#160;定义的全局或超全局变量，也只是在所属进程中有效，如果要在 Swoole 实现的多进程            <a href="https://www.cnblogs.com/a609251438/p/12769695.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-24 19:40 八重樱 阅读 (48) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12769695" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/a609251438/p/12767506.html">
+    关于PHP7.0与PHP5.6下Laravel博客应用性能对比分析详解
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：目前我安装的 Homestead 虚拟机版本是 2.1.8： 该版本 Homestead 上预装的 PHP 版本是 5.6.15： 我们使用 ab 命令（Apache 提供的性能测试工具）在该版本中测试 Laravel 应用（以目前正在讲的使用Laravel开发的博客应用为例）性能，我们模拟 100            <a href="https://www.cnblogs.com/a609251438/p/12767506.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-24 15:02 八重樱 阅读 (13) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12767506" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/a609251438/p/12767228.html">
+    thinkphp中__construct()和__initialize()的介绍
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：关于thinkphp中的__construct()和_initialize()的理解 网上有很多的说法和用法，自己测试了一下，下面是根据测试结果并结合自己的理解得出的结论，如有不对的地方，欢迎大家纠正！！！ 我们先看一下Thinkphp自带的Controlle类的内容（ThinkPHP\Librar            <a href="https://www.cnblogs.com/a609251438/p/12767228.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-24 14:25 八重樱 阅读 (17) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12767228" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/a609251438/archive/2020/04/23.html">2020年4月23日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/a609251438/p/12761548.html">
+    使用redis-dump与redis-load方式迁移redis数据库
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：实际生产场景中，有可能会因为迁移机房或者更换物理机等原因需要在生产环境迁移redis数据。本文就来为大家介绍一下迁移redis数据的方法。 迁移redis数据一般有如下3种方式： 1、第三方工具redis-dump，redis-load 2、aof机制，需要开启aof功能 3、rdb存储机制 这里介            <a href="https://www.cnblogs.com/a609251438/p/12761548.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-23 16:09 八重樱 阅读 (16) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12761548" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/a609251438/p/12760514.html">
+    Laravel v7.7 发布 容器支持可变参数
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：Laravel 团队昨天发布了 v7.7.0，其中包含容器支持的构造函数支持可变参数，一些新的 HTTP 客户端功能，Blueprint 新增 rawIndex() 方法以及 7.x 分支中的所有最新功能，修复和更改 ： HTTP 客户端 GET 请求 支持数组 Daniel Mason 贡献了 H            <a href="https://www.cnblogs.com/a609251438/p/12760514.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-23 14:18 八重樱 阅读 (19) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12760514" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/a609251438/archive/2020/04/22.html">2020年4月22日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/a609251438/p/12755713.html">
+    让你的Laravel 应用运行速度飞起来！（利用PHP OPcache）
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：什么是 Opcache 每一次执行 PHP 脚本的时候，该脚本都需要被编译成字节码，而 OPcache 可以对该字节码进行缓存，这样，下次请求同一个脚本的时候，该脚本就不需要重新编译，这极大节省了脚本的执行时间，从而让应用运行速度更快，同时也节省了服务器的开销。 用数字说话 我们当然很想知道到底进行            <a href="https://www.cnblogs.com/a609251438/p/12755713.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-22 20:35 八重樱 阅读 (32) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12755713" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/a609251438/p/12755280.html">
+    为什么我们还会继续使用 PHP ?
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：我们来开门见山地说。 PHP 是一门奇葩的语言。它既不快，语法又不漂亮。还没有遵守良好的软件开发实践。 但我还是使用它开发了很多软件。 那么问题就很明显了 为什么今天还在使用 PHP ？ 除了个人理想主义的偏好以外，还有很多理由。这才是我们要讨论的范围。为什么选 PHP 作为我的 Web 开发语言？            <a href="https://www.cnblogs.com/a609251438/p/12755280.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-22 19:12 八重樱 阅读 (60) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12755280" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/a609251438/p/12751828.html">
+    吊打面试官系列：Redis 性能优化的 13 条军规大全
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：1.缩短键值对的存储长度 键值对的长度是和性能成反比的，比如我们来做一组写入数据的性能测试，执行结果如下： 从以上数据可以看出，在 key 不变的情况下，value 值越大操作效率越慢，因为 Redis 对于同一种数据类型会使用不同的内部编码进行存储，比如字符串的内部编码就有三种：int（整数编码）            <a href="https://www.cnblogs.com/a609251438/p/12751828.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-22 14:22 八重樱 阅读 (44) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12751828" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/a609251438/archive/2020/04/21.html">2020年4月21日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/a609251438/p/12747942.html">
+    Laravel 7.6 发布
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：Laravel 团队昨天发布了 v7.6.0，其中包含 13 个新功能以及 7.x 分支的最新修复和更改： 集合新增 “until” 方法 Jason McCreary 贡献了&#160;Collection::until()&#160;方法， 该方法可以循环遍历集合直到元素满足条件再将该元素返回： // Before            <a href="https://www.cnblogs.com/a609251438/p/12747942.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-21 21:22 八重樱 阅读 (49) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12747942" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/a609251438/p/12745793.html">
+     Laravel 8 新功能：使用 schema:dump 来加速 Migration 和测试
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：Laravel 8 将于今年晚些时候发布一个新的 schema:dump 命令。 此命令对现有项目非常有用，因为它删除了不再需要的旧迁移并加快了测试和 CI process。 Taylor Otwell 在他的 pull request 中解释了此功能： 此 PR 增加了 php artisan s            <a href="https://www.cnblogs.com/a609251438/p/12745793.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-21 16:57 八重樱 阅读 (33) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12745793" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+
+<div class="topicListFooter">
+    <div id="nav_next_page">
+        
+    <a href="https://www.cnblogs.com/a609251438/default.html?page=2">
+        下一页
+    </a>
+
+    </div>    
+</div>
+
+
+
+
+
+
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 八重樱
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    
+</body>
+</html>

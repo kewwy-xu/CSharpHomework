@@ -1,0 +1,1029 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Mysticbinary - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    <link id="MainCss" rel="stylesheet" href="/skins/custom/bundle-custom.min.css?v=1ssrnY3Il79Ok472qeVrpxlSprSXcHhYPgZC5S3wtVM" />
+    <link type="text/css" rel="stylesheet" href="https://www.cnblogs.com/mysticbinary/custom.css?v=P2sh9pCCfTyiEWGg704yg4/Ccoo=" />
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/custom/bundle-custom-mobile.min.css?v=-Yh290MhQyDeXLmvKTSses9H6-49lqbpXFh55zvS0w8" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/mysticbinary/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/mysticbinary/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/mysticbinary/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 479490;
+        var currentBlogApp = 'mysticbinary';
+        var cb_enable_mathjax = true;
+        var isLogined = false;
+        var skinName = 'Custom';
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], processClass: 'math', processEscapes: true },
+        TeX: {
+        equationNumbers: { autoNumber: ['AMS'], useLabelIds: true },
+        extensions: ['extpfeil.js', 'mediawiki-texvc.js'],
+        Macros: {bm: "\\boldsymbol"}
+        },
+        'HTML-CSS': { linebreaks: { automatic: true } },
+        SVG: { linebreaks: { automatic: true } }
+        });
+    </script>
+    <script src="https://mathjax.cnblogs.com/2_7_5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/mysticbinary/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/mysticbinary/">Mysticbinary</a>
+</h1>
+<h2>
+不断验证与修复我所构建的模型。
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/mysticbinary/">
+首页</a>
+</li>
+<li>
+
+
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/Mysticbinary">
+联系</a></li>
+<li>
+
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<span id="stats_post_count">随笔 - 
+66&nbsp; </span>
+<span id="stats_article_count">文章 - 
+24&nbsp; </span>
+<span id="stats-comment_count">评论 - 
+10</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<!--done-->
+
+
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/mysticbinary/archive/2020/04/24.html">2020年4月24日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/mysticbinary/p/12767251.html">
+    msf ms17_010 port:445
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：命令： 打印结果： 利用永恒之蓝成功！但返回的只是一个cmdshell ; 因为msf默认用的paylaod是： 我们可以设置成其他payload: 只要设置 和`rport`就OK了; 运行，这个时候就反弹的就是一个meterpreter会话 （更强的payload）。 使用正向的payload也            <a href="https://www.cnblogs.com/mysticbinary/p/12767251.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-24 14:28 Mysticbinary 阅读 (7) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12767251" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/mysticbinary/p/12767121.html">
+    nmap 检测ms17-010 port:445
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：命令： 打印结果： x.x.x.x/24 = x.x.x.1~255 从结果可以看出，内网中192.168.119.139这台主机存在ms 17 010漏洞； 参考 https://cloud.tencent.com/developer/article/1541123            <a href="https://www.cnblogs.com/mysticbinary/p/12767121.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-24 14:10 Mysticbinary 阅读 (5) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12767121" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/mysticbinary/archive/2020/04/23.html">2020年4月23日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/mysticbinary/p/12762917.html">
+    msf mysql port:3306
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：1. nmap扫出3306端口的话，就往下； 2. 搜索漏洞 3. 使用该漏洞 4. 查看该漏洞用法 5. 向rhosts输入ip，看到可以正常访问mysql 6. 找一个测试爆破的用户名字典和密码字典进行爆破 7. run            <a href="https://www.cnblogs.com/mysticbinary/p/12762917.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-23 19:11 Mysticbinary 阅读 (10) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12762917" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/mysticbinary/p/12762841.html">
+    msf ssh port:22
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：1. 在终端中输入命令“nmap 192.168.1.3”，对目标主机进行端口扫描，发现主机开放22端口; 2. 在终端中输入命令“msfconsole”，启动MSF终端 3. 在终端中输入命令“search ssh_login”，搜索ssh_login的相关工具和攻击载荷; 4. 在终端中输入命令            <a href="https://www.cnblogs.com/mysticbinary/p/12762841.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-23 18:54 Mysticbinary 阅读 (9) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12762841" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/mysticbinary/archive/2020/04/21.html">2020年4月21日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/mysticbinary/p/12743020.html">
+    Wireshark的两种过滤器与BPF过滤规则
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：Wirshark使用的关键就在于过滤出想要的数据包，下面介绍怎么过滤。 抓包过滤器 Wirshark有两种过滤器，一个是抓包过滤器，一个是显示过滤器，他们之间的 在于 只抓取你设置的规则，同时丢弃其他信息， 并不会丢弃信息，只是将不符合规则的数据隐藏起来而已。有时候一旦数据包被丢弃，这些数据包就无法            <a href="https://www.cnblogs.com/mysticbinary/p/12743020.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-21 16:25 Mysticbinary 阅读 (130) 评论 (1)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12743020" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/mysticbinary/archive/2020/04/20.html">2020年4月20日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/mysticbinary/p/12739862.html">
+    Wireshark使用记录
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：TCP/IP协议族里的协议众多 要一一精通比较困难，在一些紧急急需要分析主机、客户端的流量场景时，不懂协议也要上！下面就是用到哪里就记录到哪，有错误欢迎评论指出，多谢。 wireshark这玩意相当于电脑的总网络代理，不像burpsuite只有只能拦截浏览器的http/https两种协议，电脑上使用            <a href="https://www.cnblogs.com/mysticbinary/p/12739862.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-20 20:06 Mysticbinary 阅读 (60) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12739862" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/mysticbinary/archive/2020/04/17.html">2020年4月17日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/mysticbinary/p/12703036.html">
+    过滤搜索引擎的抓取数据
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：一些规定 搜索引擎不区分大小写； Google限制最多搜索32个单词，包含搜索项和高级运算符。不过也有一些其他方法绕过这种限制，比如使用通配符来代替某些搜索项。 同样的搜索语法，百度有时也会得到惊喜。 基础型查询 inurl 搜索包含有特定字符的URL。例如输入 ，则可以找到带有admin_logi            <a href="https://www.cnblogs.com/mysticbinary/p/12703036.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-17 16:16 Mysticbinary 阅读 (204) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12703036" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/mysticbinary/p/12718864.html">
+    WEB容器开启、关闭OPTIONS方法
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：发现 请求包随意，响应包信息如下： 特征： 关闭options方案 关闭options得根据服务器使用的WEB容器种类来决定方法，下面列举主流的。 ngixn 参考： https://blog.csdn.net/doIt999/article/details/51160871 tomcat 参考：             <a href="https://www.cnblogs.com/mysticbinary/p/12718864.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-17 11:50 Mysticbinary 阅读 (25) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12718864" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/mysticbinary/archive/2020/04/16.html">2020年4月16日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/mysticbinary/p/12711809.html">
+    代码泄露到Github
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：Hawkeye 鹰眼 github https://github.com/0xbug/Hawkeye 教程 https://my.oschina.net/adailinux/blog/1609221 GSIL https://github.com/FeeiCN/GSIL/blob/master/RE            <a href="https://www.cnblogs.com/mysticbinary/p/12711809.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-16 12:02 Mysticbinary 阅读 (20) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12711809" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/mysticbinary/archive/2020/04/15.html">2020年4月15日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/mysticbinary/p/12705375.html">
+    fastjson rce 利用记录
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：Fastjson &quot;a&quot;: { &quot;@type&quot;: &quot;java.lang.Class&quot;, &quot;val&quot;: &quot;com.sun.rowset.JdbcRowSetImpl&quot; &quot;@type&quot;: &quot;com.sun.rowset.JdbcRowSetImpl&quot;, br / }, &quot;b&quot;: { &quot;@type&quot;: &quot;            <a href="https://www.cnblogs.com/mysticbinary/p/12705375.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-15 15:01 Mysticbinary 阅读 (34) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12705375" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/mysticbinary/p/12703542.html">
+    网络地址转换NAT的两种模式（概念浅析）&amp; IP溯源
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：由于全球IPv4地址越来越少、越来越贵，因此大到一个组织，小到一个家庭一个人都很难获得公网IP地址，所以只能使用内网地址，从而和别人共享一个公网IP地址。在这种情况下，NAT技术诞生。 翻译 NAT（Network Address Translation：网络地址转换）是将IP 数据包头中的IP 地            <a href="https://www.cnblogs.com/mysticbinary/p/12703542.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-15 10:21 Mysticbinary 阅读 (21) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12703542" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/mysticbinary/archive/2020/04/13.html">2020年4月13日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/mysticbinary/p/12689743.html">
+    springboot actuator 配置安全
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：springboot actuator监控是什么？类似php的phpinfor()函数，不过actuator更强大，可以查看的数据、状态更多。Actuator是Spring Boot提供的对应用系统的监控和管理的集成功能，可以查看应用配置的详细信息，例如自动化配置信息、创建的Spring beans            <a href="https://www.cnblogs.com/mysticbinary/p/12689743.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-13 10:21 Mysticbinary 阅读 (65) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12689743" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/mysticbinary/archive/2020/04/10.html">2020年4月10日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/mysticbinary/p/12675113.html">
+    HTTP头Content-Type类型记录
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：默认发POST格式 Content Type: application/x www form urlencoded 发JSON格式 Content Type: application/json; charset=utf 8            <a href="https://www.cnblogs.com/mysticbinary/p/12675113.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-10 18:18 Mysticbinary 阅读 (14) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12675113" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/mysticbinary/archive/2020/04/09.html">2020年4月9日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/mysticbinary/p/12569054.html">
+    XXE白盒审计 PHP
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：XXE与XML注入的区别 https://www.cnblogs.com/websecurity study/p/11348913.html XXE又分为内部实体和外部实体。我简单区分为内部实体就是自己构造一个功能体，外部实体就是可以引入外部文件。 原理 服务器加载外部实体声明``，导致被入侵。如下            <a href="https://www.cnblogs.com/mysticbinary/p/12569054.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-09 18:10 Mysticbinary 阅读 (26) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12569054" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/mysticbinary/p/12668547.html">
+    XXE验证与利用流程
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：特征 特征1 .ashx 看到url是 .ashx后缀的 特征2 响应体是xml 发现有这些特征都可以用下面的流程测试 测试 在线工具： 我这里用 举例 pyload 把 替换成你的 ` 然后点 ，有访问记录就说明666了。 任意读取文件测试 原理就是构造一个可以访问系统默认文件hosts的Pylo            <a href="https://www.cnblogs.com/mysticbinary/p/12668547.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-09 18:00 Mysticbinary 阅读 (22) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12668547" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/mysticbinary/archive/2020/04/08.html">2020年4月8日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/mysticbinary/p/12662399.html">
+    Mac brew安装mysql5.7
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：安装 设置密码 启动之后，输入一行命令 ` 5.7.x对设置的密码有严格的要求，分为LOW、MEDIUM、STRONG三个等级，对应要求如下： 选low即可，输入8位，我这里使用12345678 ，其他一路y确认即可。 启动 shell ➜ ~ brew services start mysql@5            <a href="https://www.cnblogs.com/mysticbinary/p/12662399.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-08 20:03 Mysticbinary 阅读 (55) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12662399" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/mysticbinary/p/12661425.html">
+    Mac使用Visual Studio Code运行Python
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：之前一直用pycharm开发python程序，这个ide编辑器确实香，一点毛病都没有，唯一毛病就是太贵了。也看到很多人在用免费、开源的Visual Studio Code， 开发的这个ide也号称宇宙最强ide，不知道我用了会不会变强。下面是配置并运行python的过程，记录一下，安装就不说了，直接            <a href="https://www.cnblogs.com/mysticbinary/p/12661425.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-08 17:41 Mysticbinary 阅读 (44) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12661425" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/mysticbinary/archive/2020/04/04.html">2020年4月4日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/mysticbinary/p/12633233.html">
+    用brew安装nginx并配置
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：安装流程 这里使用 brew 来安装软件。 安装 查看安装信息(经常用到, 比如查看安装目录等) 安装后，主要看brew把nginx安装到哪里去了，默认是安装到 常用命令记录 如果不好使，统一在命令前面加上sudo； 查看nginx版本 启动nginx服务 访问： 后，看到如下内容就是启动成功了。             <a href="https://www.cnblogs.com/mysticbinary/p/12633233.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-04 18:50 Mysticbinary 阅读 (30) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12633233" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/mysticbinary/p/12631999.html">
+    CentOS rpm常用功能记录
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：CentOS7主要有rpm和yum这两种包软件的管理。两者有功能上的区别，其中主要区别是：yum使用简单但需要联网，yum会去网上包源去获取所需要的软件包。而rpm的需要做的事情就更细一些，比如我们需要记录软件的安装位置、版本、信息等，类似macOS的homebrew。 rpm的工作原理是以一种数据            <a href="https://www.cnblogs.com/mysticbinary/p/12631999.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-04 15:20 Mysticbinary 阅读 (24) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12631999" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/mysticbinary/p/12631856.html">
+    Linux安装Redis
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：Redis数据库分为两个部分，一个服务端，一个客户端。 安装环境 1.服务器环境： 如下使用Kali系统。 2.Redis版本 2.8.3 3.Kali系统必须预装gcc、tcl 安装Reids 先cd进到你想放redis的目录，我放在/opt/programfiles/下； 查看redis生成二进            <a href="https://www.cnblogs.com/mysticbinary/p/12631856.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-04 14:53 Mysticbinary 阅读 (29) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12631856" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/mysticbinary/p/12631486.html">
+    CentOS6.4 Install oh-my-zsh
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：先安装zsh 安装oh my zsh 手动安装 自动安装 ` 不管使用手动 自动安装，完成后都需要重启。oh my zsh才能生效。 修改主题 挑选你喜欢的主题：https://github.com/robbyrussell/oh my zsh/wiki/Themes            <a href="https://www.cnblogs.com/mysticbinary/p/12631486.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-04 13:36 Mysticbinary 阅读 (18) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12631486" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/mysticbinary/p/12630011.html">
+    CSRF的几种防御方法的利弊分析
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：本文直接从防御方式开始讨论，防御CSRF有4种方法： 使用POST替代GET 检验HTTP Referer 验证码 Token 使用POST替代GET 一些程序员在开发的时候都是用GET、POST通用的函数来接收客户端的数据，这样也是某些接口有CSRF的原因之一，但是将全部接口都改成只允许POST方            <a href="https://www.cnblogs.com/mysticbinary/p/12630011.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-04 00:27 Mysticbinary 阅读 (184) 评论 (4)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12630011" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/mysticbinary/archive/2020/04/02.html">2020年4月2日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/mysticbinary/p/12620152.html">
+    同源策略与JSONP劫持原理
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：同源策略 浏览器中有两个安全机制，一个浏览器沙盒（Sandbox），另一个就是同源策略(Same Origin Policy，简称SOP) ，下面介绍同源策略。同源是指 、`同域名 同端口`，必须三同，缺一不可。下面列举了一些例子，为方便读者了解哪些是属于同源，下面列举一些案例： 根据这个策略，a.            <a href="https://www.cnblogs.com/mysticbinary/p/12620152.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-02 22:08 Mysticbinary 阅读 (255) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12620152" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/mysticbinary/archive/2020/04/01.html">2020年4月1日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/mysticbinary/p/12616650.html">
+    数字签名与数字证书的原理
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：在了解数字签名和数字证书之前，可以先了解一下加密算法的一些常见分类，我之前写了一篇介绍常见加密算法的文章。https://www.cnblogs.com/mysticbinary/p/12615063.html 将军与士兵通信 数字签名原理 为了用最简单的方式来讲解数字签名，我下面模拟几个在军事角色            <a href="https://www.cnblogs.com/mysticbinary/p/12616650.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-01 23:00 Mysticbinary 阅读 (342) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12616650" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/mysticbinary/p/12615063.html">
+    加密算法的分类与区别
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：编程工作中老是能看到RSA、DES等字眼，大概就知道是个加密的算法，但是具体是什么，正常的使用流程、之间的区别、在客户端和服务端之间怎么配合使用、容易出安全的环节在哪里？这些问题都不知道，下面记录我的学习过程。 加密算法的分类 分类方式一 RSA、DES都属于加密算法，加密算法又分为下列几类： 不需            <a href="https://www.cnblogs.com/mysticbinary/p/12615063.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-01 19:43 Mysticbinary 阅读 (92) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12615063" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/mysticbinary/p/12614880.html">
+    Linux操作php.ini文件
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：有时你使用的是别人搭建好的环境，不知道php.ini在哪里，或者好久没有修改配置了，已经忘记了路径在哪，所以在操作文件之前，得先要找到.ini路径。 找php.ini 方式一 方式二 方式三 方式四 在本地的网站目录里，新建一个php文件，写入如下代码 重启PHP 修改php.ini后，必须重启PH            <a href="https://www.cnblogs.com/mysticbinary/p/12614880.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-01 19:05 Mysticbinary 阅读 (36) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12614880" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/mysticbinary/p/12614489.html">
+    Linux添加普通权限账号并授予root权限
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：命令创建账号和密码 授予可以切换root的权限 修改/etc/sudoers文件。 修改完后，就可以用Mysticbinary帐号登录，然后用命令 或者 ，切换到root权限。            <a href="https://www.cnblogs.com/mysticbinary/p/12614489.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-01 18:24 Mysticbinary 阅读 (47) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12614489" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/mysticbinary/p/12613898.html">
+    Linux 切换 shell
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：查看当前已安装的shell 查看当前使用的shell 切换Shell            <a href="https://www.cnblogs.com/mysticbinary/p/12613898.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-01 17:12 Mysticbinary 阅读 (41) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12613898" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/mysticbinary/p/12613814.html">
+    Spring mvc 配置记录
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：使用 idea 编辑器 + Maven + spring + spring MVC 做一个简单web访问功能。 省略创建过程。 1.从pom.xml配置Maven文件开始 2.web.xml 3.springmvc config.xml 4.controller 省略配置tomcat. 5.效果图             <a href="https://www.cnblogs.com/mysticbinary/p/12613814.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-01 17:03 Mysticbinary 阅读 (28) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12613814" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/mysticbinary/p/12613243.html">
+    Mybatis检查SQL注入
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：Mybatis 的 Mapper.xml 语句中 parameterType 向SQL语句传参有两种方式：\ { } 和 ${ }。 使用\ { }是来防止SQL注入，使用${ }是用来动态拼接参数。 如何排查出 1. 检查是否有\$号 如果你使用的是ide代码编辑器，那么可以通过全局搜索 , 快速            <a href="https://www.cnblogs.com/mysticbinary/p/12613243.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-04-01 16:03 Mysticbinary 阅读 (22) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12613243" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+
+<div class="topicListFooter">
+    <div id="nav_next_page">
+        
+    <a href="https://www.cnblogs.com/mysticbinary/default.html?page=2">
+        下一页
+    </a>
+
+    </div>    
+</div>
+
+
+
+
+
+
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 Mysticbinary
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    
+</body>
+</html>

@@ -1,0 +1,6 @@
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework9_console\bin\Debug\Homework9_console.exe.config
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework9_console\bin\Debug\Homework9_console.exe
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework9_console\bin\Debug\Homework9_console.pdb
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework9_console\obj\Debug\Homework9_console.exe
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework9_console\obj\Debug\Homework9_console.pdb
+D:\VS projects\c# repos\c#作业库\CSharpHomework\Homework9_console\obj\Debug\Homework9_console.csprojAssemblyReference.cache

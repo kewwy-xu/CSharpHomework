@@ -1,0 +1,216 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="referrer" content="always" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>精华区 - 博客园</title>
+    <link rel="shortcut icon" href="//common.cnblogs.com/favicon.ico" type="image/x-icon" />
+    <link rel="Stylesheet" type="text/css" href="/css/aggsite.min.css?v=FRR6qbd_vc7TQxxV0n1kBxwFAKoajo20N8gkufL2xuk" />
+        <link id="RSSLink" title="RSS" type="application/rss+xml" rel="alternate" href="http://feed.cnblogs.com/blog/picked/rss" />
+    <script src="//common.cnblogs.com/script/jquery.js" type="text/javascript"></script>
+    <script src="/js/aggsite.min.js?v=pF9WYZrlQXxT2TvAo3ctCaa3IJ8YXeHpSWGGmRU2OV8"></script>
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            googletag.defineSlot('/1090369/A1', [468, 60], 'div-gpt-ad-1547816814884-0').addService(googletag.pubads());
+            googletag.defineSlot('/1090369/B1', [300, 250], 'div-gpt-ad-1546331539224-0').addService(googletag.pubads());
+            googletag.defineSlot('/1090369/B2', [300, 250], 'div-gpt-ad-1539007469525-0').addService(googletag.pubads());
+            googletag.defineSlot('/1090369/B3', [300, 250], 'div-gpt-ad-1546331252242-0').addService(googletag.pubads());
+            googletag.defineSlot('/1090369/B4', [300, 250], 'div-gpt-ad-1546331385104-0').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+
+        /**/</script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="hd_info">
+            <div id="cnts">
+                <div id="site_nav_top">代码改变世界</div>
+                <div id="login_area"><span id="span_userinfo"></span></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div id="header">
+            <p class="h_r_3"></p><p class="h_r_2"></p><p class="h_r_1"></p>
+            <div id="header_block">
+                <div id="logo">
+                    <h1>
+                        <a href="https://www.cnblogs.com/" title="开发者的网上家园"><img src="/images/logo_small.gif" alt="博客园Logo" width="142" height="55" /></a>
+                    </h1>
+                </div>
+
+                <div class="clear"></div>
+            </div>
+            <p class="h_r_1"></p><p class="h_r_2"></p><p class="h_r_3"></p>
+        </div>
+        <div id="nav_menu"><a href="https://home.cnblogs.com/">园子</a><a href="https://news.cnblogs.com">新闻</a><a href="https://q.cnblogs.com/">博问</a><a href="https://ing.cnblogs.com/">闪存</a><a href="https://group.cnblogs.com/">小组</a><a href="https://wz.cnblogs.com/">收藏</a><a href="https://job.cnblogs.com/">招聘</a><a href="https://edu.cnblogs.com/">班级</a><a href="http://zzk.cnblogs.com/">找找看</a></div>
+        <div id="main">
+            <div class="post_nav_block_wrapper">
+                <ul class="post_nav_block">
+                        <li><a href="/" class="" title="">首页</a></li>
+                        <li><a href="/pick/" class="current_nav" title="编辑精选博文">精华</a></li>
+                        <li><a href="/candidate/" class="" title="候选区的博文">候选</a></li>
+                        <li><a href="/news/" class="" title="新闻频道最新新闻">新闻</a></li>
+                        <li><a href="/following" class="" title="我关注博客的最新博文">关注</a></li>
+                        <li><a href="/aggsite/mycommented" class="" title="我评论过的博文">我评</a></li>
+                        <li><a href="/aggsite/mydigged" class="" title="我推荐过的博文">我赞</a></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <div class="rss_link" id="rss_block">
+<span id="posts_refresh_tips"></span><a id="posts_refresh" href="#" class="refresh" title="刷新博文列表" onclick="aggSite.loadCategoryPostList();return false">刷新</a><a href="http://feed.cnblogs.com/blog/picked/rss"><img src="//common.cnblogs.com/images/icon_rss.gif" alt="点击订阅" style="position:relative;top:2px;" title="订阅博客园文章" /></a>            </div>
+                <div id="headline_block" class="headline"><ul><li class="editor_pick"><a href="https://www.cnblogs.com/zkweb/p/12761743.html" id="editor_pick_lnk" target="_blank">【编辑推荐】写给程序员的机器学习入门 - 线性模型，激活函数与多层线性模型<span id="editor_pick_count"></span></a> <a href="/aggsite/headline" title="查看更多编辑推荐" class="right_more">»</a></li><li><a href="https://www.cnblogs.com/tianqing/p/12764404.html" target="_blank" title="阅读1480, 评论8, 推荐30">[最多推荐]ASP.NET Core技术研究-全面认识Web服务器Kestrel(8/1480)</a> <a href="/aggsite/topdigged24h" title="查看24小时推荐排行" class="right_more">»</a></li><li><a href="https://www.cnblogs.com/huangxincheng/p/12764925.html" target="_blank" title="阅读1138, 评论29, 推荐22">[最多评论]用了这么多年的泛型，你对它到底有多了解？(29/1138)</a> <a href="/aggsite/topcommented24h" title="查看24小时评论排行" class="right_more">»</a></li><li><a href="https://news.cnblogs.com/n/660491/" target="_blank" title="阅读1112, 评论12, 推荐3">[新闻头条]人造肉的意义我们都懂，但它可能走错了路(12/1112)</a> <a href="https://news.cnblogs.com/" title="查看更多新闻" class="right_more">»</a></li><li><a href="https://news.cnblogs.com/n/660501/" target="_blank" title="阅读243, 评论0, 推荐5">[推荐新闻]新AI算法能监测全球海洋塑料垃圾，平均准确率达86%(0/243)</a> <a href="https://news.cnblogs.com/n/recommend" title="查看更多推荐新闻" class="right_more">»</a></li></ul></div>
+
+            <div id="pager_top" style="display:none"></div>
+            <div id="post_list_tips" class="hide"></div>
+            
+            <div id="post_list">
+                <div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('techflow',12310669,569749,1)"> 
+	<span class="diggnum" id="digg_count_12310669">20</span>
+	</div>
+	<div class="clear"></div>
+    <div id="digg_tip_12310669" class="digg_tip">
+        
+    </div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="https://www.cnblogs.com/techflow/p/12310669.html" target="_blank">大数据算法——布隆过滤器</a></h3>               	
+    <p class="post_item_summary">
+    本文始发于个人公众号： TechFlow ，原创不易，求个关注 今天的文章和大家一起来学习大数据领域一个经常用到的算法——布隆过滤器。如果看过《数学之美》的同学对它应该并不陌生，它经常用在集合的判断上，在海量数据的场景当中用来快速地判断某个元素在不在一个庞大的集合当中。它的原理不难，但是设计非常巧妙 ...
+    </p>              
+    <div class="post_item_foot">                    
+    <a href="https://www.cnblogs.com/techflow/" class="lightblue">TechFlow2019</a> 
+    发布于 2020-02-15 09:22 
+    <span class="article_comment"><a href="https://www.cnblogs.com/techflow/p/12310669.html#commentform" title="0001-01-01 08:05" class="gray">
+        评论(16)</a></span><span class="article_view"><a href="https://www.cnblogs.com/techflow/p/12310669.html" class="gray">阅读(4529)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('alisystemsoftware',12221622,435351,1)"> 
+	<span class="diggnum" id="digg_count_12221622">16</span>
+	</div>
+	<div class="clear"></div>
+    <div id="digg_tip_12221622" class="digg_tip">
+        
+    </div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="https://www.cnblogs.com/alisystemsoftware/p/12221622.html" target="_blank">为什么 K8s 在阿里能成功？| 问底中国 IT 技术演进</a></h3>               	
+    <p class="post_item_summary">
+<a href="https://www.cnblogs.com/alisystemsoftware/" target="_blank"><img width="48" height="48" class="pfs" src="https://pic.cnblogs.com/face/1411156/20180531141029.png" alt=""/></a>    作者： 曾凡松 阿里云云原生应用平台高级技术专家 张振 阿里云云原生应用平台高级技术专家 导读 ：本文描述了阿里巴巴在容器管理领域的技术演进历程，解读了为什么 K8s 最终能够大获成功的原因，以及到今年 双11 阿里巴巴内部的 K8s 应用情况。内容着重描述了阿里巴巴基于 K8s 的云原生改造实践过 ...
+    </p>              
+    <div class="post_item_foot">                    
+    <a href="https://www.cnblogs.com/alisystemsoftware/" class="lightblue">阿里巴巴云原生</a> 
+    发布于 2020-01-21 14:27 
+    <span class="article_comment"><a href="https://www.cnblogs.com/alisystemsoftware/p/12221622.html#commentform" title="0001-01-01 08:05" class="gray">
+        评论(4)</a></span><span class="article_view"><a href="https://www.cnblogs.com/alisystemsoftware/p/12221622.html" class="gray">阅读(5322)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('alisystemsoftware',12016601,435351,1)"> 
+	<span class="diggnum" id="digg_count_12016601">9</span>
+	</div>
+	<div class="clear"></div>
+    <div id="digg_tip_12016601" class="digg_tip">
+        
+    </div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="https://www.cnblogs.com/alisystemsoftware/p/12016601.html" target="_blank">从零开始入门 K8s | 手把手带你理解 etcd</a></h3>               	
+    <p class="post_item_summary">
+<a href="https://www.cnblogs.com/alisystemsoftware/" target="_blank"><img width="48" height="48" class="pfs" src="https://pic.cnblogs.com/face/1411156/20180531141029.png" alt=""/></a>    作者 | 曾凡松（逐灵） 阿里云容器平台高级技术专家 本文整理自 "《CNCF x Alibaba 云原生技术公开课》" 第 16 讲。 导读 ：etcd 是用于共享配置和服务发现的分布式、一致性的 KV 存储系统。本文从 etcd 项目发展所经历的几个重要时刻开始，为大家介绍了 etcd 的总体架 ...
+    </p>              
+    <div class="post_item_foot">                    
+    <a href="https://www.cnblogs.com/alisystemsoftware/" class="lightblue">阿里巴巴云原生</a> 
+    发布于 2019-12-10 14:47 
+    <span class="article_comment"><a href="https://www.cnblogs.com/alisystemsoftware/p/12016601.html#commentform" title="0001-01-01 08:05" class="gray">
+        评论(4)</a></span><span class="article_view"><a href="https://www.cnblogs.com/alisystemsoftware/p/12016601.html" class="gray">阅读(3907)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('xiaoyangjia',11535486,34640,1)"> 
+	<span class="diggnum" id="digg_count_11535486">235</span>
+	</div>
+	<div class="clear"></div>
+    <div id="digg_tip_11535486" class="digg_tip">
+        
+    </div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="https://www.cnblogs.com/xiaoyangjia/p/11535486.html" target="_blank">如何高效的学习技术</a></h3>               	
+    <p class="post_item_summary">
+<a href="https://www.cnblogs.com/xiaoyangjia/" target="_blank"><img width="48" height="48" class="pfs" src="https://pic.cnblogs.com/face/31085/20190906112512.png" alt=""/></a>    我们相信努力学习一定会有收获，但是方法不当，会让人身心疲惫，也没有切实的效果。职场上无法成功升迁的原因多种多样的，没有持续学习、学习效果不佳、无法通过心仪公司的面试，一定是很重要的原因。现在把自己当成一台计算机，既有输入，也要有输出，用输出倒逼输入。 ...
+    </p>              
+    <div class="post_item_foot">                    
+    <a href="https://www.cnblogs.com/xiaoyangjia/" class="lightblue">编码砖家</a> 
+    发布于 2019-11-14 17:37 
+    <span class="article_comment"><a href="https://www.cnblogs.com/xiaoyangjia/p/11535486.html#commentform" title="0001-01-01 08:05" class="gray">
+        评论(95)</a></span><span class="article_view"><a href="https://www.cnblogs.com/xiaoyangjia/p/11535486.html" class="gray">阅读(19668)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('zer0Black',11819696,190607,1)"> 
+	<span class="diggnum" id="digg_count_11819696">142</span>
+	</div>
+	<div class="clear"></div>
+    <div id="digg_tip_11819696" class="digg_tip">
+        
+    </div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="https://www.cnblogs.com/zer0Black/p/11819696.html" target="_blank">我是如何失去团队掌控的？</a></h3>               	
+    <p class="post_item_summary">
+<a href="https://www.cnblogs.com/zer0Black/" target="_blank"><img width="48" height="48" class="pfs" src="https://pic.cnblogs.com/face/646489/20140908123308.png" alt=""/></a>    我是一个不合格的技术总监，在过去的快三个月里。我带着从40多个人的研发团队（包含需求、开发、测试）里抽调出20多个人去为公司开疆拓土。在这快三个月中，我们一起奋战奋斗拼搏。在过程中，我通宵时间超过半个月，干到凌晨4/5点的日子数不胜数，干到凌晨1/2点日子更是习以为常。整个团队绝大多数人近乎两个月没 ...
+    </p>              
+    <div class="post_item_foot">                    
+    <a href="https://www.cnblogs.com/zer0Black/" class="lightblue">zer0black</a> 
+    发布于 2019-11-08 13:45 
+    <span class="article_comment"><a href="https://www.cnblogs.com/zer0Black/p/11819696.html#commentform" title="0001-01-01 08:05" class="gray">
+        评论(154)</a></span><span class="article_view"><a href="https://www.cnblogs.com/zer0Black/p/11819696.html" class="gray">阅读(17535)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('gaorong',11710246,334473,1)"> 
+	<span class="diggnum" id="digg_count_11710246">3</span>
+	</div>
+	<div class="clear"></div>
+    <div id="digg_tip_11710246" class="digg_tip">
+        
+    </div>
+</div>      
+<div class="post_item_body">
+	<h3><a class="titlelnk" href="https://www.cnblogs.com/gaorong/p/11710246.html" target="_blank">阿里terway源码分析</a></h3>               	
+    <p class="post_item_summary">
+<a href="https://www.cnblogs.com/gaorong/" target="_blank"><img width="48" height="48" class="pfs" src="https://pic.cnblogs.com/face/1111516/20170222212901.png" alt=""/></a>    背景 随着公司业务的发展，底层容器环境也需要在各个区域部署，实现多云架构， 使用各个云厂商提供的CNI插件是k8s多云环境下网络架构的一种高效的解法。我们在阿里云的方案中，便用到了阿里云提供的CNI插件terway。terway所提供的VPC互通的网络方案，方便对接已有的基础设施，同时没有overl ...
+    </p>              
+    <div class="post_item_foot">                    
+    <a href="https://www.cnblogs.com/gaorong/" class="lightblue">gaorong404</a> 
+    发布于 2019-10-20 21:59 
+    <span class="article_comment"><a href="https://www.cnblogs.com/gaorong/p/11710246.html#commentform" title="0001-01-01 08:05" class="gray">
+        评论(1)</a></span><span class="article_view"><a href="https://www.cnblogs.com/gaorong/p/11710246.html" class="gray">阅读(2019)</a></span></div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="post_item">
+<div class="digg">
+    <div class="diggit" onclick="DiggPost('skabyy',11396571,166858

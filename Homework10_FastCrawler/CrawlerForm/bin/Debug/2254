@@ -1,0 +1,522 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>随笔列表第2页 - 曾聪聪 - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    <link id="MainCss" rel="stylesheet" href="/skins/blacklowkey/bundle-blacklowkey.min.css?v=Fx4xdLkGuHnlaG7xntG_wAnZrnorJWp5u_TWKqbvMF0" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/blacklowkey/bundle-blacklowkey-mobile.min.css?v=cYvlxMu_nd6MVfg-vi7YqOC6FaZ7VHFsDM166vO_ekA" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/zengcongcong/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/zengcongcong/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/zengcongcong/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 491385;
+        var currentBlogApp = 'zengcongcong';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'BlackLowKey';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/zengcongcong/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/zengcongcong/">生命不息，折腾不止</a>
+</h1>
+<h2>
+
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/zengcongcong/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E6%9B%BE%E8%81%AA%E8%81%AA">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/zengcongcong/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<span id="stats_post_count">随笔 - 
+97&nbsp; </span>
+<span id="stats_article_count">文章 - 
+0&nbsp; </span>
+<span id="stats-comment_count">评论 - 
+3</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<!--done-->
+
+
+<div id="homepage_top_pager" class="topicListFooter">
+    
+
+<div class="pager">
+    <a href="https://www.cnblogs.com/zengcongcong/default.html?page=1">上一页</a>
+    
+    
+        <a href="https://www.cnblogs.com/zengcongcong/default.html?page=1">1</a>
+    2
+        <a href="https://www.cnblogs.com/zengcongcong/default.html?page=3">3</a>
+        <a href="https://www.cnblogs.com/zengcongcong/default.html?page=4">4</a>
+        <a href="https://www.cnblogs.com/zengcongcong/default.html?page=5">5</a>
+        <a href="https://www.cnblogs.com/zengcongcong/default.html?page=6">6</a>
+    ···
+    <a href="https://www.cnblogs.com/zengcongcong/default.html?page=10">10</a>
+    <a href="https://www.cnblogs.com/zengcongcong/default.html?page=3">下一页</a>
+</div>
+</div>
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/zengcongcong/archive/2020/01/04.html">2020年1月4日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/zengcongcong/p/12150550.html">
+    Andriod使用WebView制作webAPP
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：安卓期末考试做一个app，使用原生安卓开发界面太慢便采用了WebView的方式封装一个WebApp,界面做到响应式即可。 实现思路：确保浏览器端可以正确的跑起自己的项目且界面兼容手机界面，在使用WebView进行封装URL，将本机当作服务器。 1.先在AndriodManifest.xml中允许网络            <a href="https://www.cnblogs.com/zengcongcong/p/12150550.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2020-01-04 21:54 曾聪聪 阅读 (105) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12150550" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/zengcongcong/archive/2019/09/21.html">2019年9月21日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/zengcongcong/p/11565354.html">
+    弄懂Java为何只有值传递
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：最近有同学问我关于Java中值传递与引用传递的问题，在此小结一下 值传递是指在函数调用时将实参内容复制一份传递给形参，这样在函数中改变该参数不会对原参数产生影响。 引用传递是指将对象地址的引用传递给该函数，这样在函数中改变该参数会对原参数产生影响。 两者的主要区别在于：是否将实参内容复制一份传递给了            <a href="https://www.cnblogs.com/zengcongcong/p/11565354.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-09-21 23:09 曾聪聪 阅读 (131) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11565354" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/zengcongcong/archive/2019/09/15.html">2019年9月15日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/zengcongcong/p/11521719.html">
+    反转链表进阶
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：最近课程比较紧张，中秋放假休息了两天，回来继续刷算法题。链表翻转是个比较常见的类型，要吃透。 力扣第92题：题目描述：反转从位置&#160;m&#160;到&#160;n&#160;的链表。请使用一趟扫描完成反转。 说明:1&#160;≤&#160;m&#160;≤&#160;n&#160;≤ 链表长度。 示例: 思路： 用指针记录要反转区间的首尾节点，在写一个反转局部区间m到n的函数，            <a href="https://www.cnblogs.com/zengcongcong/p/11521719.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-09-15 12:22 曾聪聪 阅读 (77) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11521719" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/zengcongcong/archive/2019/09/04.html">2019年9月4日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/zengcongcong/p/11458475.html">
+    剑指Offer-16:合并两个有序链表
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：题目描述： 输入两个单调递增的链表，输出两个链表合成后的链表，当然我们需要合成后的链表满足单调不减规则。 例如A链表为1-3-5-7，B链表为2-4-6-8。所以合并后的新链表C为1-2-3-4-5-6-7-8 节点定义如下： 思路：利用递归            <a href="https://www.cnblogs.com/zengcongcong/p/11458475.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-09-04 12:54 曾聪聪 阅读 (44) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11458475" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/zengcongcong/archive/2019/09/03.html">2019年9月3日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/zengcongcong/p/11452856.html">
+    剑指Offer-15:反转链表
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：题目描述： 输入一个链表，反转链表后，输出新链表的表头。例如链表为1-&gt;2-&gt;3-&gt;4 反转后为1&lt;-2-&lt;3-&lt;4 节点定义如下： 思路一： 利用三个指针是实现链表反转 思路二： 利用递归的思想，假设链表为1-&gt;2-&gt;3-&gt;4-&gt;5先迭代到链表末尾5，然后从5开始依次反转整个链表 head.nex            <a href="https://www.cnblogs.com/zengcongcong/p/11452856.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-09-03 14:35 曾聪聪 阅读 (49) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11452856" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/zengcongcong/p/11452469.html">
+    剑指Offer-14:输入一个链表，输出该链表中倒数第k个结点。
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：题目描述： 输入一个链表，输出该链表中倒数第k个结点。例如有一个链表有六个节点1，2，3，4，5，6.则它的倒数第二个节点为5 节点定义如下： 思路一： 设置一个快指针，一个慢指针。像一把尺子，当尺子的一端移动到链表的末尾，则另一端则为倒数第k个节点。 思路二： 两次遍历。第一次遍历出链表的长度n,            <a href="https://www.cnblogs.com/zengcongcong/p/11452469.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-09-03 13:37 曾聪聪 阅读 (287) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11452469" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/zengcongcong/archive/2019/09/02.html">2019年9月2日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/zengcongcong/p/11449615.html">
+    剑指Offer-13：调整数组位置使奇数位于偶数前面
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：题目描述： 输入一个整数数组，实现一个函数来调整该数组中数字的顺序，使得所有的奇数位于数组的前半部分，所有的偶数位于位于数组的后半部分，并保证奇数和奇数，偶数和偶数之间的相对位置不变。例如给定一个数组{2，4，6，3，5},调整后的数组为{3,5,2,4,6} 思路一： 最直接的思路是新建一个数组，            <a href="https://www.cnblogs.com/zengcongcong/p/11449615.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-09-02 23:00 曾聪聪 阅读 (62) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11449615" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/zengcongcong/archive/2019/08/30.html">2019年8月30日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/zengcongcong/p/11434984.html">
+    Java实现二分查找
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：二分查找又称折半查找，查找效率不错 适用场景：顺序存储结构且按有序排列，这也是它的缺点。 demo如下： 二分查找中中间值的计算： 这是一个经典的话题，如何计算二分查找中的中值？大家一般给出了两种计算方法： 算法一： mid = (low + high) / 2 算法二： mid = low + (            <a href="https://www.cnblogs.com/zengcongcong/p/11434984.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-08-30 14:54 曾聪聪 阅读 (2854) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11434984" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/zengcongcong/archive/2019/08/29.html">2019年8月29日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/zengcongcong/p/11432331.html">
+    java实现单链表增删改查
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：运行结果如下： 参考自：https://zhuanlan.zhihu.com/p/30141170            <a href="https://www.cnblogs.com/zengcongcong/p/11432331.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-08-29 22:06 曾聪聪 阅读 (465) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11432331" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+		
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/zengcongcong/archive/2019/08/11.html">2019年8月11日</a>
+    </div>
+
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/zengcongcong/p/11335927.html">
+    搞定java String校招面试题
+</a>
+
+        </div>
+        <div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：今天大致的阅读了String类的源码，并刷了常见的面试题，在此做个笔记。 面试题一：判断下列程序运行结果 画内存图逐个的分析每种情况：第一个：str1与str2指向同一个地址，故相等。 第二个：new代表创建了一个对象，str3指向堆内存中的引用，故str1与str3指向的地址不同。需要注意的是：字            <a href="https://www.cnblogs.com/zengcongcong/p/11335927.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+        <div class="clear"></div>
+        <div class="postDesc">
+
+posted @ 2019-08-11 21:05 曾聪聪 阅读 (378) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=11335927" rel="nofollow">
+    编辑
+</a>
+</div>
+        <div class="clear"></div>
+</div>
+
+
+
+<div class="topicListFooter">
+    <div id="nav_next_page">
+        
+
+    </div>    
+</div>
+
+
+<div id="homepage_bottom_pager" class="topicListFooter">
+    
+
+<div class="pager">
+    <a href="https://www.cnblogs.com/zengcongcong/default.html?page=1">上一页</a>
+    
+    
+        <a href="https://www.cnblogs.com/zengcongcong/default.html?page=1">1</a>
+    2
+        <a href="https://www.cnblogs.com/zengcongcong/default.html?page=3">3</a>
+        <a href="https://www.cnblogs.com/zengcongcong/default.html?page=4">4</a>
+        <a href="https://www.cnblogs.com/zengcongcong/default.html?page=5">5</a>
+        <a href="https://www.cnblogs.com/zengcongcong/default.html?page=6">6</a>
+    ···
+    <a href="https://www.cnblogs.com/zengcongcong/default.html?page=10">10</a>
+    <a href="https://www.cnblogs.com/zengcongcong/default.html?page=3">下一页</a>
+</div>
+</div>
+
+
+
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 曾聪聪
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    
+</body>
+</html>

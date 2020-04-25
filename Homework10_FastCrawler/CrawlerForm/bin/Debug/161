@@ -1,0 +1,551 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="never" />
+    <meta property="og:description" content="只有满怀自信的人，能在任何地方都怀有自信，沉浸在生活中，并认识自己的意志。 前言 最近公司有一个生产的小集群，专门用于运行spark作业。但是偶尔会因为nn或dn压力过大而导致作业checkpoint" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>spark 集群优化 - JohnnyBai - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    <link id="MainCss" rel="stylesheet" href="/skins/custom/bundle-custom.min.css?v=1ssrnY3Il79Ok472qeVrpxlSprSXcHhYPgZC5S3wtVM" />
+    <link type="text/css" rel="stylesheet" href="https://www.cnblogs.com/johnny666888/custom.css?v=7rnz5TtMcHt9VmgMA7H/K8T8fSI=" />
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/custom/bundle-custom-mobile.min.css?v=-Yh290MhQyDeXLmvKTSses9H6-49lqbpXFh55zvS0w8" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/johnny666888/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/johnny666888/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/johnny666888/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 240095;
+        var currentBlogApp = 'johnny666888';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'Custom';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+        <a id="lnkBlogLogo" href="https://www.cnblogs.com/johnny666888/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>		
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/johnny666888/">求知</a>
+</h1>
+<h2>
+
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/johnny666888/">
+首页</a>
+</li>
+<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/JohnnyBai">
+联系</a></li>
+<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/johnny666888/rss/">
+订阅</a>
+<!--<partial name="./Shared/_XmlLink.cshtml" model="Model" /></li>--></li>
+<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div class="blogStats">
+			
+			<span id="stats_post_count">随笔 - 
+50&nbsp; </span>
+<span id="stats_article_count">文章 - 
+1&nbsp; </span>
+<span id="stats-comment_count">评论 - 
+4</span>
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		<div id="post_detail">
+    <!--done-->
+    <div id="topics">
+        <div class="post">
+            <h1 class = "postTitle">
+                
+<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/johnny666888/p/12770325.html">spark 集群优化</a>
+
+            </h1>
+            <div class="clear"></div>
+            <div class="postBody">
+                
+<div id="cnblogs_post_body" class="blogpost-body ">
+    <p>只有满怀自信的人，能在任何地方都怀有自信，沉浸在生活中，并认识自己的意志。</p>
+<h2>前言</h2>
+<p>最近公司有一个生产的小集群，专门用于运行spark作业。但是偶尔会因为nn或dn压力过大而导致作业checkpoint操作失败进而导致spark 流任务失败。本篇记录从应用层面对spark作业进行优化，进而达到优化集群的作用。</p>
+<h2>集群使用情况</h2>
+<p>有数据的目录以及使用情况如下：</p>
+<div class="table-wrap">
+<table class="wrapped confluenceTable tablesorter tablesorter-default stickyTableHeaders" align="left"><colgroup><col /><col /><col /><col /><col /><col /></colgroup>
+<thead class="tableFloatingHeaderOriginal">
+<tr class="tablesorter-headerRow"><th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" style="text-align: left;" scope="col" data-column="0">
+<div class="tablesorter-header-inner"><span class="td-span"><span class="md-plain">目录</span></span></div>
+</th><th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" style="text-align: left;" scope="col" data-column="1">
+<div class="tablesorter-header-inner"><span class="td-span"><span class="md-plain">说明</span></span></div>
+</th><th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" style="text-align: left;" scope="col" data-column="2">
+<div class="tablesorter-header-inner"><span class="td-span"><span class="md-plain">大小</span></span></div>
+</th><th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" style="text-align: left;" scope="col" data-column="3">
+<div class="tablesorter-header-inner"><span class="td-span"><span class="md-plain">文件数量</span></span></div>
+</th><th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" style="text-align: left;" scope="col" data-column="4">
+<div class="tablesorter-header-inner"><span class="td-span"><span class="md-plain">数据数量占比</span></span></div>
+</th><th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" style="text-align: left;" scope="col" data-column="5">
+<div class="tablesorter-header-inner"><span class="td-span"><span class="md-plain">数据大小占比</span></span></div>
+</th></tr>
+</thead>
+<tbody>
+<tr>
+<td class="confluenceTd" style="text-align: left;"><span class="td-span">/user/root/.sparkStaging/applicationIdxxx</span></td>
+<td class="confluenceTd" style="text-align: left;"><span class="td-span">spark任务配置以及所需jar包</span></td>
+<td class="confluenceTd" style="text-align: left;"><span class="td-span">5G</span></td>
+<td class="confluenceTd" style="text-align: left;"><span class="td-span">约1k</span></td>
+<td class="confluenceTd" style="text-align: left;"><span class="td-span">约20%</span></td>
+<td class="confluenceTd" style="text-align: left;"><span class="td-span">约100%</span></td>
+</tr>
+<tr>
+<td class="confluenceTd" style="text-align: left;"><span class="td-span">/tmp/checkpoint/xxx/{commits|metadata|offsets|sources}</span></td>
+<td class="confluenceTd" style="text-align: left;">checkpoint文件，其中commits和offsets频繁变动</td>
+<td class="confluenceTd" style="text-align: left;"><span class="td-span">2M</span></td>
+<td class="confluenceTd" style="text-align: left;"><span class="td-span">约4k</span></td>
+<td class="confluenceTd" style="text-align: left;"><span class="td-span">约40%</span></td>
+<td class="confluenceTd" style="text-align: left;"><span class="td-span">约0%</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="md-end-block md-heading">对于.<span class="td-span">sparkStaging目录，不经常变动，只需要优化其大小即可。</span></p>
+<p class="md-end-block md-heading"><span class="td-span">对于 checkpoint目录，频繁性增删，从生成周期和保留策略两方面去考虑。</span></p>
+<h2 class="md-end-block md-heading">&nbsp;<span class="td-span"><span class="md-plain">.<span class="inline-comment-marker valid" data-ref="6fcefd4c-3f5a-440f-95e4-10e2a678a752">sparkStaging目录优化</span></span></span></h2>
+<p class="md-end-block md-heading">对于<span class="td-span">/user/hadoop/.sparkStaging下文件，是spark任务依赖文件，可以将jar包上传到指定目录下，避免或减少了jar包的重复上传，进而减少任务的等待时间。</span></p>
+<p>可以在spark的配置文件spark-defaults.conf配置如下内容：</p>
+<div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code">
+<div class="codeContent panelContent pdl">
+<div id="highlighter_35958" class="syntaxhighlighter sh-confluence nogutter  text">
+<div class="cnblogs_code">
+<pre>spark.yarn.archive=hdfs://hdfscluster/user/hadoop/jars
+spark.yarn.preserve.staging.files=false</pre>
+</div>
+</div>
+</div>
+</div>
+<h3 id="spark计算集群文件问题优化-参数说明">参数说明</h3>
+<div class="table-wrap">
+<table class="wrapped confluenceTable tablesorter tablesorter-default stickyTableHeaders"><colgroup><col /><col /><col /></colgroup>
+<thead class="tableFloatingHeaderOriginal">
+<tr class="tablesorter-headerRow"><th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" scope="col" data-column="0">
+<div class="tablesorter-header-inner">Property Name</div>
+</th><th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" scope="col" colspan="1" data-column="1">
+<div class="tablesorter-header-inner">Default</div>
+</th><th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" scope="col" data-column="2">
+<div class="tablesorter-header-inner">Meaning</div>
+</th></tr>
+</thead>
+<tbody>
+<tr>
+<td class="confluenceTd">spark.yarn.archive</td>
+<td class="confluenceTd" colspan="1">（none）</td>
+<td class="confluenceTd"><br />An archive containing needed Spark jars for distribution to the YARN cache. If set, this configuration replaces spark.yarn.jars and the archive is used in all the application's containers. The archive should contain jar files in its root directory. Like with the previous option, the archive can also be hosted on HDFS to speed up file distribution.</td>
+
+
+
+
+
+
+
+</tr>
+<tr>
+<td class="confluenceTd">spark.yarn.preserve.staging.files</td>
+<td class="confluenceTd" colspan="1">false</td>
+<td class="confluenceTd">Set to true to preserve the staged files (Spark jar, app jar, distributed cache files) at the end of the job rather than delete them.</td>
+
+
+
+
+
+
+
+</tr>
+
+
+
+
+
+
+
+</tbody>
+
+
+
+
+
+
+
+</table>
+
+
+
+
+
+
+
+</div>
+<h2 id="spark计算集群文件问题优化-checkpoint优化" class="md-end-block md-heading"><span class="td-span">checkpoint优化</span></h2>
+<p><span class="td-span">首先了解一下 checkpoint文件代表的含义。</span></p>
+<h3 id="spark计算集群文件问题优化-checkpoint文件说明" class="md-end-block md-heading"><span class="md-plain">checkpoint文件说明</span></h3>
+<ul class="ul-list">
+<li class="md-list-item">
+<p class="md-end-block md-p"><span class="md-plain">offsets 目录 - 预先记录日志，记录每个批次中存在的偏移量。为了确保给定的批次将始终包含相同的数据，我们在进行任何处理之前将其写入此日志。因此，该日志中的第N个记录指示当前正在处理的数据，第N-1个条目指示哪些偏移已持久地提交给sink。</span></p>
+
+
+
+
+
+
+
+</li>
+<li class="md-list-item">
+<p class="md-end-block md-p"><span class="md-plain">commits 目录 - 记录已完成的批次ID的日志。这用于检查批处理是否已完全处理，并且其输出已提交给接收器，因此无需再次处理。（例如）在重新启动过程中使用，以帮助识别接下来要运行的批处理。</span></p>
+
+
+
+
+
+
+
+</li>
+<li class="md-list-item">
+<p class="md-end-block md-p"><span class="md-plain">metadata 文件 - 与整个查询关联的元数据，只有一个 StreamingQuery 唯一ID</span></p>
+
+
+
+
+
+
+
+</li>
+<li class="md-list-item">
+<p class="md-end-block md-p"><span class="md-plain">sources目录 - 保存起始offset信息</span></p>
+
+
+
+
+
+
+
+</li>
+
+
+
+
+
+
+
+</ul>
+<p>下面从两个方面来优化checkpoint。</p>
+<p><span class="md-plain">第一，从触发checkpoint机制方面考虑</span></p>
+<h3 id="spark计算集群文件问题优化-trigger的机制" class="md-end-block md-heading"><span class="md-plain"><span class="inline-comment-marker valid" data-ref="6c76732c-1efb-4e09-b02e-2c345a00589e">trigger的机制</span></span></h3>
+<p class="md-end-block md-p"><span class="md-plain">Trigger是用于指示 StreamingQuery 多久生成一次结果的策略。</span></p>
+<p class="md-end-block md-p"><span class="md-plain">Trigger有三个实现类，分别为：</span></p>
+<ul class="ul-list">
+<li class="md-list-item">
+<p class="md-end-block md-p"><span class="md-plain">OneTimeTrigger - A Trigger that processes only&nbsp;<strong>one batch of data</strong><span class="md-plain">&nbsp;in a streaming query then terminates the query.</span></span></p>
+
+
+
+
+
+
+
+</li>
+
+
+
+
+
+
+
+</ul>
+<ul class="ul-list">
+<li class="md-list-item">
+<p class="md-end-block md-p"><strong>ProcessingTime</strong><span class="md-plain">&nbsp;- A trigger that runs a query periodically based on the processing time. If&nbsp;<code>interval</code><span class="md-plain">&nbsp;is 0, the query will run as fast as&nbsp;<a class="external-link" href="http://possible.by/" rel="nofollow">possible.by</a>&nbsp;default，trigger is&nbsp;<code>ProcessingTime</code><span class="md-plain">, and&nbsp;<code>interval=0</code></span></span></span></p>
+
+
+
+
+
+
+
+</li>
+
+
+
+
+
+
+
+</ul>
+<ul class="ul-list">
+<li class="md-list-item">
+<p class="md-end-block md-p"><strong>ContinuousTrigger</strong><span class="md-plain">&nbsp;- A Trigger that continuously processes streaming data,&nbsp;<strong>asynchronously&nbsp;</strong><span class="md-plain">checkpointing at the specified interval.</span></span></p>
+
+
+
+
+
+
+
+</li>
+
+
+
+
+
+
+
+</ul>
+<p class="md-end-block md-p"><span class="md-plain">可以为&nbsp;<strong>ProcessingTime</strong><span class="md-plain">&nbsp;指定一个时间 或者使用 指定时间的<strong>ContinuousTrigger</strong>&nbsp;，固定生成checkpoint的周期，避免checkpoint生成过于频繁，减轻多任务下小集群的nn的压力</span></span></p>
+<p class="md-end-block md-p">&nbsp;</p>
+<p class="md-end-block md-heading"><span class="md-plain">第二，从checkpoint保留机制考虑。</span></p>
+<h3 id="spark计算集群文件问题优化-保留机制" class="md-end-block md-heading"><span class="md-plain">保留机制</span></h3>
+<p class="md-end-block md-heading"><span class="md-plain"><span class="inline-comment-marker valid" data-ref="226d2f18-9920-49f4-b03e-5b568e8dcfa7">spark.sql.streaming.minBatchesToRetain&nbsp;-&nbsp;<span class="inline-comment-marker valid" data-ref="637e25c5-0854-4813-b582-7d7d82b1b938">必须保留并使其可恢复的最小批次数，默认为 100</span></span></span></p>
+<p><span class="md-plain">可以调小保留的batch的次数，比如调小到 20，这样 checkpoint 小文件数量整体可以减少到原来的 20%</span></p>
+<h2 id="spark计算集群文件问题优化-checkpoint参数验证"><span class="md-plain">checkpoint 参数验证</span></h2>
+<p><span class="md-plain">主要验证<strong>trigger机制</strong>和<strong>保留机制</strong></span></p>
+<h3 id="spark计算集群文件问题优化-验证trigger机制">验证trigger机制</h3>
+<h4 id="spark计算集群文件问题优化-未设置trigger效果">未设置trigger效果</h4>
+<p>未设置trigger前，spark structured streaming 的查询batch提交的周期截图如下：</p>
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="https://jira.wisers.com:18090/download/attachments/44860796/%E6%9C%AA%E8%AE%BE%E7%BD%AEquery%E5%91%A8%E6%9C%9F%E6%95%88%E6%9E%9C.png?version=1&amp;modificationDate=1587718532000&amp;api=v2" alt="" data-image-src="/download/attachments/44860796/%E6%9C%AA%E8%AE%BE%E7%BD%AEquery%E5%91%A8%E6%9C%9F%E6%95%88%E6%9E%9C.png?version=1&amp;modificationDate=1587718532000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="44861005" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="未设置query周期效果.png" data-base-url="https://jira.wisers.com:18090" data-linked-resource-content-type="image/png" data-linked-resource-container-id="44860796" data-linked-resource-container-version="9"></span></p>
+<p>每一个batch的query任务的提交是毫无周期规律可寻。</p>
+<h4 id="spark计算集群文件问题优化-设置trigger代码">设置trigger代码</h4>
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="https://jira.wisers.com:18090/download/attachments/44860796/query%E5%9B%BA%E5%AE%9A%E5%91%A8%E6%9C%9F%E9%85%8D%E7%BD%AE.png?version=1&amp;modificationDate=1587718790000&amp;api=v2" alt="" data-image-src="/download/attachments/44860796/query%E5%9B%BA%E5%AE%9A%E5%91%A8%E6%9C%9F%E9%85%8D%E7%BD%AE.png?version=1&amp;modificationDate=1587718790000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="44861006" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="query固定周期配置.png" data-base-url="https://jira.wisers.com:18090" data-linked-resource-content-type="image/png" data-linked-resource-container-id="44860796" data-linked-resource-container-version="9"></span></p>
+<h4 id="spark计算集群文件问题优化-trigger效果">trigger效果</h4>
+<p>设置trigger代码后效果截图如下：</p>
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="https://jira.wisers.com:18090/download/attachments/44860796/%E8%AE%BE%E7%BD%AEquery%E5%9B%BA%E5%AE%9A%E5%91%A8%E6%9C%9F.png?version=1&amp;modificationDate=1587718885000&amp;api=v2" alt="" data-image-src="/download/attachments/44860796/%E8%AE%BE%E7%BD%AEquery%E5%9B%BA%E5%AE%9A%E5%91%A8%E6%9C%9F.png?version=1&amp;modificationDate=1587718885000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="44861007" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="设置query固定周期.png" data-base-url="https://jira.wisers.com:18090" data-linked-resource-content-type="image/png" data-linked-resource-container-id="44860796" data-linked-resource-container-version="9"></span></p>
+<p>每一个batch的query任务的提交是有规律可寻的，即每隔5s提交一次代码，即<strong>trigger设置生效</strong>！</p>
+<p>注意，如果消息不能马上被消费，消息会有积压，structured streaming 目前并无与spark streaming效果等同的背压机制，为防止单批次query查询的数据源数据量过大，避免程序出现数据倾斜或者无法挽回的OutOfMemory错误，可以通过&nbsp;maxOffsetsPerTrigger 参数来设置单个批次允许抓取的最大消息条数。</p>
+<p>使用案例如下：</p>
+<div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code">
+<div class="codeContent panelContent pdl">
+<div id="highlighter_308233" class="syntaxhighlighter sh-confluence nogutter  scala">
+<div class="cnblogs_code">
+<pre><span style="color: #000000;">spark.readStream
+    .format(</span>"kafka"<span style="color: #000000;">)
+    .option(</span>"kafka.bootstrap.servers", "xxx:9092"<span style="color: #000000;">)
+    .option(</span>"subscribe", "test-name"<span style="color: #000000;">)
+    .option(</span>"startingOffsets", "earliest"<span style="color: #000000;">)
+    .option(</span>"maxOffsetsPerTrigger", 1<span style="color: #000000;">)
+    .option(</span>"group.id", "2"<span style="color: #000000;">)
+    .option(</span>"auto.offset.reset", "earliest"<span style="color: #000000;">)
+    .load()</span></pre>
+</div>
+<h3>验证保留机制</h3>
+</div>
+</div>
+</div>
+<h4 id="spark计算集群文件问题优化-默认保留机制效果">默认保留机制效果</h4>
+<p>spark任务提交参数</p>
+<div class="cnblogs_code">
+<pre>#!/bin/<span style="color: #000000;">bash
+spark</span>-<span style="color: #000000;">submit \
+</span>--<span style="color: #000000;">class zd.Example \
+</span>--<span style="color: #000000;">master yarn \
+</span>--deploy-<span style="color: #000000;">mode client \
+</span>--packages org.apache.spark:spark-sql-kafka-<span style="color: #800080;">0</span>-10_2.<span style="color: #800080;">11</span>:<span style="color: #800080;">2.4</span>.<span style="color: #800080;">3</span>,org.apache.kafka:kafka-clients:<span style="color: #800080;">2.0</span>.<span style="color: #800080;">0</span><span style="color: #000000;"> \
+</span>--repositories http:<span style="color: #008000;">//</span><span style="color: #008000;">maven.aliyun.com/nexus/content/groups/public/ \</span>
+/root/spark-test-<span style="color: #800080;">1.0</span>-SNAPSHOT.jar</pre>
+</div>
+<p>&nbsp;</p>
+<p>如下图，offsets和commits最终最少各保留100个文件。</p>
+<p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" src="https://jira.wisers.com:18090/download/attachments/44860796/Snipaste_2020-04-24_17-25-42.png?version=1&amp;modificationDate=1587720408000&amp;api=v2" alt="" height="182" data-image-src="/download/attachments/44860796/Snipaste_2020-04-24_17-25-42.png?version=1&amp;modificationDate=1587720408000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="44861016" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="Snipaste_2020-04-24_17-25-42.png" data-base-url="https://jira.wisers.com:18090" data-linked-resource-content-type="image/png" data-linked-resource-container-id="44860796" data-linked-resource-container-version="9"></span></p>
+<h4 id="spark计算集群文件问题优化-修改保留策略">修改保留策略</h4>
+<p>通过修改任务提交参数来进一步修改checkpoint的保留策略。</p>
+<p>添加&nbsp;<strong>--conf spark.sql.streaming.minBatchesToRetain=2</strong>&nbsp;，完整脚本如下：</p>
+<div class="cnblogs_code">
+<pre>#!/bin/<span style="color: #000000;">bash
+spark</span>-<span style="color: #000000;">submit \
+</span>--<span style="color: #000000;">class zd.Example \
+</span>--<span style="color: #000000;">master yarn \
+</span>--deploy-<span style="color: #000000;">mode client \
+</span>--packages org.apache.spark:spark-sql-kafka-<span style="color: #800080;">0</span>-10_2.<span style="color: #800080;">11</span>:<span style="color: #800080;">2.4</span>.<span style="color: #800080;">3</span>,org.apache.kafka:kafka-clients:<span style="color: #800080;">2.0</span>.<span style="color: #800080;">0</span><span style="color: #000000;"> \
+</span>--repositories http:<span style="color: #008000;">//</span><span style="color: #008000;">maven.aliyun.com/nexus/content/groups/public/ \</span>
+--conf spark.sql.streaming.minBatchesToRetain=<span style="color: #800080;">2</span><span style="color: #000000;"> \
+</span>/root/spark-test-<span style="color: #800080;">1.0</span>-SNAPSHOT.jar</pre>
+</div>
+<h4 id="spark计算集群文件问题优化-修改后保留策略效果">修改后保留策略效果</h4>
+<p>修改后保留策略截图如下：</p>
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="https://jira.wisers.com:18090/download/attachments/44860796/3%E3%80%81%E9%99%90%E5%88%B6commit%E5%92%8Coffset%E4%B8%AA%E6%95%B0%E6%95%88%E6%9E%9C.png?version=1&amp;modificationDate=1587720224000&amp;api=v2" alt="" data-image-src="/download/attachments/44860796/3%E3%80%81%E9%99%90%E5%88%B6commit%E5%92%8Coffset%E4%B8%AA%E6%95%B0%E6%95%88%E6%9E%9C.png?version=1&amp;modificationDate=1587720224000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="44861015" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="3、限制commit和offset个数效果.png" data-base-url="https://jira.wisers.com:18090" data-linked-resource-content-type="image/png" data-linked-resource-container-id="44860796" data-linked-resource-container-version="9"></span></p>
+<p>即&nbsp;<strong>checkpoint的保留策略参数设置生效</strong>！</p>
+<h3 id="spark计算集群文件问题优化-总结">总结</h3>
+<p>综上，可以通过设置 trigger 来控制每一个batch的query提交的时间间隔，可以通过设置checkpoint文件最少保留batch的大小来减少checkpoint小文件的保留个数。</p>
+<h2 id="spark计算集群文件问题优化-参照"><span class="md-plain">参照</span></h2>
+<ol>
+<li><span class="md-plain"><a class="external-link" href="https://github.com/apache/spark/blob/master/docs/running-on-yarn.md" rel="nofollow">https://github.com/apache/spark/blob/master/docs/running-on-yarn.md</a></span></li>
+<li><span class="md-plain"><a class="external-link" href="https://blog.csdn.net/lm709409753/article/details/85250859" rel="nofollow">https://blog.csdn.net/lm709409753/article/details/85250859</a></span></li>
+<li><span class="md-plain"><a class="external-link" href="https://github.com/apache/spark/blob/v2.4.3/sql/core/src/main/scala/org/apache/spark/sql/execution/streaming/MicroBatchExecution.scala" rel="nofollow">https://github.com/apache/spark/blob/v2.4.3/sql/core/src/main/scala/org/apache/spark/sql/execution/streaming/MicroBatchExecution.scala</a></span></li>
+<li><span class="md-plain"><a class="external-link" href="https://github.com/apache/spark/blob/v2.4.3/sql/core/src/main/scala/org/apache/spark/sql/execution/streaming/continuous/ContinuousExecution.scala" rel="nofollow">https://github.com/apache/spark/blob/v2.4.3/sql/core/src/main/scala/org/apache/spark/sql/execution/streaming/continuous/ContinuousExecution.scala</a></span></li>
+<li><span class="md-plain"><a class="external-link" href="https://github.com/apache/spark/blob/v2.4.3/sql/core/src/main/scala/org/apache/spark/sql/streaming/ProcessingTime.scala" rel="nofollow">https://github.com/apache/spark/blob/v2.4.3/sql/core/src/main/scala/org/apache/spark/sql/streaming/ProcessingTime.scala</a></span></li>
+<li><span class="md-plain"><a class="external-link" href="https://github.com/apache/spark/blob/v2.4.3/sql/core/src/main/scala/org/apache/spark/sql/execution/streaming/continuous/ContinuousTrigger.scala" rel="nofollow">https://github.com/apache/spark/blob/v2.4.3/sql/core/src/main/scala/org/apache/spark/sql/execution/streaming/continuous/ContinuousTrigger.scala</a></span></li>
+<li><span class="md-plain"><a class="external-link" href="https://github.com/apache/spark/blob/v2.4.3/sql/catalyst/src/main/scala/org/apache/spark/sql/internal/SQLConf.scala" rel="nofollow">https://github.com/apache/spark/blob/v2.4.3/sql/catalyst/src/main/scala/org/apache/spark/sql/internal/SQLConf.scala</a></span></li>
+</ol>
+<p>&nbsp;</p>
+</div>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+    <div id="blog_post_info"></div>
+    <div class="clear"></div>
+    <div id="post_next_prev"></div>
+</div>
+            </div>
+            <div class="postDesc">posted @ 
+<span id="post-date">2020-04-24 21:46</span>&nbsp;
+<a href="https://www.cnblogs.com/johnny666888/">JohnnyBai</a>&nbsp;
+阅读(<span id="post_view_count">...</span>)&nbsp;
+评论(<span id="post_comment_count">...</span>)&nbsp;
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12770325" rel="nofollow">编辑</a>&nbsp;
+<a href="javascript:void(0)" onclick="AddToWz(12770325);return false;">收藏</a></div>
+        </div>
+	    
+	    
+    </div><!--end: topics 文章、评论容器-->
+</div>
+<script src="https://common.cnblogs.com/highlight/9.12.0/highlight.min.js"></script>
+<script>markdown_highlight();</script>
+<script>
+    var allowComments = true, cb_blogId = 240095, cb_blogApp = 'johnny666888', cb_blogUserGuid = 'a53735de-3342-e511-b908-9dcfd8948a71';
+    var cb_entryId = 12770325, cb_entryCreatedDate = '2020-04-24 21:46', cb_postType = 1; 
+    loadViewCount(cb_entryId);
+</script><a name="!comments"></a>
+<div id="blog-comments-placeholder"></div>
+<script>
+    var commentManager = new blogCommentManager();
+    commentManager.renderComments(0);
+</script>
+
+<div id="comment_form" class="commentform">
+    <a name="commentform"></a>
+    <div id="divCommentShow"></div>
+    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+    <div id="comment_form_container"></div>
+    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+    <div id="ad_t2"></div>
+    <div id="opt_under_post"></div>
+    <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            googletag.defineSlot("/1090369/C1", [300, 250], "div-gpt-ad-1546353474406-0").addService(googletag.pubads());
+            googletag.defineSlot("/1090369/C2", [468, 60], "div-gpt-ad-1539008685004-0").addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    </script>
+    <div id="cnblogs_c1" class="c_ad_block">
+        <div id="div-gpt-ad-1546353474406-0" style="height:250px; width:300px;"></div>
+    </div>
+    <div id="under_post_news"></div>
+    <div id="cnblogs_c2" class="c_ad_block">
+        <div id="div-gpt-ad-1539008685004-0" style="height:60px; width:468px;">
+            <script>
+                if (new Date() >= new Date(2018, 9, 13)) {
+                    googletag.cmd.push(function () { googletag.display("div-gpt-ad-1539008685004-0"); });
+                }
+            </script>
+        </div>
+    </div>
+    <div id="under_post_kb"></div>
+    <div id="HistoryToday" class="c_ad_block"></div>
+    <script type="text/javascript">
+        fixPostBody();
+        deliverBigBanner();
+setTimeout(function() { incrementViewCount(cb_entryId); }, 50);        deliverAdT2();
+        deliverAdC1();
+        deliverAdC2();
+        loadNewsAndKb();
+        loadBlogSignature();
+LoadPostCategoriesTags(cb_blogId, cb_entryId);        LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+        GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+        loadOptUnderPost();
+        GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    </script>
+</div>
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script>loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 JohnnyBai
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    
+</body>
+</html>

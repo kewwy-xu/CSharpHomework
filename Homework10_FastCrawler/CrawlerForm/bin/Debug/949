@@ -1,0 +1,487 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>pythonnvyihao - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    <link id="MainCss" rel="stylesheet" href="/skins/lessismoreright/bundle-lessismoreright.min.css?v=r7HROo-7bHpj9wQ7aMjjOlbCdKigSxO_AFRYzTkcpKo" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/lessismoreright/bundle-lessismoreright-mobile.min.css?v=FJjyQba01xzuYKRyPpSwE1bMq69pRjxrz5wp2oZZGLY" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/pythonnvyihao/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/pythonnvyihao/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/pythonnvyihao/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 589959;
+        var currentBlogApp = 'pythonnvyihao';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'LessIsMoreRight';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    <div id="home">
+    <div id="header">
+        <div id="blogTitle">
+            
+<div class="title"><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/pythonnvyihao/">pythonnvyihao</a>
+</div>
+<div class="subtitle">
+
+</div>
+
+        </div>
+        <div id="navigator">
+            
+<ul id="navList">
+    <li id="nav_sitehome"><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+    <li id="nav_myhome">
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/pythonnvyihao/">
+首页</a>
+</li>
+    <li id="nav_newpost">
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+    <li id="nav_contact">
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/pythonnvyihao">
+联系</a></li>
+    <li id="nav_rss">
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/pythonnvyihao/rss/">
+订阅</a></li>
+    <li id="nav_admin">
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+            <div class="blogStats">
+                
+<span id="stats_post_count">随笔 - 
+12&nbsp;</span>
+<span id="stats_article_count">文章 - 
+0&nbsp;</span>
+<!-- <span id="stats-comment_count"></span> -->
+<span id="stats_comment_count">评论 - 
+0</span>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="mainContent">
+            <div class="forFlow">
+                
+
+
+
+
+
+
+    
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/pythonnvyihao/archive/2020/04/24.html">2020年4月24日</a>
+    </div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/pythonnvyihao/p/12770268.html">
+    学python好还是大数据好？想学IT，但有点搞不清方向的人可以看看
+</a>
+
+        </div>
+        <div class="postCon">
+            
+
+    <div class="c_b_p_desc">
+摘要：这是我在某平台上看到的一个问题，学IT的话，是学python好还是学大数据好？ 首先这个问题不太对，因为大数据和python，从根源上来说是两码事，就像你问我，是学做湘菜好，还是学做打铁好。 所以，学python好还是大数据好？python是根源，而大数据可以说是python的延伸 而且对于学大数据            <a href="https://www.cnblogs.com/pythonnvyihao/p/12770268.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <div class="clear"></div>
+        <div class="postDesc">
+            
+
+posted @ 2020-04-24 21:14 pythonnvyihao 阅读 (5) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12770268" rel="nofollow">
+    编辑
+</a>
+
+        </div>
+        <div class="clear"></div>
+</div>
+    
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/pythonnvyihao/archive/2020/04/22.html">2020年4月22日</a>
+    </div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/pythonnvyihao/p/12757306.html">
+    如何成为python工程师？科技大佬说，只需做好这五个点即可
+</a>
+
+        </div>
+        <div class="postCon">
+            
+
+    <div class="c_b_p_desc">
+摘要：现在python是越来越火了，如何成为python工程师？这也成了很多初学者的疑问。似乎学了很久，学了很多，依然离python工程师有不小的距离，那么非科班出身的我们，到底该如何成为python工程师呢？ 首先如果你希望成为专业的程序员，那么，不要过早的让自己扎根某一种或两种编程语言，因为真正厉害的            <a href="https://www.cnblogs.com/pythonnvyihao/p/12757306.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <div class="clear"></div>
+        <div class="postDesc">
+            
+
+posted @ 2020-04-22 22:19 pythonnvyihao 阅读 (11) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12757306" rel="nofollow">
+    编辑
+</a>
+
+        </div>
+        <div class="clear"></div>
+</div>
+    
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/pythonnvyihao/archive/2020/04/21.html">2020年4月21日</a>
+    </div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/pythonnvyihao/p/12748327.html">
+    如何编写python脚本?教你做简单的爬虫，适合初学者
+</a>
+
+        </div>
+        <div class="postCon">
+            
+
+    <div class="c_b_p_desc">
+摘要：如何编写python脚本?很多朋友学习python都希望能从爬虫开始，而网络爬虫是近年来的热门话题，学习网络爬虫的人越来越多！ 其实，一般的爬虫技术具有2个功能：取数据和存数据！好像我们说了句废话。。。 但从这两个功能进行拓展，需要的知识很多：请求数据，防爬处理，页面解析，内容匹配，绕过验证码，维护            <a href="https://www.cnblogs.com/pythonnvyihao/p/12748327.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <div class="clear"></div>
+        <div class="postDesc">
+            
+
+posted @ 2020-04-21 22:13 pythonnvyihao 阅读 (11) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12748327" rel="nofollow">
+    编辑
+</a>
+
+        </div>
+        <div class="clear"></div>
+</div>
+    
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/pythonnvyihao/archive/2020/04/20.html">2020年4月20日</a>
+    </div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/pythonnvyihao/p/12740776.html">
+    如何从零开始学python？掌握这几点，想学不会都很难
+</a>
+
+        </div>
+        <div class="postCon">
+            
+
+    <div class="c_b_p_desc">
+摘要：如何从零开始学python？其实并不难，好好看看下面列举的几点，明白了，你也能从零开始学会python！ 新手学Python可以按照以下步骤进行： 1、如何从零开始学python？请按部就班敲代码 在Python的教程中，他讲的语法规则时，应该会有相应的例子，Python新手可以按照例子一步一步的把            <a href="https://www.cnblogs.com/pythonnvyihao/p/12740776.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <div class="clear"></div>
+        <div class="postDesc">
+            
+
+posted @ 2020-04-20 21:42 pythonnvyihao 阅读 (11) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12740776" rel="nofollow">
+    编辑
+</a>
+
+        </div>
+        <div class="clear"></div>
+</div>
+    
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/pythonnvyihao/archive/2020/04/18.html">2020年4月18日</a>
+    </div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/pythonnvyihao/p/12728446.html">
+    如何初学python?资深程序员浅谈，教你学会入门python
+</a>
+
+        </div>
+        <div class="postCon">
+            
+
+    <div class="c_b_p_desc">
+摘要：我认为python应该是现在市面上最简单，也是最值钱的一门编程语言，所以学习的人是越来越多，但是，如何初学python？这个问题困扰着很多初学python的人，今天，给大家简单聊聊这个话题。 我曾经也是Python小白，一步一步走过来，踩过不少坑，也买过很多编程的书，学过之后才发现，其实这些编程书几            <a href="https://www.cnblogs.com/pythonnvyihao/p/12728446.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <div class="clear"></div>
+        <div class="postDesc">
+            
+
+posted @ 2020-04-18 22:00 pythonnvyihao 阅读 (19) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12728446" rel="nofollow">
+    编辑
+</a>
+
+        </div>
+        <div class="clear"></div>
+</div>
+    
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/pythonnvyihao/archive/2020/04/17.html">2020年4月17日</a>
+    </div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/pythonnvyihao/p/12722761.html">
+    Python分析数据难吗？某科技大学教授说，很难但有方法就简单   
+</a>
+
+        </div>
+        <div class="postCon">
+            
+
+    <div class="c_b_p_desc">
+摘要：用python分析数据难吗？某科技大学的教授这样说，很难，但要讲方法，主要是因为并不是掌握了基础，就能用python来做数据分析的。 所谓python的基础，也就是刚入门的python学习者，学习的基础语法，比如Python环境搭建、常量变量、运算符等等，对于大多数人来说，入门并掌握基础就已经是比较            <a href="https://www.cnblogs.com/pythonnvyihao/p/12722761.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <div class="clear"></div>
+        <div class="postDesc">
+            
+
+posted @ 2020-04-17 22:00 pythonnvyihao 阅读 (11) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12722761" rel="nofollow">
+    编辑
+</a>
+
+        </div>
+        <div class="clear"></div>
+</div>
+    
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/pythonnvyihao/archive/2020/04/16.html">2020年4月16日</a>
+    </div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/pythonnvyihao/p/12715970.html">
+    怎么搭建python环境？很简单，就几步的事
+</a>
+
+        </div>
+        <div class="postCon">
+            
+
+    <div class="c_b_p_desc">
+摘要：现在学习python的人越来越多了，而学习python必备的就是搭建python环境，那么，到底怎么搭建python环境呢？ 首先，你需要有安装包，这个去官网下载就可以了，如果不会的话，可以看文章底部。 下载完程序之后就可以开始安装了。 然后，双击下载的程序，选择安装适合所有人的那项，这应该是默认的            <a href="https://www.cnblogs.com/pythonnvyihao/p/12715970.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <div class="clear"></div>
+        <div class="postDesc">
+            
+
+posted @ 2020-04-16 21:32 pythonnvyihao 阅读 (14) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12715970" rel="nofollow">
+    编辑
+</a>
+
+        </div>
+        <div class="clear"></div>
+</div>
+    
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/pythonnvyihao/archive/2020/04/15.html">2020年4月15日</a>
+    </div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/pythonnvyihao/p/12708922.html">
+    如何练习python?有这五个游戏，实操经验就已经够了
+</a>
+
+        </div>
+        <div class="postCon">
+            
+
+    <div class="c_b_p_desc">
+摘要：现在学习python的人越来越多了，但仅仅只是学习理论怎么够呢，如何练习python？已经是python初学者比较要学会的技巧了！ 其实，最好的实操练习，就是玩游戏。 也许你不会信，但这五个小游戏足够你练手python了。 一、如何练习python？就玩五子棋人机对战游戏吧 （尾部有这五个游戏哦！）            <a href="https://www.cnblogs.com/pythonnvyihao/p/12708922.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <div class="clear"></div>
+        <div class="postDesc">
+            
+
+posted @ 2020-04-15 22:13 pythonnvyihao 阅读 (22) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12708922" rel="nofollow">
+    编辑
+</a>
+
+        </div>
+        <div class="clear"></div>
+</div>
+    
+
+
+<div class="day">
+    <div class="dayTitle">
+        <a href="https://www.cnblogs.com/pythonnvyihao/archive/2020/04/14.html">2020年4月14日</a>
+    </div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/pythonnvyihao/p/12701564.html">
+    怎么入门python？不懂你别瞎尝试，看看大佬怎么说
+</a>
+
+        </div>
+        <div class="postCon">
+            
+
+    <div class="c_b_p_desc">
+摘要：学习任何一门语言都是从入门，通过不间断练习达到熟练水准。虽然万事开头难，但好的开始是成功的一半，今天这篇文章就来谈谈怎么入门python？            <a href="https://www.cnblogs.com/pythonnvyihao/p/12701564.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <div class="clear"></div>
+        <div class="postDesc">
+            
+
+posted @ 2020-04-14 22:00 pythonnvyihao 阅读 (10) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12701564" rel="nofollow">
+    编辑
+</a>
+
+        </div>
+        <div class="clear"></div>
+            <div class="postSeparator"></div>
+        <div class="postTitle">
+            
+
+<a class="postTitle2" href="https://www.cnblogs.com/pythonnvyihao/p/12701540.html">
+    怎么高效学习python？其实只需要这个方法，快速掌握不叫事儿
+</a>
+
+        </div>
+        <div class="postCon">
+            
+
+    <div class="c_b_p_desc">
+摘要：很多人想学python，并且希望能快速高效的学习python，但一直都没有找到合适的方法，下面谈一下我的方法。            <a href="https://www.cnblogs.com/pythonnvyihao/p/12701540.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+
+        </div>
+        <div class="clear"></div>
+        <div class="postDesc">
+            
+
+posted @ 2020-04-14 21:57 pythonnvyihao 阅读 (12) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12701540" rel="nofollow">
+    编辑
+</a>
+
+        </div>
+        <div class="clear"></div>
+</div>
+
+<div class="topicListFooter">
+    <div id="nav_next_page">
+        
+    <a href="https://www.cnblogs.com/pythonnvyihao/default.html?page=2">
+        下一页
+    </a>
+
+    </div>    
+</div>
+
+
+
+
+            </div>
+        </div>
+
+        <div id="sideBar">
+            <div id="sideBarMain">
+                
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+                <div id="calendar"><div id="blog-calendar" style="display:none"></div></div>                
+                <script>loadBlogDefaultCalendar();</script>
+                <div id="leftcontentcontainer">
+                    <!-- begin:SingleColumn -->
+                    <div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+                    <!-- end:  SingleColumn -->
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+    <div id="footer">
+        <!--done-->
+Copyright &copy; 2020 pythonnvyihao
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+    </div>
+</div>
+
+    
+</body>
+</html>

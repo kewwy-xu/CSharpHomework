@@ -1,0 +1,288 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    <meta property="og:description" content="一、业务背景 es服务当前没有专门的部门负责维护和开发，交由各端自行负责维护，随着公司业务查询和统计需求非常多，会面临居多方面问题和挑战： 无人(专业RD或部门)负责 无专业的人进行维护，遇到问题几乎" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>es技术规划 - 李志涛 - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    <link id="MainCss" rel="stylesheet" href="/skins/hover/bundle-hover.min.css?v=4g9VRwEunu0VTeVQV676B9zlptl8ucyilUBAFWqEsMA" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/hover/bundle-hover-mobile.min.css?v=ADiCwO2hOTdd5yYidcx7eob7ix2VJI4o_TXjEycTHjs" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/lizherui/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/lizherui/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/lizherui/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 354992;
+        var currentBlogApp = 'lizherui';
+        var cb_enable_mathjax = false;
+        var isLogined = false;
+        var skinName = 'Hover';
+    </script>
+    
+    
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    
+<div id="top">
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/lizherui/">李志涛</a>
+</h1>
+</div>
+<p id="tagline">
+
+</p>
+
+
+<div id="leftmenu">
+	
+		
+<h3>导航</h3>
+<ul>
+			<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+			<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/lizherui/">
+首页</a>
+</li>
+			<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+			<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/%E6%9D%8E%E5%BF%97%E6%B6%9B">
+联系</a></li>
+			<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/lizherui/rss/">
+订阅</a>
+<a id="blog_nav_rss_image" href="https://www.cnblogs.com/lizherui/rss/">
+    <img src="/skins/hover/images/xml.gif" alt="订阅" />
+</a></li>
+			<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+</ul>
+
+
+		<div id="calendar"><div id="blog-calendar" style="display:none"></div></div>                
+                    <script>loadBlogDefaultCalendar();</script>
+		<h3>统计</h3>
+	<ul>
+		<li>随笔 - 
+23</li>
+		<li>文章 - 
+0</li>
+		<li>评论 - 
+5</li>
+		<li>引用 - 
+0</li>
+	</ul>
+
+
+		
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+		<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+	
+</div>
+<div id="main">
+	<div id="post_detail">
+	<div class="post">
+		<h2>
+			
+<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/lizherui/p/12769878.html">es技术规划</a>
+
+		</h2>
+		
+<div id="cnblogs_post_body" class="blogpost-body ">
+    <h2 class="p1">一、业务背景</h2>
+<p class="p2"><span class="s1">es服务当前没有专门的部门负责维护和开发，交由各端自行负责维护，随着公司业务查询和统计需求非常多，会面临居多方面问题和挑战：</span></p>
+<ul class="ul1">
+<li class="li2"><span class="s2">无人(专业<span class="s1">RD或部门)负责</span></span></li>
+<ul class="ul1">
+<li class="li2"><span class="s2">无专业的人进行维护，遇到问题几乎无人处理</span></li>
+</ul>
+<li class="li2"><span class="s2">缺乏性能评估</span></li>
+<ul class="ul1">
+<li class="li2"><span class="s2">查询和统计相关语句执行无指标评价体系</span></li>
+</ul>
+<li class="li2"><span class="s2">运维效率较低</span></li>
+<ul class="ul1">
+<li class="li2"><span class="s2">无操作友好且高效的<span class="s1">web管理平台</span></span></li>
+</ul>
+<li class="li2"><span class="s2">质量评估缺失</span></li>
+<ul class="ul1">
+<li class="li2"><span class="s2">监控报警体系不完善</span></li>
+</ul>
+<li class="li2"><span class="s2">缺乏运维体系建设</span></li>
+<ul class="ul1">
+<li class="li2"><span class="s1">无集群性能评估和压测报告</span></li>
+<li class="li2"><span class="s1">无容灾容错措施</span></li>
+<li class="li2"><span class="s1">无迁移扩容方案</span></li>
+<li class="li2"><span class="s1">无最佳实践(容量、集群规模、<span class="s1">jvm配置等等)</span></span></li>
+<li class="li2"><span class="s1">无优化方案</span></li>
+</ul>
+</ul>
+<h2 class="p1">二、业务目标</h2>
+<ul class="ul1">
+<li class="li2"><span class="s1">提效率降成本，<span class="s2">web自动化运维平台建设</span></span></li>
+<li class="li2"><span class="s1">优化性能，服务治理体系建设(<span class="s2">SOP、调优)</span></span></li>
+<li class="li2"><span class="s1">集群性能评估，提供性能、压测方案</span></li>
+<li class="li2"><span class="s1">保障质量，监控报警、数据报表完善和<span class="s2">SLA</span></span></li>
+<li class="li2"><span class="s1">节约资源，进行集群规划和梳理，逐步收敛集群规模。<span class="s2"> 1.下线富余机器<span class="s2">&nbsp; 2.相应机器降配置</span></span></span></li>
+<li class="li2"><span class="s1">新增安全性，新增鉴权模块，实现访问隔离和安全验证</span></li>
+<li class="li2"><span class="s1">索引同步保证，保证数据一致性、正确性、实时性</span></li>
+</ul>
+<h2 class="p1">三、技术规划</h2>
+<p class="p2"><span class="s1">es成果落地分期进行，每期以季度为单位，每季度都要规划具体开发和落地任务以及完成时间</span></p>
+<p class="p2">一期计划：</p>
+<ul class="ul1">
+<li class="li2"><span class="s2">监控报警完善，报警考虑与第三方组件集成，例如运维体系、钉钉集成等</span></li>
+<li class="li2"><span class="s2">优化性能，集群性能调优、部署架构调整、集群分类。</span></li>
+<li class="li2"><span class="s2">建立各种<span class="s1">SOP（安装、机器配置、<span class="s1">jvm配置、重启、迁移、扩容等）</span></span></span></li>
+<li class="li2"><span class="s2">收敛集群规模和数量，下线富余机器。例如有的节点<span class="s1">128G根本用不了，纯属浪费资源</span></span></li>
+<li class="li2"><span class="s2">测试方案，性能测试、功能测试、可靠性测试(各种容灾容错场景)、<span class="s1">es版本升级与兼容性测试</span></span></li>
+</ul>
+<p class="p2">二期计划：</p>
+<ul class="ul1">
+<li class="li2"><span class="s2">建平台，推进<span class="s1">web自动化运维平台建设</span></span></li>
+<ul class="ul1">
+<li class="li2"><span class="s2">多集群管理(浏览、增减)</span></li>
+<li class="li2"><span class="s2">节点管理(浏览、增减)</span></li>
+<li class="li2"><span class="s2">业务接入评估公式和规范</span></li>
+<li class="li2"><span class="s2">业务申请入口</span></li>
+<li class="li2"><span class="s2">类<span class="s1">SQL支持<span class="s1">/统计查询性能，集成官方<span class="s1">SQL插件</span></span></span></span></li>
+</ul>
+</ul>
+<p class="p2">三期计划：</p>
+<ul class="ul1">
+<li class="li2"><span class="s2">架构升级优化，增加代理层</span></li>
+<ul class="ul1">
+<li class="li2"><span class="s2">通过代理层检索服务，实现限流，超时，重试机制</span></li>
+<li class="li2"><span class="s2">大集群业务访问隔离</span></li>
+</ul>
+</ul>
+<h2 class="p1">五、开发任务</h2>
+<p class="p1">人力需求规划：需求<span class="s1">2人<span class="s1">&nbsp; 一期计划<span class="s1">&nbsp; 1人负责测试方案落地，容错容灾机制，保障集群稳定性<span class="s1">&nbsp; 1人负责各种<span class="s1">sop和演练，参与部分优化工作</span></span></span></span></span></p>
+<p class="p1">&nbsp;</p>
+<p class="p1">引用博客地址：<a href="https://www.cnblogs.com/lizherui/p/12769878.html">https://www.cnblogs.com/lizherui/p/12769878.html</a></p>
+</div>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+    <div id="blog_post_info"></div>
+    <div class="clear"></div>
+    <div id="post_next_prev"></div>
+</div>
+		<p class="postfoot">
+			posted on 
+<span id="post-date">2020-04-24 20:27</span>&nbsp;
+<a href="https://www.cnblogs.com/lizherui/">李志涛</a>&nbsp;
+阅读(<span id="post_view_count">...</span>)&nbsp;
+评论(<span id="post_comment_count">...</span>)&nbsp;
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12769878" rel="nofollow">编辑</a>&nbsp;
+<a href="javascript:void(0)" onclick="AddToWz(12769878);return false;">收藏</a>
+		</p>
+	</div>
+
+
+<script src="https://common.cnblogs.com/highlight/9.12.0/highlight.min.js"></script>
+<script>markdown_highlight();</script>
+<script>
+    var allowComments = true, cb_blogId = 354992, cb_blogApp = 'lizherui', cb_blogUserGuid = '03cd9f93-ca38-e011-ac81-842b2b196315';
+    var cb_entryId = 12769878, cb_entryCreatedDate = '2020-04-24 20:27', cb_postType = 1; 
+    loadViewCount(cb_entryId);
+</script><a name="!comments"></a>
+<div id="blog-comments-placeholder"></div>
+<script>
+    var commentManager = new blogCommentManager();
+    commentManager.renderComments(0);
+</script>
+
+<div id="comment_form" class="commentform">
+    <a name="commentform"></a>
+    <div id="divCommentShow"></div>
+    <div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="#" onclick="return RefreshPage();">刷新页面</a><a href="#top">返回顶部</a></div>
+    <div id="comment_form_container"></div>
+    <div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+    <div id="ad_t2"></div>
+    <div id="opt_under_post"></div>
+    <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function () {
+            googletag.defineSlot("/1090369/C1", [300, 250], "div-gpt-ad-1546353474406-0").addService(googletag.pubads());
+            googletag.defineSlot("/1090369/C2", [468, 60], "div-gpt-ad-1539008685004-0").addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    </script>
+    <div id="cnblogs_c1" class="c_ad_block">
+        <div id="div-gpt-ad-1546353474406-0" style="height:250px; width:300px;"></div>
+    </div>
+    <div id="under_post_news"></div>
+    <div id="cnblogs_c2" class="c_ad_block">
+        <div id="div-gpt-ad-1539008685004-0" style="height:60px; width:468px;">
+            <script>
+                if (new Date() >= new Date(2018, 9, 13)) {
+                    googletag.cmd.push(function () { googletag.display("div-gpt-ad-1539008685004-0"); });
+                }
+            </script>
+        </div>
+    </div>
+    <div id="under_post_kb"></div>
+    <div id="HistoryToday" class="c_ad_block"></div>
+    <script type="text/javascript">
+        fixPostBody();
+        deliverBigBanner();
+setTimeout(function() { incrementViewCount(cb_entryId); }, 50);        deliverAdT2();
+        deliverAdC1();
+        deliverAdC2();
+        loadNewsAndKb();
+        loadBlogSignature();
+LoadPostCategoriesTags(cb_blogId, cb_entryId);        LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+        GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+        loadOptUnderPost();
+        GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+    </script>
+</div></div>
+
+
+</div>
+<p id="footer">
+	Powered by: 
+	<br />
+	
+	
+<a href="https://www.cnblogs.com/" id="Footer1_Hyperlink3" style="font-size: 12px; font-family: Verdana">博客园</a>
+	<br />
+	Copyright &copy; 2020 李志涛
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+</p>
+
+
+
+
+    
+</body>
+</html>

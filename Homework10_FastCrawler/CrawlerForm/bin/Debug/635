@@ -1,0 +1,806 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="origin" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Insus.NET - 博客园</title>
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=-oFz8B4m7JhHaZzdTkzPza2oLZNDRR8obnCz6w7OHbU" />
+    <link id="MainCss" rel="stylesheet" href="/skins/summergarden/bundle-summergarden.min.css?v=VU1dFS4587gn2X8grE6LlrhwScli3SW5N_Dod2a5NAU" />
+    
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/summergarden/bundle-summergarden-mobile.min.css?v=qqfeWJjwG2yHc4G3o4D_aAh8NdA2Uspy5vjuqwOEq0c" />
+    
+    <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/insus/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/insus/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/insus/wlwmanifest.xml" />
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=z6JkvKQ7L_bGD-nwJExYzsoFf5qnluqZJru6RsfoZuM"></script>
+    <script>
+        var currentBlogId = 31588;
+        var currentBlogApp = 'insus';
+        var cb_enable_mathjax = true;
+        var isLogined = false;
+        var skinName = 'summerGarden';
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], processClass: 'math', processEscapes: true },
+        TeX: {
+        equationNumbers: { autoNumber: ['AMS'], useLabelIds: true },
+        extensions: ['extpfeil.js', 'mediawiki-texvc.js'],
+        Macros: {bm: "\\boldsymbol"}
+        },
+        'HTML-CSS': { linebreaks: { automatic: true } },
+        SVG: { linebreaks: { automatic: true } }
+        });
+    </script>
+    <script src="https://mathjax.cnblogs.com/2_7_5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+</head>
+<body>
+    <a name="top"></a>
+    
+    
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+	<a href="https://www.cnblogs.com/insus/"><img id="blogLogo" src="/skins/custom/images/logo.gif" alt="返回主页" /></a>			
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle HeaderMainTitle" href="https://www.cnblogs.com/insus/">Insus.NET</a>
+</h1>
+<h2>
+放下一切乘云去，坐起云端观落日。
+</h2>
+
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+
+			<ul id="navList">
+				<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">
+博客园</a>
+</li>
+				<li>
+<a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/insus/">
+首页</a>
+</li>
+				<li>
+
+<a id="blog_nav_newpost" class="menu" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">
+新随笔</a>
+</li>
+				<li>
+<a id="blog_nav_contact" class="menu" href="https://msg.cnblogs.com/send/Insus.NET">
+联系</a></li>
+				<li>
+<a id="blog_nav_admin" class="menu" href="https://i.cnblogs.com/">
+管理</a>
+</li>
+				<li>
+<a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/insus/rss/">
+订阅</a>
+				
+<a id="blog_nav_rss_image" href="https://www.cnblogs.com/insus/rss/">
+    <img src="/skins/summergarden/images/xml.gif" alt="订阅" />
+</a></li>
+			</ul>
+
+
+
+		<div class="blogStats">
+			
+			<!--done-->
+随笔 - 
+1749&nbsp;
+文章 - 
+0&nbsp;
+评论 - 
+2785&nbsp;
+
+
+
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<!--done-->
+
+
+
+
+		
+
+<div class="day">
+	<div class="dayTitle">
+		<a href="https://www.cnblogs.com/insus/archive/2020/04/24.html">
+2020年4月24日</a>				  
+	</div>
+
+	
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/insus/p/12767306.html">
+    SetParameterValue for main report or subreport in crystal report
+</a>
+
+			</div>
+			<div class="postCon">
+
+    <div class="cnblogs-post-body" id="postlist_postbody_12767306">
+        正文内容加载中...
+    </div>
+    <script type="text/javascript">getBlogPostBody(12767306);</script>
+</div>
+			<div class="clear"></div>
+			<div class="postDesc">
+
+posted @ 2020-04-24 15:06 Insus.NET 阅读 (8) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12767306" rel="nofollow">
+    编辑
+</a>
+</div>
+			<div class="clear"></div>
+
+</div>
+
+
+		
+
+<div class="day">
+	<div class="dayTitle">
+		<a href="https://www.cnblogs.com/insus/archive/2020/04/11.html">
+2020年4月11日</a>				  
+	</div>
+
+	
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/insus/p/12677543.html">
+    angularjs下拉列表设置一个默认值
+</a>
+
+			</div>
+			<div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：angularjs环境中，下拉列表html代码如下： 下拉列表的数据源结构大约如下： 现在，我们想在页面的初始化或者一个用户Click事件中，为这个下拉列表设置一个默认值。 方法如下： $scope.Trans_Type =1; //2,3,4,..... 当我们执行时，发现它并没有得到预期的效果，            <a href="https://www.cnblogs.com/insus/p/12677543.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+			<div class="clear"></div>
+			<div class="postDesc">
+
+posted @ 2020-04-11 06:21 Insus.NET 阅读 (46) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12677543" rel="nofollow">
+    编辑
+</a>
+</div>
+			<div class="clear"></div>
+			<div class="postSeparator"></div>
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/insus/p/12677535.html">
+    angularjs环境中为Tinymce编辑器取值或赋值
+</a>
+
+			</div>
+			<div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：Tinymce版本,5.2.1 html: 取值或赋值， 方法1： 方法2：            <a href="https://www.cnblogs.com/insus/p/12677535.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+			<div class="clear"></div>
+			<div class="postDesc">
+
+posted @ 2020-04-11 05:36 Insus.NET 阅读 (22) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12677535" rel="nofollow">
+    编辑
+</a>
+</div>
+			<div class="clear"></div>
+
+</div>
+
+
+		
+
+<div class="day">
+	<div class="dayTitle">
+		<a href="https://www.cnblogs.com/insus/archive/2020/04/10.html">
+2020年4月10日</a>				  
+	</div>
+
+	
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/insus/p/12674331.html">
+    angularjs display html in ng-repeat
+</a>
+
+			</div>
+			<div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：最近项目中，一些html内容需要显示在ng-repeat内。 1，引用angular-sanitize.js 2，写一个过滤器 最后是在html中使用过滤器 存储于数据库表内的html内容： 呈现效果：            <a href="https://www.cnblogs.com/insus/p/12674331.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+			<div class="clear"></div>
+			<div class="postDesc">
+
+posted @ 2020-04-10 16:31 Insus.NET 阅读 (25) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12674331" rel="nofollow">
+    编辑
+</a>
+</div>
+			<div class="clear"></div>
+
+</div>
+
+
+		
+
+<div class="day">
+	<div class="dayTitle">
+		<a href="https://www.cnblogs.com/insus/archive/2020/04/08.html">
+2020年4月8日</a>				  
+	</div>
+
+	
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/insus/p/12661516.html">
+    angularjs验证一个值是否有效
+</a>
+
+			</div>
+			<div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：一般情况之下，我们只需要传递验证值本身向服务端即可。 但是，Insus.NET所遇上的问题是，得传递其它值一起POST至服务端来验证。 自定义指令Directive: Html 代码：            <a href="https://www.cnblogs.com/insus/p/12661516.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+			<div class="clear"></div>
+			<div class="postDesc">
+
+posted @ 2020-04-08 17:53 Insus.NET 阅读 (38) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12661516" rel="nofollow">
+    编辑
+</a>
+</div>
+			<div class="clear"></div>
+
+</div>
+
+
+		
+
+<div class="day">
+	<div class="dayTitle">
+		<a href="https://www.cnblogs.com/insus/archive/2020/04/07.html">
+2020年4月7日</a>				  
+	</div>
+
+	
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/insus/p/12654556.html">
+    Not enough space in runtime area !!! smbios data will not be available.
+</a>
+
+			</div>
+			<div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：电脑启动时，显示“Not enough space in runtime area !!! smbios data will not be available.” 清除bios，没有用。 解决方法：拔掉主板电池，按住电源开关不放松(太约15~30秒左右)，电脑会启动直至自动关闭为止。然后安装好主板电            <a href="https://www.cnblogs.com/insus/p/12654556.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+			<div class="clear"></div>
+			<div class="postDesc">
+
+posted @ 2020-04-07 17:18 Insus.NET 阅读 (25) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12654556" rel="nofollow">
+    编辑
+</a>
+</div>
+			<div class="clear"></div>
+			<div class="postSeparator"></div>
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/insus/p/12653260.html">
+    获取ng-repeat内的input field值进行更新
+</a>
+
+			</div>
+			<div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：Insus.NET有在angularjs中把ng-repeat显示数据的同时又让其能更新数据。 html代码如下： 当用户点击更新时，能获取按钮当前行的更新数据进行更新。            <a href="https://www.cnblogs.com/insus/p/12653260.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+			<div class="clear"></div>
+			<div class="postDesc">
+
+posted @ 2020-04-07 14:36 Insus.NET 阅读 (28) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12653260" rel="nofollow">
+    编辑
+</a>
+</div>
+			<div class="clear"></div>
+
+</div>
+
+
+		
+
+<div class="day">
+	<div class="dayTitle">
+		<a href="https://www.cnblogs.com/insus/archive/2020/04/01.html">
+2020年4月1日</a>				  
+	</div>
+
+	
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/insus/p/12612024.html">
+    ng-repeat实现动态过滤
+</a>
+
+			</div>
+			<div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：下面的静态代码中： 现在想把箭头所指的值，改为动态。 根据不同条件，它将有可能是1,或是3或是2或是5等。            <a href="https://www.cnblogs.com/insus/p/12612024.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+			<div class="clear"></div>
+			<div class="postDesc">
+
+posted @ 2020-04-01 13:42 Insus.NET 阅读 (57) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12612024" rel="nofollow">
+    编辑
+</a>
+</div>
+			<div class="clear"></div>
+			<div class="postSeparator"></div>
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/insus/p/12610619.html">
+    pass data to parital view
+</a>
+
+			</div>
+			<div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：传递数据至部分视图： 在ps.cshtml中get到上面高亮的参数：            <a href="https://www.cnblogs.com/insus/p/12610619.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+			<div class="clear"></div>
+			<div class="postDesc">
+
+posted @ 2020-04-01 09:56 Insus.NET 阅读 (47) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12610619" rel="nofollow">
+    编辑
+</a>
+</div>
+			<div class="clear"></div>
+
+</div>
+
+
+		
+
+<div class="day">
+	<div class="dayTitle">
+		<a href="https://www.cnblogs.com/insus/archive/2020/03/30.html">
+2020年3月30日</a>				  
+	</div>
+
+	
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/insus/p/12598696.html">
+    抽离Service方法体，实现对js的重构
+</a>
+
+			</div>
+			<div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：下面2个service中，方法体均一样。只是其中service名，参数和url路径不一样。 原因是曾经对项目升级或是重构留下来的结果。 由于程序中N多处地方有引用，又不能合并它，删除更不用说了。 因为，Insus.NET为了让其更好维护，因此写了另外一个Service来进行重构它们： 好了，博文中最            <a href="https://www.cnblogs.com/insus/p/12598696.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+			<div class="clear"></div>
+			<div class="postDesc">
+
+posted @ 2020-03-30 15:05 Insus.NET 阅读 (72) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12598696" rel="nofollow">
+    编辑
+</a>
+</div>
+			<div class="clear"></div>
+
+</div>
+
+
+		
+
+<div class="day">
+	<div class="dayTitle">
+		<a href="https://www.cnblogs.com/insus/archive/2020/03/26.html">
+2020年3月26日</a>				  
+	</div>
+
+	
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/insus/p/12572250.html">
+    Angularjs实现一个Factory
+</a>
+
+			</div>
+			<div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：昨晚对项目程序进行重构，发现一些数据冗余非常严重，一些货币，单位等静态数据N个页面均有从数据库获取。 因此，Insus.NET想到了，把它们写成一个通用的方法。在页面中，直接去执行此通用的方法即可。 代码示例大约如下： 公共函数： function httpRequestEvent(type, ur            <a href="https://www.cnblogs.com/insus/p/12572250.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+			<div class="clear"></div>
+			<div class="postDesc">
+
+posted @ 2020-03-26 09:26 Insus.NET 阅读 (62) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12572250" rel="nofollow">
+    编辑
+</a>
+</div>
+			<div class="clear"></div>
+
+</div>
+
+
+		
+
+<div class="day">
+	<div class="dayTitle">
+		<a href="https://www.cnblogs.com/insus/archive/2020/03/17.html">
+2020年3月17日</a>				  
+	</div>
+
+	
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/insus/p/12509447.html">
+    获取部分视图(子控制器)的model值
+</a>
+
+			</div>
+			<div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：项目是ASP.NET MVC，在重构时页面时，几部页面相同的html代码，被抽至部分视图Partial View中去了。但是ASP.NET MVC中，又使用了angularjs。所以部分视图中的Controller相对于angularjs来说，就成了子控制器Controller。 现在的问题是，在视            <a href="https://www.cnblogs.com/insus/p/12509447.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+			<div class="clear"></div>
+			<div class="postDesc">
+
+posted @ 2020-03-17 11:19 Insus.NET 阅读 (107) 评论 (1)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12509447" rel="nofollow">
+    编辑
+</a>
+</div>
+			<div class="clear"></div>
+
+</div>
+
+
+		
+
+<div class="day">
+	<div class="dayTitle">
+		<a href="https://www.cnblogs.com/insus/archive/2020/03/16.html">
+2020年3月16日</a>				  
+	</div>
+
+	
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/insus/p/12504321.html">
+    文本框仅允许输入大于0的正整数
+</a>
+
+			</div>
+			<div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：系统有个栏位，作为参数设置，限制用户只能输入大于0的正整数： &lt;input type=&quot;text&quot; name=&quot;non&quot; ng-model=&quot;non&quot; onpaste=&quot;return false;&quot; onkeyup=&quot;if ( this.value.length == 1 ) { this.valu            <a href="https://www.cnblogs.com/insus/p/12504321.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+			<div class="clear"></div>
+			<div class="postDesc">
+
+posted @ 2020-03-16 15:44 Insus.NET 阅读 (96) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12504321" rel="nofollow">
+    编辑
+</a>
+</div>
+			<div class="clear"></div>
+
+</div>
+
+
+		
+
+<div class="day">
+	<div class="dayTitle">
+		<a href="https://www.cnblogs.com/insus/archive/2020/03/09.html">
+2020年3月9日</a>				  
+	</div>
+
+	
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/insus/p/12449395.html">
+    Angularjs接收服务端的布尔值
+</a>
+
+			</div>
+			<div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：在数据库库存储的布尔值： 但在前端Angularjs给布尔值却是&quot;true&quot; and &quot;false&quot;。 因此你值去显示服务端的布尔值时，也许永远得到的是false值。 所以，Insus.NET在开发过程中，得写一个Service来进行转换： &#39;use strict&#39;; app.service(&#39;co            <a href="https://www.cnblogs.com/insus/p/12449395.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+			<div class="clear"></div>
+			<div class="postDesc">
+
+posted @ 2020-03-09 16:22 Insus.NET 阅读 (44) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12449395" rel="nofollow">
+    编辑
+</a>
+</div>
+			<div class="clear"></div>
+			<div class="postSeparator"></div>
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/insus/p/12449173.html">
+    Ajax POST单个对象或多个对象至API
+</a>
+
+			</div>
+			<div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：如下图示例： 前端在引用这个2个Action时，POST单个对象，或多个对象作为参数传至服务端的API。 传单外对象： var _obj = {}; _obj.Item_Code = code; $http({ method: &#39;POST&#39;, url: &#39;/Item/Delete/&#39;, dataTy            <a href="https://www.cnblogs.com/insus/p/12449173.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+			<div class="clear"></div>
+			<div class="postDesc">
+
+posted @ 2020-03-09 16:03 Insus.NET 阅读 (109) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12449173" rel="nofollow">
+    编辑
+</a>
+</div>
+			<div class="clear"></div>
+			<div class="postSeparator"></div>
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/insus/p/12447532.html">
+    ASP.NET MVC程序重构
+</a>
+
+			</div>
+			<div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：审视ASP.NET MVC代码时，发现一些代码冗余： 3处高亮的代码都一样，只是在不相同的ActionResult的Action内。 现在，我们可以把这3部分的代码抽取出来： private Transportation t = new Transportation { Controller = &quot;            <a href="https://www.cnblogs.com/insus/p/12447532.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+			<div class="clear"></div>
+			<div class="postDesc">
+
+posted @ 2020-03-09 11:31 Insus.NET 阅读 (148) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12447532" rel="nofollow">
+    编辑
+</a>
+</div>
+			<div class="clear"></div>
+
+</div>
+
+
+		
+
+<div class="day">
+	<div class="dayTitle">
+		<a href="https://www.cnblogs.com/insus/archive/2020/02/21.html">
+2020年2月21日</a>				  
+	</div>
+
+	
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/insus/p/12342108.html">
+    查询数据库创建时间
+</a>
+
+			</div>
+			<div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：可以执行存储过程sp_helpdb查询到数据库相关信息： EXECUTE sp_helpdb &#39;Test&#39; GO Source Code 或者查询view视图sys.databases： SELECT create_date FROM sys.databases WHERE name = &#39;Test            <a href="https://www.cnblogs.com/insus/p/12342108.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+			<div class="clear"></div>
+			<div class="postDesc">
+
+posted @ 2020-02-21 17:24 Insus.NET 阅读 (119) 评论 (1)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12342108" rel="nofollow">
+    编辑
+</a>
+</div>
+			<div class="clear"></div>
+			<div class="postSeparator"></div>
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/insus/p/12341943.html">
+    查询MS SQL的版本号
+</a>
+
+			</div>
+			<div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：可以使用全局变量@@VERSION或者是使用SERVERPROPERTY()函数： 参考： SELECT @@VERSION SELECT SERVERPROPERTY(&#39;Edition&#39;) Source Code 根据查询的结果，有2个值可以参考的： x86 = 32-bit x64 = 64-b            <a href="https://www.cnblogs.com/insus/p/12341943.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+			<div class="clear"></div>
+			<div class="postDesc">
+
+posted @ 2020-02-21 16:43 Insus.NET 阅读 (80) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12341943" rel="nofollow">
+    编辑
+</a>
+</div>
+			<div class="clear"></div>
+			<div class="postSeparator"></div>
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/insus/p/12341816.html">
+    获取Data和Log默认路径
+</a>
+
+			</div>
+			<div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：使用SERVERPROPERTY()来得到Data和Log的默认路径： InstanceDefaultDataPath和InstanceDefaultLogPath分别返回默认数据和日志目录。 DECLARE @ddp sql_variant = SERVERPROPERTY(&#39;InstanceDe            <a href="https://www.cnblogs.com/insus/p/12341816.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+			<div class="clear"></div>
+			<div class="postDesc">
+
+posted @ 2020-02-21 16:18 Insus.NET 阅读 (70) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12341816" rel="nofollow">
+    编辑
+</a>
+</div>
+			<div class="clear"></div>
+			<div class="postSeparator"></div>
+			<div class="postTitle">
+				
+
+<a class="postTitle2" href="https://www.cnblogs.com/insus/p/12341481.html">
+    快速查找对象
+</a>
+
+			</div>
+			<div class="postCon">
+
+    <div class="c_b_p_desc">
+摘要：在SQL Server Management Studio对象，会随系统的开发，所产生的对象也会越来越多，我们可以使用SMS的过滤功能来查找对象： 参考下面步骤： 按步骤5之后，得到结果： 最后，如果想取消过滤，参考：            <a href="https://www.cnblogs.com/insus/p/12341481.html" class="c_b_p_desc_readmore">阅读全文</a>
+    </div>
+</div>
+			<div class="clear"></div>
+			<div class="postDesc">
+
+posted @ 2020-02-21 15:18 Insus.NET 阅读 (80) 评论 (0)
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12341481" rel="nofollow">
+    编辑
+</a>
+</div>
+			<div class="clear"></div>
+
+</div>
+
+
+
+<div class="topicListFooter">
+    <div id="nav_next_page">
+        
+    <a href="https://www.cnblogs.com/insus/default.html?page=2">
+        下一页
+    </a>
+
+    </div>    
+</div>
+
+
+
+
+
+
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<div id="sidebar_news" class="newsItem">
+            <script>loadBlogNews();</script>
+</div>
+
+			<div id="calendar"><div id="calendar"><div id="blog-calendar" style="display:none"></div></div>                
+                    <script>loadBlogDefaultCalendar();</script></div>
+			
+			<DIV id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div>
+                    <script>loadBlogSideColumn();</script>
+			</DIV>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		<!--done-->
+Copyright &copy; 2020 Insus.NET
+<br /><span id="poweredby">Powered by .NET Core on Kubernetes</span>
+
+
+
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+
+    
+</body>
+</html>

@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">博客园_和牛</title>
+  <subtitle type="text"></subtitle>
+  <id>uuid:0d9a7eed-4c6e-4c6a-b966-a76fff4e7415;id=73</id>
+  <updated>2020-04-24T12:21:36Z</updated>
+  <author>
+    <name>和牛</name>
+    <uri>http://www.cnblogs.com/heniu/</uri>
+  </author>
+  <generator>feed.cnblogs.com</generator>
+  <entry>
+    <id>http://www.cnblogs.com/heniu/p/12769842.html</id>
+    <title type="text">尝试用python开发一款图片压缩工具1：尝试 pillow库 - 和牛</title>
+    <summary type="text">开发目的 我经常使用图片。公众号文章发文也好，还是生活中要使用素材。图片是一种比文字更加直观的载体。但是图片更加占用带宽，很多软件都对图片有大小限制。图片太大也会影响加载速度。我试过几款图片压缩工具，比如 tinypng 和 tinyjpg 非常好用，体验也非常棒。但是它存在几个局限的地方： 1， </summary>
+    <published>2020-04-24T12:22:00Z</published>
+    <updated>2020-04-24T12:22:00Z</updated>
+    <author>
+      <name>和牛</name>
+      <uri>http://www.cnblogs.com/heniu/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/heniu/p/12769842.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/heniu/p/12769842.html" />
+    <content type="html">【摘要】开发目的 我经常使用图片。公众号文章发文也好，还是生活中要使用素材。图片是一种比文字更加直观的载体。但是图片更加占用带宽，很多软件都对图片有大小限制。图片太大也会影响加载速度。我试过几款图片压缩工具，比如 tinypng 和 tinyjpg 非常好用，体验也非常棒。但是它存在几个局限的地方： 1，  &lt;a href="http://www.cnblogs.com/heniu/p/12769842.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/heniu/p/12740400.html</id>
+    <title type="text">python教程：使用 async 和 await 协程进行并发编程 - 和牛</title>
+    <summary type="text">python 一直在进行并发编程的优化， 比较熟知的是使用 thread 模块多线程和 multiprocessing 多进程，后来慢慢引入基于 yield 关键字的协程。 而近几个版本，python 对于协程的写法进行了大幅的优化，很多之前的协程写法不被官方推荐了。如果你之前了解过 python </summary>
+    <published>2020-04-20T12:52:00Z</published>
+    <updated>2020-04-20T12:52:00Z</updated>
+    <author>
+      <name>和牛</name>
+      <uri>http://www.cnblogs.com/heniu/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/heniu/p/12740400.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/heniu/p/12740400.html" />
+    <content type="html">【摘要】python 一直在进行并发编程的优化， 比较熟知的是使用 thread 模块多线程和 multiprocessing 多进程，后来慢慢引入基于 yield 关键字的协程。 而近几个版本，python 对于协程的写法进行了大幅的优化，很多之前的协程写法不被官方推荐了。如果你之前了解过 python  &lt;a href="http://www.cnblogs.com/heniu/p/12740400.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/heniu/p/12434111.html</id>
+    <title type="text">让你的代码更优秀的 14 条建议 - 和牛</title>
+    <summary type="text">学习代码语法是一件比较简单的事情。但是如何利用简单的语法去组建庞大的项目，会衍生出很多问题。这里总结了一些编程过程中需要注意的陷阱和原则，之后如果有新的总结，我会继续更新。 1，不要编程 对，不要编程。能用草稿纸解决的问题，不用去写程序。 在写程序之前，应该先弄清楚问题。花更多的时间去听、读和理解问</summary>
+    <published>2020-03-07T06:30:00Z</published>
+    <updated>2020-03-07T06:30:00Z</updated>
+    <author>
+      <name>和牛</name>
+      <uri>http://www.cnblogs.com/heniu/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/heniu/p/12434111.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/heniu/p/12434111.html" />
+    <content type="html">【摘要】学习代码语法是一件比较简单的事情。但是如何利用简单的语法去组建庞大的项目，会衍生出很多问题。这里总结了一些编程过程中需要注意的陷阱和原则，之后如果有新的总结，我会继续更新。 1，不要编程 对，不要编程。能用草稿纸解决的问题，不用去写程序。 在写程序之前，应该先弄清楚问题。花更多的时间去听、读和理解问 &lt;a href="http://www.cnblogs.com/heniu/p/12434111.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/heniu/p/10343571.html</id>
+    <title type="text">想写作吗？ - 和牛</title>
+    <summary type="text">题图：Alexa Mazzarello1每个人都会有表达欲望，现在人不缺吃不缺穿，就想着怎么证明自己的存在了。存在感越低的那类人这种感觉会更加强烈。我们写作、往朋友圈发大量的照片，偶尔发一些视频放到网上。我就这样在人人网，qq空间，微博，朋友圈输出了大量内容，可是还是没有人关注我，证明我的存在。每次</summary>
+    <published>2019-01-31T11:51:00Z</published>
+    <updated>2019-01-31T11:51:00Z</updated>
+    <author>
+      <name>和牛</name>
+      <uri>http://www.cnblogs.com/heniu/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/heniu/p/10343571.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/heniu/p/10343571.html" />
+    <content type="html">【摘要】题图：Alexa Mazzarello1每个人都会有表达欲望，现在人不缺吃不缺穿，就想着怎么证明自己的存在了。存在感越低的那类人这种感觉会更加强烈。我们写作、往朋友圈发大量的照片，偶尔发一些视频放到网上。我就这样在人人网，qq空间，微博，朋友圈输出了大量内容，可是还是没有人关注我，证明我的存在。每次 &lt;a href="http://www.cnblogs.com/heniu/p/10343571.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/heniu/p/10336985.html</id>
+    <title type="text">不要现场编程 - 和牛</title>
+    <summary type="text">这是一篇翻译文稿，原文地址：https://inconshreveable.com/11-13-2015/your-live-coding-demo-is-boring/1. 译文在过去一年里我参加了各种各样的会议，从中得出一点看法：不要现场编程，那真的很无聊。无论你编程多么厉害，现场编程真的不是一</summary>
+    <published>2019-01-30T02:25:00Z</published>
+    <updated>2019-01-30T02:25:00Z</updated>
+    <author>
+      <name>和牛</name>
+      <uri>http://www.cnblogs.com/heniu/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/heniu/p/10336985.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/heniu/p/10336985.html" />
+    <content type="html">【摘要】这是一篇翻译文稿，原文地址：https://inconshreveable.com/11-13-2015/your-live-coding-demo-is-boring/1. 译文在过去一年里我参加了各种各样的会议，从中得出一点看法：不要现场编程，那真的很无聊。无论你编程多么厉害，现场编程真的不是一 &lt;a href="http://www.cnblogs.com/heniu/p/10336985.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/heniu/p/10326635.html</id>
+    <title type="text">关于程序员的几点思考 - 和牛</title>
+    <summary type="text">前几天读了一篇《什么是真正的程序员》，以小王子中的口味讲述了 printf 遇到各种各样程序员的故事，引起了我一些思考，并不只是对程序员实用。需要看这篇文章请点击最后「阅读原文」。1. 应不应该专注于一个领域？我认为一个人在一个领域里要有所成就专注是必须的。专注并不是说重复做相同的事情，应该是持续不</summary>
+    <published>2019-01-27T06:58:00Z</published>
+    <updated>2019-01-27T06:58:00Z</updated>
+    <author>
+      <name>和牛</name>
+      <uri>http://www.cnblogs.com/heniu/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/heniu/p/10326635.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/heniu/p/10326635.html" />
+    <content type="html">【摘要】前几天读了一篇《什么是真正的程序员》，以小王子中的口味讲述了 printf 遇到各种各样程序员的故事，引起了我一些思考，并不只是对程序员实用。需要看这篇文章请点击最后「阅读原文」。1. 应不应该专注于一个领域？我认为一个人在一个领域里要有所成就专注是必须的。专注并不是说重复做相同的事情，应该是持续不 &lt;a href="http://www.cnblogs.com/heniu/p/10326635.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/heniu/p/10322118.html</id>
+    <title type="text">如何学习新技术 - 和牛</title>
+    <summary type="text">我总是感觉自己在盲目的学习一些看上去很火热的技术。比如 React Native，Flutter 等等。我家里堆了各种编程语言的入门书籍，有 Go 的，有 Erlang 的，有 c++ 的，还有 JavaScript 和 CSS。 我到现在都搞不懂这个事情。我连主流的 Python 语言都没有掌握清</summary>
+    <published>2019-01-25T14:40:00Z</published>
+    <updated>2019-01-25T14:40:00Z</updated>
+    <author>
+      <name>和牛</name>
+      <uri>http://www.cnblogs.com/heniu/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/heniu/p/10322118.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/heniu/p/10322118.html" />
+    <content type="html">【摘要】我总是感觉自己在盲目的学习一些看上去很火热的技术。比如 React Native，Flutter 等等。我家里堆了各种编程语言的入门书籍，有 Go 的，有 Erlang 的，有 c++ 的，还有 JavaScript 和 CSS。 我到现在都搞不懂这个事情。我连主流的 Python 语言都没有掌握清 &lt;a href="http://www.cnblogs.com/heniu/p/10322118.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/heniu/p/9922039.html</id>
+    <title type="text">几种常用的排序算法 - 和牛</title>
+    <summary type="text">什么是算法 我想很多程序员恐怕误解了「算法」的意义，一想到算法就是动态规划，机器学习之类的高大名词。算法其实就是数学中的「解题过程」，解题过程要求精确，考虑各种情况，需要人看得懂。算法不需要你在键盘上选择什么编程语言实现，只需要在本子上详细的写出每一个步骤就可以了。 算法真的很重要吗？ 我经常在社区</summary>
+    <published>2018-11-07T05:29:00Z</published>
+    <updated>2018-11-07T05:29:00Z</updated>
+    <author>
+      <name>和牛</name>
+      <uri>http://www.cnblogs.com/heniu/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/heniu/p/9922039.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/heniu/p/9922039.html" />
+    <content type="html">【摘要】什么是算法 我想很多程序员恐怕误解了「算法」的意义，一想到算法就是动态规划，机器学习之类的高大名词。算法其实就是数学中的「解题过程」，解题过程要求精确，考虑各种情况，需要人看得懂。算法不需要你在键盘上选择什么编程语言实现，只需要在本子上详细的写出每一个步骤就可以了。 算法真的很重要吗？ 我经常在社区 &lt;a href="http://www.cnblogs.com/heniu/p/9922039.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/heniu/p/9390604.html</id>
+    <title type="text">Charles 抓包工具安装和采坑记录 - 和牛</title>
+    <summary type="text">Charles 抓包工具安装和采坑记录 网络抓包是解决网络问题的第一步，也是网络分析的基础。网络出现问题，第一步肯定是通过抓包工具进行路径分析，看哪一步出现异常。做网络爬虫，第一步就是通过抓包工具对目标网站进行分析，应对各种反爬策略。不会使用抓包工具的网络分析员等于是黑夜里找针，就算找到了，也是凭运</summary>
+    <published>2018-07-30T07:01:00Z</published>
+    <updated>2018-07-30T07:01:00Z</updated>
+    <author>
+      <name>和牛</name>
+      <uri>http://www.cnblogs.com/heniu/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/heniu/p/9390604.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/heniu/p/9390604.html" />
+    <content type="html">【摘要】Charles 抓包工具安装和采坑记录 网络抓包是解决网络问题的第一步，也是网络分析的基础。网络出现问题，第一步肯定是通过抓包工具进行路径分析，看哪一步出现异常。做网络爬虫，第一步就是通过抓包工具对目标网站进行分析，应对各种反爬策略。不会使用抓包工具的网络分析员等于是黑夜里找针，就算找到了，也是凭运 &lt;a href="http://www.cnblogs.com/heniu/p/9390604.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+  <entry>
+    <id>http://www.cnblogs.com/heniu/p/9335281.html</id>
+    <title type="text">当你骂特朗普的时候你究竟在骂什么 - 和牛</title>
+    <summary type="text">美国大选的时候，新闻上天天都是希拉里和特朗普的新闻。希拉里还好，已经参选几届总统了了，又是克林顿的妻子，熟得很，可是特朗普这个人之前都没听说过。媒体似乎很喜欢这个人，纷纷把头版头条挤出来给他，民众也纷纷持围观状，制作了各种逼真的图片，天天在社交网络晒，把特朗普当成了一个大明星。 最近因为中美贸易战，</summary>
+    <published>2018-07-19T05:31:00Z</published>
+    <updated>2018-07-19T05:31:00Z</updated>
+    <author>
+      <name>和牛</name>
+      <uri>http://www.cnblogs.com/heniu/</uri>
+    </author>
+    <link rel="alternate" href="http://www.cnblogs.com/heniu/p/9335281.html" />
+    <link rel="alternate" type="text/html" href="http://www.cnblogs.com/heniu/p/9335281.html" />
+    <content type="html">【摘要】美国大选的时候，新闻上天天都是希拉里和特朗普的新闻。希拉里还好，已经参选几届总统了了，又是克林顿的妻子，熟得很，可是特朗普这个人之前都没听说过。媒体似乎很喜欢这个人，纷纷把头版头条挤出来给他，民众也纷纷持围观状，制作了各种逼真的图片，天天在社交网络晒，把特朗普当成了一个大明星。 最近因为中美贸易战， &lt;a href="http://www.cnblogs.com/heniu/p/9335281.html" target="_blank"&gt;阅读全文&lt;/a&gt;</content>
+  </entry>
+</feed>
